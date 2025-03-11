@@ -30,11 +30,10 @@ organizer_ids:
 co-organizer_ids:
 staff_ids: 
 
-actions: 
+links:
   - title: 捐款頁
     url: https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=84
-    color: grey
-    icon: home
+
 
 listed: yes
 listed_en: 
