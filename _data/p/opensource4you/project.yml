@@ -1,0 +1,40 @@
+name: 源來適你
+name_en: Open Source 4 You
+# 英文版網頁用
+
+description: 「源來適你」是一個將開源技術帶給台灣工程師的社群！參與開源技術對軟體工程師是一條職涯晉升的捷徑，可惜很多台灣工程師「不得其門而入」，而已經獲得開源頭銜的台灣人也沒「環境」在台灣推廣開源。因此在台灣成立社群「源來適你」，我們將開源領域有傑出表現的台灣人團結起來，一起思考如何組織一系列的活動來推廣開源、找出有潛力的工程師培養成下一批「技術專家」！
+
+
+og_image: /p/opensource4you/os4u.png
+# og_image: url
+# 專案的預覽縮圖，會出現在專案列表頁、sns 連結預覽
+# 選用長寬比接近 facebook og image 的圖片（1200 x 630）
+header_image: 
+# 專案頁首的底圖，若有，會出現在專案頁、活動頁
+# 選用長寬比接近長條形的圖片（1400 x 300）
+avatar_image:
+# 專案的 avatar 圖檔網址，若有，會出現在專案頁的左側邊欄
+# 選用長寬比接近正方形的圖片
+theme_color: teal
+    
+
+topic_ids:
+  - source
+field_ids:
+  - it
+tags:
+tags_en:
+
+organizer_ids:
+  - opensource4you
+co-organizer_ids:
+staff_ids: 
+
+actions: 
+  - title: 捐款頁
+    url: https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=84
+    color: grey
+    icon: home
+
+listed: yes
+listed_en: 
