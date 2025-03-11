@@ -20,10 +20,11 @@ end:
 
 
 topic_ids:
+  - tech
 
 
 field_ids:
-
+  - it
 tags:
 tags_en:
 
