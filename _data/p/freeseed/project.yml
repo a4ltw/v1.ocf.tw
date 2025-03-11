@@ -48,6 +48,7 @@ actions_en:
 
 advisor_ids:
 organizer_ids:
+  - freeseed
 co-organizer_ids:
 implementer_ids:
 sponsor_ids:
