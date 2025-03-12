@@ -264,7 +264,50 @@ SITCON 2020 邀請身為學生的你，向大家分享您的經驗與技術，�
       url: https://sitcon.camp/2023/
   cover_image: /p/sitcon/sitcon2023.png
   contributor_ids: 
-    - rock
+
   project_ids:
     - sitcon
 
+- id:
+  name: 學生計算機年會 SITCON 2024
+  name_en: SITCON 2024
+  description: 2024 年的社會仍然有各式問題需要解決：社群媒體審查機制、內容推薦演算法、科技綁架、個人資料追蹤、深度偽造技術、詐騙及假新聞、科技巨擘壟斷行為、⋯⋯。每個議題的複雜程度之高、涉及層面之廣，不禁讓我們思考：究竟科技發展會帶領我們到何方？
+  start: 2024/03/09
+  end: 
+  links:
+    - title: 活動網頁
+      url: https://sitcon.org/2024/
+  cover_image: /p/sitcon/sitconcamp2024-1.png
+  contributor_ids: 
+
+  project_ids:
+    - sitcon
+
+- id:
+  name: SITCON 夏令營 2024
+  name_en: SITCON Camp 2024
+  description: 今年 SITCON 夏令營將於陽明交通大學光復校區舉辦，以「拉麵加點 source，麵向開源界」為主軸。正如同拉麵的麵條和配料可以隨個人喜好自由搭配組合，在程式設計中也可以讓每個人根據自己的想法和需求，選用不同的程式模組和元件，打造獨一無二的作品。透過兩者結合，傳達開源及資訊的無限可能性，在動手實作的過程中，激發創意靈感，發掘個人興趣所在，進而體會開源的樂趣與價值。
+  start: 2024/07/17
+  end: 2024/07/21
+  links:
+    - title: 活動網頁
+      url: https://sitcon.camp/2024/
+  cover_image: /p/sitcon/sitconcamp2024.png
+  contributor_ids: 
+
+  project_ids:
+    - sitcon
+
+- id:
+  name: 學生計算機年會 SITCON 2025
+  name_en: SITCON 2025
+  description: 作為學生，我們處在一個迷惘卻充滿熱血的年紀，可以試圖去尋找社會中的裂隙，並透過「自我覺察」來建立屬於自己的價值觀與信念。無論是發掘在螢幕後方的我們，被社群媒體影響的同時遺漏了什麼；或是如何不為了合群或符合社會期待，而去隱藏自己的真實想法以此從眾；甚至是勇敢地成為先鋒，以資訊結合不同領域，打造出多元化的社群生態。讓我們帶著自我覺察的心，去開創一條屬於這個時代的逃逸路線。
+  start: 2024/03/08
+  end: 
+  links:
+    - title: 活動網頁
+      url: https://sitcon.org/2025/
+  cover_image: /p/sitcon/sitconcamp2025.png
+  contributor_ids: 
+  project_ids:
+    - sitcon
