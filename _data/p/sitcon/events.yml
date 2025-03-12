@@ -277,7 +277,7 @@ SITCON 2020 邀請身為學生的你，向大家分享您的經驗與技術，�
   links:
     - title: 活動網頁
       url: https://sitcon.org/2024/
-  cover_image: /p/sitcon/sitconcamp2024-1.png
+  cover_image: /p/sitcon/sitcon2024-1.png
   contributor_ids: 
 
   project_ids:
@@ -302,12 +302,12 @@ SITCON 2020 邀請身為學生的你，向大家分享您的經驗與技術，�
   name: 學生計算機年會 SITCON 2025
   name_en: SITCON 2025
   description: 作為學生，我們處在一個迷惘卻充滿熱血的年紀，可以試圖去尋找社會中的裂隙，並透過「自我覺察」來建立屬於自己的價值觀與信念。無論是發掘在螢幕後方的我們，被社群媒體影響的同時遺漏了什麼；或是如何不為了合群或符合社會期待，而去隱藏自己的真實想法以此從眾；甚至是勇敢地成為先鋒，以資訊結合不同領域，打造出多元化的社群生態。讓我們帶著自我覺察的心，去開創一條屬於這個時代的逃逸路線。
-  start: 2024/03/08
+  start: 2025/03/08
   end: 
   links:
     - title: 活動網頁
       url: https://sitcon.org/2025/
-  cover_image: /p/sitcon/sitconcamp2025.png
+  cover_image: /p/sitcon/sitcon2025.png
   contributor_ids: 
   project_ids:
     - sitcon
