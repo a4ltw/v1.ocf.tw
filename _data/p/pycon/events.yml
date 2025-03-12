@@ -159,10 +159,38 @@
   end: 2022/09/04
   links:
     - title: 活動網頁
-      url: https://tw.pycon.org/2022/en-us
+      url: https://tw.pycon.org/2022zh-hant/
   cover_image: /p/pycon/py2022logo.png
   contributor_ids:
     - rock
     - claire
+  project_ids:
+    - pycon
+
+- id:
+  name: PyConTW 2023
+  name_en: PyConTW 2023
+  description: 2023 年我們將再次在中研院舉辦實體年會，以「重生」為主軸，鼓勵 Pythonista 們走出虛擬世界，帶領大家回到現場。期待新舊會眾們為 Python 社群帶來更多創新想法，激盪出不一樣的火花。
+  start: 2023/09/02
+  end: 2023/09/03
+  links:
+    - title: 活動網頁
+      url: https://tw.pycon.org/2023/zh-hant/
+  cover_image: /p/pycon/pycontw2023.png
+  contributor_ids:
+  project_ids:
+    - pycon
+
+- id:
+  name: PyConTW 2024
+  name_en: PyConTW 2024
+  description: 去年 PyCon Taiwan 帶會眾們從虛擬重返實體，今年 PyCon Taiwan 2024 將帶著會眾們前進高雄！今年在這個熱情的城市以「連結」為核心，希望來自各地的會眾分享交流為 Python 社群帶來更多創新想法。
+  start: 2024/09/21
+  end: 2024/09/22
+  links:
+    - title: 活動網頁
+      url: https://tw.pycon.org/2024/zh-hant/
+  cover_image: /p/pycon/pycontw2024.png
+  contributor_ids:
   project_ids:
     - pycon
