@@ -5,9 +5,6 @@
   description_en: 
   start: 2024/11/15
   end:
-  links:
-    - title: 
-      url:  
   cover_image: 
   contributor_ids: 
     - singing
@@ -23,9 +20,6 @@
   description_en: 
   start: 2024/11/15
   end:
-  links:
-    - title: 
-      url: 
   cover_image: 
   contributor_ids: 
     - singing
@@ -41,9 +35,6 @@
   description_en: 
   start: 2024/11/01
   end:
-  links:
-    - title: 
-      url: 
   cover_image: 
   contributor_ids: 
     - singing
@@ -59,9 +50,6 @@
   description_en: 
   start: 2024/10/25
   end:
-  links:
-    - title: 
-      url: 
   cover_image: 
   contributor_ids: 
     - singing
@@ -77,9 +65,7 @@
   description_en: 
   start: 2024/10/25
   end:
-  links:
-    - title: 
-      url: 
+
   cover_image: 
   contributor_ids: 
     - singing
@@ -95,9 +81,7 @@
   description_en: 
   start: 2024/10/18
   end:
-  links:
-    - title: 
-      url: 
+
   cover_image: 
   contributor_ids: 
     - singing
@@ -113,9 +97,7 @@
   description_en: 
   start: 2024/10/18
   end:
-  links:
-    - title: 
-      url: 
+ 
   cover_image: 
   contributor_ids: 
     - singing
@@ -131,9 +113,7 @@
   description_en: 
   start: 2024/10/17
   end:
-  links:
-    - title: 
-      url: 
+
   cover_image: 
   contributor_ids: 
     - singing
@@ -149,9 +129,7 @@
   description_en: 
   start: 2024/10/17
   end:
-  links:
-    - title: 
-      url: 
+
   cover_image: 
   contributor_ids: 
     - singing
@@ -167,9 +145,6 @@
   description_en: 
   start: 2024/09/27
   end:
-  links:
-    - title: 
-      url: 
   cover_image: 
   contributor_ids: 
     - singing
