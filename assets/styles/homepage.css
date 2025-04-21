@@ -5,12 +5,12 @@
   background-position: center 100%;
   background-size: cover;
   margin: 0;
-  height: 100vh;
+  height: 75vh;
 }
 
 @media only screen and (max-width: 767px) {
   #homepage #hero {
-    height: 40vh;
+    height: 30vh;
   }
 }
 
