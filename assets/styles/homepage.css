@@ -5,7 +5,29 @@
   background-position: center 100%;
   background-size: cover;
   margin: 0;
-  height: 100vh;
+  height: 70vh;
+}
+
+.donate-button {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f48024; /* OCF 橘 */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+
+.donate-button:hover {
+  background-color: #d26b1f;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
 @media only screen and (max-width: 767px) {
