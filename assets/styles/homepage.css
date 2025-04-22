@@ -13,8 +13,8 @@
   bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #6450DC; 
-  color: #CE0058 !important;
+  background-color: #D7DCF0; 
+  color: #CE0058;
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -26,7 +26,7 @@
 }
 
 .donate-button:hover {
-  background-color: #D7DCF0;
+  background-color: #6450DC;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
