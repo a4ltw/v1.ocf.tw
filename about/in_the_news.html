@@ -18,31 +18,6 @@ OCF是一個從開源社群發起的非營利組織，每一筆的收入和捐�
     </a>
 </div>
 -->
-{% assign mentions_by_year = site.data.ocf.what_we_have_done.media_mentions | group_by_exp: "item", "item.date | slice: 0, 4" %}
-{% assign sorted_groups = mentions_by_year | sort: "name" | reverse %}
-
-<div class="news-year-list">
-  {% for group in sorted_groups %}
-    <div class="news-year-card">
-      <button class="year-toggle" onclick="toggleYear('{{ group.name }}')">
-        📅 {{ group.name }} 年 <span class="arrow">▼</span>
-      </button>
-      <div class="news-items" id="year-{{ group.name }}" style="display: none;">
-        <ul>
-          {% assign sorted = group.items | sort: "date" | reverse %}
-          {% for mention in sorted %}
-            <li>
-              <a href="{{ mention.link }}" target="_blank" rel="noopener">
-                {{ mention.date }} - {{ mention.title }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
 <h3 class="ui header">OCF 相關報導</h3>
 
 <div class="ui list">
