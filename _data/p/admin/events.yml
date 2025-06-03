@@ -1,4 +1,31 @@
 - id: admin
+  name: 扁平時代下，資訊開放如何幫助我們突破演算法？
+  name_en: algorithm
+  description: 本場講座將聚焦於《扁平時代：演算法如何限縮我們的品味與文化》一書的核心主張，揭露演算法如何影響我們的資訊接收、文化品味與各種價值觀，並深入討論這種模式是否正在扼殺觀點的多樣性與創新的可能。我們將檢視演算法推薦機制如何影響資訊傳播與文化生態，並思考開放技術如何提供更具透明度與自主性的內容推薦方式。
+  start: 2025/06/08
+  end:
+  links:
+    - title: 報名網頁
+      url: https://ocftw.kktix.cc/events/algorithm
+  cover_image: /p/admin/2025/a20250608.jpg
+  project_ids:
+    - admin
+
+- id: admin
+  name: 轉生到異世界，留下的肉帳怎麼辦？
+  name_en: afterlife
+  description: 本場講座將聚焦於《雲端亡魂》（The Afterlife of Data）一書的核心觀點，探討數位遺產的歸屬權、AI如何延展數據生命，並檢視這些變化對個人隱私、社會記憶與未來政治的影響。
+  start: 2025/05/25
+  end:
+  links:
+    - title: 報名網頁
+      url: https://ocftw.kktix.cc/events/afterlife
+  cover_image: /p/admin/2025/a20250525.jpg
+  project_ids:
+    - admin
+
+
+- id: admin
   name: 林強《時間浸漬 Bioerosion》專輯發行座談會
   name_en: Bioerosion
   description: 林強睽違 19 年重磅推出全新專輯《時間浸漬 Bioerosion》，2 月 16 日晚間 8 點，誠品松菸店將舉行一場充滿創意與啟發的對話。當晚，林強將攜手音像藝術家 Luca Bonaccorsi，與現場觀眾分享專輯創作的靈感來源與理念碰撞，探討音像藝術與開源精神的緊密連結。
@@ -7,7 +34,7 @@
   links:
     - title: 自由參加
       url: https://www.facebook.com/events/3573895562911955/?acontext=%7B%22event_action_history%22%3A[]%7D
-  cover_image: /assets/images/rea02.png
+  cover_image: /p/admin/2025/a20250216.jpg
   project_ids:
     - admin
 
