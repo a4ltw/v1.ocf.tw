@@ -34,9 +34,9 @@ items:
 <br>By staying true to our mission while adapting to the times, we can create even more possibilities in the next decade. Thank you to all our supporters—let's continue working together for the future of open culture!
         "
         items:
-      - type: image
-        url: /p/admin/2024/b-sign-en.png
-
+      - type: article
+        title:
+        description:"<br><br><br><br>Chief Executive Officer,<br>Open Culture Foundation<br>Shin-Ying, Li"
   #數字圖
   - type: image_header
     cover: /p/admin/2024/2024enreport-nums.png
