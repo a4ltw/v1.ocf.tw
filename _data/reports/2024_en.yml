@@ -36,7 +36,7 @@ items:
         items:
       - type: article
         title:
-        description:"<br><br><br><br>Chief Executive Officer,<br>Open Culture Foundation<br>Shin-Ying, Li"
+        description: "<br><br><br><br>Chief Executive Officer,<br>Open Culture Foundation<br>Shin-Ying, Li"
   #數字圖
   - type: image_header
     cover: /p/admin/2024/2024enreport-nums.png
