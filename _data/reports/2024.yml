@@ -355,17 +355,21 @@ items:
     cover: /p/admin/2024/2024report-end.png
     cover_image_alt: 感謝
 
-  - type: content
-    columns:
-      - type: article
-        logo_height: 7rem
-        logos:
-          - org_id: archilife
-      - type: article
-        logo_height: 7rem
-        title: 感謝年度贊助夥伴的支持<br><br>本年度財務報告將於六月推出
-        logos:
-          - org_id:        
+    - type: image_header
+    cover: /p/admin/2024/2024report-endtks.png
+    cover_image_alt: 年度贊助
+
+#  - type: content
+#    columns:
+#      - type: article
+#        logo_height: 7rem
+#        logos:
+#          - org_id: archilife
+#      - type: article
+#        logo_height: 7rem
+#        title: 感謝年度贊助夥伴的支持<br><br>本年度財務報告將於六月推出
+#        logos:
+#          - org_id:        
   - type: content
     columns:
       - type: article
