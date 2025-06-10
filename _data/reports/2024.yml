@@ -354,7 +354,7 @@ items:
     cover: /p/admin/2024/2024report-end.png
     cover_image_alt: 感謝
 
-    - type: image_header
+  - type: image_header
     cover: /p/admin/2024/2024report-endtks.png
     cover_image_alt: 年度贊助
 
