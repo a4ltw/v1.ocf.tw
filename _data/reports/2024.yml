@@ -111,7 +111,7 @@ items:
       # image_header 區塊的背景圖片，若留空，則顯示單純的背景色塊，且以下三個欄位都不會生效
     cover_image_alt: "donate"
       # image_header 區塊背景圖片的替代文字
-    background_color: "#000"
+    background_color: "#FFF"
       # image_header 區塊背景圖片的背景色，可填入任一種合法的 css color，沒有預設值。 css 的 color code 請參考： https://developer.mozilla.org/en-US/docs/Web/CSS/color
       # 如果使用 # 開頭的 hex color 如 #000 ，要用引號包起來變成 "#000" ，不然會因為 # 的關係而被 .yml 檔案視為註解
     button: 
@@ -120,6 +120,7 @@ items:
         # 按鈕顯示的文字
       url: "https://dub.sh/donateus"
         # 按下按鈕後前往的網址
+      position: center
 
   #五大領域
 
