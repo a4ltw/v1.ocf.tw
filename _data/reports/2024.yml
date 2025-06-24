@@ -378,11 +378,6 @@ items:
     columns:
       - type: image
         url: /p/admin/2024/fin2-1.png
-
-  - type: content
-    single_column: 
-    alignment: center
-    columns:
       - type: image
         url: /p/admin/2024/fin2-2.png
 
@@ -392,11 +387,6 @@ items:
     columns:
       - type: image
         url: /p/admin/2024/fin-in.png
-
-  - type: content
-    single_column: 
-    alignment: center
-    columns:
       - type: image
         url: /p/admin/2024/fin-out.png
 
