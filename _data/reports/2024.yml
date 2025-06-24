@@ -368,6 +368,39 @@ items:
 
 #財務
 
+
+  - type: image_header
+    cover: /p/admin/2024/b-fr.png
+    cover_image_alt: 財務
+
+  - type: content
+    single_column: true
+    alignment: center
+    columns:
+      - type: image
+        url: /p/admin/2024/fin2-1.png
+
+  - type: content
+    single_column: true
+    alignment: center
+    columns:
+      - type: image
+        url: /p/admin/2023/fin2-2.png
+
+  - type: content
+    single_column: true
+    alignment: center
+    columns:
+      - type: image
+        url: /p/admin/2023/fin-in.png
+
+  - type: content
+    single_column: true
+    alignment: center
+    columns:
+      - type: image
+        url: /p/admin/2023/fin-out.png
+
 #感謝
   - type: image_header
     cover: /p/admin/2024/2024report-end.png
