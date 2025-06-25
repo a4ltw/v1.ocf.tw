@@ -368,9 +368,15 @@ items:
 
 #財務
 
-  - type: image_header
-    cover: /p/admin/2024/b-fr.png
-    cover_image_alt: 財務
+  - type: content
+    single_column: 
+    alignment: center
+    columns:
+      - type: image
+        url: /p/admin/2024/b-fr1.png
+      - type: image
+        url: /p/admin/2024/b-fr2.png
+
 
   - type: content
     single_column: 
