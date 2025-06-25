@@ -395,7 +395,8 @@ items:
     columns:
       - type: article
         logo_height: 7rem
-        logos: We deeply appreciate the support of our sponsorship partners.
+        title: We deeply appreciate the support of our sponsorship partners.
+        logos: 
           - org_id: archilife
 #      - type: article
 #        logo_height: 7rem
