@@ -1,6 +1,6 @@
 
 title: 2024 Annual Report | Open Culture Foundation
-description: Open Culture & Art
+description: Illuminate a free and equal digital future by embracing open technologies.
 cover: /p/admin/2024/2024report-cover.png
 theme: dark
 color:
@@ -81,7 +81,7 @@ items:
         title: 
         description: "<h3>Monitor and Initiative</h3>OCF submitted five concrete proposals to the Executive Yuan's Open Government Commitments to advance open data implementation. However, proposal submission was not the end of our advocacy. We organized Open Technology Community Meetups to track government progress, bringing together open-source communities and advocates to maintain ongoing attention on these issues.
 <br>By participating in government advisory meetings and legislative consultation sessions, we urged policymakers to build the technology application upon robust personal data protection.
-<br><h3Build Global Network</h3>In 2024, OCF actively expanded the dialogue between open-source culture, digital rights, and internet governance. We presented our strategies for using open-source solutions to counter digital threats and information monopolies at major international conferences, including the “Digital Rights Asia-Pacific Assembly (DRAPAC)”, the “Asia-Pacific Regional Internet Governance Forum (APrIGF)”, and “Global Gathering”.
+<br><h3>Build Global Network</h3>In 2024, OCF actively expanded the dialogue between open-source culture, digital rights, and internet governance. We presented our strategies for using open-source solutions to counter digital threats and information monopolies at major international conferences, including the “Digital Rights Asia-Pacific Assembly (DRAPAC)”, the “Asia-Pacific Regional Internet Governance Forum (APrIGF)”, and “Global Gathering”.
 <br>We also built a multi-stakeholder dialogue platform, bringing together open-source communities, human rights organizations, businesses, and government representatives to explore inclusive, rights-respecting approaches to internet governance.
         "
         items:
@@ -126,9 +126,8 @@ items:
     columns:
       - type: article
         swap: false
-        title: 
-        description: "
-In 2024, we worked to extend open culture beyond the traditional open-source community. We believe sustaining an open, transparent, and inclusive digital environment can foster a thriving open-source ecosystem.
+        title: Expand Open Culture. Balance Depth and Reach Across Five Core Areas
+        description: "In 2024, we worked to extend open culture beyond the traditional open-source community. We believe sustaining an open, transparent, and inclusive digital environment can foster a thriving open-source ecosystem.
 <br>To achieve this long-term goal, we implemented different action strategies across five core domains with the most suitable approaches. We select the approaches based on the progress level of each domain in Taiwan.
 <br>For open-source code, open government, and open data, which are relatively well-established, we integrated these three themes under ”Open Technology“ to encourage cross-sector dialogue and help embed open collaboration practices into both public and private sectors.
        " 
@@ -147,7 +146,7 @@ In 2024, we worked to extend open culture beyond the traditional open-source com
     columns:
       - type: article
         swap: false
-        title: 
+        title: Build A Solid Open Source Foundation in Taiwan
         description: "Through educational programs, talent development, and open-source project localization, OCF actively expanded the influence of open-source culture, strengthening the foundation of Taiwan's open-source ecosystem.
 
 " 
@@ -205,7 +204,7 @@ In 2024, we worked to extend open culture beyond the traditional open-source com
     columns:
       - type: article
         swap: false
-        title: 
+        title: Develop The Strategy for Public Code and Open Government in Taiwan
         description: "Public Money, Public Code (PMPC) is a campaign that advocates for governments to prioritize open-source solutions in the software they develop and use. PMPC ensures transparency in digital transformation, enables civic engagement, and maximizes shared benefits. Implementing PMPC is already a commitment under Taiwan's Open Government National Action Plan.
 <br>To support this effort, OCF organized capacity-building workshops to introduce public agencies to open-source principles and Public Code. Additionally, through interviews with domestic and international experts, we gained insights into the practical experience and key challenges, laying the groundwork for Taiwan's PMPC strategy.
 
@@ -254,7 +253,7 @@ In 2024, we worked to extend open culture beyond the traditional open-source com
     columns:
       - type: article
         swap: false
-        title: 
+        title: Strengthen Open Data Policies and Collaborative Frameworks
         description: "OCF created a robust open data environment through policy advocacy and organizing Open Technology Meetups. We aim to establish high-quality open data standards and a legal foundation that protects human rights.
 "
         items:
@@ -293,7 +292,7 @@ In 2024, we worked to extend open culture beyond the traditional open-source com
     columns:
       - type: article
         swap: false
-        title: 
+        title: Strengthen Cyber Defense for Taiwan’s Civil Society
         description: "From research to action, OCF developed a Digital Defense Framework for Civil Society, providing advocacy groups with concrete support systems through research, capacity-building, and global collaboration.
 "
         items:
@@ -337,7 +336,7 @@ In 2024, we worked to extend open culture beyond the traditional open-source com
     columns:
       - type: article
         swap: false
-        title: 
+        title: Connect Global and Local Efforts to Shape Human Rights-Centered Governance
         description: "Since launching Internet Freedom Meetups in 2019, OCF has sustained the initiative and expanded its scope, integrating global insights and fostering cross-sector dialogue to raise awareness of internet freedom issues in Taiwan.
 
 "
@@ -400,7 +399,7 @@ In 2024, we worked to extend open culture beyond the traditional open-source com
           - org_id: archilife
       - type: article
         logo_height: 7rem
-        title: We deeply appreciate the support of our annual sponsorship partners.<br><br>Our financial report for this year will be available in June.
+        title: We deeply appreciate the support of our sponsorship partners.
         logos:
           - org_id:        
   - type: content
