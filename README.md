@@ -262,3 +262,14 @@ $ gem install jekyll-redirect-from
 $ gem install jekyll-sitemap
 $ jekyll _3.9.5_ serve --watch
 ```
+
+### 用 Docker 執行開發環境
+
+1. 確認你已經安裝好 Docker（推薦在 mac 安裝 orbstack）。
+2. 在專案根目錄執行下列指令，啟動開發環境：
+
+   ```sh
+   ./run_docker.sh
+   ```
+
+3. 打開 [http://localhost:4000](http://localhost:4000) 就可以預覽網站。
