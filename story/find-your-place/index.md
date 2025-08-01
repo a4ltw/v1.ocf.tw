@@ -1,30 +1,7 @@
 ---
-redirect_from:
-
-layout: global
-
-og_title:
-og_description:
-og_image:
-
-header_image_opacity:
-header_veil_opacity:
-
-show_events:
-gsheet_url:
-show_sponsors:
-show_donors:
-
-show_progress:
-progress:
-  duration:
-  goal:
-  current:
-  percent:
-  count:
-  updated:
-cpid:
-show_child_projects:
+layout: story
+og_title: 沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子
+og_description: 微雨的午後，公館水岸廣場——與景美溪僅有一道河堤的距離，高架橋下的挑高狹長空地，也是市區知名的獨立音樂場所，臺灣第一屆開源祭，正式開幕。
 ---
 
 # 沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子
