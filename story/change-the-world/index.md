@@ -1,30 +1,12 @@
 ---
-redirect_from:
-
-layout: global
-
-og_title:
-og_description:
-og_image:
-
-header_image_opacity:
-header_veil_opacity:
-
-show_events:
-gsheet_url:
-show_sponsors:
-show_donors:
-
-show_progress:
-progress:
-  duration:
-  goal:
-  current:
-  percent:
-  count:
-  updated:
-cpid:
-show_child_projects:
+layout: story
+og_title: 
+og_description: 
+toc:
+  linux-點燃的自由火種: Linux 點燃的自由火種
+  開源社群遍地開花: 開源社群遍地開花
+  公民科技崛起: 公民科技崛起
+  開源的故事尚未完結: 開源的故事，尚未完結
 ---
 
 # 他們用程式碼改變世界——臺灣開源運動的前世今生
