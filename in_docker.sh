@@ -7,4 +7,4 @@ source ~/.bashrc
 gem install jekyll bundler
 gem install jekyll-redirect-from
 gem install jekyll-sitemap
-jekyll serve --watch --host 0.0.0.0
+jekyll serve --watch --host 0.0.0.0 --livereload --incremental
