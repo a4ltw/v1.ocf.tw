@@ -2,6 +2,7 @@
 layout: story
 og_title: 從協助社群帳務到登上國際舞台，OCF推動開源文化的十年之路
 og_description: OCF成立的時候，是要解決開源社群辦活動、金流、作帳的問題。現在不只做這些，做了很多有意義的事情。
+og_image: images/image1.jpg
 ---
 
 # 從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路
