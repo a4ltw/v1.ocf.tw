@@ -3,8 +3,8 @@ layout: global
 ---
 
 <main id="about">
-  {% include _shared/kv.html title=page.og_title
-  description=site.data.people.orgs.ocf.slogan image="/assets/images/about_KV.png" %}
+  {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
+  {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
 
   {% comment %} 處理 h2 標籤的 id 和 title {% endcomment %}
   {% assign h2_parts = content | split: '<h2' %}
@@ -53,7 +53,8 @@ layout: global
       </div>
 
       <div class="ten wide column" id="content">
-        {{ content }}
+        {% assign content_without_h1 = content | replace: '<h1', '<!-- <h1' | replace: '</h1>', '</h1> -->' %}
+        {{ content_without_h1 }}
       </div>
 
     </div>
