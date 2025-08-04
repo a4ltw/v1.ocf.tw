@@ -1,0 +1,62 @@
+---
+layout: global
+---
+
+<main id="about">
+  {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
+  {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
+
+  {% comment %} 處理 h2 標籤的 id 和 title {% endcomment %}
+  {% assign h2_parts = content | split: '<h2' %}
+  {% assign toc_ids = '' | split: '' %}
+  {% assign toc_titles = '' | split: '' %}
+  {% for part in h2_parts %}
+    {% if part != h2_parts.first %}
+      {% assign h2_tag = part | split: '</h2>' | first %}
+      {% if h2_tag contains 'id="' %}
+        {% assign h2_id_part = h2_tag | split: 'id="' | last %}
+        {% assign h2_id = h2_id_part | split: '"' | first %}
+        {% assign h2_title = h2_tag | split: '>' | last %}
+        {% assign toc_ids = toc_ids | push: h2_id %}
+        {% assign toc_titles = toc_titles | push: h2_title %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="ui center aligned stripe container">
+    <nav id="submenu" data-context="mobile" class="ui sticky one item menu">
+      <div class="ui dropdown item">
+        <span data-content="current">跳至...</span>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          {% for toc_id in toc_ids %}
+            {% assign index = forloop.index0 %}
+            <a href="#{{ toc_id }}" class="item">{{ toc_titles[index] }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <hr class="ui hidden divider" />
+
+  <div class="ui stripe container">
+    <div class="ui two column stackable grid">
+
+      <div id="toc" data-context="desktop" class="six wide column">
+        <nav class="ui secondary sticky vertical pointing fluid menu">
+          {% for toc_id in toc_ids %}
+            {% assign index = forloop.index0 %}
+            <a href="#{{ toc_id }}" class="item" style="color: var(--ocf-primary); font-size: 1.75rem;">{{ toc_titles[index] }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+
+      <div class="ten wide column" id="content">
+        {% assign content_without_h1 = content | replace: '<h1', '<!-- <h1' | replace: '</h1>', '</h1> -->' %}
+        {{ content_without_h1 }}
+      </div>
+
+    </div>
+  </div>
+</main>

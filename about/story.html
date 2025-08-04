@@ -1,0 +1,39 @@
+<!--
+1. 特刊文章
+最基本的願望：手機也好閱讀、不懂程式的人可以自己拿去套內容
+預計網頁位置：OCF 官網（ocf.tw） → 關於 → 左側欄位新增連結
+呈現樣式參考：報導者深度專題
+專題頁（範例）：專題文字介紹+三個連結到文章頁
+文章頁（範例）
+-->
+
+<!-- <h3 class="ui header">特刊文章</h3> -->
+
+<!--
+<p>
+  FIXME：這邊放一些專題文字介紹
+</p>
+-->
+
+<div class="ui list">
+{% for item in site.data.about.story %}
+
+  <div class="item">
+    <i class="icon fa-file-alt"></i>
+    <div class="content">
+      <div class="header">
+        <a href="/story/{{ item.slug }}" target="_blank">
+          {{ item.title }}
+        </a>
+      </div>
+      {{ item.date }}
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+
+<!--
+<h3 class="ui header">文宣品下載</h3>
+<a href="https://ocf.tw/mediakit/"_blank>請點此</a>
+-->
