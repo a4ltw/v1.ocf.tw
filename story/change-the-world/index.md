@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 他們用程式碼改變世界——臺灣開源運動的前世今生
-og_description: 講到慶典，你腦海裡可能會立刻浮現熱鬧的畫面。2024年9月14日的開源祭，卻帶了一點「宅氣」。
+og_description: "開源祭特刊 #1"
 og_image: images/image1.jpg
 ---
 
