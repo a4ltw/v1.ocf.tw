@@ -91,6 +91,9 @@
         href="/assets/styles/{{ page.css }}" />
   {% endif %}
 
+  {% if page.layout == "story" %}
+    {{ json_ld_article }}
+  {% endif %}
 </head>
 <body data-lang="{{ lang }}" id="page__pushable--wrapper">
 

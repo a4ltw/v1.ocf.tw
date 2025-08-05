@@ -15,6 +15,7 @@
 {% endif %}
 
 {% assign og_published_time = page.publish_date | date: "%Y-%m-%d" %}
+{% assign published_time_iso8601 = page.publish_date | date: "%Y-%m-%dT%H:%M:%S+08:00" %}
 {% assign og_modified_time = page.modified_time | date: "%Y-%m-%dT%H:%M:%S+08:00" %}
 {% assign og_author = page.author %}
 {% assign og_section = page.section %}
@@ -34,4 +35,22 @@
   {% if og_section %}
     <meta property="article:section" content="{{ og_section }}" />
   {% endif %}
+{% endcapture %}
+
+{% capture json_ld_article %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ og_title }}",
+  "image": [
+    "{{ og_image | absolute_url }}"
+   ],
+  "datePublished": "{{ published_time_iso8601 }}",
+  "dateModified": "{{ og_modified_time }}",
+  "author": [
+    { "name": "{{ og_author }}" }
+  ]
+}
+</script>
 {% endcapture %}
