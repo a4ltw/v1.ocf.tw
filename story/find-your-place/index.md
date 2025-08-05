@@ -3,6 +3,10 @@ layout: story
 og_title: 沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子
 og_description: "開源祭特刊 #2"
 og_image: images/image1.jpg
+publish_date: 2025-07-31
+# modified_time: 2025-08-01 23:00
+author: 鄭婷宇
+section: 開源祭特刊
 ---
 
 # 沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子
