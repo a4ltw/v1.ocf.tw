@@ -3,6 +3,10 @@ layout: story
 og_title: 從協助社群帳務到登上國際舞台，OCF推動開源文化的十年之路
 og_description: "開源祭特刊 #3"
 og_image: images/image3.jpg
+publish_date: 2025-07-31
+# modified_time: 2025-08-01 23:00
+author: 鄭婷宇
+section: 開源祭特刊
 ---
 
 # 從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路

@@ -12,6 +12,7 @@
   page.layout == "report" or
   page.layout == "design" or
   page.layout == "p" or 
+  page.layout == "story" or
   page.layout == "e"
 %}
   {% include _var/og/{{ page.layout }}.html %}
@@ -19,7 +20,8 @@
   {% include _var/og/default.html %}
 {% endif %}
 
-{% include _var/og/custom.html %}
+{% comment %} FIXME: 這個 overwrite 作用不明，可能是多餘的 {% endcomment %}
+{% include _var/og/custom.html %} 
 
 {% if lang == 'en' %}
   {% assign sitename = site.data.people.orgs.ocf.sitename_en %}
@@ -33,8 +35,11 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-
+  {% if page.layout == "story" %}
+  {{ story_meta_tags }}
+  {% else %}
   <meta property="og:type" content="website" />
+  {% endif %}
   <meta property="og:url" content="{{ og_url | absolute_url }}" />
   <link rel="canonical" href="{{ og_url | absolute_url }}" />
 
@@ -86,6 +91,9 @@
         href="/assets/styles/{{ page.css }}" />
   {% endif %}
 
+  {% if page.layout == "story" %}
+    {{ json_ld_article }}
+  {% endif %}
 </head>
 <body data-lang="{{ lang }}" id="page__pushable--wrapper">
 

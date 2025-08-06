@@ -3,6 +3,10 @@ layout: story
 og_title: 他們用程式碼改變世界——臺灣開源運動的前世今生
 og_description: "開源祭特刊 #1"
 og_image: images/image1.jpg
+publish_date: 2025-07-31
+# modified_time: 2025-08-01 23:00
+author: 鄭婷宇
+section: 開源祭特刊
 ---
 
 # 他們用程式碼改變世界——臺灣開源運動的前世今生

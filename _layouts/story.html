@@ -23,36 +23,22 @@ layout: global
     {% endif %}
   {% endfor %}
 
-  <div class="ui center aligned stripe container">
-    <nav id="submenu" data-context="mobile" class="ui sticky one item menu">
-      <div class="ui dropdown item">
-        <span data-content="current">跳至...</span>
-        <i class="dropdown icon"></i>
-        <div class="menu">
+  <hr class="ui hidden divider" />
+
+  <div class="stripe ui container">
+    <div class="ui two column stackable grid">
+
+      <div class="four wide column">
+        <nav class="ui secondary vertical fluid text menu" id="table-of-contents">
+          <div class="header item">目次</div>
           {% for toc_id in toc_ids %}
             {% assign index = forloop.index0 %}
             <a href="#{{ toc_id }}" class="item">{{ toc_titles[index] }}</a>
           {% endfor %}
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <hr class="ui hidden divider" />
-
-  <div class="ui stripe container">
-    <div class="ui two column stackable grid">
-
-      <div id="toc" data-context="desktop" class="six wide column">
-        <nav class="ui secondary sticky vertical pointing fluid menu">
-          {% for toc_id in toc_ids %}
-            {% assign index = forloop.index0 %}
-            <a href="#{{ toc_id }}" class="item" style="color: var(--ocf-primary); font-size: 1.75rem;">{{ toc_titles[index] }}</a>
-          {% endfor %}
         </nav>
       </div>
 
-      <div class="ten wide column" id="content">
+      <div class="twelve wide column" id="content">
         {% assign content_without_h1 = content | replace: '<h1', '<!-- <h1' | replace: '</h1>', '</h1> -->' %}
         {{ content_without_h1 }}
       </div>
