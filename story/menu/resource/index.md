@@ -50,3 +50,21 @@ og_image:
 * [數位部中文化成果](https://github.com/moda-gov-tw)
 
 關於[自由與開源軟體中文化計畫](https://ocf.tw/p/oss_localization/)
+
+## 歷年成果報告
+<p>
+OCF的經費來源主要是透過對社群收取服務費用、專案承攬、定期定額的捐款，以及單次性的捐贈等。這些經費除了使用在每月固定的行政開銷費用(行政、辦公室營運等)之外，多使用於專案支持、活動辦理等業務進行。 OCF主要業務之一為協助開源社群行政及財務管理，其各社群在 OCF 的捐款收入皆為各自社群之捐款收入，OCF 僅盡代管之責。<br>
+每年業務成果、收支情形及社群協助狀況等，詳細請見 OCF 年度報告：
+</p>
+{% assign i = site.data.settings.current %}
+{% for item in site.data.reports %}
+{% unless item[0] contains "_" %}
+  {% assign i = i | minus:1 %}
+<div class="item">
+  <a href="/p/{{ i }}" target="_blank">
+      <i class="globe icon"></i>
+      {{ i }} 年成果報告
+  </a>
+</div>
+{% endunless %}
+{% endfor %}
