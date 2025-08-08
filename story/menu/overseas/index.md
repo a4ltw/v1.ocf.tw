@@ -69,19 +69,17 @@ og_image:
 
 
 ## 2016 國際出訪
+
 * 2016 OGP summit @巴黎 
->[成果報告](https://docs.google.com/document/d/16NtkMWRpwBvL96u8gARsgMK_qSln6BBnzM8vJzomff0/edit#heading=h.ijnpxjmgktj9)
->[公民審議成果報告](https://drive.google.com/open?id=0B0btxvSLjDAqSm1vdE44bXpCNWc)
->分享會 (一)開放政府中的公民力量，[共筆/資料](https://ocf-tw.hackpad.tw/OGP-summit--w1GhqSmsiHL)
->分享會 (二)開放政府中的公民審議，[共筆/資料](https://ocf-tw.hackpad.tw/OGP-summit--HNYIGTHQGxb)
-
-
+	- [成果報告](https://docs.google.com/document/d/16NtkMWRpwBvL96u8gARsgMK_qSln6BBnzM8vJzomff0/edit#heading=h.ijnpxjmgktj9)
+	- [公民審議成果報告](https://drive.google.com/open?id=0B0btxvSLjDAqSm1vdE44bXpCNWc)
+	- 分享會 (一)開放政府中的公民力量，[共筆/資料](https://ocf-tw.hackpad.tw/OGP-summit--w1GhqSmsiHL)
+	- 分享會 (二)開放政府中的公民審議，[共筆/資料](https://ocf-tw.hackpad.tw/OGP-summit--HNYIGTHQGxb)
 * 2016 Code for American Summit @ Oakland 
->[出訪報告](https://drive.google.com/file/d/1iOIZ3hT40SYvNhZAP24_xfsuvlyWI-HD/view)
->g0v@Stanford [talk](https://g0v.hackpad.com/g0vStanford-Talk-Fork-and-Merge-an-Open-Government-Experiments-of-g0v-in-Taiwan-CCTD1E5e3xz)
->分享會[直播](https://https://www.youtube.com/watch?v=XI-uYe50dG4)
->CfA 現場與分享會[照片](https://https://drive.google.com/drive/u/0/folders/0B62BopK8ZVZ2ajUzNDgzd3RjWms)
-
+	- [出訪報告](https://drive.google.com/file/d/1iOIZ3hT40SYvNhZAP24_xfsuvlyWI-HD/view)
+	- g0v@Stanford [talk](https://g0v.hackpad.com/g0vStanford-Talk-Fork-and-Merge-an-Open-Government-Experiments-of-g0v-in-Taiwan-CCTD1E5e3xz)
+	- 分享會[直播](https://https://www.youtube.com/watch?v=XI-uYe50dG4)
+	- CfA 現場與分享會[照片](https://https://drive.google.com/drive/u/0/folders/0B62BopK8ZVZ2ajUzNDgzd3RjWms)
 * 2016 g0v hackathon @NYC [活動紀錄](https://hackmd.io/OwTgTAxgLApgZgNgLQEYYEMVKgBhzJdAI2GSgFYJyATGBFG9EIA=)，Day 1 [Video](https://www.youtube.com/watch?v=fSV9rI2b3q8)，Day 2 [Video](https://www.youtube.com/watch?v=-yuGVXKg_BY)
 
 
