@@ -51,27 +51,24 @@ og_image:
 
 關於[自由與開源軟體中文化計畫](https://ocf.tw/p/oss_localization/)
 
-## OCF 十週年
-* [十週年網站](https://ocf.tw/10years/)
-* 十週年特刊
-<div class="ui list">
-{% for item in site.data.about.story %}
-
-  <div class="item">
-    <i class="icon fa-file-alt"></i>
-    <div class="content">
-      <div class="header">
-        <a href="/story/{{ item.slug }}" target="_blank">
+## 十週年開源祭
+* [開源祭網站](https://ocf.tw/10years/)
+* 開源祭特刊
+  - <div class="ui list">
+    {% for item in site.data.about.story %}
+      <div class="item">
+      <i class="icon fa-file-alt"></i>
+      <div class="content">
+        <div class="header">
+          <a href="/story/{{ item.slug }}" target="_blank">
           {{ item.title }}
-        </a>
+          </a>
+        </div>
+          {{ item.date }}
       </div>
-      {{ item.date }}
     </div>
+  {% endfor %}
   </div>
-
-{% endfor %}
-</div>
-
 
 ## 歷年成果報告
 <p>
