@@ -51,6 +51,28 @@ og_image:
 
 關於[自由與開源軟體中文化計畫](https://ocf.tw/p/oss_localization/)
 
+## OCF 十週年
+* [十週年網站](https://ocf.tw/10years/)
+* 十週年特刊
+<div class="ui list">
+{% for item in site.data.about.story %}
+
+  <div class="item">
+    <i class="icon fa-file-alt"></i>
+    <div class="content">
+      <div class="header">
+        <a href="/story/{{ item.slug }}" target="_blank">
+          {{ item.title }}
+        </a>
+      </div>
+      {{ item.date }}
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+
+
 ## 歷年成果報告
 <p>
 OCF 的經費來源主要是透過對社群收取服務費用、專案承攬、定期定額的捐款，以及單次性的捐贈等。這些經費除了使用在每月固定的行政開銷費用（行政、辦公室營運等）之外，多使用於專案支持、活動辦理等業務進行。OCF 主要業務之一為協助開源社群行政及財務管理，其各社群在 OCF 的捐款收入皆為各自社群專款專用，OCF 僅盡代管之責。<br>
