@@ -54,8 +54,6 @@ og_image:
 ## 十週年開源祭
 * [開源祭網站](https://ocf.tw/10years/)
 * 開源祭特刊
-
-- 
 <div class="ui list">
 {% for item in site.data.about.story %}
 
