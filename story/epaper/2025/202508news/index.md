@@ -16,10 +16,9 @@ Academy Software Foundation（ASWF）剛在溫哥華舉辦 Open Source Days 2025
 * LAIKA 分享如何用開源技術改造製片流程
 * 基金會現況報告與年度回顧
 
-大會的最新精華影片將在 8/31 前公開在 YouTube 上，精華片段將讓你驚訝原來這麼多看過的電影背後都使用了各種開源工具！
-https://www.youtube.com/academysoftwarefoundation
+大會的最新精華影片將在 8/31 前公開在 [YouTube](https://www.youtube.com/academysoftwarefoundation) 上，精華片段將讓你驚訝原來這麼多看過的電影背後都使用了各種開源工具！
 
-來源：https://www.linuxfoundation.org/blog/linux-foundation-newsletter-august-2025#projectnews, Linux Foundation
+來源：[Linux Foundation August 2025 newsletter](https://www.linuxfoundation.org/blog/linux-foundation-newsletter-august-2025#projectnews)
 
 ## Windows 10 支援即將結束，用 Linux 讓舊電腦重生！
 
@@ -38,4 +37,4 @@ https://www.youtube.com/academysoftwarefoundation
 
 別讓舊電腦成為電子垃圾，讓它繼續為您服務，並為地球盡一份心力。()
 
-來源：https://endof10.org/zh-tw/
+來源：[10 之終結](https://endof10.org/zh-tw/)
