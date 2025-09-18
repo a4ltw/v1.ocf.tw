@@ -25,7 +25,7 @@ og_image:
 {% endfor %}
 </div>
 
-## OCF 相關報導
+## 媒體報導
 
 <div class="ui list">
 {% for item in site.data.about.ocf %}
