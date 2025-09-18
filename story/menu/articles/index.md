@@ -5,7 +5,7 @@ og_description: "開放文化基金會"
 og_image: 
 ---
 
-# 文章
+## 最新文章
 
 <div class="ui list">
 {% for item in site.data.about.story %}
@@ -22,5 +22,41 @@ og_image:
     </div>
   </div>
 
+{% endfor %}
+</div>
+
+## OCF 相關報導
+
+<div class="ui list">
+{% for item in site.data.about.ocf %}
+  <div class="item">
+    <i class="icon newspaper"></i>
+    <div class="content">
+      <div class="header">
+      {{ item.date }} / {{ item.media }}
+      </div>
+      <a href="{{ item.url }}" target="_blank">
+      {{ item.title }}
+      </a>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+## 開源 / 開放文化相關報導
+
+<div class="ui list">
+{% for item in site.data.about.floss %}
+  <div class="item">
+    <i class="icon newspaper"></i>
+    <div class="content">
+      <div class="header">
+      {{ item.date }} / {{ item.media }}
+      </div>
+      <a href="{{ item.url }}" target="_blank">
+      {{ item.title }}
+      </a>
+    </div>
+  </div>
 {% endfor %}
 </div>
