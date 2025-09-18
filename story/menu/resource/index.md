@@ -53,7 +53,12 @@ og_image:
 
 ## 十週年開源祭
 * [開源祭網站](https://10years.ocf.tw)
-* 開源祭特刊
+- 開源祭特刊
+  - [他們用程式碼改變世界——臺灣開源運動的前世今生](https://ocf.tw/story/change-the-world)
+  - [沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子](https://ocf.tw/story/find-your-place)
+  - [從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路](https://ocf.tw/story/ten-years-of-ocf)
+
+
 <div class="ui list">
 {% for item in site.data.about.story %}
 
