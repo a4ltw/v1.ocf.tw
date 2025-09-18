@@ -1,5 +1,5 @@
 ---
-layout: articles
+layout: story
 og_title: 最新文章
 og_description: "開放文化基金會"
 og_image: 
