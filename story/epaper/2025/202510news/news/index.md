@@ -6,7 +6,7 @@ og_image: images/image1.png
 ---
 
 # 2025 年 10 月開放科技新聞摘要
-
+thub
 ## 2025-10-07 - React Foundation 將成立
 
 The Linux Foundation 宣布其打算成立 React Foundation，作為 React、React Native 與相關專案的新中立組織載體，讓 React 與 React Native 在開放性、創新性、社群主導上得以維持與發展。 
