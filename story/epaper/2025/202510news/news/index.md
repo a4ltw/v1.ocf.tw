@@ -5,7 +5,7 @@ og_description: "2025 年 10 月"
 og_image: images/image1.png
 ---
 
-# 2025 年 10 月開放科技新聞摘要
+# 2025 OCT 開放科技新聞摘要
 
 ## 2025-10-07 - React Foundation 將成立
 
