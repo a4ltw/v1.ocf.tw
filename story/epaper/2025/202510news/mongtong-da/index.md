@@ -18,5 +18,8 @@ og_image: images/image1.png
 
 本次的專輯《明日音》在視覺上與老戰友 XTRUX 合作，音樂內容上又加入北非、阿拉伯節奏，還有一部分印尼 Dangdut 元素。百合花樂團與本人分別參加了〈萬引〉與〈強烈建議〉（原名「我強烈建議您查看此郵件內容」）。根據洪御的構想，A 面最後一首〈Zㄣ〉與 B 面最後一首〈強烈建議〉播放時間相同，但拍數各異，如能將兩個檔案同時播放，會產生「聲音的化學作用」。
 
+:::danger 
+[訂閱 OCF 電子報獲取第一手快訊](https://ocf.tw/news/)
+:::
 
-[image1]: images/image1.jpg
+[image1]: images/image1.png
