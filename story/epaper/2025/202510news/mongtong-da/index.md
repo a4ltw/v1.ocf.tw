@@ -30,7 +30,8 @@ og_image: images/image1.png
 ![本文作者黃大旺，又名黑狼，跨界聲音與行動藝術家。][image2]
 *本文作者黃大旺，又名黑狼，跨界聲音與行動藝術家。*
 
-[!CAUTION] 訂閱 OCF 電子報獲取第一手快訊](https://ocf.tw/news/)
+	
+>[訂閱 OCF 電子報獲取第一手快訊](https://ocf.tw/news/)
 
 
 
