@@ -2,7 +2,7 @@
 layout: story
 og_title: 開放音像派對：從《時間浸漬》到《明日音》
 og_description: "OCF 參與 Jam Jam Asia 亞洲音樂節回顧"
-og_image: 
+og_image: images/image1.jpg
 ---
 
 
