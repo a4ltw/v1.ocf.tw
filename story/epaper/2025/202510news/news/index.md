@@ -15,7 +15,6 @@ The Linux Foundation 宣布將成立 React Foundation，作為 React、React Nat
 ## 2025-09-23 — 開放知識基金會（OKFN）呼籲科技與公共利益的平衡
 
 開放知識基金會（OKFN）發布新指南《The Tech We Want | Read This Before You Build》，以其 20 年倡議經驗，提出開發公共利益科技前，團隊應思考的 8 大核心問題，強調簡單、耐用、社群共創和以負責任的方式整合人工智慧（integrate AI responsibly）整合。內容包含真實案例與自評工具，呼籲技術團隊「慢一點、做小一點、更傾聽」，以打造真正有用且包容的數位工具。  
-
 - 原文：[Our New Field Guide: ‘The Tech We Want | Read This Before You Build](https://blog.okfn.org/2025/09/23/our-new-field-guide-the-tech-we-want-read-this-before-you-build/)
 
 ## 2025-09-19 — 歐洲自由軟體基金會（FSFE）持續維持數位市場公平競爭與使用者選擇權 
