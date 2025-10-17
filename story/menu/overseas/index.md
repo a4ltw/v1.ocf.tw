@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 國際會議出訪記錄
-og_description: "開放文化基金會"
+og_description: "這裡是參與國際大型會議的報告記錄"
 og_image: 
 ---
 

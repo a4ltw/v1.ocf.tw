@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 各項成果與資源下載
-og_description: "開放文化基金會"
+og_description: "研究報告、推廣手冊都在這裡"
 og_image: 
 ---
 

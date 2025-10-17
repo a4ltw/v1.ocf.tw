@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 最新消息
-og_description: "開放文化基金會"
+og_description: "這裡有最新文章、新聞報導"
 og_image: 
 ---
 
