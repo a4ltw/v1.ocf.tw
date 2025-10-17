@@ -27,6 +27,8 @@ menu:
   # 這個欄位用來設定主選單的選項與連結
   - title: 關於
     url: /about/
+  - title: 最新消息
+    url: /story/menu/articles/
   - title: 夥伴
     url: /people/
   - title: 基金會專案
@@ -42,7 +44,7 @@ menu:
 #  - title: OCFLab
 #    url: https://lab.ocf.tw/
   - title: 資源
-    url: https://ocf.tw/story/menu/resource/
+    url: /story/menu/resource/
   - title: 捐款支持
     url: /supportus/
 
