@@ -427,23 +427,35 @@
     width: 100% !important;
   }
 }
-
+.slick {
+  max-width: 1200px;
+  margin: 0 auto;  /* 讓容器置中，自動左右留白 */
+}
 .slick img {
   width: 100%;
-  max-width: 1200px;
   height: 400px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
+  .slick {
+    max-width: 1440px;
+  }
   .slick img {
-    max-width: 1620px;
-    height: 300px;
+    height: 600px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .slick img {
-    height: 220px;
+    height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .slick {
+    max-width: 99vw;  /* 小螢幕自動貼邊 */
+  }
+  .slick img {
+    height: 180px;
   }
 }
