@@ -429,3 +429,23 @@
 }
 
 
+
+.slick {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.slick img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  .slick img {
+    max-height: 220px;
+    object-fit: cover;
+    /* content: url('/assets/images/homepage/mobile_slide1.png'); */
+  }
+}
+
