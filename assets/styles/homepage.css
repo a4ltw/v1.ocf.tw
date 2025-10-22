@@ -427,3 +427,23 @@
     width: 100% !important;
   }
 }
+
+.slick img {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1400px) {
+  .slick img {
+    max-width: 1920px;
+    height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .slick img {
+    height: 220px;
+  }
+}
