@@ -428,39 +428,17 @@
   }
 }
 
+
 .slick {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
   box-sizing: border-box;
-}
-.slick-list, .slick-track {
-  width: 100% !important;
-  overflow: visible !important;
-}
-.slick-slide {
-  text-align: center;
+  min-height: 400px;
 }
 .slick img {
   width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-  background: #fff;
+  height: 400px;
+  object-fit: cover; /* 不裁切則改成 contain */
   display: block;
-  margin: 0 auto;
-}
-@media (min-width: 1440px) {
-  .slick {
-    max-width: 1440px;
-    padding: 0 60px;
-  }
-  .slick img {
-    max-height: 600px;
-  }
-}
-@media (max-width: 991px) {
-  .slick img {
-    max-height: 220px;
-  }
+  background: #fff;
 }
