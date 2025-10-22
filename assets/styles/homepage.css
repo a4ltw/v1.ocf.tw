@@ -438,8 +438,8 @@
 }
 @media (min-width: 1400px) {
   .slick img {
-    max-width: 1920px;
-    height: 600px;
+    max-width: 1620px;
+    height: 300px;
   }
 }
 @media (max-width: 767px) {
