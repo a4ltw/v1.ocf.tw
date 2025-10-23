@@ -427,3 +427,34 @@
     width: 100% !important;
   }
 }
+
+/* test */
+
+
+
+/* slick 輪播 RWD fix，限制圖片最大寬度 100% 並自動縮放 */
+.slick img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* slick 輪播區自適應寬度，避免橫向滾動 */
+.slick {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .slick {
+    /* 可依需求自訂 padding 或 margin */
+    padding: 0 8px;
+  }
+  .slick img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
