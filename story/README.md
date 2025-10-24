@@ -1,4 +1,12 @@
-# 新增文章步驟
+# 最新消息頁面上架步驟
+
+完成以下三步驟，即可上架文章到[最新消息](https://ocf.tw/story/menu/articles/#最新文章)。
+
+- 在 story 資料夾下建立子目錄
+- 置入 markdown 格式文件及圖片
+- 在 [_data/about/story.yml](https://github.com/ocftw/v1.ocf.tw/blob/gh-pages/_data/about/story.yml) 加入對應網址等 metadata
+
+## Google Doc 上架步驟
 
 1. 將 google doc 文章下載成 html（檔案 ⭢ 下載），只取其中的 images 圖片資料夾
 
