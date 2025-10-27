@@ -1,6 +1,6 @@
 ---
 layout: story
-og_title: ：台灣數位信任協會
+og_title: 台灣數位信任協會
 og_description: "網路自由小聚 2025/7 後記"
 og_image: images/image1.png
 ---
@@ -78,8 +78,8 @@ og_image: images/image1.png
 然而，現代數位社會，一言一行早已跨越國界，人人都應該要關心自身在數位世界上的權利。大家一起來小聚聊聊，認識更多全球重要網路自由課題 !!!!!!
 
 本文為網路自由小聚：台灣數位信任協會 - 活動摘要，內容為源自現場錄音與共筆記錄，透過 NotebookLM 整理後，再經人工編輯。本文採 CC-BY 公眾授權釋出，歡迎自由轉貼利用。
-線上討論：https://groups.google.com/g/coffee-circumvention-tw 
-活動共筆：https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view 
+- [線上討論](https://groups.google.com/g/coffee-circumvention-tw) 
+- [活動共筆](https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view)
 
 
 	
