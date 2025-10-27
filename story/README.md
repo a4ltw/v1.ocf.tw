@@ -1,4 +1,12 @@
-# 新增文章步驟
+# 最新消息頁面上架步驟
+
+完成以下三步驟，即可上架文章到[最新消息](https://ocf.tw/story/menu/articles/#最新文章)。
+
+- 在 story 資料夾下建立子目錄
+- 置入 markdown 格式文件及圖片
+- 在 [_data/about/story.yml](https://github.com/ocftw/v1.ocf.tw/blob/gh-pages/_data/about/story.yml) 加入對應網址等 metadata
+
+## Google Doc 上架步驟
 
 1. 將 google doc 文章下載成 html（檔案 ⭢ 下載），只取其中的 images 圖片資料夾
 
@@ -34,7 +42,7 @@
         *四十多年來的國內外開放原始碼歷史和臺灣社群的興起，透過開源祭的各項展覽呈現在民眾眼前。照片：淬戀影像工作室攝影，開放文化基金會提供。CC BY 4.0 釋出。*
         ```
 
-8. 在 _data/story.yml 中加入 /about 的文章連結，格式如下：
+8. 在 `_data/about/story.yml` 中加入 /about 的文章連結，格式如下：
 
     ```yml
     - title: 從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路
