@@ -2,7 +2,7 @@
 layout: story
 og_title: OCF 與愛陌生基金會攜手改善 AED 資料品質
 og_description: "Taiwan AED Google Maps 全民建置行動起跑記者會"
-og_image: images/image1.png
+og_image: images/image1.jpg
 ---
 # OCF 與愛陌生基金會攜手改善 AED 資料品質
 
@@ -18,11 +18,12 @@ og_image: images/image1.png
 OCF 將持續與公部門及民間夥伴合作，推動開放資料在公共領域的應用，以開放科技和跨界合作來應對數位時代的各項威脅並健全數位社會的發展。
 
 ![記者會現場照片，圖片來源：黃捷臉書][image1]
+圖：記者會現場照片，圖片來源：黃捷臉書
 
 ![AED 位置標示錯誤示例圖][image3]
-
+圖：AED 位置標示錯誤示例圖
 ![記者會現場照片，圖片來源：鄧東波][image2]
-
+圖：記者會現場照片，圖片來源：鄧東波
 	
 [訂閱 OCF 電子報獲取第一手快訊](https://ocf.tw/news/)
 
