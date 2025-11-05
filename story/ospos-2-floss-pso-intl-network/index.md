@@ -80,7 +80,7 @@ OS2 的代表專案包括：
 此外，針對 OSPO 成立過程中所需的一切流程管理，他們也開發了 [GGI-Board](https://ospo.zone/ggi-board/) 工具，協助您管理整體進度。  
 從法國的中央協調、丹麥的聯盟團購，到美國的政策領航，我們看到各國政府正用不同的方式，擁抱「公共程式碼」這個不可逆的趨勢。
 
-**OSPO Alliance 於 2021 年 6 月 由歐洲多個開放原始碼組織共同發起，包括 OW2、Eclipse Foundation、OpenForum Europe 與 Foundation for Public Code 等。這是一個以「開源」為核心的社群型態聯盟，由各支持組織與志工共同組成，致力於推動公共與私部門建立及強化開放原始碼治理能力，主要為國際級的經驗共用平台與治理工具庫。**
+**＊OSPO Alliance 於 2021 年 6 月 由歐洲多個開放原始碼組織共同發起，包括 OW2、Eclipse Foundation、OpenForum Europe 與 Foundation for Public Code 等。這是一個以「開源」為核心的社群型態聯盟，由各支持組織與志工共同組成，致力於推動公共與私部門建立及強化開放原始碼治理能力，主要為國際級的經驗共用平台與治理工具庫。**
 
 [image1]: images/image1.png
 [image2]: images/image2.png
