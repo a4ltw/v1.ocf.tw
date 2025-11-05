@@ -1,12 +1,12 @@
 ---
 layout: story
 og_title: OSPO 正在集結中！來自世界各地的政府開源計畫辦公室  
-og_description: "OSPO 聯盟系列 #2"
+og_description: "開源治理系列 #2"
 og_image: images/image1.png
 publish_date: 2025-11-04
 modified_time: 2025-11-04 18:00
 author: Ian Liu (Yanyiyi)
-section: OSPO 聯盟系列
+section: 開源治理系列
 ---
 
 # OSPO 正在集結中！來自世界各地的政府開源計畫辦公室  
@@ -24,19 +24,22 @@ section: OSPO 聯盟系列
 - PSO 則是「公部門組織」（Public Sector Organisation）。
 
 ![如何參與成為 FLOSS-PSO 行動的一份子，翻譯資料來源：FLOSS-PSO Network 首頁][image2]
+*如何參與成為 FLOSS-PSO 行動的一份子，翻譯資料來源：FLOSS-PSO Network 首頁*
 
-這個專案由 [OSPO 聯盟（OSPO Alliance）](https://ospo.zone/) 支持，希望串連起各國的公部門 OSPO，讓大家有個交流、分享經驗的地方。  
+這個專案由 [OSPO 聯盟（OSPO Alliance）](https://ospo.zone/) [^1] 支持，希望串連起各國的公部門 OSPO，讓大家有個交流、分享經驗的地方。  
 這個網絡的加入方式本身就體現了「開源精神」。想加入的單位必須在一個公開的 [GitLab 程式碼庫（Repo）](https://gitlab.eclipse.org/eclipse/plato/public-ospos) 提交一個 [YAML 格式](https://floss-pso.network/ospometa-builder/)的登記表，說明自己的開源政策。這種透明的「開源治理」方式，讓所有人都能看見誰加入了、以及他們承諾了什麼。
 
-![資料來源：FLOSS-PSO Network OSPOmeta YAML 生產器][image3]  
-
-這個列表也成為一份寶貴的學習資源，讓後進者能「相互借鏡」，看看各國的開源政策是怎麼設計的。
+![資料來源：FLOSS-PSO Network OSPOmeta YAML 生產器][image3]
+*資料來源：FLOSS-PSO Network OSPOmeta YAML 生產器*
 
 ## 各國如何推動？三種發展模式！
 
-截至本文發佈，已有來自多國的中央與地方政府 OSPO 加入了這個網絡。目前已經有 6 個中央政府層級、 8 個地方政府層級的 OSPO 加入。我們發現了幾種獨特的發展模式，也和社群的大家分享。
+而由各國提報的列表也成為一份寶貴的學習資源，讓後進者能「相互借鏡」，看看各國的開源政策是怎麼設計的。
 
-![這次的開源祭中][image1]
+截至本文發佈，已有來自多國的國家中央與地方政府 OSPO 加入了這個網絡。目前已經有 6 個國際或國家政府層級、 8 個地方政府層級的 OSPO 加入。我們發現了幾種獨特的發展模式，也和社群的大家分享。
+
+![資料來源：FLOSS-PSO Network][image1]
+*OCF 整理製圖。資料來源：FLOSS-PSO Network*
 
 ### 模式一：法國中央帶頭、地方響應的「核心與節點整合模式」
 
@@ -55,9 +58,9 @@ section: OSPO 聯盟系列
 於是，他們決定「集資」，一同找到共同開發或採購「開源」的解決方案。這樣不僅能共享開發成果、分攤成本，更扭轉了與軟體供應商的權力關係。  
 OS2 的代表專案包括：
 
-* **OS2forms**：專為市鎮複雜業務（如公民申請、內部審批）設計的強大網路表單系統。  
-* **OS2display**：用於管理於市政府、辦公廳、圖書館等公共場所資訊螢幕的系統。
-* **OS2display**：用於管理市政廳、圖書館等公共場所資訊螢幕的系統。
+* [**OS2forms**](https://github.com/OS2Forms/)：是一套開放原始碼的表單系統，專為市政機關與公共部門設計，能處理如公民申請、內部審核、資料蒐集等複雜業務流程。系統支援自訂欄位、流程管理與資料整合，有助於提升行政效率與透明度。
+* [**OS2display**](https://github.com/os2display)：是一套開源的資訊螢幕管理系統，適用於市政府、圖書館、學校等公共場所，可集中管理公告、活動與即時資訊的排程與顯示，強化資訊傳遞與公共服務。
+* [**OS2BorgerPC**](https://github.com/os2borgerpc)：是一款基於 Ubuntu 的開源業系統，專為公共場所（如圖書館、民眾服務中心等）設計。它具備中央管理、自動清除使用者資料，以及防止鍵盤側錄等安全功能，能有效保護使用者隱私，並簡化系統維運。
 
 ### 模式三：美國聯邦技術先行的「政策程式碼化模式」
 
@@ -65,7 +68,7 @@ OS2 的代表專案包括：
 
 在一個充滿繁複法規、講求風險規避的公務體系中，他們的核心工作是為公務員「掃除障礙」，讓同仁們有能力、有信心地在開放環境中工作。他們將政府採購與軟體開發的標準流程「程式碼化」，推出了幾個關鍵專案，為其他機構提供了可以直接使用的以程式碼為核心的範本：
 
-* [**ospo-guide**](https://www.google.com/search?q=https://dsacms.github.io/ospo-guide/)：這是一份為 CMS 員工寫的綜合性開源指南。它提供了軟體開發生命週期各個環節的 Roadmap，從需求與設計階段的授權選擇，到上線與驗收階段的安全審查，皆有明確指引。  
+* [**ospo-guide**](https://dsacms.github.io/ospo-guide/)：這是一份為 CMS 員工寫的綜合性開源指南。它提供了軟體開發生命週期各個環節的 Roadmap，從需求與設計階段的授權選擇，到上線與驗收階段的安全審查，皆有明確指引。  
 * [**repo-scaffolder**](https://github.com/DSACMS/repo-scaffolder)：這是一個自動化工具，能「一鍵生成」符合聯邦政府要求的標準專案結構。它能自動包含必要的授權文件、安全政策、行為準則等合規檔案。這極大地降低了啟動新專案的行政門檻，是將開發成果作為公共程式的第一步。  
 * [**metrics**](https://github.com/DSACMS/metrics)：一個用於追蹤與展示 CMS 開源專案各項指標的網站。透過資料視覺化，它不僅向公眾展示了 OSPO 的工作成果，也為內部決策提供了依據。
 
@@ -75,12 +78,11 @@ OS2 的代表專案包括：
 
 看了這麼多案例，想在您的機關裡推動開源，或成立 OSPO，可以從哪裡開始？  
 
-[OSPO 聯盟](https://ospo.zone/)旗下有一套非常完整的開源治理方法論——[良善治理手冊（GGI Handbook）](https://ospo.zone/ggi-handbook/introduction/)，OCF 也已協助將其[翻譯為中文版](https://ospo-alliance.org/docs/ggi_handbook_v1.2_zh_Hant.pdf)，適合作為開啟計劃的起點。  
+[OSPO 聯盟](https://ospo.zone/)旗下有一套非常完整的開源治理方法論——[良善治理手冊（GGI Handbook）](https://ospo.zone/ggi-handbook/introduction/)，OCF 也已協助將其[翻譯為中文版](https://ospo-alliance.org/docs/ggi_handbook_v1.2_zh_Hant.pdf)，適合作為開啟計劃的起點。  此外，針對 OSPO 成立過程中所需的一切流程管理，他們也開發了 [GGI-Board](https://ospo.zone/ggi-board/) 工具，協助您管理整體進度。  
 
-此外，針對 OSPO 成立過程中所需的一切流程管理，他們也開發了 [GGI-Board](https://ospo.zone/ggi-board/) 工具，協助您管理整體進度。  
 從法國的中央協調、丹麥的聯盟團購，到美國的政策領航，我們看到各國政府正用不同的方式，擁抱「公共程式碼」這個不可逆的趨勢。
 
-**＊OSPO Alliance 於 2021 年 6 月 由歐洲多個開放原始碼組織共同發起，包括 OW2、Eclipse Foundation、OpenForum Europe 與 Foundation for Public Code 等。這是一個以「開源」為核心的社群型態聯盟，由各支持組織與志工共同組成，致力於推動公共與私部門建立及強化開放原始碼治理能力，主要為國際級的經驗共用平台與治理工具庫。**
+[^1]:  OSPO 聯盟，Open Source Program Offices Alliance 於 2021 年 6 月 由歐洲多個開放原始碼組織共同發起，包括 OW2、Eclipse Foundation、OpenForum Europe 與 Foundation for Public Code 等。這是一個以「開源」為核心的社群型態聯盟，由各支持組織與志工共同組成，致力於推動公共與私部門建立及強化開放原始碼治理能力，主要為國際級的經驗共用平台與治理工具庫。
 
 [image1]: images/image1.png
 [image2]: images/image2.png
