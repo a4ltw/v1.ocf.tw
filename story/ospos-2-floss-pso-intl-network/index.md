@@ -1,6 +1,6 @@
 ---
 layout: story
-og_title: OSPO 正在集結中！來自世界各地的政府開源專案辦公室  
+og_title: 【開源治理系列】OSPO 正在集結中！來自世界各地的政府開源專案辦公室  
 og_description: "開源治理系列 #2"
 og_image: images/image1.png
 publish_date: 2025-11-04

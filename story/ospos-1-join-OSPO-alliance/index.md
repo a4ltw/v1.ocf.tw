@@ -65,6 +65,7 @@ OSPO 是什麼？怎麼起步？如何評估組織內部的開源程度為何？
 * 📖 [《開放原始碼良善治理手冊》下載](https://dub.sh/OSPO-GGI-ZHTW)
 
 ## 開源治理系列專文
+
 * [#1 OCF 正式加入 OSPO 聯盟！開源治理手冊是什麼？](https://ocf.tw/story/ospos-1-join-OSPO-alliance/)
 * [#2 OSPO 正在集結中！來自世界各地的政府開源專案辦公室](https://ocf.tw/story/ospos-2-floss-pso-intl-network/)
 
