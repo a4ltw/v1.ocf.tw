@@ -1,6 +1,6 @@
 ---
 layout: story
-og_title: OSPO 正在集結中！來自世界各地的政府開源計畫辦公室  
+og_title: OSPO 正在集結中！來自世界各地的政府開源專案辦公室  
 og_description: "開源治理系列 #2"
 og_image: images/image1.png
 publish_date: 2025-11-04
@@ -24,13 +24,15 @@ section: 開源治理系列
 - PSO 則是「公部門組織」（Public Sector Organisation）。
 
 ![如何參與成為 FLOSS-PSO 行動的一份子，翻譯資料來源：FLOSS-PSO Network 首頁][image2]
-*如何參與成為 FLOSS-PSO 行動的一份子，翻譯資料來源：FLOSS-PSO Network 首頁*
+
+***如何參與成為 FLOSS-PSO 行動的一份子，翻譯資料來源：FLOSS-PSO Network 首頁***
 
 這個專案由 [OSPO 聯盟（OSPO Alliance）](https://ospo.zone/) [^1] 支持，希望串連起各國的公部門 OSPO，讓大家有個交流、分享經驗的地方。  
 這個網絡的加入方式本身就體現了「開源精神」。想加入的單位必須在一個公開的 [GitLab 程式碼庫（Repo）](https://gitlab.eclipse.org/eclipse/plato/public-ospos) 提交一個 [YAML 格式](https://floss-pso.network/ospometa-builder/)的登記表，說明自己的開源政策。這種透明的「開源治理」方式，讓所有人都能看見誰加入了、以及他們承諾了什麼。
 
 ![資料來源：FLOSS-PSO Network OSPOmeta YAML 生產器][image3]
-*資料來源：FLOSS-PSO Network OSPOmeta YAML 生產器*
+
+***資料來源：FLOSS-PSO Network OSPOmeta YAML 生產器***
 
 ## 各國如何推動？三種發展模式！
 
@@ -39,7 +41,8 @@ section: 開源治理系列
 截至本文發佈，已有來自多國的國家中央與地方政府 OSPO 加入了這個網絡。目前已經有 6 個國際或國家政府層級、 8 個地方政府層級的 OSPO 加入。我們發現了幾種獨特的發展模式，也和社群的大家分享。
 
 ![資料來源：FLOSS-PSO Network][image1]
-*OCF 整理製圖。資料來源：FLOSS-PSO Network*
+
+***OCF 整理製圖。資料來源：FLOSS-PSO Network***
 
 ### 模式一：法國中央帶頭、地方響應的「核心與節點整合模式」
 
@@ -80,9 +83,15 @@ OS2 的代表專案包括：
 
 [OSPO 聯盟](https://ospo.zone/)旗下有一套非常完整的開源治理方法論——[良善治理手冊（GGI Handbook）](https://ospo.zone/ggi-handbook/introduction/)，OCF 也已協助將其[翻譯為中文版](https://ospo-alliance.org/docs/ggi_handbook_v1.2_zh_Hant.pdf)，適合作為開啟計劃的起點。  此外，針對 OSPO 成立過程中所需的一切流程管理，他們也開發了 [GGI-Board](https://ospo.zone/ggi-board/) 工具，協助您管理整體進度。  
 
-從法國的中央協調、丹麥的聯盟團購，到美國的政策領航，我們看到各國政府正用不同的方式，擁抱「公共程式碼」這個不可逆的趨勢。
+從法國的中央為核心串連各節點、丹麥的聯盟團購，到美國的政策領航，我們看到各國政府正用不同的方式，擁抱「開源程式碼」中！
+
+## 開源治理系列專文
+
+* [#1 OCF 正式加入 OSPO 聯盟！開源治理手冊是什麼？](https://ocf.tw/story/ospos-1-join-OSPO-alliance/)
+* [#2 OSPO 正在集結中！來自世界各地的政府開源專案辦公室](https://ocf.tw/story/ospos-2-floss-pso-intl-network/)
 
 [^1]:  OSPO 聯盟，Open Source Program Offices Alliance 於 2021 年 6 月 由歐洲多個開放原始碼組織共同發起，包括 OW2、Eclipse Foundation、OpenForum Europe 與 Foundation for Public Code 等。這是一個以「開源」為核心的社群型態聯盟，由各支持組織與志工共同組成，致力於推動公共與私部門建立及強化開放原始碼治理能力，主要為國際級的經驗共用平台與治理工具庫。
+
 
 [image1]: images/image1.png
 [image2]: images/image2.png
