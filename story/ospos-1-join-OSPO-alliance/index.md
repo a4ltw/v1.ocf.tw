@@ -2,7 +2,7 @@
 layout: story
 og_title: 【OSPO 聯盟系列】OCF 正式加入 OSPO 聯盟！
 og_description: "OSPO 聯盟系列 #1"
-og_image: images/image1.jpg
+og_image: images/image1.png
 publish_date: 2025-11-01
 modified_time: 2025-11-01 23:00
 author: Ian Liu

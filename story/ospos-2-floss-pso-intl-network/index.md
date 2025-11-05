@@ -2,7 +2,7 @@
 layout: story
 og_title: OSPO 正在集結中！來自世界各地的政府開源計畫辦公室  
 og_description: "OSPO 聯盟系列 #2"
-og_image: images/image1.jpg
+og_image: images/image1.png
 publish_date: 2025-11-04
 modified_time: 2025-11-04 18:00
 author: Ian Liu (Yanyiyi)
