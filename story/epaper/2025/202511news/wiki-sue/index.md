@@ -114,10 +114,11 @@ og_image: images/image1.jpg
 —
 本文為網路自由小聚於台灣網路治理論壇 TWIGF 活動摘要，討論主題「數位平台治理新架構：
 政府、產業與公民共同前進」，由現場參與者 CHENG PENG ([paulpengtw](https://github.com/paulpengtw/)) 協助整理活動現場的發言、摘錄並延伸討論，本文採 CC-BY 公眾授權釋出，歡迎自由轉貼利用。
-線上討論：https://groups.google.com/g/coffee-circumvention-tw
-活動共筆：https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view
+- 線上討論：https://groups.google.com/g/coffee-circumvention-tw
+- 活動共筆：https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view
 
-	
+
+
 [訂閱 OCF 電子報獲取第一手快訊](https://ocf.tw/news/)
 
 
