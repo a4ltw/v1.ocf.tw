@@ -93,7 +93,7 @@ card:
   - legends
   - intl
   - oscvpass
-  - rdr 
+  - rdr
   - g0vdathon
   - g0vsummit
   - coscup
@@ -125,6 +125,7 @@ card:
   - cofacts
   - internetfreedom
   - hakka
+  - otg
 card_en:
 # 英文專案列表頁上的專案卡片，會以這個清單的順序排列。
   - admin
@@ -141,3 +142,4 @@ card_en:
   - sciwork
   - cofacts
   - rdr
+  - otg
