@@ -1,7 +1,7 @@
 name:  開放科技車庫 Open Tech Garage
 name_en: Open Tech Garage
 
-description: Open Tech Garage 是一個專注於評估、分析和測試各種開放原始碼軟體工具的專案。我們致力於提供透明的資訊，幫助使用者做出明智的選擇，特別是那些重視安全和隱私的使用者。評估範圍涵蓋功能性、安全性、隱私保護、使用者體驗和技術維護等多個面向。我們親自測試工具的安裝過程，評估硬體需求、系統環境、網路條件和技術門檻，透過完整的說明文件降低入門障礙。內容包含從教學手冊到常見問題的各層級文件，並以多維度分類整理工具。我們持續更新以回應技術演進和社群回饋，歡迎透過 GitHub 貢獻工具推薦、使用經驗和評估建議，共同推廣開源文化並鼓勵協作開發。
+description: Open Tech Garage 是一個專注於評估、分析和測試各種開放原始碼軟體工具的專案。本專案致力於提供透明的資訊，幫助使用者，特別是那些重視安全和隱私的群眾，得以在充足知情後再進行工具選擇。評估範圍涵蓋功能性、安全性、隱私保護、使用者體驗和技術維護等多個面向。我們親自測試工具的安裝過程，評估硬體需求、系統環境、網路條件和技術門檻，透過完整的說明文件降低入門障礙。內容包含從教學手冊到常見問題的各層級文件，並以多維度分類整理工具。我們持續更新以回應技術演進和社群回饋，歡迎透過 GitHub 貢獻工具推薦、使用經驗和評估建議，共同推廣開源文化並鼓勵協作開發。
 description_en: Open Tech Garage is a project focused on evaluating, analyzing and testing various open source software tools. We provide transparent information to help users make informed choices, particularly those prioritizing security and privacy. Our comprehensive evaluation spans functionality, security, privacy protection, user experience, and technical maintenance. We personally test tool installation processes, evaluating hardware requirements, system environment, network conditions, and technical thresholds. Complete documentation ranges from tutorials to FAQs across all skill levels. We organize tools through multi-dimensional categorization and provide continuous updates responsive to technological evolution and community feedback. We welcome contributions of tool recommendations, user experiences, and evaluation suggestions via GitHub, promoting open source culture and encouraging collaborative development.
 
 tagline:  您的開源工具指南
