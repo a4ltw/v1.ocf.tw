@@ -7,10 +7,10 @@ description_en: Open Tech Garage is a project focused on evaluating, analyzing a
 tagline:  您的開源工具指南
 tagline_en: Your Guide to Open Source Tools
 
-og_image: /p/otg/otg-logo.png
-og_image_en: /p/otg/otg-logo.png
-header_image: /p/otg/otg-banner.png
-avatar_image: /p/otg/otg-logo.png
+og_image: /p/otg/otg_mainimg.jpeg
+og_image_en: /p/otg/otg_mainimg.jpeg
+header_image: /p/otg/otg_banner.jpg
+avatar_image: /p/otg/otg_mainimg.jpeg
 theme_color: blue
 
 start: 
