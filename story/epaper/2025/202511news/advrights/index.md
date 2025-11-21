@@ -31,4 +31,4 @@ og_image: images/image1.jpg
 
 
 
-[image1]: images/image1.jpg
+[image1]: images/image1.png
