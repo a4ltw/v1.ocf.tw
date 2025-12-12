@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: IT Matters 開源社群貢獻獎
-og_description: "讓更多開源故事發生"
+og_description: "讓更多開源故事發生！贊助 OCF 幫我們把開放做得更多"
 og_image: images/image1.jpg
 ---
 
