@@ -46,4 +46,8 @@ JetBrains、Kotlin 相關技術的傳教士范聖佑提供了 30 分鐘的時間
 🗣[Chris Huang](https://www.facebook.com/share/p/1DVjF5RJuP/)
 在 iThome 工作，也充滿開源社群魂的 Chris Huang 也提供了 [專屬捐款連結](https://neti.cc/gopA0lx)，單筆捐款達 500 元，就可以跟 Chris 獨家談話「無腦泰國自助方法論+簡易旅遊泰語」60 分鐘！
 
+🗣[黃尹伶 Eileen](https://www.facebook.com/share/p/1GWEzF9Muy/)
+透過 TPM 社群 [Eileen 的專屬連結捐款](https://neti.cc/BzdNDO2)，憑捐款成功截圖，捐款金額的 10% 就可以直接折抵 2026 年的任一場 PM 小聚的活動報名費！
+
+
 [image1]: images/image1.png
