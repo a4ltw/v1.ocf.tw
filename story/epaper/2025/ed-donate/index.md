@@ -55,7 +55,6 @@ og_image: images/image1.png
 - 話題： 技術、社群、職涯、未來與人生。
 🔗 [聖佑專屬連結](https://neti.cc/Gv2zloo)
 
-
 🔸 [網路黑貓](https://www.facebook.com/share/p/17mQpZhbB7/?mibextid=wwXIfr)
 - 回饋內容：
 	- 單次捐款 $5,000 或每月捐款 $500，獲得履歷檢視＋線上語音、或書面職涯諮詢（請截圖並透過 FB Messenger or email 與個人聯繫 - 單次捐款 $15,000 或每月捐款 $1,200，可和網路黑貓吃一頓免費餐＋面對面聊天。
