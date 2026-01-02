@@ -33,7 +33,7 @@ PostgreSQL 台灣使用者社群的 Yung-Chung 分享，2019 年他與 OCF 遠�
 
 每一份支持，都是讓 OCF 持續運作、服務更多社群的關鍵燃料 ✨
 
-👉👉 [立刻行動：https://ocf.tw/300/]
+👉👉 [立刻行動支持](https://ocf.tw/300/)
 
 
 [訂閱 OCF 電子報獲取第一手快訊](https://ocf.tw/news/)
