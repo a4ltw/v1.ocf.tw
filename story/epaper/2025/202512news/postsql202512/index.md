@@ -1,6 +1,6 @@
 ---
 layout: story
-og_title: ✨社群小故事 ④✨ PostgreSQL台灣使用者社群 
+og_title: ✨社群小故事 ④✨ PostgreSQL 台灣使用者社群 
 og_description: "社群小故事系列文"
 og_image: images/image1.jpg
 ---

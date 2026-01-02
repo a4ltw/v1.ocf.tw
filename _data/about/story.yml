@@ -1,12 +1,20 @@
-- title: "年末募款系列文 ✨社群小故事 ③✨ - Golang Taiwan"
+- title: "✨社群小故事 ⑤✨ BSD Taiwan"
+  slug: epaper/2025/202512news/bsdtw202512/
+  date: 2026-01-02
+
+- title: "✨社群小故事 ④✨ PostgreSQL 台灣使用者社群"
+  slug: epaper/2025/202512news/postsql202512/
+  date: 2026-01-02
+
+- title: "✨社群小故事 ③✨ - Golang Taiwan"
   slug: epaper/2025/202512news/golang202512/
   date: 2025-12-29
 
-- title: "年末募款系列文 ✨社群小故事 ②✨ - Civil Society Cyber Shield"
+- title: "✨社群小故事 ②✨ - Civil Society Cyber Shield"
   slug: epaper/2025/202512news/cscs202512/
   date: 2025-12-22
 
-- title: "年末募款系列文 ✨社群小故事 ①✨ - Cofacts 真的假的"
+- title: "✨社群小故事 ①✨ - Cofacts 真的假的"
   slug: epaper/2025/202512news/cofacts202512/
   date: 2025-12-12
 
