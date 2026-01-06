@@ -5,14 +5,6 @@ og_description: "研究報告、推廣手冊都在這裡"
 og_image: 
 ---
 
-
----
-layout: story
-og_title: 各項成果與資源下載
-og_description: "研究報告、推廣手冊都在這裡"
-og_image: 
----
-
 <style>
 /* 頁面專屬 CSS，讓版面瞬間升級 */
 .resource-container {
@@ -212,9 +204,10 @@ og_image:
 
 <h2 class="section-title">歷年成果報告</h2>
 <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
-    <p>
-    OCF 的經費來源主要是透過對社群收取服務費用、專案承攬、定期定額的捐款... (略，保持原文字) ...詳細請見 OCF 年度報告：
-    </p>
+<p>
+OCF 的經費來源主要是透過對社群收取服務費用、專案承攬、定期定額的捐款，以及單次性的捐贈等。這些經費除了使用在每月固定的行政開銷費用（行政、辦公室營運等）之外，多使用於專案支持、活動辦理等業務進行。OCF 主要業務之一為協助開源社群行政及財務管理，其各社群在 OCF 的捐款收入皆為各自社群專款專用，OCF 僅盡代管之責。<br>
+每年業務成果、收支情形及社群協助狀況等，詳細請見 OCF 年度報告：
+</p>
 
     <div class="report-grid">
         {% assign i = site.data.settings.current %}
