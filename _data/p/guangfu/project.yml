@@ -25,30 +25,24 @@ field_ids:
 tags:
 tags_en:
 
-links:
-  - title: Threads
-    url: https://www.threads.com/@gunangfu250927
-    color: green
-    icon: world icon
-
-links:
-  - title: Instagram
-    url: https://www.instagram.com/gunangfu250927/
-    color: green
-    icon: hand point right
-
-
-links:
-  - title: Facebook
-    url: https://www.facebook.com/gunangfu250927
-    color: green
-    icon: facebook
-
 actions: 
   - title: 捐款支持！
     url: https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=88
     color: blue
     icon: hand
+  - title: Threads
+    url: https://www.threads.com/@gunangfu250927
+    color: green
+    icon: world icon
+  - title: Instagram
+    url: https://www.instagram.com/gunangfu250927/
+    color: green
+    icon: hand point right
+  - title: Facebook
+    url: https://www.facebook.com/gunangfu250927
+    color: green
+    icon: facebook
+
 actions_en: 
 
 organizer_ids:
