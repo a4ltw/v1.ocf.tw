@@ -81,7 +81,7 @@ og_image:
 }
 
 .report-btn:hover {
-    background-color: #0091DA;
+    background-color: #6450DC;
     color: #fff;
 }
 
