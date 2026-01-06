@@ -81,7 +81,7 @@ og_image:
 }
 
 .report-btn:hover {
-    background-color: #0F1293;
+    background-color: #0091DA;
     color: #fff;
 }
 
@@ -189,16 +189,16 @@ og_image:
         <p>OCF 十週年特別活動首頁</p>
     </a>
     <a href="https://ocf.tw/story/change-the-world" class="resource-card">
-        <h3>特刊：前世今生</h3>
-        <p>他們用程式碼改變世界——臺灣開源運動</p>
+        <h3>開源祭特刊 #1</h3>
+        <p>他們用程式碼改變世界——臺灣開源運動的前世今生</p>
     </a>
     <a href="https://ocf.tw/story/find-your-place" class="resource-card">
-        <h3>特刊：找到位子</h3>
-        <p>沒寫過程式，也能當開源大神！</p>
+        <h3>開源祭特刊 #2</h3>
+        <p>沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子</p>
     </a>
     <a href="https://ocf.tw/story/ten-years-of-ocf" class="resource-card">
-        <h3>特刊：十年之路</h3>
-        <p>從協助社群帳務到登上國際舞台</p>
+        <h3>開源祭特刊 #3</h3>
+        <p>從協助社群帳務到登上國際舞台，OCF推動開源文化的十年之路</p>
     </a>
 </div>
 
