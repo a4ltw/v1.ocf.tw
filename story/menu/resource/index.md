@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: 
 og_title: 各項成果與資源下載
 og_description: "研究報告、推廣手冊都在這裡"
 og_image: 
@@ -81,7 +81,7 @@ og_image:
 }
 
 .report-btn:hover {
-    background-color: #2c3e50;
+    background-color: #D7DCF0;
     color: #fff;
 }
 
