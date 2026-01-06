@@ -29,7 +29,7 @@ actions:
   - title: 捐款支持！
     url: https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=88
     color: blue
-    icon: hand
+    icon: hand point right
   - title: Threads
     url: https://www.threads.com/@gunangfu250927
     color: green
@@ -37,7 +37,7 @@ actions:
   - title: Instagram
     url: https://www.instagram.com/gunangfu250927/
     color: green
-    icon: hand point right
+    icon: instagram
   - title: Facebook
     url: https://www.facebook.com/gunangfu250927
     color: green
