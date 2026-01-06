@@ -1,0 +1,62 @@
+name: 支持光復超人
+name_en: 
+
+description: 光復超人平台起源於 2025 年光復與馬太鞍溪洪災。在第一線，我們看到的不是沒有人願意幫忙，而是——資訊太亂、角色太多、沒有一個地方可以好好協作。於是，一群來自不同背景的志工，用最臨時、最克難的方式，把資訊、行動與人連在一起。
+
+description_en: 
+
+abbr: guangfu
+abbr_en: 
+
+tagline: 
+tagline_en: 
+
+og_image: /p/guangfu/guangfu.png
+header_image: /p/guangfu/guangfu-bg.png
+avatar_image: /p/guangfu/guangfu.png
+theme_color: green
+
+
+topic_ids:
+  - source
+  - data
+field_ids:
+  - community
+tags:
+tags_en:
+
+links:
+  - title: Threads
+    url: https://www.threads.com/@gunangfu250927
+    color: green
+    icon: world icon
+
+links:
+  - title: Instagram
+    url: https://www.instagram.com/gunangfu250927/
+    color: green
+    icon: hand point right
+
+
+links:
+  - title: Facebook
+    url: https://www.facebook.com/gunangfu250927
+    color: green
+    icon: facebook
+
+actions: 
+  - title: 捐款支持！
+    url: https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=88
+    color: blue
+    icon: hand
+actions_en: 
+
+organizer_ids:
+
+board_ids:
+staff_ids:
+
+listed: yes
+listed_en: 
+
+reports:
