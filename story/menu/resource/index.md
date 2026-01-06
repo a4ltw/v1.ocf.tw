@@ -106,11 +106,11 @@ og_image:
     </a>
     <a href="https://docs.google.com/presentation/d/1WAh6lcLDfof_iZzuGmvw-ztIWZfP7QZSdHJu7HScTlA/edit" class="resource-card">
         <h3>開放國會研究報告</h3>
-        <p>如何改善工作追蹤與開放國會委員會內部協力 (CC BY 4.0)</p>
+        <p>如何改善工作追蹤與開放國會委員會內部協力（CC BY 4.0）</p>
     </a>
     <a href="https://opengovreport.ocf.tw/" class="resource-card">
         <h3>開放政府觀察報告</h3>
-        <p>2014-2016，中英文版 (CC BY-SA 4.0)</p>
+        <p>2014-2016，中英文版（CC BY-SA 4.0）</p>
     </a>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/opentech/">開放科技與倡議專案</a></small></p>
@@ -119,12 +119,12 @@ og_image:
 <h2 class="section-title">公民社會數位防禦</h2>
 <div class="card-grid">
     <a href="https://digitalsecurityhandbook.ocf.tw/" class="resource-card">
-        <h3>CSOs 數位防禦手冊 (網頁版)</h3>
+        <h3>CSOs 數位防禦手冊（網頁版）</h3>
         <p>注重隱私與安全的開放原始碼工具指南</p>
     </a>
     <a href="https://ocf.tw/story/menu/resource/(public)CSOs數位防禦手冊_注重隱私與安全的開放原始碼工具V2.pdf" class="resource-card">
-        <h3>CSOs 數位防禦手冊 (PDF)</h3>
-        <p>2024.07 更版，下載閱讀</p>
+        <h3>CSOs 數位防禦手冊（PDF）</h3>
+        <p>2024.07 更新版</p>
     </a>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/csodefense/">公民社會數位防禦計畫</a></small></p>
@@ -137,11 +137,11 @@ og_image:
         <p>檢視企業在數位時代的人權責任</p>
     </a>
     <a href="https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=sharing" class="resource-card">
-        <h3>數位威脅概況 (English)</h3>
+        <h3>數位威脅概況（English）</h3>
         <p>台灣人權與民主倡議團體面臨的挑戰</p>
     </a>
     <a href="https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view?usp=sharing" class="resource-card">
-        <h3>數位威脅概況 (中文摘要)</h3>
+        <h3>數位威脅概況（中文摘要）</h3>
         <p>台灣人權與民主倡議團體面臨的挑戰</p>
     </a>
     <a href="https://ocf.tw/p/dra/ep/" class="resource-card">
