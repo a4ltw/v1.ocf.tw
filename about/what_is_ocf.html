@@ -1,3 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* 全局變數與基礎設定 */
+  :root {
+    --ocf-primary: #0066cc; /* OCF 主色調，可依實際 logo 調整 */
+    --ocf-secondary: #004d99;
+    --ocf-accent: #f0f7ff;
+    --ocf-text: #333333;
+    --ocf-text-light: #666666;
+    --bg-light: #ffffff;
+    --bg-gray: #f8f9fa;
+  }
+
+  .ocf-about-page {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ocf-text);
+    line-height: 1.7;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* 通用容器 */
+  .ocf-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* 通用標題 */
+  .ocf-section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ocf-primary);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .ocf-section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--ocf-primary);
+    margin: 15px auto 0;
+    border-radius: 2px;
+  }
+
+  /* 區塊間距 */
+  .ocf-section {
+    padding: 60px 0;
+  }
+  
+  .ocf-section.alt-bg {
+    background-color: var(--bg-gray);
+  }
+
+  /* 1. Intro Section */
+  .ocf-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  /* 2. Vision & Mission Section (Flexbox) */
+  .vm-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .vm-card {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--ocf-primary);
+    text-align: center;
+  }
+  
+  .vm-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--ocf-secondary);
+  }
+
+  /* 3. Core Areas */
+  .core-areas-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 40px;
+    border-radius: 8px;
+  }
+
+  .core-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .core-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745; /* 綠色代表生機/開放 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .core-item strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #28a745;
+  }
+
+  /* 4. Action Strategies (Grid) */
+  .strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .strategy-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+  }
+  
+  .strategy-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .strategy-card h4 {
+    color: var(--ocf-primary);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  .strategy-card ul {
+    padding-left: 20px;
+    margin: 0;
+    color: var(--ocf-text-light);
+    font-size: 0.95rem;
+  }
+  .strategy-card li { margin-bottom: 8px; }
+
+  /* 5. History & Founder */
+  .history-content {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .founder-list {
+    background: var(--ocf-accent);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .founder-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+
+  .doc-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .doc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .doc-btn:hover {
+    background: var(--ocf-primary);
+    color: white;
+    border-color: var(--ocf-primary);
+  }
+
+  /* 6. Culture */
+  .culture-principles {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .culture-principles li {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ff9900; /* 橙色代表活力/文化 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .culture-principles strong {
+    color: #d35400;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /* RWD */
+  @media (max-width: 768px) {
+    .vm-container {
+      flex-direction: column;
+    }
+    .ocf-section {
+      padding: 40px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="ocf-about-page">
+
+  <section class="ocf-section">
+    <div class="ocf-container ocf-intro">
+      <h2 class="ocf-section-title">開放文化基金會 (OCF)</h2>
+      <p>是一個非營利性的組織。透過推廣開放科技和跨界合作，在臺灣持續的銜繫科技社群與其他公／私領域，來促成開放共創保障數位人權、支持透明涵融的數位公民社會。</p>
+      <p>自 2014 年創立以來，我們以法人做為組織形式，支持臺灣 40 多個開放科技社群，在過程中，不僅是持續性的推廣開放科技概念，我們也開始參與政策倡議，為眾人的數位人權發聲，進而創建了一個在臺灣發展開放科技的基地。</p>
+      <p>這些成果並非由開放文化基金會獨立實現，而是透過科技社群和公民夥伴一起促使臺灣的數位/網路環境變得更加公開、透明和公眾參與 — 不論這樣的參與是以個人、社群或是組織為名義。</p>
+
+      <div class="vm-container">
+        <div class="vm-card">
+          <h3>🌟 願景</h3>
+          <p>促成一個開放、安全、涵融且眾人參與的數位公民社會。</p>
+        </div>
+        <div class="vm-card">
+          <h3>🚀 使命</h3>
+          <p>以開放科技和跨界合作來應對數位時代的各項威脅並健全數位社會的發展。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ocf-section alt-bg">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">什麼是「開放科技」？</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+        開放科技是由開放源碼、開放資料及開放政府三個概念的集合，係指透過從數位世界的建構、資料收集及政府治理皆以公開、透明及眾人參與的方式執行，能更好的促進數位人權和網路自由的落實。
+      </p>
+
+      <h3 style="text-align:center; margin-bottom: 20px;">OCF 五大核心領域</h3>
+      <div style="text-align: center;">
+        <img src="/assets/images/openAbout_ch.png" title="核心領域" alt="OCF 五大核心領域圖表" class="core-areas-img">
+      </div>
+
+      <div class="core-list">
+        <div class="core-item">
+          <strong>開放源碼 (Open Source)</strong>
+          科技的運作是公開、透明及眾人可參與的，透過公開和開放協作讓科技是人人都可以使用與改善，增加信任與個人隱私的保障。
+        </div>
+        <div class="core-item">
+          <strong>開放資料 (Open Data)</strong>
+          以開放授權釋出各領域和公私部門直接或間接產製、蒐集的資料，藉此達到資料的可互通性以更好的知識共享。
+        </div>
+        <div class="core-item">
+          <strong>開放政府 (Open Government)</strong>
+          以數位科技輔助政府得以用開放協作的方式推動數位治理，進而達到眾人參與的可能。
+        </div>
+        <div class="core-item">
+          <strong>網路自由 (Internet Freedom)</strong>
+          網路應不分群體、具備普及性、確保言論和結社自由，並以開放為基礎達到公共利益和商業獲利的平衡。
+        </div>
+        <div class="core-item">
+          <strong>數位人權 (Digital Rights)</strong>
+          既有人權類別在數位世界的實踐，以及因應新興科技而產生符合人權範疇的新型態權利（如網路可及性）。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ocf-section">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">行動策略</h2>
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <h4>社群支援</h4>
+          <ul>
+            <li>提供開放科技社群專案行政及財務支援</li>
+            <li>透過諮詢服務和共同活動企劃支持社群成長</li>
+          </ul>
+        </div>
+        <div class="strategy-card">
+          <h4>人才培訓</h4>
+          <ul>
+            <li>提供獎助計畫、培訓管道和聚會平台</li>
+            <li>培育開放科技、數位人權之相關倡議人才</li>
+          </ul>
+        </div>
+        <div class="strategy-card">
+          <h4>知識分享</h4>
+          <ul>
+            <li>產出知識論述，透過網絡與社會大眾交流</li>
+            <li>舉辦線上線下活動推廣開放概念</li>
+          </ul>
+        </div>
+        <div class="strategy-card">
+          <h4>監督倡議</h4>
+          <ul>
+            <li>協助政府或民間取得科技應用於公民社會的觀點</li>
+            <li>結合多方專業領域進行政策監督和倡議</li>
+          </ul>
+        </div>
+        <div class="strategy-card">
+          <h4>國際串連</h4>
+          <ul>
+            <li>透過國際活動和網絡串連</li>
+            <li>共同回應數位公民社會面臨的阻礙和威脅</li>
+          </ul>
+        </div>
+        <div class="strategy-card">
+          <h4>開源推廣</h4>
+          <ul>
+            <li>推廣開放源碼工具於工作與生活</li>
+            <li>本會產出皆以 CC 授權釋出，並優先使用開源軟體</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ocf-section alt-bg">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">為什麼會成立 OCF？</h2>
+      <div class="history-content">
+        <p>臺灣的開源社群一向非常活躍，由社群舉辦的開源研討會更是百花齊放。但籌辦研討會的帳務與單據，若透過私人公司或社團法人核銷常有限制。因此社群間開始出現成立財團法人的討論。</p>
+        <p>2014 年 6 月，在 g0v 村長 clkao 挖坑，多方社群與企業贊助，以及眾多開源人奔走相挺之下，開放文化基金會向台北市政府文化局提出申請並核准成立。</p>
+        
+        <div class="founder-list">
+          <strong style="font-size: 1.1em;">🏆 感謝創始捐助人：</strong>
+          <ul>
+            <li>OSDC：簡信昌</li>
+            <li>李明哲（時任 KKBOX COO）</li>
+            <li>網絡行動科技（Netivism）</li>
+            <li>COSCUP：李柏鋒</li>
+            <li>PyConTW：陳永昱</li>
+          </ul>
+        </div>
+
+        <div class="doc-links">
+          <a href="https://web.archive.org/web/20220522161904/https://g0v.hackpad.tw/0rg.tw--2r3K7emrNpC" target="_blank" class="doc-btn">
+            <i>🌐</i> 籌備期間社群討論共筆
+          </a>
+          <a href="bylaws.html" target="_blank" class="doc-btn">
+            <i>📜</i> 財團法人開放文化基金會捐助章程
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ocf-section">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">組織文化</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto 30px;">
+        我們以「公開、透明、眾人參與」為行事作風。
+      </p>
+      
+      <ul class="culture-principles">
+        <li>
+          <strong>粗略的共識，進擊的程式</strong>
+          Rough Consensus and Running Code：一旦達到粗略的共識，就鼓勵放手嘗試，不責備錯誤。
+        </li>
+        <li>
+          <strong>Patches Welcome</strong>
+          在需要意見時，提供具體且有可行性的建議。
+        </li>
+        <li>
+          <strong>提早釋出、頻繁釋出</strong>
+          Release early, Release often：工作過程中產生的各種草稿或雛形，都盡可能提早釋出。
+        </li>
+        <li>
+          <strong>資訊公開</strong>
+          只要沒有隱私疑慮，且人力足以負擔，所有資訊都盡可能地公開揭露。
+        </li>
+        <li>
+          <strong>經驗共享</strong>
+          產出成果盡可能以開放授權釋出，過程中獲得的經驗與知識盡可能地與外界分享。
+        </li>
+        <li>
+          <strong>開源落實於生活</strong>
+          在可行的範圍內，盡可能地使用自由與開源軟體或服務。
+        </li>
+        <li>
+          <strong>尊重多元</strong>
+          尊重且維護合作社群及夥伴的獨立性和自主性。
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
+<!--
 <h3 class="ui header">開放文化基金會（Open Culture Foundation，簡稱 OCF）</h3>
 <p>
 是一個非營利性的組織。透過推廣開放科技和跨界合作，在臺灣持續的銜繫科技社群與其他公／私領域，來促成開放共創保障數位人權、支持透明涵融的數位公民社會。
@@ -117,7 +543,7 @@
 <li>尊重多元：尊重且維護合作社群及夥伴的獨立性和自主性。
 </ul>
 
-
+-->
 
 
 
