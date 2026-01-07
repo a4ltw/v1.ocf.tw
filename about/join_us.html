@@ -1,3 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* 容器設定 */
+  .ocf-recruit-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  /* 標題與前言區塊 */
+  .ocf-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .ocf-intro p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+  }
+
+  .ocf-intro img {
+    max-width: 100%;
+    height: auto;
+    width: 280px;
+    margin-top: 15px;
+  }
+
+  /* 卡片佈局容器 (Grid System) */
+  .ocf-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  /* 個別卡片樣式 */
+  .ocf-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ocf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #badcea;
+  }
+
+  .ocf-card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ocf-card-content {
+    flex-grow: 1;
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .ocf-card-content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  .ocf-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    transition: background 0.2s;
+    margin-top: auto; /* 讓按鈕置底 */
+  }
+
+  .ocf-btn:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .ocf-btn.secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  .ocf-btn.secondary:hover {
+    background-color: #e2e6ea;
+    color: #333;
+  }
+
+  /* 為什麼加入我們區塊 */
+  .ocf-benefits {
+    background-color: #f8fcfd;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #007bff;
+  }
+
+  .ocf-benefits h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+
+  .ocf-benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .ocf-benefits li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+  }
+
+  .ocf-benefits li::before {
+    content: "✔"; /* 或使用 icon font */
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="ocf-recruit-container">
+  
+  <div class="ocf-intro">
+    <p>要以開放科技和跨界合作來推動數位公民社會的實現和應對數位時代的各項威脅，單靠一個人完成不容易，還需要各界的開源同路人一起努力！</p>
+    <p><strong>現在起加入我們的行列吧！</strong></p>
+    <img src="/assets/images/OCF_web_about_elements_Cocreate.svg" title="加入我們" alt="加入我們 Co-create">
+  </div>
+
+  <div class="ocf-cards">
+    
+    <div class="ocf-card">
+      <div class="ocf-card-title">🚀 OCF 正職/兼職</div>
+      <div class="ocf-card-content">
+        尋找渴望用科技改變社會的你。我們提供友善的開源工作環境。
+      </div>
+      <a href="http://ocf.tw/jobs" target="_blank" class="ocf-btn">查看職缺</a>
+    </div>
+
+    <div class="ocf-card">
+      <div class="ocf-card-title">🎓 實習夥伴</div>
+      <div class="ocf-card-content">
+        提供實習證明。歡迎同學課餘時間加入！你可以運用專業技能和我們一起：
+        <ul>
+          <li>翻譯科技軟體相關文章</li>
+          <li>搜集國內外相關資料</li>
+          <li>辦理技術演講、推廣活動</li>
+        </ul>
+        和我們一起遨遊在自由開放的世界吧！
+      </div>
+      <a href="http://blog.ocf.tw/search/label/%E5%AF%A6%E7%BF%92" target="_blank" class="ocf-btn secondary">了解實習計畫</a>
+    </div>
+
+    <div class="ocf-card">
+      <div class="ocf-card-title">🤝 志工夥伴</div>
+      <div class="ocf-card-content">
+        提供志工服務證明。和我們一起用網頁、講故事的方式來推廣開源理念～<br>
+        也可以加入我們的 Slack 頻道互動。
+      </div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a href="https://volunteer.ocf.tw/" target="_blank" class="ocf-btn secondary" style="flex:1;">加入志工</a>
+        <a href="https://ocftw.slack.com/?redir=%2Fmessages%2Fgeneral%2F" target="_blank" class="ocf-btn secondary" style="flex:1;">Slack 頻道</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ocf-benefits">
+    <h3 class="ui header">為什麼要加入我們？</h3>
+    <ul>
+      <li>你可以透過我們的介紹，更了解開放的文化和社群生態！</li>
+      <li>你可以在我們的引導下，更快速地投入開源社群的運作，深入了解怎麼樣經營社群和實體活動，厚植硬底子！</li>
+      <li>你可以學習有效運用各種自由開源軟體、多人共工的軟體，廣增軟實力！</li>
+      <li>你可以和國內外相關 NGO 組織交流合作，描繪出你心中的開源地圖！</li>
+      <li>你可以和一群熱愛自由開放的夥伴，激盪出更多的可能！</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<!--
 <p>要以開放科技和跨界合作來推動數位公民社會的實現和應對數位時代的各項威脅，這樣的使用一個人完成不容易，還需要各界的開源同路人一起努力！現在起加入我們的行列吧！</p>
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="/assets/images/OCF_web_about_elements_Cocreate.svg" title="加入我們" border="0" style="max-width: 300px;">
@@ -30,3 +239,4 @@
 <li>你可以和一群熱愛自由開放的夥伴，激盪出更多的可能！</li>
 </ul>
 </p>
+-->
