@@ -38,15 +38,6 @@ layout: global
         </nav>
       </div>
 
-<!--test-->
-{% if page.toc != false %}
-  <nav id="table-of-contents">
-    <!-- 目次內容 -->
-  </nav>
-{% endif %}
-<!--test-->
-
-
 
       <div class="twelve wide column" id="content">
         {% assign content_without_h1 = content | replace: '<h1', '<!-- <h1' | replace: '</h1>', '</h1> -->' %}
