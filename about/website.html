@@ -1,3 +1,152 @@
+<style>
+  .ocf-colophon-container {
+    background-color: #f9f9f9; /* 淺灰背景，區隔內容 */
+    border-top: 2px solid #eee;
+    padding: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  /* 連結通用樣式 */
+  .ocf-colophon-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .ocf-colophon-container a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  /* 第一區：核心授權聲明 */
+  .ocf-license-main {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .ocf-license-main i.icon {
+    margin-right: 5px;
+  }
+
+  /* 第二區：資源連結網格 (Grid System) */
+  .ocf-resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自動適應寬度 */
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  /* 資源連結卡片 */
+  .ocf-resource-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .ocf-resource-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-decoration: none; /* 卡片 hover 時不畫底線，僅連結變色 */
+  }
+  .ocf-resource-item span {
+    display: block;
+    margin-bottom: 5px;
+    color: #888;
+    font-size: 0.85em;
+  }
+  .ocf-resource-item .link-text {
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ocf-resource-item:hover .link-text {
+    color: #007bff;
+  }
+
+  /* 第三區：底部法律條款 */
+  .ocf-legal-footer {
+    font-size: 0.85em;
+    color: #888;
+    text-align: center; /* 置中顯示 */
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .ocf-legal-footer span {
+    margin: 0 10px;
+  }
+  
+  /* RWD 調整 */
+  @media (max-width: 600px) {
+    .ocf-resource-grid {
+      grid-template-columns: 1fr; /* 手機版單欄 */
+    }
+    .ocf-legal-footer span {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+</style>
+
+<div class="ocf-colophon-container">
+
+  <div class="ocf-license-main">
+    <p>
+      本站除另有標示外，程式碼以 <a href="https://opensource.org/licenses/MIT">MIT 授權條款</a> 釋出，內容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">創用 CC 姓名標示 4.0</a> 或更新版授權條款釋出。
+    </p>
+    <p>
+      <a href="https://github.com/ocftw/v1.ocf.tw/" target="_blank">
+        <i class="icon github"></i> <strong>前往 OCF 官網 GitHub repo</strong>
+      </a>
+    </p>
+  </div>
+
+  <div class="ocf-resource-grid">
+    
+    <a href="https://docs.google.com/presentation/d/1fc5d9jjqp5Jfwx-a4mGl0DIdo0sHFBFupYH1LQJ6N0w/edit?usp=sharing" target="_blank" class="ocf-resource-item">
+      <span>規劃文件 (CC BY)</span>
+      <div class="link-text"><i class="icon file powerpoint outline"></i> OCF.tw UX Report</div>
+    </a>
+
+    <a href="{{ site.data.design.settings.menu.design.url }}" target="_blank" class="ocf-resource-item">
+      <span>交接文件 (CC BY)</span>
+      <div class="link-text">
+        <i class="icon {{ site.data.design.settings.menu.design.icon }}"></i> 
+        OCF.tw {{ site.data.design.settings.menu.design.title }}
+      </div>
+    </a>
+
+    <a href="https://ocf-tw.hackpad.com/-2016-OCF-Redesign-V61pfKwwlRN" target="_blank" class="ocf-resource-item">
+      <span>專案共筆 (CC BY)</span>
+      <div class="link-text"><i class="icon text file outline"></i> 官網改版 (2016) 專案共筆</div>
+    </a>
+
+  </div>
+
+  <div class="ocf-legal-footer">
+    <p style="margin-bottom: 5px;">本站企畫、文案、設計、程式，由基金會行政中心與設計組志工群以開源協作完成。</p>
+    <div>
+      <a href="https://github.com/ocftw/v1.ocf.tw/blob/gh-pages/LICENSE.md" target="_blank"><i class="icon legal"></i> 授權條款詳情</a>
+      <span>|</span>
+      <a href="https://github.com/ocftw/v1.ocf.tw/blob/gh-pages/PRIVACY.md" target="_blank"><i class="icon legal"></i> 隱私權條款聲明</a>
+    </div>
+  </div>
+
+</div>
+
+<!--
 <p>
   本站除另有標示外，程式碼以 <a href="https://opensource.org/licenses/MIT">MIT 授權條款</a>釋出，內容以<a href="https://creativecommons.org/licenses/by/4.0/" rel="license">創用 CC 姓名標示 4.0 </a> 或更新版授權條款釋出。詳見：<a href="https://github.com/ocftw/v1.ocf.tw/" target="_blank"><i class="icon github"></i>OCF 官網 GitHub repo</a>
 </p>
@@ -20,3 +169,4 @@
   本站隱私權條款聲明請見：
 <a href="https://github.com/ocftw/v1.ocf.tw/blob/gh-pages/PRIVACY.md" target="_blank"><i class="icon legal"></i>OCF 官網隱私權條款</a>
 </p>
+-->
