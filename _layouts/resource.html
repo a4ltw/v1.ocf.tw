@@ -2,33 +2,48 @@
 layout: global
 ---
 
-{% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
-{% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
-{% include _var/f.html %}
+<main id="about">
+  {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
+  {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
 
-<main id="freestyle">
-
-{% include e/header.html %}
-
-<div class="ui container">
-  <section id="content">
-    {% if page.og_image %}
-    <img class="ui fluid image" src="{{ page.og_image }}" alt="Cover image for '{{ page.og_title }}'" />
-    {% else %}
-    <div></div>
+  {% comment %} 處理 h2 標籤的 id 和 title {% endcomment %}
+  {% assign h2_parts = content | split: '<h2' %}
+  {% assign toc_ids = '' | split: '' %}
+  {% assign toc_titles = '' | split: '' %}
+  {% for part in h2_parts %}
+    {% if part != h2_parts.first %}
+      {% assign h2_tag = part | split: '</h2>' | first %}
+      {% if h2_tag contains 'id="' %}
+        {% assign h2_id_part = h2_tag | split: 'id="' | last %}
+        {% assign h2_id = h2_id_part | split: '"' | first %}
+        {% assign h2_title = h2_tag | split: '>' | last %}
+        {% assign toc_ids = toc_ids | push: h2_id %}
+        {% assign toc_titles = toc_titles | push: h2_title %}
+      {% endif %}
     {% endif %}
+  {% endfor %}
 
-    <h2 class="ui header">
-      {{ page.og_title }}
-    </h2>
-    <div class="ui basic secondary segment">
-      {{ page.og_description }}
-    </div>    
-  
-    {{ content }}
+  <hr class="ui hidden divider" />
+<!--
+  <div class="stripe ui container">
+    <div class="ui two column stackable grid">
 
-    <div class="ui hidden divider"></div>
-  </section>
-</div>
+      <div class="four wide column">
+        <nav class="ui secondary vertical fluid text menu" id="table-of-contents">
+          <div class="header item">目次</div>
+          {% for toc_id in toc_ids %}
+            {% assign index = forloop.index0 %}
+            <a href="#{{ toc_id }}" class="item">{{ toc_titles[index] }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+-->
 
+      <div class="twelve wide column" id="content">
+        {% assign content_without_h1 = content | replace: '<h1', '<!-- <h1' | replace: '</h1>', '</h1> -->' %}
+        {{ content_without_h1 }}
+      </div>
+
+    </div>
+  </div>
 </main>
