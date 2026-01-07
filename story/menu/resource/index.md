@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: resource
 og_title: 各項成果與資源下載
 og_description: "研究報告、推廣手冊都在這裡"
 og_image: 
@@ -91,13 +91,11 @@ og_image:
 }
 </style>
 
-# 成果
 
 <div class="resource-container">
 
 <h1>各項成果、資源下載</h1>
 
-## 開放科技與倡議
 
 <h2 class="section-title">開放科技與倡議</h2>
 <div class="card-grid">
@@ -120,7 +118,6 @@ og_image:
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/opentech/">開放科技與倡議專案</a></small></p>
 
-## 公民社會數位防禦
 
 <h2 class="section-title">公民社會數位防禦</h2>
 <div class="card-grid">
@@ -135,7 +132,6 @@ og_image:
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/csodefense/">公民社會數位防禦計畫</a></small></p>
 
-## 數位人權
 
 <h2 class="section-title">數位人權</h2>
 <div class="card-grid">
@@ -158,7 +154,6 @@ og_image:
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/dra/">數位人權與倡議</a></small></p>
 
-## 網路自由
 
 <h2 class="section-title">網路自由</h2>
 <div class="card-grid">
@@ -178,8 +173,6 @@ og_image:
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/infr/">網路自由</a></small></p>
 
 
-## 國際夥伴 & 中文化
-
 <h2 class="section-title">國際夥伴 & 中文化</h2>
 <div class="card-grid">
     <a href="https://ocf.tw/story/menu/overseas" class="resource-card">
@@ -192,7 +185,6 @@ og_image:
     </a>
 </div>
 
-## 十週年開源祭
 
 <h2 class="section-title">十週年開源祭</h2>
 <div class="card-grid">
@@ -214,7 +206,6 @@ og_image:
     </a>
 </div>
 
-## 歷年成果報告
 
 <h2 class="section-title">歷年成果報告</h2>
 <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
