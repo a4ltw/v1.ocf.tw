@@ -7,10 +7,7 @@ layout: global
 <main id="freestyle">
 
 {% include e/header.html %}
-<!-- o-->
-  {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
-  {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
-<!--o-->
+
 <div class="ui container">
   <section id="content">
     {% if page.og_image %}

@@ -4,6 +4,11 @@
 # 全站所有頁面共用的終極 template
 ---
 
+<!-- o-->
+  {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
+  {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
+<!--o-->
+
 {% include _var/lang.html %}
 
 {% if 
