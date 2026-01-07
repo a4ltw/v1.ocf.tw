@@ -4,11 +4,50 @@ og_title: 捐助章程
 og_description: 捐助章程
 ---
 
----
-layout: global
-og_title: 捐助章程
-og_description: 捐助章程
----
+<style>
+/* 增加文章區塊間的距離 */
+.article-block {
+    margin-bottom: 2.5em;
+}
+
+/* 調整條文標題的樣式，使其顯眼但不過大 */
+.article-block h3.ui.header {
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eee; /* 選用：增加底線區隔 */
+    color: #333;
+}
+
+/* 優化正文閱讀舒適度 */
+.charter-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify; /* 左右對齊讓區塊更方正 */
+}
+
+/* 處理中文編號列表 (一、二、三) */
+ol.chinese-list {
+    list-style-type: cjk-ideographic; /* 自動生成 一、二、三... */
+    padding-left: 2em; /* 預留編號空間 */
+    margin-top: 0.5em;
+}
+
+ol.chinese-list li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em; /* 文字與編號的距離 */
+}
+
+/* RWD: 在手機版稍微縮小字體 */
+@media only screen and (max-width: 767px) {
+    .charter-content p, 
+    ol.chinese-list li {
+        font-size: 1em;
+    }
+}	
+	
+</style>
 
 <main id="about">
 <div class="ui stripe container">
