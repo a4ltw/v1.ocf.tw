@@ -1,4 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --ocf-primary: #6450dc;
+    --ocf-primary-dark: #503ebd;
+    --text-color: #333;
+    --bg-light: #f4f6f9;
+  }
+
+  /* 容器：卡片式設計 */
+  .likecoin-promo {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid #eaeaea;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* 左側圖片區 */
+  .promo-image {
+    flex: 0 0 40%; /* 圖片佔 40% 寬度 */
+    background-color: var(--bg-light); /* 圖片底色，避免去背不乾淨 */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .promo-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* 讓圖片白色背景融入底色（視圖片而定） */
+  }
+
+  /* 右側內容區 */
+  .promo-content {
+    flex: 1;
+    padding: 40px;
+    color: var(--text-color);
+  }
+
+  .promo-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ocf-primary);
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+
+  .promo-questions {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .promo-questions p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .promo-questions p::before {
+    content: "❤️"; /* 使用愛心作為項目符號 */
+    font-size: 0.9em;
+  }
+
+  .promo-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    background: var(--bg-light);
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  /* CTA 按鈕 */
+  .clap-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--ocf-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(100, 80, 220, 0.3);
+  }
+
+  .clap-btn:hover {
+    background-color: var(--ocf-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(100, 80, 220, 0.4);
+    color: #fff;
+  }
+
+  .clap-icon {
+    font-size: 1.2em;
+  }
+
+  /* RWD 手機版設定 */
+  @media (max-width: 768px) {
+    .likecoin-promo {
+      flex-direction: column; /* 改為垂直排列 */
+    }
+    
+    .promo-image {
+      width: 100%;
+      padding: 30px;
+    }
+
+    .promo-content {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .promo-questions p {
+      justify-content: center; /* 手機版文字置中 */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="likecoin-promo">
+  
+  <div class="promo-image">
+    <img src="/assets/images/Labdonate.png" title="LikeCoin 按讚捐款" alt="LikeCoin 拍手捐款示意圖">
+  </div>
+
+  <div class="promo-content">
+    <h2 class="promo-title">動動手指，免費支持！<br>化讚賞為 OCF 的原動力</h2>
+    
+    <div class="promo-questions">
+      <p>喜歡 OCF Lab 撰寫的文章嗎？</p>
+      <p>認同 OCF 在臺灣推動開源的努力嗎？</p>
+    </div>
+
+    <div class="promo-desc">
+      只要點擊每篇文章最下方的「拍手圖片」按讚，您的讚賞就能透過 LikeCoin 機制，化為實質收益，支持我們繼續創作出好的內容！
+    </div>
+
+    <a href="https://lab.ocf.tw/" target="_blank" class="clap-btn">
+      <span class="clap-icon">👏</span> 前往 OCF Lab 閱讀文章
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+<!--
 <img src="/assets/images/Labdonate.png" title="LikeCoin 按讚捐款" border="0" width="400" height="400">
 <p>喜歡 OCF Lab 撰寫的文章嗎？</p>
 <p>認同 OCF 在臺灣開源的努力嗎？</p>
 <p>只要點擊<a href="https://lab.ocf.tw/" target="_blank">OCF Lab</a>每篇文章最下方的拍手圖片按讚，您的讚賞就能化為 LikeCoin 實質鼓勵 OCF 繼續創作！</p>
+-->

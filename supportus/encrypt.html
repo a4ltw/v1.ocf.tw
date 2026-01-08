@@ -1,3 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --ocf-primary: #6450dc;
+    --text-dark: #333;
+    --bg-gray: #f8f9fa;
+    --code-bg: #eef1f6;
+    --warn-color: #d63031;
+    --border-color: #e0e0e0;
+  }
+
+  .crypto-container {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  /* 頭部介紹區 */
+  .crypto-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .crypto-header img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .crypto-intro h3 {
+    margin-top: 0;
+    color: var(--ocf-primary);
+  }
+
+  /* 幣種卡片列表 */
+  .wallet-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  .wallet-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    border-left: 5px solid var(--ocf-primary); /* 左側色條區分 */
+  }
+
+  .coin-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+  }
+
+  /* 地址樣式：等寬字體，易於複製 */
+  .address-box {
+    background: var(--code-bg);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.95rem;
+    color: #444;
+    word-break: break-all; /* 確保手機上地址會換行 */
+    border: 1px solid #dde2e9;
+    margin-bottom: 5px;
+  }
+
+  .network-label {
+    display: inline-block;
+    background: #555;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* 警告訊息 */
+  .warning-note {
+    font-size: 0.85rem;
+    color: var(--warn-color);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .warning-note::before {
+    content: "⚠️";
+  }
+
+  /* 多鏈列表 (針對 USDT) */
+  .multi-chain-list {
+    display: grid;
+    gap: 15px;
+  }
+  .chain-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  .chain-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* 底部注意事項 */
+  .legal-footer {
+    margin-top: 40px;
+    background: var(--bg-gray);
+    padding: 25px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .legal-footer h4 {
+    color: var(--text-dark);
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .legal-footer ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  .legal-footer li {
+    margin-bottom: 8px;
+  }
+
+  /* RWD */
+  @media (max-width: 768px) {
+    .crypto-header {
+      flex-direction: column;
+      text-align: center;
+    }
+    .crypto-header img {
+      width: 150px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="crypto-container">
+
+  <div class="crypto-header">
+    <img src="/assets/images/encrypt.png" title="加密貨幣捐款" alt="加密貨幣示意圖">
+    <div class="crypto-intro">
+      <h3>加密貨幣捐款</h3>
+      <p>若您注重隱私、希望隱匿資訊，或是旅居國外覺得換匯麻煩，歡迎使用加密貨幣支持 OCF 推廣臺灣開源！</p>
+      <p>請務必確認<strong>「幣種」</strong>與<strong>「傳輸協定 (Chain)」</strong>是否正確，錯誤的傳輸將導致資產永久遺失。</p>
+    </div>
+  </div>
+
+  <div class="wallet-list">
+
+    <div class="wallet-card">
+      <div class="coin-title">#BTC (Bitcoin)</div>
+      <div class="address-box">38EejyKsRYct6nWXUZZtc9fi1jNhMTXCQ7</div>
+    </div>
+
+    <div class="wallet-card">
+      <div class="coin-title">#ETH (Ethereum)</div>
+      <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      <div class="warning-note">不支援 BEP2、BEP20 或 BSC 協定，僅支援以太坊主網。</div>
+    </div>
+
+    <div class="wallet-card">
+      <div class="coin-title">#USDC (USD Coin)</div>
+      <div class="chain-item">
+        <div><span class="network-label">ERC-20</span> 僅支援以太坊主網智能合約</div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+        <div class="warning-note">請務必透過 ERC20 入金。透過任何其他協定入金將導致資產遺失。</div>
+      </div>
+    </div>
+
+    <div class="wallet-card">
+      <div class="coin-title">#USDT (Tether)</div>
+      <div class="multi-chain-list">
+        
+        <div class="chain-item">
+          <div><span class="network-label">ERC-20</span> Ethereum</div>
+          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+        </div>
+
+        <div class="chain-item">
+          <div><span class="network-label">POLYGON</span> Polygon Chain</div>
+          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+        </div>
+
+        <div class="chain-item">
+          <div><span class="network-label">BSC</span> Binance Smart Chain</div>
+          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+        </div>
+
+        <div class="chain-item">
+          <div><span class="network-label">ARBITRUM</span> Arbitrum One</div>
+          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+        </div>
+
+        <div class="chain-item">
+          <div><span class="network-label">AVALANCHE</span> Avalanche C-Chain</div>
+          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+        </div>
+
+        <div class="chain-item">
+          <div><span class="network-label">TRC-20</span> Tron (波場)</div>
+          <div class="address-box">TRKeUBf2mV6SDkeKMuF3Aj7pWBiChzcj6X</div>
+          <div class="warning-note">注意：不支援 BEP2、BEP20 的 USDT。不支援波場鏈上任何形式的智能合約轉帳，僅支援標準 TRC20 轉帳。</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="wallet-card">
+      <div class="coin-title">#LikeCoin</div>
+      <div class="address-box">cosmos19juy3yq3v42qdvm8a6waeef2m43f7cx932wkq3</div>
+    </div>
+
+  </div>
+
+  <div class="legal-footer">
+    <h4>📌 捐款提醒與收據須知</h4>
+    <ul>
+      <li>由於政府法規規定，並不認列加密貨幣為法定貨幣，故若有捐出加密貨幣，會以「捐贈有價物品」（捐物）方式向政府呈報，且公開在捐物徵信。</li>
+      <li>OCF 將開立<strong>「捐物收據」</strong>。若您在台灣有報稅、抵稅需求，國稅局會要求您提出憑證（如購買發票、Invoice）以證明該加密貨幣的成本價值。</li>
+      <li>若無抵稅需求，則可忽略上述報稅憑證要求。</li>
+      <li>以上列出較常見的幣別，若有其它幣種捐款需求，或需開立實名捐物收據，敬請來信 <a href="mailto:hi@ocf.tw" style="color:var(--ocf-primary);">hi@ocf.tw</a></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
+<!--
 <img src="/assets/images/encrypt.png" title="加密貨幣捐款" border="0" width="400" height="400">
 <p>若您 1.注重隱私，盡量隱匿資訊 2.旅居國外，覺得換匯麻煩，歡迎使用加密貨幣支持 OCF 推廣臺灣開源！</p>
 <p>📌 加密貨幣錢包地址📌</p>
@@ -25,3 +280,4 @@
 <p>📌 請留意📌</p>
 <li> 以上列出較常見的幣別，若有其它需求，敬請來信 hi@ocf.tw</li>
 <li> 若需開立實名的捐物收據，敬請來信 hi@ocf.tw</li>
+-->

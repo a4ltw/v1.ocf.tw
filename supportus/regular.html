@@ -1,3 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --ocf-primary: #6450dc;
+    --ocf-dark: #4b3bb3;
+    --text-main: #333;
+    --text-light: #666;
+    --bg-highlight: #fdf8e4; /* 暖黃色用於注意事項 */
+    --border-radius: 12px;
+  }
+
+  /* 主容器 */
+  .regular-donate-card {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-main);
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #eee;
+  }
+
+  /* 左側圖片區 */
+  .donate-img-col {
+    flex: 0 0 40%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f3fb; /* 淺紫底色 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .donate-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 讓圖片填滿且不變形 */
+    transition: transform 0.5s ease;
+  }
+  
+  .regular-donate-card:hover .donate-img-col img {
+    transform: scale(1.05); /* 滑鼠移過去微微放大 */
+  }
+
+  /* 右側內容區 */
+  .donate-content-col {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 標題與引言 */
+  .donate-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ocf-primary);
+    margin-bottom: 15px;
+  }
+
+  .donate-quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--ocf-primary);
+    padding-left: 15px;
+  }
+
+  .highlight-text {
+    color: #d35400; /* 咖啡色調強調少喝咖啡 */
+    font-weight: bold;
+  }
+
+  /* 權益清單 */
+  .benefit-box {
+    background: #fcfcfc;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .benefit-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .benefit-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+  }
+
+  /* 按鈕 */
+  .donate-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--ocf-primary);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(100, 80, 220, 0.3);
+    transition: all 0.2s;
+    margin-bottom: 30px;
+  }
+
+  .donate-btn:hover {
+    background-color: var(--ocf-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(100, 80, 220, 0.4);
+    color: #fff;
+  }
+
+  /* 底部注意事項 */
+  .notice-section {
+    font-size: 0.85rem;
+    color: #666;
+    background-color: var(--bg-highlight);
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+  }
+
+  .notice-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .notice-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* RWD 手機版 */
+  @media (max-width: 768px) {
+    .regular-donate-card {
+      flex-direction: column;
+    }
+    .donate-img-col {
+      height: 250px; /* 手機版圖片高度限制 */
+    }
+    .donate-content-col {
+      padding: 25px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="regular-donate-card">
+  
+  <div class="donate-img-col">
+    <img src="/assets/images/support_regular.png" title="定期定額捐款" alt="定期定額支持 OCF">
+  </div>
+
+  <div class="donate-content-col">
+    <h2 class="donate-title">定期定額，細水長流</h2>
+    
+    <div class="donate-quote">
+      科技正在改變世界，而我們要讓這個改變往更開放、自由且平等的方向前進。<br>
+      <span class="highlight-text">☕ 少喝一點咖啡，成為用開源推進社會的一大助力！</span>
+    </div>
+
+    <div class="benefit-box">
+      <div class="benefit-title">📌 加入定期定額，您將享有：</div>
+      <ul class="benefit-list">
+        <li>
+          <span>🎟️</span> 優惠參加 OCF 不定期開源活動
+        </li>
+        <li>
+          <span>🎁</span> 每年捐款滿 <strong>$2,400</strong>，將獲得年度捐款禮
+        </li>
+      </ul>
+    </div>
+
+    <a href="https://ocf.tw/supus" target="_blank" class="donate-btn">
+      立即加入定期定額 ➔
+    </a>
+
+    <div class="notice-section">
+      <div class="notice-item">
+        <span>ℹ️</span>
+        <span>每月捐款者將以「部分隱藏之真實姓名」或「匿名」公開至 <a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank" style="color:#666;text-decoration:underline;">捐款徵信</a>。</span>
+      </div>
+      <div class="notice-item">
+        <span>📝</span>
+        <span><strong>報稅提醒：</strong>若選擇電子收據，OCF 將於每年二月自動上傳紀錄至國稅局。有需求者請務必填寫：1.正確中文全名 2.身分證字號。</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+<!--
 <img src="/assets/images/support_regular.png" title="定期定額捐款" border="0" width="400" height="400">
 <p>科技正在改變世界，而我們要讓這個改變往更開放、自由且平等的方向前進。<br>
   少喝一點咖啡，成為用開源推進社會的一大助力！</p>
@@ -10,3 +232,4 @@
   <br>
   <p>※每月捐款者將以部分隱藏之真實姓名/匿名公開至<a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank">捐款徵信</a>。</p>
   <p>※若選擇電子收據，OCF 將會直接於每年二月自動上傳捐款記錄給國稅局，若有報稅需求的開源夥伴，請記得填寫 <br>1.正確的中文全名 2.身分證字號。</p>
+  -->
