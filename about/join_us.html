@@ -18,7 +18,7 @@
     text-align: center;
     margin-bottom: 40px;
   }
-   
+  
   .ocf-intro p {
     font-size: 1.1em;
     color: #555;
@@ -56,15 +56,13 @@
   .ocf-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    /* 配合 #6450DC 的淡紫色邊框 */
-    border-color: #d1caf5; 
+    border-color: #badcea;
   }
 
   .ocf-card-title {
     font-size: 1.25em;
     font-weight: bold;
     margin-bottom: 15px;
-    /* 標題維持原設定，不更動 */
     color: #2c3e50;
     display: flex;
     align-items: center;
@@ -83,16 +81,10 @@
     margin-top: 10px;
   }
 
-  /* --- 修改重點：使用指定紫色 #6450DC --- */
   .ocf-btn {
     display: inline-block;
-<<<<<<< Updated upstream
     background-color: #f8f9fa;
     color: #333;
-=======
-    background-color: #6450DC; /* 指定顏色 */
-    color: white;
->>>>>>> Stashed changes
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
@@ -100,17 +92,12 @@
     text-align: center;
     font-weight: 500;
     transition: background 0.2s;
-    margin-top: auto; 
+    margin-top: auto; /* 讓按鈕置底 */
   }
 
   .ocf-btn:hover {
-<<<<<<< Updated upstream
     background-color: #e2e6ea;
     color: #333;
-=======
-    background-color: #4b3ca6; /* #6450DC 的深色版本，用於懸停效果 */
-    color: white;
->>>>>>> Stashed changes
   }
 
   .ocf-btn.secondary {
@@ -128,8 +115,7 @@
     background-color: #f8fcfd;
     padding: 30px;
     border-radius: 12px;
-    /* --- 修改重點：左側裝飾線改為指定紫色 --- */
-    border-left: 5px solid #6450DC;
+    border-left: 5px solid #007bff;
   }
 
   .ocf-benefits h3 {
@@ -149,10 +135,10 @@
   }
 
   .ocf-benefits li::before {
-    content: "✔"; 
+    content: "✔"; /* 或使用 icon font */
     position: absolute;
     left: 0;
-    color: #6450DC; /* 打勾符號改為指定紫色 */
+    color: #28a745;
     font-weight: bold;
   }
 </style>
@@ -160,7 +146,7 @@
 <body>
 
 <div class="ocf-recruit-container">
-   
+  
   <div class="ocf-intro">
     <p>要以開放科技和跨界合作來推動數位公民社會的實現和應對數位時代的各項威脅，單靠一個人完成不容易，還需要各界的開源同路人一起努力！</p>
     <p><strong>現在起加入我們的行列吧！</strong></p>
