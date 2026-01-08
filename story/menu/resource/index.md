@@ -115,6 +115,10 @@ og_image:
         <h3>開放政府觀察報告</h3>
         <p>2014-2016，中英文版（CC BY-SA 4.0）</p>
     </a>
+    <a href="https://github.com/moda-gov-tw" class="resource-card">
+        <h3>數位部中文化成果</h3>
+        <p>GitHub 上的開源軟體在地化專案</p>
+    </a>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/opentech/">開放科技與倡議專案</a></small></p>
 
@@ -178,10 +182,6 @@ og_image:
     <a href="https://ocf.tw/story/menu/overseas" class="resource-card">
         <h3>國際會議出訪記錄</h3>
         <p>OCF 接軌國際開源社群的足跡</p>
-    </a>
-    <a href="https://github.com/moda-gov-tw" class="resource-card">
-        <h3>數位部中文化成果</h3>
-        <p>GitHub 上的開源軟體在地化專案</p>
     </a>
 </div>
 
