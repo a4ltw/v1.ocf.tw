@@ -26,28 +26,23 @@
     border: 1px solid #eee;
   }
 
-  /* 左側圖片區 */
+  /* 左側圖片區 - 修正為完整顯示 */
   .donate-img-col {
-    flex: 0 0 40%;
-    position: relative;
-    overflow: hidden;
+    flex: 0 0 40%; /* 左側佔 40% 寬度 */
     background-color: #f4f3fb; /* 淺紫底色 */
-    display: flex;
+    display: flex; /* 使用 Flex 讓圖片置中 */
     align-items: center;
     justify-content: center;
+    padding: 20px; /* 增加一點內距讓圖片不要貼邊 */
   }
 
   .donate-img-col img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 讓圖片填滿且不變形 */
-    transition: transform 0.5s ease;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%; /* 確保高度也不會超出 */
+    object-fit: contain; /* 關鍵：確保圖片完整呈現不裁切 */
   }
   
-  .regular-donate-card:hover .donate-img-col img {
-    transform: scale(1.05); /* 滑鼠移過去微微放大 */
-  }
-
   /* 右側內容區 */
   .donate-content-col {
     flex: 1;
@@ -74,8 +69,11 @@
   }
 
   .highlight-text {
-    color: #d35400; /* 咖啡色調強調少喝咖啡 */
+    color: #d35400; /* 咖啡色調強調 */
     font-weight: bold;
+    display: block; /* 讓強調句獨立一行 */
+    margin-top: 10px;
+    font-size: 1.15rem;
   }
 
   /* 權益清單 */
@@ -83,14 +81,14 @@
     background: #fcfcfc;
     border: 1px solid #eaeaea;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 25px;
   }
 
   .benefit-title {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -103,19 +101,20 @@
   }
 
   .benefit-list li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     color: #444;
+    font-size: 1rem;
   }
 
-  /* 按鈕 */
+  /* 按鈕 - 確保文字為白色 */
   .donate-btn {
     display: block;
     width: 100%;
     background-color: var(--ocf-primary);
-    color: #fff;
+    color: #fff !important; /* 強制白色字體 */
     text-align: center;
     padding: 15px;
     border-radius: 50px;
@@ -131,7 +130,7 @@
     background-color: var(--ocf-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(100, 80, 220, 0.4);
-    color: #fff;
+    color: #fff !important;
   }
 
   /* 底部注意事項 */
@@ -139,19 +138,24 @@
     font-size: 0.85rem;
     color: #666;
     background-color: var(--bg-highlight);
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     line-height: 1.5;
   }
 
   .notice-item {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
-    gap: 6px;
+    gap: 8px;
   }
   .notice-item:last-child {
     margin-bottom: 0;
+  }
+  
+  .notice-icon {
+    font-size: 1.1em;
+    line-height: 1.2;
   }
 
   /* RWD 手機版 */
@@ -160,7 +164,8 @@
       flex-direction: column;
     }
     .donate-img-col {
-      height: 250px; /* 手機版圖片高度限制 */
+      height: auto; /* 手機版高度自動 */
+      padding: 30px; /* 增加手機版圖片內距 */
     }
     .donate-content-col {
       padding: 25px;
@@ -181,11 +186,11 @@
     
     <div class="donate-quote">
       科技正在改變世界，而我們要讓這個改變往更開放、自由且平等的方向前進。<br>
-      <span class="highlight-text">☕ 少喝一點咖啡，成為用開源推進社會的一大助力！</span>
+      <span class="highlight-text">☕️ 用一杯咖啡的金額，成為用開源推進社會的一大助力！</span>
     </div>
 
     <div class="benefit-box">
-      <div class="benefit-title">📌 加入定期定額，您將享有：</div>
+      <div class="benefit-title">🚀 加入定期定額，您將享有：</div>
       <ul class="benefit-list">
         <li>
           <span>🎟️</span> 優惠參加 OCF 不定期開源活動
@@ -202,11 +207,11 @@
 
     <div class="notice-section">
       <div class="notice-item">
-        <span>ℹ️</span>
+        <span class="notice-icon">ℹ️</span>
         <span>每月捐款者將以「部分隱藏之真實姓名」或「匿名」公開至 <a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank" style="color:#666;text-decoration:underline;">捐款徵信</a>。</span>
       </div>
       <div class="notice-item">
-        <span>📝</span>
+        <span class="notice-icon">📝</span>
         <span><strong>報稅提醒：</strong>若選擇電子收據，OCF 將於每年二月自動上傳紀錄至國稅局。有需求者請務必填寫：1.正確中文全名 2.身分證字號。</span>
       </div>
     </div>
@@ -216,7 +221,6 @@
 
 </body>
 </html>
-
 
 
 <!--
