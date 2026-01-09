@@ -3,159 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <style>
-  :root {
-    --ocf-primary: #6450dc;
-    --text-dark: #333;
-    --bg-gray: #f8f9fa;
-    --code-bg: #eef1f6;
-    --warn-color: #d63031;
-    --border-color: #e0e0e0;
-  }
+/* 1. 替換掉原本的 .address-box (同方案一) */
+.address-box {
+  background: #f4f6f8;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.8rem;        /* 字體縮小 */
+  color: #555;
+  word-break: break-all;
+  border: 1px solid #eaeaea;
+  user-select: all;         /* 點擊即全選，方便複製 */
+}
 
-  .crypto-container {
-    max-width: 900px;
-    margin: 40px auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--text-dark);
-    line-height: 1.6;
-  }
+/* 2. 修改 .chain-item 讓內容並排 (Flexbox) */
+.chain-item {
+  display: flex;            /* 啟用彈性佈局 */
+  align-items: center;      /* 垂直置中 */
+  justify-content: space-between; /* 左右推開 */
+  gap: 15px;                /* 間距 */
+  border-bottom: 1px solid #f0f0f0;
+  padding: 8px 0;           /* 減少垂直間距 */
+}
 
-  /* 頭部介紹區 */
-  .crypto-header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
+/* 確保左側標籤不會被擠壓 */
+.chain-item > div:first-child {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 
-  .crypto-header img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
+/* 右側地址靠右對齊 */
+.chain-item .address-box {
+  margin-bottom: 0;
+  text-align: right;
+  max-width: 60%;          /* 限制最大寬度，避免太長 */
+}
 
-  .crypto-intro h3 {
-    margin-top: 0;
-    color: var(--ocf-primary);
-  }
-
-  /* 幣種卡片列表 */
-  .wallet-list {
-    display: grid;
-    gap: 20px;
-  }
-
-  .wallet-card {
-    background: #fff;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
-    position: relative;
-    border-left: 5px solid var(--ocf-primary); /* 左側色條區分 */
-  }
-
-  .coin-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--text-dark);
-  }
-
-  /* 地址樣式：等寬字體，易於複製 */
-  .address-box {
-    background: var(--code-bg);
-    padding: 10px 15px;
-    border-radius: 6px;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.95rem;
-    color: #444;
-    word-break: break-all; /* 確保手機上地址會換行 */
-    border: 1px solid #dde2e9;
-    margin-bottom: 5px;
-  }
-
-  .network-label {
-    display: inline-block;
-    background: #555;
-    color: #fff;
-    font-size: 0.75rem;
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
-
-  /* 警告訊息 */
-  .warning-note {
-    font-size: 0.85rem;
-    color: var(--warn-color);
-    margin-top: 5px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-  }
-  .warning-note::before {
-    content: "⚠️";
-  }
-
-  /* 多鏈列表 (針對 USDT) */
-  .multi-chain-list {
-    display: grid;
-    gap: 15px;
-  }
+/* 3. 手機版 RWD 優化：手機畫面窄，自動變回上下排列 */
+@media (max-width: 600px) {
   .chain-item {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+    flex-direction: column; /* 改回垂直排列 */
+    align-items: flex-start;
   }
-  .chain-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+  .chain-item .address-box {
+    width: 100%;            /* 手機版佔滿寬度 */
+    max-width: 100%;
+    text-align: left;
+    margin-top: 5px;
   }
-
-  /* 底部注意事項 */
-  .legal-footer {
-    margin-top: 40px;
-    background: var(--bg-gray);
-    padding: 25px;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    color: #555;
-  }
-  
-  .legal-footer h4 {
-    color: var(--text-dark);
-    margin-top: 0;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-  }
-
-  .legal-footer ul {
-    padding-left: 20px;
-    margin: 0;
-  }
-  .legal-footer li {
-    margin-bottom: 8px;
-  }
-
-  /* RWD */
-  @media (max-width: 768px) {
-    .crypto-header {
-      flex-direction: column;
-      text-align: center;
-    }
-    .crypto-header img {
-      width: 150px;
-    }
-  }
+}
 </style>
 </head>
 <body>
