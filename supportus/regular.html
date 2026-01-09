@@ -3,7 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <style>
+  /* --- 樣式設定開始 --- */
+  
+  /* 定義區域變數，方便統一管理顏色，且不汙染全站設定 */
+  .regular-donate-card {
+    --card-primary: #6450dc;       /* OCF 主色 */
+    --card-primary-dark: #4b3bb3;  /* 按鈕深色狀態 */
+    --card-bg: #ffffff;
+    --card-text: #333333;
+    --card-text-light: #666666;
+    --card-accent-bg: #f8f9fa;     /* 淺灰背景 */
+    --card-radius: 12px;
+    
+    /* 容器基礎設定 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* 增加立體感 */
+    border: 1px solid #eaeaea;
+    display: flex;
+    overflow: hidden; /* 確保圓角不被圖片切掉 */
+    max-width: 900px;
+    margin: 30px auto;
+    line-height: 1.6;
+    color: var(--card-text);
+  }
 
+  /* 左側圖片區 */
+  .donate-img-col {
+    flex: 0 0 40%; /* 固定佔據 40% 寬度 */
+    position: relative;
+    background-color: #f4f3fb; /* 圖片載入前的預設底色 */
+    min-height: 300px;
+  }
+
+  .donate-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片填滿且不變形 */
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  /* 滑鼠移入卡片時，圖片微微放大增加互動感 */
+  .regular-donate-card:hover .donate-img-col img {
+    transform: scale(1.05);
+  }
+
+  /* 右側內容區 */
+  .donate-content-col {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* 標題 */
+  .donate-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--card-primary);
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+  }
+
+  /* 引言區塊 */
+  .donate-quote {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 25px;
+  }
+
+  .highlight-text {
+    display: block;
+    margin-top: 10px;
+    color: #d35400; /* 使用暖色系強調咖啡 */
+    font-weight: 600;
+    background: #fff9f0;
+    padding: 8px 12px;
+    border-left: 4px solid #d35400;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* 權益清單區塊 (Benefit Box) */
+  .benefit-box {
+    background-color: var(--card-accent-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+  }
+
+  .benefit-title {
+    font-weight: bold;
+    color: var(--card-primary);
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+
+  .benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .benefit-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+  
+  .benefit-list li span {
+    margin-right: 8px;
+    font-size: 1.1rem;
+  }
+
+  /* 按鈕設定 */
+  .donate-btn {
+    display: inline-block;
+    background-color: var(--card-primary);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(100, 80, 220, 0.2);
+    margin-bottom: 25px;
+  }
+
+  .donate-btn:hover {
+    background-color: var(--card-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(100, 80, 220, 0.3);
+    color: #fff; /* 確保懸停時文字仍為白色 */
+  }
+
+  /* 注意事項區塊 */
+  .notice-section {
+    font-size: 0.85rem;
+    color: var(--card-text-light);
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+
+  .notice-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  .notice-icon {
+    margin-right: 6px;
+    flex-shrink: 0; /* 防止 icon 被壓縮 */
+  }
+
+  /* RWD 手機版設定 */
+  @media (max-width: 768px) {
+    .regular-donate-card {
+      flex-direction: column; /* 改為垂直排列 */
+      margin: 20px; /* 手機版留邊距 */
+      max-width: 100%;
+    }
+
+    .donate-img-col {
+      flex: none;
+      height: 200px; /* 手機版圖片高度 */
+    }
+
+    .donate-content-col {
+      padding: 25px;
+    }
+
+    .donate-title {
+      font-size: 1.5rem;
+    }
+  }
+  /* --- 樣式設定結束 --- */
 </style>
 </head>
 <body>
@@ -41,7 +222,7 @@
     <div class="notice-section">
       <div class="notice-item">
         <span class="notice-icon">ℹ️</span>
-        <span>每月捐款者將以「部分隱藏之真實姓名」或「匿名」公開至 <a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank" style="color:#666;text-decoration:underline;">捐款徵信</a>。</span>
+        <span>每月捐款者將以「部分隱藏之真實姓名」或「匿名」公開至 <a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank" style="color:#888;text-decoration:underline;">捐款徵信</a>。</span>
       </div>
       <div class="notice-item">
         <span class="notice-icon">📝</span>
