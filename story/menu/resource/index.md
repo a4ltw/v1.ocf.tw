@@ -177,7 +177,7 @@ og_image:
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/infr/">網路自由</a></small></p>
 
 
-<h2 class="section-title">國際夥伴 & 中文化</h2>
+<h2 class="section-title">國際夥伴串聯</h2>
 <div class="card-grid">
     <a href="https://ocf.tw/story/menu/overseas" class="resource-card">
         <h3>國際會議出訪記錄</h3>
