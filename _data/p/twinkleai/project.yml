@@ -21,7 +21,7 @@ end:
 type_ids:
   - community
 topic_ids:
-  - source
+  - misc
 field_ids:
   - ai
 tags:
