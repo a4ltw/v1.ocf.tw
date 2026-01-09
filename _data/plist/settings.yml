@@ -90,6 +90,9 @@
     - id: rsh
       name: 研究
       name_en: Research
+    - id: ai
+      name: 人工智慧
+      name_en: AI
     - id: misc
       name: 其他
       name_en: Misc
