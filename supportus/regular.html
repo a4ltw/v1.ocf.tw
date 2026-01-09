@@ -19,33 +19,33 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: var(--card-bg);
     border-radius: var(--card-radius);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* 增加立體感 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     border: 1px solid #eaeaea;
     display: flex;
-    overflow: hidden; /* 確保圓角不被圖片切掉 */
+    overflow: hidden;
     max-width: 900px;
     margin: 30px auto;
     line-height: 1.6;
     color: var(--card-text);
+    text-align: left; /* 確保內容靠左對齊 */
   }
 
   /* 左側圖片區 */
   .donate-img-col {
-    flex: 0 0 40%; /* 固定佔據 40% 寬度 */
+    flex: 0 0 40%;
     position: relative;
-    background-color: #f4f3fb; /* 圖片載入前的預設底色 */
+    background-color: #f4f3fb;
     min-height: 300px;
   }
 
   .donate-img-col img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 確保圖片填滿且不變形 */
+    object-fit: cover;
     display: block;
     transition: transform 0.5s ease;
   }
   
-  /* 滑鼠移入卡片時，圖片微微放大增加互動感 */
   .regular-donate-card:hover .donate-img-col img {
     transform: scale(1.05);
   }
@@ -78,7 +78,7 @@
   .highlight-text {
     display: block;
     margin-top: 10px;
-    color: #d35400; /* 使用暖色系強調咖啡 */
+    color: #d35400;
     font-weight: 600;
     background: #fff9f0;
     padding: 8px 12px;
@@ -86,7 +86,7 @@
     border-radius: 0 4px 4px 0;
   }
 
-  /* 權益清單區塊 (Benefit Box) */
+  /* 權益清單區塊 */
   .benefit-box {
     background-color: var(--card-accent-bg);
     padding: 20px;
@@ -120,11 +120,12 @@
     font-size: 1.1rem;
   }
 
-  /* 按鈕設定 */
+  /* 按鈕設定 - 修正部分 */
   .donate-btn {
     display: inline-block;
     background-color: var(--card-primary);
-    color: #fff;
+    /* 加入 !important 強制文字為白色，避免被外部連結樣式覆蓋 */
+    color: #ffffff !important; 
     text-decoration: none;
     text-align: center;
     padding: 14px 24px;
@@ -134,13 +135,15 @@
     transition: all 0.2s ease;
     box-shadow: 0 4px 10px rgba(100, 80, 220, 0.2);
     margin-bottom: 25px;
+    border: none;
+    cursor: pointer;
   }
 
   .donate-btn:hover {
     background-color: var(--card-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(100, 80, 220, 0.3);
-    color: #fff; /* 確保懸停時文字仍為白色 */
+    color: #ffffff !important; /* 確保懸停時也強制為白色 */
   }
 
   /* 注意事項區塊 */
@@ -160,20 +163,31 @@
 
   .notice-icon {
     margin-right: 6px;
-    flex-shrink: 0; /* 防止 icon 被壓縮 */
+    flex-shrink: 0;
+    margin-top: 2px;
   }
+  
+  /* 修正連結顏色 */
+  .notice-item a {
+      color: var(--card-text-light) !important;
+      text-decoration: underline;
+  }
+
 
   /* RWD 手機版設定 */
   @media (max-width: 768px) {
     .regular-donate-card {
-      flex-direction: column; /* 改為垂直排列 */
-      margin: 20px; /* 手機版留邊距 */
+      flex-direction: column;
+      margin: 20px 0;
       max-width: 100%;
+      border-radius: 0; /* 手機版滿版時常會移除圓角 */
+      border-left: none;
+      border-right: none;
     }
 
     .donate-img-col {
       flex: none;
-      height: 200px; /* 手機版圖片高度 */
+      height: 200px;
     }
 
     .donate-content-col {
@@ -182,6 +196,11 @@
 
     .donate-title {
       font-size: 1.5rem;
+    }
+    
+    .donate-btn {
+        display: block;
+        width: 100%; /* 手機版按鈕滿寬 */
     }
   }
   /* --- 樣式設定結束 --- */
@@ -222,7 +241,7 @@
     <div class="notice-section">
       <div class="notice-item">
         <span class="notice-icon">ℹ️</span>
-        <span>每月捐款者將以「部分隱藏之真實姓名」或「匿名」公開至 <a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank" style="color:#888;text-decoration:underline;">捐款徵信</a>。</span>
+        <span>每月捐款者將以「部分隱藏之真實姓名」或「匿名」公開至 <a href="http://blog.ocf.tw/search/label/%E6%8D%90%E6%AC%BE%E5%BE%B5%E4%BF%A1" target="_blank">捐款徵信</a>。</span>
       </div>
       <div class="notice-item">
         <span class="notice-icon">📝</span>
