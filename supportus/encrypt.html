@@ -2,57 +2,250 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCF 加密貨幣捐款</title>
 <style>
-/* 1. 替換掉原本的 .address-box (同方案一) */
-.address-box {
-  background: #f4f6f8;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 0.8rem;        /* 字體縮小 */
-  color: #555;
-  word-break: break-all;
-  border: 1px solid #eaeaea;
-  user-select: all;         /* 點擊即全選，方便複製 */
-}
+  :root {
+    --ocf-primary: #6450dc;
+    --ocf-primary-light: #f4f3fb;
+    --text-dark: #333;
+    --text-gray: #666;
+    --bg-gray: #f8f9fa;
+    --border-color: #eaeaea;
+    --warn-bg: #fff5f5;
+    --warn-text: #c0392b;
+    --code-bg: #f4f6f8;
+  }
 
-/* 2. 修改 .chain-item 讓內容並排 (Flexbox) */
-.chain-item {
-  display: flex;            /* 啟用彈性佈局 */
-  align-items: center;      /* 垂直置中 */
-  justify-content: space-between; /* 左右推開 */
-  gap: 15px;                /* 間距 */
-  border-bottom: 1px solid #f0f0f0;
-  padding: 8px 0;           /* 減少垂直間距 */
-}
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
 
-/* 確保左側標籤不會被擠壓 */
-.chain-item > div:first-child {
-  flex-shrink: 0;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
+  .crypto-container {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 20px;
+  }
 
-/* 右側地址靠右對齊 */
-.chain-item .address-box {
-  margin-bottom: 0;
-  text-align: right;
-  max-width: 60%;          /* 限制最大寬度，避免太長 */
-}
+  /* --- 頭部介紹區 --- */
+  .crypto-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+  }
 
-/* 3. 手機版 RWD 優化：手機畫面窄，自動變回上下排列 */
-@media (max-width: 600px) {
-  .chain-item {
-    flex-direction: column; /* 改回垂直排列 */
+  .crypto-header img {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .crypto-intro h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--ocf-primary);
+    font-size: 1.8rem;
+  }
+
+  .crypto-intro p {
+    color: var(--text-gray);
+    margin-bottom: 15px;
+  }
+
+  .crypto-intro strong {
+    color: var(--ocf-primary);
+  }
+
+  /* --- 幣種卡片列表 --- */
+  .wallet-list {
+    display: grid;
+    gap: 25px;
+  }
+
+  .wallet-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    border-left: 5px solid var(--ocf-primary);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .wallet-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+  }
+
+  .coin-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+  }
+
+  /* --- 鏈與地址的排版 (Flexbox) --- */
+  .chain-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 12px 0;
+  }
+
+  .chain-row:last-child {
+    border-bottom: none;
+  }
+
+  /* 左側：鏈名稱/標籤 */
+  .chain-info {
+    flex-shrink: 0;
+    min-width: 120px;
+  }
+
+  .network-label {
+    display: inline-block;
+    background: var(--text-dark);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .network-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+
+  /* 右側：地址 */
+  .address-box {
+    background: var(--code-bg);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.85rem;
+    color: #555;
+    border: 1px solid #e0e0e0;
+    word-break: break-all;
+    text-align: right;
+    user-select: all; /* 點擊即全選 */
+    cursor: text;
+    transition: border-color 0.2s;
+    max-width: 65%; /* 限制寬度，避免太長 */
+  }
+
+  .address-box:hover {
+    border-color: var(--ocf-primary);
+    background: #fff;
+  }
+
+  /* --- 警告訊息 --- */
+  .warning-box {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--warn-text);
+    background: var(--warn-bg);
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: flex;
     align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
   }
-  .chain-item .address-box {
-    width: 100%;            /* 手機版佔滿寬度 */
-    max-width: 100%;
-    text-align: left;
-    margin-top: 5px;
+
+  .warning-box::before {
+    content: "⚠️";
+    flex-shrink: 0;
   }
-}
+
+  /* --- 底部注意事項 --- */
+  .legal-footer {
+    margin-top: 50px;
+    background: var(--bg-gray);
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .legal-footer h4 {
+    color: var(--text-dark);
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .legal-footer ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .legal-footer li {
+    margin-bottom: 10px;
+  }
+
+  .legal-footer a {
+    color: var(--ocf-primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .legal-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* --- RWD 手機版優化 --- */
+  @media (max-width: 768px) {
+    .crypto-header {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .crypto-header img {
+      width: 120px;
+    }
+
+    /* 手機版：地址改為垂直排列 */
+    .chain-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .address-box {
+      width: 100%;
+      max-width: 100%;
+      text-align: left;
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+    
+    .chain-info {
+      margin-bottom: 4px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -64,7 +257,7 @@
     <div class="crypto-intro">
       <h3>加密貨幣捐款</h3>
       <p>若您注重隱私、希望隱匿資訊，或是旅居國外覺得換匯麻煩，歡迎使用加密貨幣支持 OCF 推廣臺灣開源！</p>
-      <p>請務必確認<strong>「幣種」</strong>與<strong>「傳輸協定 (Chain)」</strong>是否正確，錯誤的傳輸將導致資產永久遺失。</p>
+      <p>請務必確認 <strong>「幣種」</strong> 與 <strong>「傳輸協定 (Chain)」</strong> 是否正確，錯誤的傳輸將導致資產永久遺失。</p>
     </div>
   </div>
 
@@ -72,65 +265,98 @@
 
     <div class="wallet-card">
       <div class="coin-title">#BTC (Bitcoin)</div>
-      <div class="address-box">38EejyKsRYct6nWXUZZtc9fi1jNhMTXCQ7</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">BTC</span> <span class="network-name">Bitcoin Network</span>
+        </div>
+        <div class="address-box">38EejyKsRYct6nWXUZZtc9fi1jNhMTXCQ7</div>
+      </div>
     </div>
 
     <div class="wallet-card">
       <div class="coin-title">#ETH (Ethereum)</div>
-      <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
-      <div class="warning-note">不支援 BEP2、BEP20 或 BSC 協定，僅支援以太坊主網。</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">ETH</span> <span class="network-name">Ethereum Mainnet</span>
+        </div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      </div>
+      <div class="warning-box">
+        注意：不支援 BEP2、BEP20 或 BSC 協定，僅支援以太坊主網。
+      </div>
     </div>
 
     <div class="wallet-card">
       <div class="coin-title">#USDC (USD Coin)</div>
-      <div class="chain-item">
-        <div><span class="network-label">ERC-20</span> 僅支援以太坊主網智能合約</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">ERC-20</span> <span class="network-name">Ethereum</span>
+        </div>
         <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
-        <div class="warning-note">請務必透過 ERC20 入金。透過任何其他協定入金將導致資產遺失。</div>
+      </div>
+      <div class="warning-box">
+        請務必透過 ERC20 入金。透過任何其他協定入金將導致資產遺失。
       </div>
     </div>
 
     <div class="wallet-card">
       <div class="coin-title">#USDT (Tether)</div>
-      <div class="multi-chain-list">
-        
-        <div class="chain-item">
-          <div><span class="network-label">ERC-20</span> Ethereum</div>
-          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">ERC-20</span> <span class="network-name">Ethereum</span>
         </div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      </div>
 
-        <div class="chain-item">
-          <div><span class="network-label">POLYGON</span> Polygon Chain</div>
-          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">POLYGON</span> <span class="network-name">Polygon Chain</span>
         </div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      </div>
 
-        <div class="chain-item">
-          <div><span class="network-label">BSC</span> Binance Smart Chain</div>
-          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">BSC</span> <span class="network-name">BNB Smart Chain</span>
         </div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      </div>
 
-        <div class="chain-item">
-          <div><span class="network-label">ARBITRUM</span> Arbitrum One</div>
-          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">ARBITRUM</span> <span class="network-name">Arbitrum One</span>
         </div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      </div>
 
-        <div class="chain-item">
-          <div><span class="network-label">AVALANCHE</span> Avalanche C-Chain</div>
-          <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">AVALANCHE</span> <span class="network-name">Avalanche C-Chain</span>
         </div>
+        <div class="address-box">0xFD835211413D19D86f83086f7981dd5Ed8Def668</div>
+      </div>
 
-        <div class="chain-item">
-          <div><span class="network-label">TRC-20</span> Tron (波場)</div>
-          <div class="address-box">TRKeUBf2mV6SDkeKMuF3Aj7pWBiChzcj6X</div>
-          <div class="warning-note">注意：不支援 BEP2、BEP20 的 USDT。不支援波場鏈上任何形式的智能合約轉帳，僅支援標準 TRC20 轉帳。</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">TRC-20</span> <span class="network-name">Tron</span>
         </div>
+        <div class="address-box">TRKeUBf2mV6SDkeKMuF3Aj7pWBiChzcj6X</div>
+      </div>
 
+      <div class="warning-box">
+        注意：不支援 BEP2 (BNB Beacon Chain) 的 USDT。不支援波場鏈上任何形式的智能合約轉帳。
       </div>
     </div>
 
     <div class="wallet-card">
       <div class="coin-title">#LikeCoin</div>
-      <div class="address-box">cosmos19juy3yq3v42qdvm8a6waeef2m43f7cx932wkq3</div>
+      <div class="chain-row">
+        <div class="chain-info">
+          <span class="network-label">LIKE</span> <span class="network-name">LikeCoin Chain</span>
+        </div>
+        <div class="address-box">cosmos19juy3yq3v42qdvm8a6waeef2m43f7cx932wkq3</div>
+      </div>
     </div>
 
   </div>
@@ -141,7 +367,7 @@
       <li>由於政府法規規定，並不認列加密貨幣為法定貨幣，故若有捐出加密貨幣，會以「捐贈有價物品」（捐物）方式向政府呈報，且公開在捐物徵信。</li>
       <li>OCF 將開立<strong>「捐物收據」</strong>。若您在台灣有報稅、抵稅需求，國稅局會要求您提出憑證（如購買發票、Invoice）以證明該加密貨幣的成本價值。</li>
       <li>若無抵稅需求，則可忽略上述報稅憑證要求。</li>
-      <li>以上列出較常見的幣別，若有其它幣種捐款需求，或需開立實名捐物收據，敬請來信 <a href="mailto:hi@ocf.tw" style="color:var(--ocf-primary);">hi@ocf.tw</a></li>
+      <li>以上列出較常見的幣別，若有其它幣種捐款需求，或需開立實名捐物收據，敬請來信 <a href="mailto:hi@ocf.tw">hi@ocf.tw</a></li>
     </ul>
   </div>
 
@@ -149,32 +375,3 @@
 
 </body>
 </html>
-<!--
-<img src="/assets/images/encrypt.png" title="加密貨幣捐款" border="0" width="400" height="400">
-<p>若您 1.注重隱私，盡量隱匿資訊 2.旅居國外，覺得換匯麻煩，歡迎使用加密貨幣支持 OCF 推廣臺灣開源！</p>
-<p>📌 加密貨幣錢包地址📌</p>
-<li> #BTC 地址：38EejyKsRYct6nWXUZZtc9fi1jNhMTXCQ7</li>
-<li> #ETH 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668</li>
-（不支援 BEP2、BEP20 或 BSC 協定的 ETH。）
-<li> #USDC</li>
-　→ ERC 20 USDT 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668<br>
-（「只」支援經 ERC20 智能合約的 USDC 入金。透過任何其他協定入金將導致資產遺失。）<br>
-<li> #USDT</li>
-　→ ERC 20 USDT 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668<br>
-　→ POLYGON USDT 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668<br>
-　→ BSC USDT 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668<br>
-　→ ARBITRUM USDT 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668<br>
-　→ AVALANCHE USDT 地址：0xFD835211413D19D86f83086f7981dd5Ed8Def668<br>
-　→ TRC20 USDT 地址：TRKeUBf2mV6SDkeKMuF3Aj7pWBiChzcj6X<br>
-（不支援 BEP2、BEP20 的 USDT、不支援波場鏈上任何形式的合約轉帳。）<br>
-<li> #LikeCoin 地址：cosmos19juy3yq3v42qdvm8a6waeef2m43f7cx932wkq3</li>
-<br>
-<p>📌 加密貨幣捐款 - 提醒事項📌</p>
-<li> 由於政府法規規定，並不認列加密貨幣為法定貨幣，故若有捐出加密貨幣，會以「捐贈有價物品」（捐物）方式向政府呈報，且公開在捐物徵信。</li>
-<li> 承上，因而 OCF 將開立「捐物收據」給捐加密貨幣者。若在台灣有報稅、抵稅的需求，則國稅局會主動要求捐加密貨幣者提出憑證，證明捐出物（此即加密貨幣）的成本價值，如：提出購買發票、invoice 等。</li>
-<li> 若無抵稅需求，則可忽略上述。</li>
-<br>
-<p>📌 請留意📌</p>
-<li> 以上列出較常見的幣別，若有其它需求，敬請來信 hi@ocf.tw</li>
-<li> 若需開立實名的捐物收據，敬請來信 hi@ocf.tw</li>
--->
