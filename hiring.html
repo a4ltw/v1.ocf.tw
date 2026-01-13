@@ -335,16 +335,16 @@ toc: false
             <h3>一、核心能力</h3>
             <ul>
                 <li>具募款專案或活動執行經驗，熟悉專案進度控管與成果追蹤。</li>
-                <li>能撰寫與整理募款內容，轉化為具說服力的對外文案。</li>
+                <li>能撰寫與整理募款內容，將專案資訊轉化為具說服力的對外文案。</li>
                 <li>能快速理解既有募款策略，並在短期內獨立完成專案支援。</li>
-                <li>善於與內部團隊及外部協作，清楚專案需求並有效溝通。</li>
+                <li>善於與內部團隊及外部企業單位協作，清楚專案需求並有效溝通。</li>
                 <li>具基本簡報、製圖能力 (Canva 等) 或 AI 工具導入經驗。</li>
-                <li>熟悉資料分析或簡單報表呈現。</li>
+                <li>熟悉資料分析或簡單報表呈現，用以追蹤募款成效</li>
             </ul>
             <h3>二、加分能力</h3>
             <ul>
-                <li>曾參與企業合作或專案型募款，能協助撰寫提案與對接。</li>
-                <li>理解開源、科技議題，熟悉非營利組織運作。</li>
+                <li>曾參與企業合作或專案型募款，能協助撰寫提案與對接合作單位。</li>
+                <li>理解開源、科技議題，並能熟悉非營利組織專案運作模式，與之應用。</li>
             </ul>
         </section>
 
@@ -356,16 +356,16 @@ toc: false
         <div class="apply-box">
             <h2>申請方式</h2>
             <p style="margin-bottom: 20px;">履歷隨到隨審，若不符合資格，恕不另行通知。</p>
-            
+            <p>請將必備文件寄至 hr@ocf.tw，標題請寫「我要加入OCF_募款與企業合作專員_姓名」並附期望待遇。</p>
             <div class="apply-requirements">
                 <h3 style="color: white; margin-top: 0; font-size: 1rem;">📄 必備文件</h3>
                 <ul style="margin-bottom: 0;">
                     <li><strong>履歷</strong></li>
                     <li><strong>作品集</strong>（建議包含以下內容）：
                         <ul style="margin-top: 5px; font-size: 0.9rem;">
-                            <li>參與專案簡介與提案素材（有故事性）</li>
-                            <li>視覺化資料整理</li>
-                            <li>簡報、製圖或 AI 工具導入的相關產出</li>
+                            <li>參與專案 - 專案簡介與提案素材，文字清楚、有故事性，能有效傳達理念與目標。</li>
+                            <li>視覺化資料 - 能將複雜資訊整理成清楚易懂的形式，兼顧文字與視覺表達。</li>
+                            <li>簡報、製圖或 AI 工具導入的相關產出。</li>
                         </ul>
                     </li>
                 </ul>
@@ -373,43 +373,3 @@ toc: false
         </div>
     </div>
 </div>
-
-<div id="toast">已複製到剪貼簿</div>
-
-<script>
-    function copyText(text, msg) {
-        if (!navigator.clipboard) {
-           fallbackCopyTextToClipboard(text);
-           showToast(msg);
-           return;
-        }
-        navigator.clipboard.writeText(text).then(function() {
-            showToast(msg);
-        }, function(err) {
-            console.error('無法複製文字: ', err);
-            fallbackCopyTextToClipboard(text);
-            showToast(msg);
-        });
-    }
-
-    function fallbackCopyTextToClipboard(text) {
-        var textArea = document.createElement("textarea");
-        textArea.value = text;
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        try {
-            var successful = document.execCommand('copy');
-        } catch (err) {
-            console.error('Fallback: Oops, unable to copy', err);
-        }
-        document.body.removeChild(textArea);
-    }
-
-    function showToast(message) {
-        var toast = document.getElementById("toast");
-        toast.innerText = message;
-        toast.className = "show";
-        setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
-    }
-</script>
