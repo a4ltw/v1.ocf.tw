@@ -393,17 +393,6 @@ toc: false
                                 </ul>
                         </ul>
                     </div>
-
-                    <div class="action-area">
-                        <button class="btn btn-secondary" onclick="copyText('我要加入OCF_募款與企業合作專員_姓名', '標題格式已複製！')">
-                            📋 複製標題格式
-                        </button>
-                        <button class="btn btn-secondary">
-                        <a href="mailto:hr@ocf.tw?subject=我要加入OCF_募款與企業合作專員_您的姓名" class="btn btn-secondary">
-                            ✉️ 寄信應徵
-                        </a>
-                    </button>
-                    </div>
                 </div>
             </div>
         </details>
@@ -489,57 +478,9 @@ toc: false
                         </ul>
                     </div>
 
-                    <div class="action-area">
-                        <button class="btn btn-secondary" onclick="copyText('我要加入OCF_行銷企劃專員_姓名', '標題格式已複製！')">
-                            📋 複製標題格式
-                        </button>
-                        <a href="mailto:hr@ocf.tw?subject=我要加入OCF_行銷企劃專員_您的姓名" class="btn btn-secondary">
-                            ✉️ 寄信應徵
-                        </a>
-                    </div>
                 </div>
             </div>
         </details>
 
     </div>
 </div>
-
-<div id="toast">已複製到剪貼簿</div>
-
-<script>
-    function copyText(text, msg) {
-        if (!navigator.clipboard) {
-           fallbackCopyTextToClipboard(text);
-           showToast(msg);
-           return;
-        }
-        navigator.clipboard.writeText(text).then(function() {
-            showToast(msg);
-        }, function(err) {
-            console.error('無法複製文字: ', err);
-            fallbackCopyTextToClipboard(text);
-            showToast(msg);
-        });
-    }
-
-    function fallbackCopyTextToClipboard(text) {
-        var textArea = document.createElement("textarea");
-        textArea.value = text;
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        try {
-            document.execCommand('copy');
-        } catch (err) {
-            console.error('Fallback error', err);
-        }
-        document.body.removeChild(textArea);
-    }
-
-    function showToast(message) {
-        var toast = document.getElementById("toast");
-        toast.innerText = message;
-        toast.className = "show";
-        setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
-    }
-</script>
