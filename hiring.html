@@ -1,414 +1,426 @@
 ---
 layout: global
-og_title: BLAH
+og_title: OCF 職缺招募 - 募款與企業合作專員
 og_description: 開放文化就在身邊，影響著每天生活！開源技術的發展背後其實都有看不見的一隻手？我們為您來解密！
-toc:
+toc: false
 ---
 
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCF 職缺招募 - 募款與企業合作專員（半年期職務代理）</title>
-    <style>
-        :root {
-            --primary-color: #6450DC; /* OCF 風格藍綠色 */
-            --primary-dark: #234e52;
-            --secondary-color: #f7fafc;
-            --text-dark: #2d3748;
-            --text-gray: #4a5568;
-            --highlight: #e53e3e;
-            --bg-color: #f0f4f8;
-            --btn-copy: #4a5568;
+<style>
+    /* 為了不影響全站樣式，我們將變數與樣式限縮在這個區塊 */
+    .job-page-wrapper {
+        --primary-color: #6450DC;
+        --primary-dark: #234e52;
+        --secondary-color: #f7fafc;
+        --text-dark: #2d3748;
+        --text-gray: #4a5568;
+        --highlight: #e53e3e;
+        --bg-color: #f0f4f8;
+        
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+        line-height: 1.6;
+        color: var(--text-dark);
+        background-color: var(--bg-color);
+        /* 確保背景色填滿 */
+        width: 100%;
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
+    .job-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .job-page-wrapper * {
+        box-sizing: border-box;
+    }
+
+    /* --- Header Section --- */
+    .job-header {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        text-align: center;
+        margin-bottom: 24px;
+        border-top: 6px solid var(--primary-color);
+    }
+
+    .job-header h1 {
+        font-size: 2rem;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+        letter-spacing: -0.5px;
+        line-height: 1.3;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        color: var(--text-gray);
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border: 1px solid #e2e8f0;
+    }
+
+    .tag.urgent {
+        background-color: #fff5f5;
+        color: var(--highlight);
+        border-color: #fed7d7;
+    }
+
+    /* --- Content Cards --- */
+    .section-card {
+        background: white;
+        padding: 32px;
+        margin-bottom: 24px;
+        border-radius: 16px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .section-card h2 {
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--secondary-color);
+        display: flex;
+        align-items: center;
+    }
+
+    .section-card h3 {
+        font-size: 1.15rem;
+        margin: 24px 0 12px 0;
+        color: var(--text-dark);
+        font-weight: 700;
+    }
+
+    .section-card p {
+        margin-bottom: 16px;
+        color: var(--text-gray);
+    }
+
+    .section-card ul {
+        list-style-position: outside;
+        margin-left: 20px;
+        margin-bottom: 16px;
+    }
+
+    .section-card li {
+        margin-bottom: 8px;
+        color: var(--text-gray);
+    }
+
+    /* --- Special Highlights --- */
+    .overview-box {
+        background-color: #ebf8ff;
+        border-radius: 8px;
+        padding: 20px;
+        border-left: 5px solid #4299e1;
+    }
+    
+    .overview-box p {
+        color: #2c5282;
+        margin-bottom: 10px;
+    }
+    
+    .overview-box p:last-child {
+        margin-bottom: 0;
+    }
+
+    .salary-highlight {
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--primary-color);
+        background: #e6fffa;
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 8px;
+    }
+
+    /* --- Application Section --- */
+    .apply-box {
+        background-color: var(--text-dark);
+        color: white;
+        padding: 40px;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .apply-box h2 {
+        color: white;
+        border-bottom-color: #4a5568;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #4a5568;
+    }
+
+    .apply-box p, .apply-box li {
+        color: #e2e8f0;
+    }
+
+    .apply-requirements {
+        background: rgba(255,255,255,0.1);
+        padding: 24px;
+        border-radius: 12px;
+        margin: 24px 0;
+    }
+
+    /* Action Buttons Area */
+    .action-area {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 14px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.2s;
+        border: none;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .btn-primary:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+        background-color: rgba(255,255,255,0.15);
+        color: white;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-secondary:hover {
+        background-color: rgba(255,255,255,0.25);
+    }
+    .btn-secondary:active {
+        transform: scale(0.98);
+    }
+
+    /* Toast Notification */
+    #toast {
+        visibility: hidden;
+        min-width: 250px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 50px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1000;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        font-size: 0.9rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        opacity: 0;
+        transition: opacity 0.3s, bottom 0.3s;
+    }
+
+    #toast.show {
+        visibility: visible;
+        opacity: 1;
+        bottom: 50px;
+    }
+
+    /* --- Mobile RWD Specifics --- */
+    @media (max-width: 600px) {
+        .job-container {
+            padding: 20px 15px;
+        }
+        
+        .job-header {
+            padding: 30px 20px;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            -webkit-tap-highlight-color: transparent; /* 移除手機點擊高亮 */
+        .job-header h1 {
+            font-size: 1.6rem;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: var(--bg-color);
-            padding-bottom: 40px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* --- Header Section --- */
-        header {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            text-align: center;
-            margin-bottom: 24px;
-            border-top: 6px solid var(--primary-color);
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 12px;
-            color: var(--text-dark);
-            letter-spacing: -0.5px;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--text-gray);
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-
-        .tags {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border: 1px solid #e2e8f0;
-        }
-
-        .tag.urgent {
-            background-color: #fff5f5;
-            color: var(--highlight);
-            border-color: #fed7d7;
-        }
-
-        /* --- Content Cards --- */
         .section-card {
-            background: white;
-            padding: 32px;
-            margin-bottom: 24px;
-            border-radius: 16px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            padding: 24px 20px;
         }
 
-        h2 {
-            font-size: 1.4rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--secondary-color);
-            display: flex;
-            align-items: center;
-        }
-
-        h3 {
-            font-size: 1.15rem;
-            margin: 24px 0 12px 0;
-            color: var(--text-dark);
-            font-weight: 700;
-        }
-
-        p {
-            margin-bottom: 16px;
-            color: var(--text-gray);
-        }
-
-        ul {
-            list-style-position: outside;
-            margin-left: 20px;
-            margin-bottom: 16px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: var(--text-gray);
-        }
-
-        /* --- Special Highlights --- */
-        .overview-box {
-            background-color: #ebf8ff;
-            border-radius: 8px;
-            padding: 20px;
-            border-left: 5px solid #4299e1;
-        }
-        
-        .overview-box p {
-            color: #2c5282;
-            margin-bottom: 10px;
-        }
-        
-        .overview-box p:last-child {
-            margin-bottom: 0;
-        }
-
-        .salary-highlight {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            background: #e6fffa;
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 8px;
-        }
-
-        /* --- Application Section (Enhanced) --- */
-        .apply-box {
-            background-color: var(--text-dark);
-            color: white;
-            padding: 40px;
-            border-radius: 16px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .apply-box h2 {
-            color: white;
-            border-bottom-color: #4a5568;
-        }
-
-        .apply-box p, .apply-box li {
-            color: #e2e8f0;
-        }
-
-        .apply-requirements {
-            background: rgba(255,255,255,0.1);
-            padding: 24px;
-            border-radius: 12px;
-            margin: 24px 0;
-        }
-
-        /* Action Buttons Area */
         .action-area {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 30px;
+            flex-direction: column;
         }
 
         .btn {
-            flex: 1;
-            padding: 14px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-            text-align: center;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.2s;
-            border: none;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 200px;
+            width: 100%;
+            min-width: auto;
         }
 
-        /* Primary Action: Mailto */
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        .apply-box {
+            padding: 24px;
         }
-        .btn-primary:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
+    }
+</style>
 
-        /* Secondary Action: Copy */
-        .btn-secondary {
-            background-color: rgba(255,255,255,0.15);
-            color: white;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        .btn-secondary:hover {
-            background-color: rgba(255,255,255,0.25);
-        }
-        .btn-secondary:active {
-            transform: scale(0.98);
-        }
+<div class="job-page-wrapper">
+    <div class="job-container">
+        <header class="job-header">
+            <div class="subtitle">OCF 開放文化基金會</div>
+            <h1>募款與企業合作專員</h1>
+            <div class="tags">
+                <span class="tag urgent">半年期職務代理</span>
+                <span class="tag">專案執行</span>
+                <span class="tag">月薪 40k+</span>
+            </div>
+        </header>
 
-        /* Toast Notification */
-        #toast {
-            visibility: hidden;
-            min-width: 250px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            border-radius: 50px;
-            padding: 16px;
-            position: fixed;
-            z-index: 1000;
-            left: 50%;
-            bottom: 30px;
-            transform: translateX(-50%);
-            font-size: 0.9rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            opacity: 0;
-            transition: opacity 0.3s, bottom 0.3s;
-        }
+        <section class="section-card">
+            <h2>職務定位</h2>
+            <div class="overview-box">
+                <p><strong>⚡️ 重點說明</strong></p>
+                <p>本職務為半年期職務代理，以<strong>「專案執行、日常推進」</strong>為核心。</p>
+                <p>非從 0 規劃完整策略，適合能在短期內接手既有工作、處理實務細節，並為後續團隊留下可延續成果者。</p>
+            </div>
+        </section>
 
-        #toast.show {
-            visibility: visible;
-            opacity: 1;
-            bottom: 50px;
-        }
-
-        /* --- Mobile RWD Specifics --- */
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-                margin-top: 10px;
-            }
-            
-            header {
-                padding: 30px 20px;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            .section-card {
-                padding: 24px 20px;
-            }
-
-            .action-area {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                min-width: auto;
-            }
-
-            .apply-box {
-                padding: 24px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="subtitle">OCF 開放文化基金會</div>
-        <h1>募款與企業合作專員</h1>
-        <div class="tags">
-            <span class="tag urgent">半年期職務代理</span>
-            <span class="tag">專案執行</span>
-            <span class="tag">月薪 40k+</span>
-        </div>
-    </header>
-
-    <section class="section-card">
-        <h2>職務定位</h2>
-        <div class="overview-box">
-            <p><strong>⚡️ 重點說明</strong></p>
-            <p>本職務為半年期職務代理，以<strong>「專案執行、日常推進」</strong>為核心。</p>
-            <p>非從 0 規劃完整策略，適合能在短期內接手既有工作、處理實務細節，並為後續團隊留下可延續成果者。</p>
-        </div>
-    </section>
-
-    <section class="section-card">
-        <h2>工作內容</h2>
-        <h3>一、募款執行與專案推進（70%）</h3>
-        <ul>
-            <li>協助規劃並執行年度或專案型募款活動（含大眾募款與企業合作）。</li>
-            <li>策劃與執行戶外募款活動（例如：活動攤位募款活動）。</li>
-            <li>撰寫募款文案、專案說明與對外提案素材。</li>
-            <li>擔任贊助企業募款窗口，並協助募款專案執行。</li>
-            <li>追蹤募款專案進度、整理資料與進度報告。</li>
-        </ul>
-
-        <h3>二、行銷活動支援（30%）</h3>
-        <ul>
-            <li>支援行銷對外活動人力。</li>
-            <li>協助活動相關簡報、文稿或紀錄內容的彙整。</li>
-            <li>其他主管交辦事務。</li>
-        </ul>
-    </section>
-
-    <section class="section-card">
-        <h2>能力要求</h2>
-        <h3>一、核心能力</h3>
-        <ul>
-            <li>具募款專案或活動執行經驗，熟悉專案進度控管與成果追蹤。</li>
-            <li>能撰寫與整理募款內容，轉化為具說服力的對外文案。</li>
-            <li>能快速理解既有募款策略，並在短期內獨立完成專案支援。</li>
-            <li>善於與內部團隊及外部協作，清楚專案需求並有效溝通。</li>
-            <li>具基本簡報、製圖能力 (Canva 等) 或 AI 工具導入經驗。</li>
-            <li>熟悉資料分析或簡單報表呈現。</li>
-        </ul>
-        <h3>二、加分能力</h3>
-        <ul>
-            <li>曾參與企業合作或專案型募款，能協助撰寫提案與對接。</li>
-            <li>理解開源、科技議題，熟悉非營利組織運作。</li>
-        </ul>
-    </section>
-
-    <section class="section-card">
-        <h2>薪資待遇</h2>
-        <p>月薪：待遇面議</p>
-        <p class="salary-highlight">經常性薪資達 4 萬元或以上</p>
-    </section>
-
-    <div class="apply-box">
-        <h2>申請方式</h2>
-        <p style="margin-bottom: 20px;">履歷隨到隨審，若不符合資格，恕不另行通知。</p>
-        
-        <div class="apply-requirements">
-            <h3 style="color: white; margin-top: 0; font-size: 1rem;">📄 必備文件</h3>
-            <ul style="margin-bottom: 0;">
-                <li><strong>履歷</strong></li>
-                <li><strong>作品集</strong>（建議包含以下內容）：
-                    <ul style="margin-top: 5px; font-size: 0.9rem;">
-                        <li>參與專案簡介與提案素材（有故事性）</li>
-                        <li>視覺化資料整理</li>
-                        <li>簡報、製圖或 AI 工具導入的相關產出</li>
-                    </ul>
-                </li>
+        <section class="section-card">
+            <h2>工作內容</h2>
+            <h3>一、募款執行與專案推進（70%）</h3>
+            <ul>
+                <li>協助規劃並執行年度或專案型募款活動（含大眾募款與企業合作）。</li>
+                <li>策劃與執行戶外募款活動（例如：活動攤位募款活動）。</li>
+                <li>撰寫募款文案、專案說明與對外提案素材。</li>
+                <li>擔任贊助企業募款窗口，並協助募款專案執行。</li>
+                <li>追蹤募款專案進度、整理資料與進度報告。</li>
             </ul>
-        </div>
 
-        <div style="margin-bottom: 10px; font-size: 0.9rem; opacity: 0.8;">點擊下方按鈕可直接複製資訊：</div>
+            <h3>二、行銷活動支援（30%）</h3>
+            <ul>
+                <li>支援行銷對外活動人力。</li>
+                <li>協助活動相關簡報、文稿或紀錄內容的彙整。</li>
+                <li>其他主管交辦事務。</li>
+            </ul>
+        </section>
 
-        <div class="action-area">
-            <button class="btn btn-secondary" onclick="copyText('我要加入OCF_募款與企業合作專員_姓名', '信件標題格式已複製！')">
-                📋 複製標題格式
-            </button>
+        <section class="section-card">
+            <h2>能力要求</h2>
+            <h3>一、核心能力</h3>
+            <ul>
+                <li>具募款專案或活動執行經驗，熟悉專案進度控管與成果追蹤。</li>
+                <li>能撰寫與整理募款內容，轉化為具說服力的對外文案。</li>
+                <li>能快速理解既有募款策略，並在短期內獨立完成專案支援。</li>
+                <li>善於與內部團隊及外部協作，清楚專案需求並有效溝通。</li>
+                <li>具基本簡報、製圖能力 (Canva 等) 或 AI 工具導入經驗。</li>
+                <li>熟悉資料分析或簡單報表呈現。</li>
+            </ul>
+            <h3>二、加分能力</h3>
+            <ul>
+                <li>曾參與企業合作或專案型募款，能協助撰寫提案與對接。</li>
+                <li>理解開源、科技議題，熟悉非營利組織運作。</li>
+            </ul>
+        </section>
+
+        <section class="section-card">
+            <h2>薪資待遇</h2>
+            <p>月薪：待遇面議</p>
+            <p class="salary-highlight">經常性薪資達 4 萬元或以上</p>
+        </section>
+
+        <div class="apply-box">
+            <h2>申請方式</h2>
+            <p style="margin-bottom: 20px;">履歷隨到隨審，若不符合資格，恕不另行通知。</p>
             
-            <button class="btn btn-secondary" onclick="copyText('hr@ocf.tw', 'Email 已複製！')">
-                📧 複製 Email
-            </button>
+            <div class="apply-requirements">
+                <h3 style="color: white; margin-top: 0; font-size: 1rem;">📄 必備文件</h3>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>履歷</strong></li>
+                    <li><strong>作品集</strong>（建議包含以下內容）：
+                        <ul style="margin-top: 5px; font-size: 0.9rem;">
+                            <li>參與專案簡介與提案素材（有故事性）</li>
+                            <li>視覺化資料整理</li>
+                            <li>簡報、製圖或 AI 工具導入的相關產出</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-            <a href="mailto:hr@ocf.tw?subject=我要加入OCF_募款與企業合作專員_您的姓名" class="btn btn-primary">
-                🚀 開啟郵件軟體
-            </a>
+            <div style="margin-bottom: 10px; font-size: 0.9rem; opacity: 0.8;">點擊下方按鈕可直接複製資訊：</div>
+
+            <div class="action-area">
+                <button class="btn btn-secondary" onclick="copyText('我要加入OCF_募款與企業合作專員_姓名', '信件標題格式已複製！')">
+                    📋 複製標題格式
+                </button>
+                
+                <button class="btn btn-secondary" onclick="copyText('hr@ocf.tw', 'Email 已複製！')">
+                    📧 複製 Email
+                </button>
+
+                <a href="mailto:hr@ocf.tw?subject=我要加入OCF_募款與企業合作專員_您的姓名" class="btn btn-primary">
+                    🚀 開啟郵件軟體
+                </a>
+            </div>
         </div>
     </div>
+</div>
 
 <div id="toast">已複製到剪貼簿</div>
 
 <script>
     function copyText(text, msg) {
-        // 使用 Clipboard API 複製文字
+        if (!navigator.clipboard) {
+           fallbackCopyTextToClipboard(text);
+           showToast(msg);
+           return;
+        }
         navigator.clipboard.writeText(text).then(function() {
             showToast(msg);
         }, function(err) {
             console.error('無法複製文字: ', err);
-            // 備用方案 (針對不支援 Clipboard API 的舊瀏覽器)
             fallbackCopyTextToClipboard(text);
             showToast(msg);
         });
+    }
+
+    function fallbackCopyTextToClipboard(text) {
+        var textArea = document.createElement("textarea");
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            var successful = document.execCommand('copy');
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+        document.body.removeChild(textArea);
     }
 
     function showToast(message) {
@@ -418,6 +430,3 @@ toc:
         setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
     }
 </script>
-
-</body>
-</html>
