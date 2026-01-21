@@ -1,0 +1,241 @@
+---
+redirect_from:
+- /p/ccalbum
+
+layout: p
+
+og_title: 
+og_description: 
+og_image: 
+
+header_image_opacity: 
+header_veil_opacity: 
+
+show_events: 
+gsheet_url: 
+show_sponsors: 
+show_donors: 
+
+show_progress: 
+progress:
+  duration: 
+  goal: 
+  current: 
+  percent: 
+  count: 
+  updated: 
+cpid: 
+show_child_projects: 
+---
+
+<h2 class="ui dividing header"></h2>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCF 開放頻率 | 公眾授權專輯計畫</title>
+    <style>
+        :root {
+            --primary-color: #6450DC; /* 沈穩深藍 */
+            --accent-color: #27ae60;  /* 開放綠色 */
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --square-size: 300px;     /* 定義正方形尺寸 */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "PingFang TC", "Heiti TC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Header 區域 */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 主要內容容器 */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 理念說明區塊 */
+        .concept-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .concept-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .concept-text {
+            text-align: left;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* 下載區塊佈局 */
+        .download-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap; /* 手機版自動換行 */
+            margin-bottom: 60px;
+        }
+
+        /* 正方形下載卡片設計 */
+        .download-card {
+            width: var(--square-size);
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+
+        .download-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* 圖片佔位符 (Placeholder) */
+        .image-placeholder {
+            width: 100%;
+            height: var(--square-size); /* 確保是正方形 */
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #888;
+            border: 2px dashed #bbb;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 模擬圖片載入後的樣式（可移除） */
+        .image-placeholder::after {
+            content: "封面圖片區 (300x300)";
+            font-size: 0.9rem;
+        }
+
+        .download-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* 授權聲明 Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .cc-license {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .download-section { gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>OPEN FREQUENCY</h1>
+        <p>不只是音樂，更是文化的公共財。<br>基於 OCF 開放精神製作的公眾授權專輯。</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="concept-section">
+            <h2>關於本計畫</h2>
+            <div class="concept-text">
+                <p>這張專輯不僅僅是聲音的集合，更是一場關於「所有權」與「創造力」的實驗。受到<strong>開放文化基金會 (Open Culture Foundation)</strong> 的啟發，我們相信文化應該像空氣一樣自由流動。</p>
+                <br>
+                <p>傳統的版權限制了創意的傳播，而我們選擇擁抱<strong>公眾領域 (Public Domain)</strong> 與<strong>創用 CC (Creative Commons)</strong>。我們公開所有的分軌音檔 (Stems) 與專案原始碼，邀請您不僅是「聽眾」，更是「共同創作者」。您可以自由地下載、取樣、混音，甚至用於商業用途，只需標示原作者即可。</p>
+            </div>
+        </section>
+
+        <section class="download-section">
+            
+            <a href="#" class="download-card">
+                <div class="image-placeholder" style="background-color: #ddeeff;">
+                    <span>[ 圖片：專輯正式封面 ]</span>
+                </div>
+                <h3>完整高音質專輯</h3>
+                <span class="btn-download">Download WAV/MP3</span>
+            </a>
+
+            <a href="#" class="download-card">
+                <div class="image-placeholder" style="background-color: #eeffdd;">
+                    <span>[ 圖片：混音分軌素材 ]</span>
+                </div>
+                <h3>原始分軌素材 (Stems)</h3>
+                <span class="btn-download">Download Source</span>
+            </a>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Open Frequency Project.</p>
+        <div class="cc-license">
+            本作品採用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" style="color: var(--accent-color);">創用 CC 姓名標示 4.0 國際授權條款</a> 釋出。
+        </div>
+        <p>Powered by Open Culture Spirit.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
