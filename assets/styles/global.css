@@ -253,3 +253,7 @@ a:link,
 a:hover {
   text-decoration: none;
 }
+/* Fix for Font Awesome Brands icons inside Semantic UI icon class */
+i.icon.fab, i.icon.fa-brands {
+  font-family: "Font Awesome 6 Brands" !important;
+}
