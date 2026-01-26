@@ -22,7 +22,7 @@
         --accent-yellow: #f1c40f;  
         --accent-blue: #5dade2;    
         --accent-green: #48c774;   
-        --hover-glow-green: #4fffa8; /* 新增：懸停時的螢光綠 */
+        --hover-glow-green: #4fffa8; /* 懸停時的螢光綠 */
       }
 
       /* --- 全局樣式 --- */
@@ -40,16 +40,19 @@
       /* --- 頂部圖示區 --- */
       .top-icons {
         text-align: center;
-        padding: 2rem 0 1rem;
+        padding: 3rem 0 2rem;
         font-size: 1.4rem;
         letter-spacing: 12px;
         color: var(--text-main);
       }
 
+      /* === 修改重點 1: 增加兩倍留白 === */
       .main-container {
-        max-width: 1400px; /* 稍微加寬容器以容納 7:3 的左側大圖 */
+        /* max-width 稍微縮小，讓兩側在大螢幕上留白更多 */
+        max-width: 1200px; 
         margin: 0 auto;
-        padding: 0 2rem 4rem;
+        /* Padding 左右增加到 4rem (原為 2rem) */
+        padding: 0 4rem 5rem;
       }
 
       /* --- 左欄：專輯資訊區 --- */
@@ -75,7 +78,7 @@
         font-weight: 700;
       }
 
-      /* --- 右欄：曲目卡片 (核心設計) --- */
+      /* --- 右欄：曲目卡片 --- */
       .track-card {
         background-color: var(--card-bg);
         border: 1px solid var(--border-color); 
@@ -85,17 +88,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transition: all 0.3s ease; /* 平滑過渡效果 */
+        transition: all 0.3s ease; 
       }
 
-      /* === 修改重點 1: Mouse over 泛綠光效果 === */
+      /* Hover 泛綠光效果 */
       .track-card:hover {
         border-color: var(--hover-glow-green);
         box-shadow: 0 0 15px rgba(79, 255, 168, 0.3), inset 0 0 10px rgba(79, 255, 168, 0.05);
         transform: translateY(-2px);
       }
 
-      /* 曲目資訊文字 */
       .track-info {
         flex: 1;
         padding-right: 1rem;
@@ -115,7 +117,6 @@
         font-family: monospace; 
       }
 
-      /* 按鈕區塊 */
       .track-actions {
         display: flex;
         flex-direction: column;
@@ -123,7 +124,7 @@
         min-width: 120px; 
       }
 
-      /* 膠囊按鈕樣式 */
+      /* 膠囊按鈕 */
       .btn-pill {
         display: inline-flex;
         align-items: center;
@@ -141,34 +142,15 @@
       
       .btn-pill i { margin-right: 6px; }
 
-      /* 下載按鈕 (黃) */
-      .btn-download {
-        color: var(--accent-yellow);
-        border-color: var(--accent-yellow);
-      }
-      .btn-download:hover {
-        background-color: var(--accent-yellow);
-        color: #121212;
-      }
+      /* 按鈕顏色定義 */
+      .btn-download { color: var(--accent-yellow); border-color: var(--accent-yellow); }
+      .btn-download:hover { background-color: var(--accent-yellow); color: #121212; }
 
-      /* 播放按鈕 (藍) */
-      .btn-play {
-        color: var(--accent-blue);
-        border-color: var(--accent-blue);
-      }
-      .btn-play:hover {
-        background-color: var(--accent-blue);
-        color: #ffffff;
-      }
+      .btn-play { color: var(--accent-blue); border-color: var(--accent-blue); }
+      .btn-play:hover { background-color: var(--accent-blue); color: #ffffff; }
 
-      .btn-active {
-        color: var(--accent-green);
-        border-color: var(--accent-green);
-      }
-      .btn-active:hover {
-        background-color: var(--accent-green);
-        color: #ffffff;
-      }
+      .btn-active { color: var(--accent-green); border-color: var(--accent-green); }
+      .btn-active:hover { background-color: var(--accent-green); color: #ffffff; }
 
       /* Footer */
       .footer {
@@ -178,8 +160,10 @@
       }
       .footer img { opacity: 0.7; width: 150px; }
 
-      /* RWD 手機版調整 */
+      /* RWD: 手機版調整 (單欄堆疊) */
       @media (max-width: 768px) {
+        .main-container { padding: 0 1.5rem 3rem; } /* 手機版不需要過大的 Padding */
+        
         .track-card {
           flex-direction: column;
           align-items: flex-start;
@@ -192,23 +176,24 @@
         .btn-pill { flex: 1; }
         .track-info { padding-right: 0; }
         
-        /* 手機版時恢復單欄堆疊 */
-        .column.is-custom-70 { flex: none; width: 100%; }
-        .column.is-custom-30 { flex: none; width: 100%; }
+        .column.is-custom-60 { flex: none; width: 100%; }
+        .column.is-custom-40 { flex: none; width: 100%; }
       }
 
-      /* === 修改重點 2: 自定義 70:30 佈局 === */
+      /* === 修改重點 2: 自定義 60:40 佈局 === */
       @media (min-width: 769px) {
         .columns.custom-ratio {
           display: flex;
         }
-        .column.is-custom-70 {
+        /* 左欄 60% */
+        .column.is-custom-60 {
           flex: none;
-          width: 70%;
+          width: 60%;
         }
-        .column.is-custom-30 {
+        /* 右欄 40% */
+        .column.is-custom-40 {
           flex: none;
-          width: 30%;
+          width: 40%;
         }
       }
     </style>
@@ -223,9 +208,9 @@
     </div>
 
     <div class="main-container" id="app">
-      <div class="columns custom-ratio is-variable is-6">
+      <div class="columns custom-ratio is-variable is-8">
         
-        <div class="column is-custom-70">
+        <div class="column is-custom-60">
           
           <figure class="image album-cover-wrapper">
             <img src="https://d2tqnseq05ro3i.cloudfront.net/album-cover.webp" alt="Bioerosion Album Cover" />
@@ -256,7 +241,7 @@
           
         </div>
 
-        <div class="column is-custom-30">
+        <div class="column is-custom-40">
           
           <div 
             v-for="(track, index) in tracks" 
