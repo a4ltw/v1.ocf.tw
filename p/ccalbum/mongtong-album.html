@@ -1,587 +1,344 @@
 <!DOCTYPE html>
-<html class="theme-dark has-navbar-fixed-top" lang="zh-Hant">
+<html class="theme-dark" lang="zh-Hant">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     
     <title>全新專輯《時間浸漬 Bioerosion》林強 與 Luca Bonaccorsi 開源電子音樂專輯 | 財團法人開放文化基金會 (OCF)</title>
-    <meta name="description" content="林強最開放的電子音樂專輯，基于「開放」與「分享」兩大核心理念所創作的全新專輯《時間浸漬 Bioerosion》。..." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://10years.ocf.tw/bioerosion-album.html" />
-    <meta property="og:title" content="全新專輯《時間浸漬 Bioerosion》林強 與 Luca Bonaccorsi 開源電子音樂專輯 | 財團法人開放文化基金會 (OCF)" />
-    <meta property="og:description" content="林強最開放的電子音樂專輯，基于「開放」與「分享」兩大核心理念所創作的全新專輯《時間浸漬 Bioerosion》..." />
+    
+    <meta name="description" content="林強最開放的電子音樂專輯，基于「開放」與「分享」兩大核心理念所創作的全新專輯《時間浸漬 Bioerosion》。" />
     <meta property="og:image" content="https://d2tqnseq05ro3i.cloudfront.net/bioerosion.webp" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="全新專輯《時間浸漬 Bioerosion》林強 與 Luca Bonaccorsi 開源電子音樂專輯 | 財團法人開放文化基金會 (OCF)" />
-    <meta name="twitter:description" content="林強最開放的電子音樂專輯，基于「開放」與「分享」..." />
-    <meta name="twitter:image" content="https://d2tqnseq05ro3i.cloudfront.net/bioerosion.webp" />
 
-    <link rel="icon" type="image/svg+xml" href="/img/ocf.png" />
-    <link rel="stylesheet" href="/css/bulma.min.css" />
-    <link rel="stylesheet" href="/fa/css/all.min.css" />
-    <link rel="stylesheet" href="/css/all.css" />
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
-/* =========================================
-   1. 全域變數設定 (CSS Variables)
-   方便統一調整主題顏色
-   ========================================= */
-:root {
-  /* 背景色系 */
-  --bg-main: #0a0a0a;         /* 深邃黑 */
-  --bg-card: rgba(0, 0, 0, 0.6);
-  --bg-stripe-odd: #000000;
-  --bg-stripe-even: #282828;
-  
-  /* 文字色系 */
-  --text-primary: #ffffff;
-  --text-secondary: #dddddd;
-  --link-color: #bbc3ff;      /* 淡紫藍色連結 */
-  
-  /* 視覺特效 */
-  --accent-glow: #00ffaa;     /* 霓虹綠光暈 */
-  --border-light: rgba(255, 255, 255, 0.2);
-  --glass-effect: blur(10px); /* 毛玻璃模糊度 */
-  
-  /* 捐款區塊漸層 */
-  --gradient-donate: linear-gradient(123deg, #962eff 0%, #006ce0 100%);
-}
+      /* --- 核心變數設定 --- */
+      :root {
+        --bg-color: #121212;       /* 背景深黑 */
+        --card-bg: transparent;    /* 卡片背景透明 */
+        --border-color: #ffffff;   /* 白色邊框 */
+        --text-main: #ffffff;      /* 主要文字白 */
+        --text-sub: #cccccc;       /* 次要文字灰 */
+        --accent-yellow: #f1c40f;  /* 下載按鈕黃 */
+        --accent-blue: #5dade2;    /* 播放按鈕藍 */
+        --accent-green: #48c774;   /* 播放中綠 */
+      }
 
-/* =========================================
-   2. 基礎設定 (Base)
-   ========================================= */
-body {
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  min-height: 100vh;
-  line-height: 1.6;
-}
+      /* --- 全局樣式 --- */
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        font-family: -apple-system, "Microsoft JhengHei", "Helvetica Neue", sans-serif;
+        min-height: 100vh;
+        line-height: 1.6;
+      }
 
-/* 修正 Bulma 的 Section 內距，適應深色主題 */
-:root .section {
-  padding: 3rem 1.5rem !important;
-}
+      a { text-decoration: none; }
+      
+      [v-cloak] { display: none; }
 
-/* Vue 尚未加載前隱藏區塊 */
-[v-cloak] {
-  display: none;
-}
+      /* --- 頂部圖示區 --- */
+      .top-icons {
+        text-align: center;
+        padding: 3rem 0 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 15px;
+        color: var(--text-main);
+      }
 
-/* =========================================
-   3. 專輯封面與視覺 (Album Art)
-   ========================================= */
-.albumcover img {
-  border-radius: 8px;
-  /* 增加更有層次感的陰影 */
-  box-shadow: 0 10px 30px rgba(109, 136, 134, 0.4);
-  transition: transform 0.3s ease;
-}
+      .main-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2rem 4rem;
+      }
 
-.albumcover img:hover {
-  transform: scale(1.02); /* 滑鼠移過去微微放大 */
-}
+      /* --- 左欄：專輯資訊區 --- */
+      .album-cover-wrapper img {
+        border-radius: 12px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        display: block;
+        border: 1px solid rgba(255,255,255,0.1);
+      }
 
-/* =========================================
-   4. 內容區塊 (Description Box)
-   使用現代化的毛玻璃效果
-   ========================================= */
-.desc_content {
-  color: var(--text-primary);
-  /* 玻璃質感背景 */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: var(--glass-effect); 
-  -webkit-backdrop-filter: var(--glass-effect);
-  
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 1.5rem auto;
-}
+      .info-card {
+        background-color: #252525;
+        border-radius: 12px;
+        padding: 1.5rem;
+        color: #ddd;
+        font-size: 1rem;
+        border: 1px solid rgba(255,255,255,0.1);
+      }
 
-.desc_content a {
-  color: var(--link-color);
-  text-decoration: none;
-  border-bottom: 1px dashed transparent;
-  transition: border-color 0.2s;
-}
+      .text-highlight {
+        color: #fff;
+        font-weight: 700;
+      }
 
-.desc_content a:hover {
-  border-bottom-color: var(--link-color);
-}
+      /* --- 右欄：曲目卡片 (核心設計) --- */
+      .track-card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color); /* 關鍵：白色線框 */
+        border-radius: 12px;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
 
-.desc_content ol {
-  margin-left: 2rem;
-  margin-top: 0.5rem;
-}
+      .track-card:hover {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
 
-/* 摺疊選單優化 */
-.desc_content details {
-  cursor: pointer;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 4px;
-  transition: background-color 0.2s;
-}
+      /* 曲目資訊文字 */
+      .track-info {
+        flex: 1;
+        padding-right: 1.5rem;
+      }
 
-.desc_content details:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-}
+      .track-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+        color: var(--text-main);
+        line-height: 1.4;
+      }
 
-.desc_content summary {
-  font-weight: bold;
-  color: var(--accent-glow);
-}
+      .track-meta {
+        font-size: 0.85rem;
+        color: var(--text-sub);
+        font-family: monospace; /* 讓數字顯示更有科技感 */
+      }
 
-/* =========================================
-   5. 曲目列表 (Track List)
-   核心互動區域
-   ========================================= */
-.track {
-  color: var(--text-primary);
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
-  margin-bottom: 12px !important;
-  padding: 1.25rem;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
+      /* 按鈕區塊 */
+      .track-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 130px; /* 固定按鈕區寬度，確保整齊 */
+      }
 
-/* 垂直置中內容 */
-.track .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+      /* 膠囊按鈕樣式 */
+      .btn-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 16px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        background: transparent;
+        border: 1px solid;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      
+      .btn-pill i { margin-right: 6px; }
 
-/* 斑馬紋效果 (需搭配 HTML 中的 class 或 nth-child) */
-.track:nth-child(odd), .track.is-odd {
-  background-color: var(--bg-stripe-odd);
-}
+      /* 下載按鈕 (黃) */
+      .btn-download {
+        color: var(--accent-yellow);
+        border-color: var(--accent-yellow);
+      }
+      .btn-download:hover {
+        background-color: var(--accent-yellow);
+        color: #121212;
+      }
 
-.track:nth-child(even), .track.is-even {
-  background-color: var(--bg-stripe-even);
-}
+      /* 播放按鈕 (藍) */
+      .btn-play {
+        color: var(--accent-blue);
+        border-color: var(--accent-blue);
+      }
+      .btn-play:hover {
+        background-color: var(--accent-blue);
+        color: #ffffff;
+      }
 
-/* 懸停發光特效 (Neon Glow) */
-.track:hover {
-  border-color: var(--accent-glow);
-  box-shadow: 0 0 20px rgba(0, 255, 170, 0.3), inset 0 0 10px rgba(0, 255, 170, 0.05);
-  transform: translateY(-2px);
-  z-index: 1;
-}
+      /* 暫停按鈕 (綠) */
+      .btn-active {
+        color: var(--accent-green);
+        border-color: var(--accent-green);
+      }
+      .btn-active:hover {
+        background-color: var(--accent-green);
+        color: #ffffff;
+      }
 
-/* 強制按鈕靠右對齊 */
-.track .buttons.is-right {
-  justify-content: flex-end;
-}
+      /* 其他連結卡片 (BT下載等) */
+      .extra-link-card {
+        border: 1px dashed rgba(255,255,255,0.3);
+        border-radius: 12px;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        color: #aaa;
+        transition: border-color 0.3s;
+      }
+      .extra-link-card:hover {
+        border-color: #fff;
+        color: #fff;
+      }
 
-/* =========================================
-   6. 按鈕樣式優化 (Button Overrides)
-   覆蓋 Bulma 預設樣式以符合黑底
-   ========================================= */
-.button.is-outlined {
-  backdrop-filter: blur(4px);
-  font-weight: 500;
-  transition: all 0.2s;
-}
+      /* Footer */
+      .footer {
+        background-color: transparent;
+        padding: 3rem 1.5rem;
+        color: #666;
+      }
+      .footer img { opacity: 0.7; width: 150px; }
 
-.button.is-light.is-outlined:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border-color: #fff;
-}
-
-/* 下載按鈕 (黃色) */
-.button.is-warning.is-outlined {
-  color: #ffdd57;
-  border-color: #ffdd57;
-}
-.button.is-warning.is-outlined:hover {
-  background-color: #ffdd57;
-  color: #000;
-}
-
-/* 播放按鈕 (藍色) */
-.button.is-info.is-outlined {
-  color: #3e8ed0;
-  border-color: #3e8ed0;
-}
-.button.is-info.is-outlined:hover {
-  background-color: #3e8ed0;
-  color: #fff;
-}
-
-/* 暫停按鈕 (綠色) */
-.button.is-success.is-outlined {
-  color: #48c774;
-  border-color: #48c774;
-}
-
-/* =========================================
-   7. 特別區塊 (Special Sections)
-   ========================================= */
-/* 捐款/行動支持區塊 */
-.donation-box {
-  background: var(--gradient-donate) !important;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-/* 增加一點微光流動感 */
-.donation-box::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-  pointer-events: none;
-}
-
-/* 頁腳 */
-.footer {
-  background-color: transparent;
-  padding: 3rem 1.5rem 6rem;
-  color: #888;
-}
-
-.footer img.logo {
-  height: 50px;
-  width: auto;
-  margin-bottom: 1rem;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-.footer img.logo:hover {
-  opacity: 1;
-}
-
-/* 工具類 */
-.center-icon {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  opacity: 0.9;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
+      /* RWD 手機版調整 */
+      @media (max-width: 768px) {
+        .track-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .track-actions {
+          width: 100%;
+          flex-direction: row;
+          margin-top: 1rem;
+        }
+        .btn-pill { flex: 1; }
+        .track-info { padding-right: 0; }
+      }
     </style>
   </head>
 
   <body>
-    <div class="desc">
-      <div class="section">
-        <div class="columns">
-          <div class="column descarea"></div>
-        </div>
+    
+    <div class="top-icons">
+      <i class="fas fa-music"></i>
+      <i class="fab fa-creative-commons"></i>
+      <i class="fas fa-universal-access"></i>
+    </div>
 
-        <div class="column">
-          <div class="center-icon">
-            <span class="icon text-white">
-              <i class="fas fa-music" style="margin-right: 5px"></i>
-              <i class="fab fa-creative-commons" style="margin-right: 5px"></i>
-              <i class="fab fa-creative-commons-by"></i>
-            </span>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-1"></div>
+    <div class="main-container" id="app">
+      <div class="columns is-variable is-6">
+        
+        <div class="column is-5-desktop is-12-tablet">
           
-          <div class="column is-6">
-            <div>
-              <figure class="image albumcover">
-                <img src="https://d2tqnseq05ro3i.cloudfront.net/album-cover.webp" alt="Album Cover" />
-              </figure>
-            </div>
+          <figure class="image album-cover-wrapper">
+            <img src="https://d2tqnseq05ro3i.cloudfront.net/album-cover.webp" alt="Bioerosion Album Cover" />
+          </figure>
 
-            <div class="desc_content">
-              <p class="mb-10">
-                開放文化基金會（Open Culture Foundation, OCF）成立十週年，策劃以科技跨界為主題的盛典「開源祭」...
-                （下略，保持原文字內容）...
-                <strong >《時間浸漬 Bioerosion》</strong>，展現音樂及視覺藝術的創新融合。
-              </p>
-              <p>
-                此專輯為林強繼 2005 年《驚蟄》之後，時隔 19 年再次在臺灣推出的電子音樂作品。整張專輯採用 CC-BY 4.0 授權方式發布...
-              </p>
-            </div>
-
-            <div class="desc_content" style="font-size: small; color: #ffffff">
-              <p class="center-icon">
-                《時間浸漬 Bioerosion》專輯曲目、專輯封面採用<strong>創用 CC 姓名標示（CC-BY 4.0）</strong>方式授權提供。<br />
-                <a href="https://zh.wikipedia.org/zh-tw/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">
-                  <img src="./img/CC_BY_icon.svg" alt="CC BY Icon"/>
-                </a>
-              </p>
-              <p class="mb-10">
-                如欲使用本專輯的音樂或視聽作品，及其多媒體素材，包含商業用途，請標示以下文字...
-                </p>
-              <p class="mb-10">
-                 To lawfully use the music or audiovisual works from this album...
-                 </p>
-              <p>No additional permission from the publisher or creators is required.</p>
-            </div>
+          <div class="info-card mt-5">
+            <p class="mb-4">
+              開放文化基金會（Open Culture Foundation, OCF）成立十週年，策劃以科技跨界為主題的盛典「開源祭」，邀請多位知名音樂人及科技領域專家共同歡慶，探索未來科技與創意的無限可能。
+            </p>
+            <p class="mb-4">
+              林強與義大利藝術家 Luca Bonaccorsi，推出基於「開放」與「分享」兩大核心理念所創作的全新專輯<strong class="text-highlight">《時間浸漬 Bioerosion》</strong>，展現音樂及視覺藝術的創新融合。
+            </p>
+            <p>
+              此專輯為林強繼 2005 年《驚蟄》之後，時隔 19 年再次在臺灣推出的電子音樂作品。整張專輯採用 CC-BY 4.0 授權方式發布，鼓勵民眾以此為素材進行二次創作。
+            </p>
           </div>
 
-          <div class="column" id="app">
-            
-            <div 
-              v-for="(track, index) in tracks" 
-              :key="index"
-              v-show="index > 0" 
-              class="box track" 
-              :class="index % 2 !== 0 ? 'is-odd' : 'is-even'"
-              v-cloak
-            >
-              <div class="columns">
-                <div class="column is-7">
-                  <p><strong>{{ index }}.</strong> {{ track.title }}</p>
-                  <p>{{ track.duration }} <small>{{ track.specs }}</small></p>
-                </div>
-                <div class="column">
-                  <div class="buttons is-right">
-                    <a :href="track.src" class="button is-rounded is-light is-outlined is-warning" target="_blank">
-                      <span class="icon-text">
-                        <span class="icon"><i class="fas fa-download"></i></span>
-                        <span>下載</span>
-                      </span>
-                    </a>
-                    
-                    <a v-if="track.status == 'no'" @click="play($event, index)" class="button is-rounded is-light is-outlined is-info">
-                      <span class="icon-text">
-                        <span class="icon"><i class="far fa-play-circle"></i></span>
-                        <span>線上播放</span>
-                      </span>
-                    </a>
-                    
-                    <a v-show="track.status == 'pause'" @click="play($event, index)" class="button is-rounded is-light is-outlined is-info">
-                      <span class="icon-text">
-                        <span class="icon"><i class="far fa-play-circle"></i></span>
-                        <span>播放</span>
-                      </span>
-                    </a>
-                    
-                    <a v-show="track.status == 'play'" @click="pause($event, index)" class="button is-rounded is-light is-outlined is-success">
-                      <span class="icon-text">
-                        <span class="icon"><i class="far fa-stop-circle"></i></span>
-                        <span>暫停</span>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <div class="info-card mt-4 has-text-centered">
+            <p class="mb-3" style="font-size: 0.9rem;">
+              《時間浸漬 Bioerosion》專輯曲目、專輯封面採用<br>
+              <strong class="text-white">創用 CC 姓名標示 (CC-BY 4.0)</strong> 方式授權提供。
+            </p>
+            <div class="is-size-4">
+               <i class="fab fa-creative-commons"></i>
+               <i class="fab fa-creative-commons-by"></i>
             </div>
-            <div class="box track">
-              <div class="columns">
-                <div class="column is-3">
-                  <p>其他平台</p>
-                </div>
-                <div class="column">
-                  <div class="buttons is-right">
-                    <a href="#bt" class="button is-rounded is-light is-outlined is-warning">
-                      <span class="icon-text">
-                        <span class="icon"><i class="fas fa-download"></i></span>
-                        <span>透過 BT 下載</span>
-                      </span>
-                    </a>
-                    <a href="https://www.youtube.com/playlist?list=PLFuYOsppHDrlAZhOyeqC7cOaKT3MKkbBo" class="button is-rounded is-light is-outlined is-danger" target="_blank">
-                      <span class="icon-text">
-                        <span class="icon"><i class="fab fa-youtube"></i></span>
-                        <span>YouTube</span>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
-          <div class="column is-1"></div>
+          
+          <div class="extra-link-card">
+            <p class="mb-3">流量過大？試試 BT 下載</p>
+            <a href="./album/bioerosion_album.torrent" class="btn-pill btn-download is-small">
+              <i class="fas fa-download"></i> 下載 Torrent 種子
+            </a>
+          </div>
+
         </div>
 
-        <div class="columns">
-          <div class="column is-3"></div>
-          <div class="column">
-            
-            <div style="text-align: center">
-              <a id="bt"></a>
-              <span class="icon text-white">
-                <i class="fas fa-music" style="margin-right: 5px"></i>
-                <i class="fab fa-creative-commons" style="margin-right: 5px"></i>
-                <i class="fab fa-creative-commons-by"></i>
-              </span>
-            </div>
-            
-            <div class="desc_content">
-              <p class="mb-10"><strong><u>使用 BT 的方式下載</u></strong></p>
-              <p class="mb-10">由於前幾個月各界反應熱烈...（下略）</p>
-              
-              <p class="mb-10"><strong><u>專輯音樂</u></strong></p>
-              <p class="mb-10">專輯檔案包含各單曲音檔、專輯封面。完整檔案大小為：740.9 MB。</p>
-              <p style="margin-bottom: 25px">
-                <a href="./album/bioerosion_album.torrent" class="button is-rounded is-light is-outlined is-warning" target="_blank">
-                  <span class="icon-text">
-                    <span class="icon"><i class="fas fa-download"></i></span>
-                    <span>下載 torrent 種子<small> (63.6 KB)</small></span>
-                  </span>
-                </a>
-              </p>
-              
-              <p class="mb-10"><strong><u>專輯音樂影像</u></strong></p>
-              <p class="mb-10">專輯檔案包含各單曲的音樂影像素材。完整檔案大小為：14.75 GB。</p>
-              <p style="margin-bottom: 25px">
-                 <a href="./album/bioerosion_music_video.torrent" class="button is-rounded is-light is-outlined is-warning" target="_blank">
-                  <span class="icon-text">
-                    <span class="icon"><i class="fas fa-download"></i></span>
-                    <span>下載 torrent 種子<small> (1.2 MB)</small></span>
-                  </span>
-                </a>
-              </p>
-              
-              <p class="mb-10"><strong><u>如何使用 BT 下載？</u></strong></p>
-              <p class="mb-10">不論你是沒用過 BT 下載還是好久沒使用了...</p>
-              <p class="mb-10">我們推薦使用開源軟體的 <a href="https://www.qbittorrent.org/" target="_blank">qBittorrent</a>...</p>
-              <ul style="margin-bottom: 10px; list-style: disc; margin-left: 18px">
-                <li>window: 找到 Windows x64 點選下載</li>
-                <li>macOS: 找到 Mac OS X 點選下載</li>
-                <li>Linux: 找到 AppImage 點選下載，或透過 snap 套件中尋找安裝。</li>
-              </ul>
-              <p class="mb-10">完成安裝後...</p>
-              <p>BT 的特性是將檔案分割小片段...</p>
-            </div>
-
-            <div class="desc_content">
-              <p class="mb-10"><strong><u>授權可使用的素材</u></strong></p>
-              <ol style="margin-left: 1rem; margin-bottom: 10px">
-                <li>專輯所有曲目。</li>
-                <li>專輯封面。</li>
-              </ol>
-              <p class="mb-10">我們鼓勵您重新混音與剪輯影像...</p>
-              <p class="mb-10">We encourage you to remix the music...</p>
-              
-              <div class="columns">
-                <div class="column">
-                  <p><strong><u>專輯發行資訊</u></strong></p>
-                  <ol style="margin-left: 1rem; margin-bottom: 10px">
-                    <li>製作人：林強、Luca Bonaccorsi</li>
-                    <li>發行：財團法人開放文化基金會</li>
-                  </ol>
-                </div>
-                <div class="column">
-                  <p><strong><u>Album Release Information</u></strong></p>
-                   <ol style="margin-left: 1rem; margin-bottom: 10px">
-                    <li>Producers/ Lim Giong, Luca Bonaccorsi</li>
-                     <li>Published by/ Open Culture Foundation</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            
-            <div style="text-align: center">
-              <span class="icon text-white">
-                <i class="fas fa-compact-disc" style="margin-right: 5px"></i>
-                <i class="fab fa-creative-commons" style="margin-right: 5px"></i>
-                <i class="fab fa-creative-commons-by"></i>
-              </span>
-            </div>
-
-            <div class="desc_content">
-              <p class="mb-10"><strong><u>其他可使用的素材</u></strong></p>
-              <details>
-                <summary>專輯封面（正反面合併）</summary>
-                <div>
-                   <ol>
-                    <li><a href="https://d2tqnseq05ro3i.cloudfront.net/bioerosion thanks card definitive edition.ai" target="_blank">bioerosion thanks card definitive edition.ai</a></li>
-                    <li><a href="https://d2tqnseq05ro3i.cloudfront.net/vinyl poster inside.pdf" target="_blank">vinyl poster inside.pdf</a></li>
-                  </ol>
-                </div>
-              </details>
-              <details>
-                <summary>專輯封面（正反面方形）</summary>
-                 <div><ol><li>...</li></ol></div>
-              </details>
-              <details>
-                <summary>現場演出剪輯</summary>
-                <div>
-                  <figure class="image is-16by9">
-                    <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/dS1ce9cj36s" frameborder="0" allowfullscreen></iframe>
-                  </figure>
-                </div>
-              </details>
-            </div>
-
-            <div class="center-icon">
-              <span class="icon text-white"><i class="fas fa-question"></i></span>
-            </div>
-            <div class="desc_content">
-              <p class="mb-10"><strong><u>何謂創用 CC？</u></strong></p>
-              <p>創用 CC 是 Creative Commons 的縮寫...</p>
-            </div>
-            <div class="desc_content">
-               <p class="mb-10"><strong><u>什麼是開源祭？</u></strong></p>
-               <p>開源祭活動是一個融合音樂與科技藝術的盛會...</p>
-               <p>了解更多關於十週年開源祭活動，可參考<a style="color: #bbc3ff" href="./archive_index.html" target="_blank">活動頁面</a>。</p>
-            </div>
-             <div class="desc_content">
-               <p class="mb-10"><strong><u>什麼是開放文化基金會？</u></strong></p>
-               <p>開放文化基金會（OCF）是一個非營利性組織...</p>
-            </div>
-
-            <div class="center-icon">
-               <span class="icon text-white"><i class="fas fa-hand-holding-usd"></i></span>
-            </div>
-            <div class="desc_content donation-box">
-              <p class="mb-10"><strong><u>Co-create the Digital Future</u></strong></p>
-              <p>科技正在改變世界...</p>
-              <p>我們持續努力推動開放原始碼...</p>
-              <p>加入我們，用開源的力量，重新定義臺灣與亞太區域的數位未來！</p>
-              <p style="margin-top: 1rem">
-                <a class="button is-rounded is-light is-outlined is-info" href="https://ocf.tw/supportus/" target="_blank" style="border-color: #ffffff; color: #ffffff">
-                  <span class="icon-text">
-                    <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
-                  </span>
-                  <span>行動支持我們</span>
-                </a>
+        <div class="column is-7-desktop is-12-tablet">
+          
+          <div 
+            v-for="(track, index) in tracks" 
+            :key="index"
+            v-show="index > 0" 
+            class="track-card"
+            v-cloak
+          >
+            <div class="track-info">
+              <h3 class="track-title">
+                <strong>{{ index }}.</strong> {{ track.title }}
+              </h3>
+              <p class="track-meta">
+                {{ track.duration }} <span style="opacity:0.5">|</span> {{ track.specs }}
               </p>
             </div>
-
+            
+            <div class="track-actions">
+              <a :href="track.src" class="btn-pill btn-download" target="_blank">
+                <i class="fas fa-download"></i> 下載
+              </a>
+              
+              <a v-if="track.status == 'no' || track.status == 'pause'" 
+                 @click="play($event, index)" 
+                 class="btn-pill btn-play">
+                <i class="far fa-play-circle"></i> 線上播放
+              </a>
+              
+              <a v-if="track.status == 'play'" 
+                 @click="pause($event, index)" 
+                 class="btn-pill btn-active">
+                <i class="far fa-stop-circle"></i> 暫停播放
+              </a>
+            </div>
           </div>
-          <div class="column is-3"></div>
+          <div class="track-card">
+             <div class="track-info">
+              <h3 class="track-title">其他串流平台</h3>
+              <p class="track-meta">YouTube, SoundCloud...</p>
+             </div>
+             <div class="track-actions">
+                <a href="https://www.youtube.com/playlist?list=PLFuYOsppHDrlAZhOyeqC7cOaKT3MKkbBo" target="_blank" class="btn-pill" style="color:#ff0000; border-color:#ff0000;">
+                  <i class="fab fa-youtube"></i> YouTube
+                </a>
+             </div>
+          </div>
+
         </div>
       </div>
     </div>
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>
-          <a href="https://ocf.tw/" target="_blank">
-            <img class="logo" src="/img/ocf_logo_white.svg" />
-          </a>
-        </p>
-        <p>財團法人開放文化基金會<br />Open Culture Foundation</p>
+        <a href="https://ocf.tw/" target="_blank">
+          <img src="https://ocf.tw/assets/img/ocf_logo_white.svg" alt="OCF Logo" />
+        </a>
+        <p class="mt-3">財團法人開放文化基金會 Open Culture Foundation</p>
       </div>
     </footer>
 
-    <script src="/js/all.js"></script>
-    <script src="/js/vue.global.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3DG2E5E3W"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3DG2E5E3W"></script>
     <script>
-      const { createApp, ref, reactive } = Vue;
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-X3DG2E5E3W");
+    </script>
 
-      // Data refactored to include Titles and Specs for v-for loop
-      // Note: Index 0 is empty to maintain 1-based indexing logic from original code
+    <script>
+      const { createApp, reactive } = Vue;
+
+      // 曲目資料
       const tracks = reactive([
-        {}, 
+        {}, // Index 0 留空，配合顯示邏輯從 1 開始
         {
           title: "破裂水泥牆的植物 / plants breaking through concrete",
-          specs: "(2304 kbps / 48.00 kHz / 87.6 MB)",
+          specs: "2304 kbps / 48.00 kHz / 87.6 MB",
           duration: "05:04",
           src: "https://d2tqnseq05ro3i.cloudfront.net/1. Plants breaking through concrete. 破裂水泥牆的植物.wav",
           audio: null,
@@ -589,7 +346,7 @@ body {
         },
         {
           title: "液態金屬 / liquid metal",
-          specs: "(2304 kbps / 48.00 kHz / 85.6 MB)",
+          specs: "2304 kbps / 48.00 kHz / 85.6 MB",
           duration: "04:57",
           src: "https://d2tqnseq05ro3i.cloudfront.net/2. Liquid metal. 液態金屬.wav",
           audio: null,
@@ -597,7 +354,7 @@ body {
         },
         {
           title: "液壓 / hydraulics",
-          specs: "(2304 kbps / 48.00 kHz / 86.4 MB)",
+          specs: "2304 kbps / 48.00 kHz / 86.4 MB",
           duration: "05:00",
           src: "https://d2tqnseq05ro3i.cloudfront.net/3. Hydraulics.液壓.wav",
           audio: null,
@@ -605,7 +362,7 @@ body {
         },
         {
           title: "水分子 / OH－ H+",
-          specs: "(2304 kbps / 48.00 kHz / 86.4 MB)",
+          specs: "2304 kbps / 48.00 kHz / 86.4 MB",
           duration: "05:00",
           src: "https://d2tqnseq05ro3i.cloudfront.net/4. OH－  H+.  水分子.wav",
           audio: null,
@@ -613,7 +370,7 @@ body {
         },
         {
           title: "蒸氣機 / steam engine",
-          specs: "(2304 kbps / 48.00 kHz / 86.4 MB)",
+          specs: "2304 kbps / 48.00 kHz / 86.4 MB",
           duration: "05:00",
           src: "https://d2tqnseq05ro3i.cloudfront.net/5. Steam engine. 蒸氣機.wav",
           audio: null,
@@ -621,7 +378,7 @@ body {
         },
         {
           title: "噪音振幅 / amplitude of noise",
-          specs: "(2304 kbps / 48.00 kHz / 84.6 MB)",
+          specs: "2304 kbps / 48.00 kHz / 84.6 MB",
           duration: "04:53",
           src: "https://d2tqnseq05ro3i.cloudfront.net/6. Amplitude of Noise. 噪音振幅.wav",
           audio: null,
@@ -629,7 +386,7 @@ body {
         },
         {
           title: "地下管道 / underground water pipe",
-          specs: "(2304 kbps / 48.00 kHz / 86.4 MB)",
+          specs: "2304 kbps / 48.00 kHz / 86.4 MB",
           duration: "05:00",
           src: "https://d2tqnseq05ro3i.cloudfront.net/7. Underground water pipe. 地下管道.wav",
           audio: null,
@@ -637,7 +394,7 @@ body {
         },
         {
           title: "人類廢墟 / human ruins",
-          specs: "(2304 kbps / 48.00 kHz / 86.4 MB)",
+          specs: "2304 kbps / 48.00 kHz / 86.4 MB",
           duration: "05:00",
           src: "https://d2tqnseq05ro3i.cloudfront.net/8. human ruins. 人類廢墟.wav",
           audio: null,
@@ -645,14 +402,13 @@ body {
         },
       ]);
 
+      // 停止所有播放
       function allstop(org_track) {
         tracks.forEach((track, index) => {
-          // Check if index > 0 because track[0] is empty object
-          if (index > 0 && track && track.audio && track.status == "play") {
-            if (index != org_track) { // Compare index
+          if (index > 0 && track.audio && track.status == "play") {
+            if (index != org_track) {
               track.audio.pause();
               track.status = "no";
-              // track.audio = null; // Optional: Keeping audio object might improve re-play performance
             }
           }
         });
@@ -660,36 +416,32 @@ body {
 
       createApp({
         setup() {
-          return {
-            tracks,
-          };
+          return { tracks };
         },
         methods: {
-          play($event, trackIndex) {
-            allstop(trackIndex);
-            if (tracks[trackIndex].audio === null) {
-              tracks[trackIndex].audio = new Audio(tracks[trackIndex].src);
+          play($event, index) {
+            allstop(index);
+            // Lazy load audio object
+            if (tracks[index].audio === null) {
+              tracks[index].audio = new Audio(tracks[index].src);
+              // 監聽播放結束事件，自動重置狀態
+              tracks[index].audio.addEventListener('ended', () => {
+                 tracks[index].status = 'no';
+              });
             }
-            let audio = tracks[trackIndex].audio;
+            let audio = tracks[index].audio;
             audio.play();
-            tracks[trackIndex].status = "play";
+            tracks[index].status = "play";
           },
-          pause($event, trackIndex) {
-            let audio = tracks[trackIndex].audio;
-            audio.pause();
-            tracks[trackIndex].status = "pause";
+          pause($event, index) {
+            let audio = tracks[index].audio;
+            if(audio) {
+              audio.pause();
+              tracks[index].status = "pause";
+            }
           },
         },
       }).mount("#app");
-    </script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-X3DG2E5E3W");
     </script>
   </body>
 </html>
