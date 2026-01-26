@@ -7,22 +7,22 @@
     <title>全新專輯《時間浸漬 Bioerosion》林強 與 Luca Bonaccorsi 開源電子音樂專輯 | 財團法人開放文化基金會 (OCF)</title>
     
     <meta name="description" content="林強最開放的電子音樂專輯，基于「開放」與「分享」兩大核心理念所創作的全新專輯《時間浸漬 Bioerosion》。" />
-    <meta property="og:image" content="https://d2tqnseq05ro3i.cloudfront.net/bioerosion.webp" />
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
       /* --- 核心變數設定 --- */
       :root {
-        --bg-color: #121212;       /* 背景深黑 */
-        --card-bg: transparent;    /* 卡片背景透明 */
-        --border-color: #ffffff;   /* 白色邊框 */
-        --text-main: #ffffff;      /* 主要文字白 */
-        --text-sub: #cccccc;       /* 次要文字灰 */
-        --accent-yellow: #f1c40f;  /* 下載按鈕黃 */
-        --accent-blue: #5dade2;    /* 播放按鈕藍 */
-        --accent-green: #48c774;   /* 播放中綠 */
+        --bg-color: #121212;       
+        --card-bg: transparent;    
+        --border-color: #ffffff;   
+        --text-main: #ffffff;      
+        --text-sub: #cccccc;       
+        --accent-yellow: #f1c40f;  
+        --accent-blue: #5dade2;    
+        --accent-green: #48c774;   
+        --hover-glow-green: #4fffa8; /* 新增：懸停時的螢光綠 */
       }
 
       /* --- 全局樣式 --- */
@@ -35,20 +35,19 @@
       }
 
       a { text-decoration: none; }
-      
       [v-cloak] { display: none; }
 
       /* --- 頂部圖示區 --- */
       .top-icons {
         text-align: center;
-        padding: 3rem 0 2rem;
-        font-size: 1.5rem;
-        letter-spacing: 15px;
+        padding: 2rem 0 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 12px;
         color: var(--text-main);
       }
 
       .main-container {
-        max-width: 1280px;
+        max-width: 1400px; /* 稍微加寬容器以容納 7:3 的左側大圖 */
         margin: 0 auto;
         padding: 0 2rem 4rem;
       }
@@ -79,25 +78,27 @@
       /* --- 右欄：曲目卡片 (核心設計) --- */
       .track-card {
         background-color: var(--card-bg);
-        border: 1px solid var(--border-color); /* 關鍵：白色線框 */
+        border: 1px solid var(--border-color); 
         border-radius: 12px;
         padding: 1.25rem 1.5rem;
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: all 0.3s ease; /* 平滑過渡效果 */
       }
 
+      /* === 修改重點 1: Mouse over 泛綠光效果 === */
       .track-card:hover {
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        border-color: var(--hover-glow-green);
+        box-shadow: 0 0 15px rgba(79, 255, 168, 0.3), inset 0 0 10px rgba(79, 255, 168, 0.05);
         transform: translateY(-2px);
       }
 
       /* 曲目資訊文字 */
       .track-info {
         flex: 1;
-        padding-right: 1.5rem;
+        padding-right: 1rem;
       }
 
       .track-title {
@@ -111,7 +112,7 @@
       .track-meta {
         font-size: 0.85rem;
         color: var(--text-sub);
-        font-family: monospace; /* 讓數字顯示更有科技感 */
+        font-family: monospace; 
       }
 
       /* 按鈕區塊 */
@@ -119,7 +120,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        min-width: 130px; /* 固定按鈕區寬度，確保整齊 */
+        min-width: 120px; 
       }
 
       /* 膠囊按鈕樣式 */
@@ -127,9 +128,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 6px 16px;
+        padding: 6px 14px;
         border-radius: 50px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         transition: all 0.3s ease;
         background: transparent;
         border: 1px solid;
@@ -160,7 +161,6 @@
         color: #ffffff;
       }
 
-      /* 暫停按鈕 (綠) */
       .btn-active {
         color: var(--accent-green);
         border-color: var(--accent-green);
@@ -168,21 +168,6 @@
       .btn-active:hover {
         background-color: var(--accent-green);
         color: #ffffff;
-      }
-
-      /* 其他連結卡片 (BT下載等) */
-      .extra-link-card {
-        border: 1px dashed rgba(255,255,255,0.3);
-        border-radius: 12px;
-        padding: 1rem;
-        margin-top: 2rem;
-        text-align: center;
-        color: #aaa;
-        transition: border-color 0.3s;
-      }
-      .extra-link-card:hover {
-        border-color: #fff;
-        color: #fff;
       }
 
       /* Footer */
@@ -206,6 +191,25 @@
         }
         .btn-pill { flex: 1; }
         .track-info { padding-right: 0; }
+        
+        /* 手機版時恢復單欄堆疊 */
+        .column.is-custom-70 { flex: none; width: 100%; }
+        .column.is-custom-30 { flex: none; width: 100%; }
+      }
+
+      /* === 修改重點 2: 自定義 70:30 佈局 === */
+      @media (min-width: 769px) {
+        .columns.custom-ratio {
+          display: flex;
+        }
+        .column.is-custom-70 {
+          flex: none;
+          width: 70%;
+        }
+        .column.is-custom-30 {
+          flex: none;
+          width: 30%;
+        }
       }
     </style>
   </head>
@@ -219,9 +223,9 @@
     </div>
 
     <div class="main-container" id="app">
-      <div class="columns is-variable is-6">
+      <div class="columns custom-ratio is-variable is-6">
         
-        <div class="column is-5-desktop is-12-tablet">
+        <div class="column is-custom-70">
           
           <figure class="image album-cover-wrapper">
             <img src="https://d2tqnseq05ro3i.cloudfront.net/album-cover.webp" alt="Bioerosion Album Cover" />
@@ -250,16 +254,9 @@
             </div>
           </div>
           
-          <div class="extra-link-card">
-            <p class="mb-3">流量過大？試試 BT 下載</p>
-            <a href="./album/bioerosion_album.torrent" class="btn-pill btn-download is-small">
-              <i class="fas fa-download"></i> 下載 Torrent 種子
-            </a>
-          </div>
-
         </div>
 
-        <div class="column is-7-desktop is-12-tablet">
+        <div class="column is-custom-30">
           
           <div 
             v-for="(track, index) in tracks" 
@@ -273,7 +270,7 @@
                 <strong>{{ index }}.</strong> {{ track.title }}
               </h3>
               <p class="track-meta">
-                {{ track.duration }} <span style="opacity:0.5">|</span> {{ track.specs }}
+                {{ track.duration }} <br/> {{ track.specs }}
               </p>
             </div>
             
@@ -295,6 +292,7 @@
               </a>
             </div>
           </div>
+
           <div class="track-card">
              <div class="track-info">
               <h3 class="track-title">其他串流平台</h3>
@@ -321,7 +319,6 @@
     </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3DG2E5E3W"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -333,9 +330,8 @@
     <script>
       const { createApp, reactive } = Vue;
 
-      // 曲目資料
       const tracks = reactive([
-        {}, // Index 0 留空，配合顯示邏輯從 1 開始
+        {}, 
         {
           title: "破裂水泥牆的植物 / plants breaking through concrete",
           specs: "2304 kbps / 48.00 kHz / 87.6 MB",
@@ -402,7 +398,6 @@
         },
       ]);
 
-      // 停止所有播放
       function allstop(org_track) {
         tracks.forEach((track, index) => {
           if (index > 0 && track.audio && track.status == "play") {
@@ -421,10 +416,8 @@
         methods: {
           play($event, index) {
             allstop(index);
-            // Lazy load audio object
             if (tracks[index].audio === null) {
               tracks[index].audio = new Audio(tracks[index].src);
-              // 監聽播放結束事件，自動重置狀態
               tracks[index].audio.addEventListener('ended', () => {
                  tracks[index].status = 'no';
               });
