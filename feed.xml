@@ -1,0 +1,36 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    
+    {% comment %} 這裡開始跑你的資料迴圈 {% endcomment %}
+    {% for item in site.data.about.story limit:20 %}
+      <item>
+        <title>{{ item.title | xml_escape }}</title>
+        {% comment %} 組合文章網址: 假設你的網址結構是 /story/slug {% endcomment %}
+        <link>{{ site.url }}/story/{{ item.slug }}</link>
+        <guid isPermaLink="true">{{ site.url }}/story/{{ item.slug }}</guid>
+        
+        {% comment %} 處理日期: 假設 data 裡的日期格式是 YYYY-MM-DD {% endcomment %}
+        {% if item.date %}
+          <pubDate>{{ item.date | date: "%a, %d %b %Y 00:00:00 +0800" }}</pubDate>
+        {% endif %}
+        
+        {% comment %} 這裡放文章簡介，如果 data 裡有 description 欄位 {% endcomment %}
+        {% if item.description %}
+        <description>{{ item.description | xml_escape }}</description>
+        {% endif %}
+      </item>
+    {% endfor %}
+    
+  </channel>
+</rss>

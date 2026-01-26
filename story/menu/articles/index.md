@@ -7,6 +7,13 @@ og_image:
 
 ## 最新文章
 
+<h2 class="ui header">
+  最新文章
+  <a href="/feed.xml" target="_blank" class="ui mini label orange">
+    <i class="rss icon"></i> RSS 訂閱
+  </a>
+</h2>
+
 <div class="ui list">
 {% for item in site.data.about.story %}
 
