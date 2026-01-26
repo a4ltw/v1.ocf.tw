@@ -30,12 +30,12 @@ subscribe:
   - title: 電子報 epaper
     url: https://ocf.tw/news/
     icon: newspaper
+  - title: RSS feed
+    url: https://ocf.tw/feed.xml
+    icon: rss
   - title: Blog
     url: http://blog.ocf.tw/
     icon: rss
-#  - title: OCFLab
-#    url: https://lab.ocf.tw/
-#    icon: rss
   - title: Facebook
     url: https://www.facebook.com/www.ocf.tw
     icon: facebook
