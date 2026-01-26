@@ -21,63 +21,256 @@
     <link rel="stylesheet" href="/fa/css/all.min.css" />
     <link rel="stylesheet" href="/css/all.css" />
 
+
+
     <style>
-      :root {
-        --bulma-navbar-height: 0;
-      }
-      :root .section {
-        --bulma-section-padding: 0 1.5rem !important;
-        --bulma-section-padding-desktop: 1.5rem 3rem !important;
-      }
-      [v-cloak] {
-        display: none;
-      }
-      /* Track Styles */
-      .track {
-        color: #ffffff;
-        border: 1px #ffffff solid;
-        border-radius: 7px;
-        margin-bottom: 10px !important;
-        transition: box-shadow 0.3s, border-color 0.3s;
-      }
-      .track .column {
-        align-content: center;
-      }
-      .track:hover {
-        box-shadow: 0 0 3rem rgba(255, 255, 255, 0.5);
-        border-color: rgb(0, 255, 170);
-      }
-      /* Stripe effect for tracks: even/odd logic moved to fit data index */
-      .track.is-odd { background-color: #000000; }
-      .track.is-even { background-color: #282828; }
-      
-      .albumcover img {
-        border-radius: 7px;
-        box-shadow: 0 0 1rem rgb(109, 136, 134);
-      }
-      /* Content Box Styles */
-      .desc_content {
-        color: #ffffff;
-        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
-        padding: 20px;
-        border-radius: 7px;
-        background-color: rgba(0, 0, 0, 0.5); /* Fixed invalid color syntax */
-        margin: 12px auto;
-      }
-      .desc_content a { color: #bbc3ff; }
-      .desc_content ol { margin-left: 2rem; }
-      .desc_content details {
-        cursor: pointer !important;
-        margin-bottom: 10px;
-      }
-      /* Utility Classes */
-      .center-icon { text-align: center; margin-bottom: 10px; }
-      .mb-10 { margin-bottom: 10px; }
-      .text-white { color: #ffffff; }
-      .donation-box {
-        background: linear-gradient(123deg, #962eff 50%, #006ce0 100%, #007e94 100%);
-        border: 1px solid #ffffff;
-      }
+/* =========================================
+   1. 全域變數設定 (CSS Variables)
+   方便統一調整主題顏色
+   ========================================= */
+:root {
+  /* 背景色系 */
+  --bg-main: #0a0a0a;         /* 深邃黑 */
+  --bg-card: rgba(0, 0, 0, 0.6);
+  --bg-stripe-odd: #000000;
+  --bg-stripe-even: #282828;
+  
+  /* 文字色系 */
+  --text-primary: #ffffff;
+  --text-secondary: #dddddd;
+  --link-color: #bbc3ff;      /* 淡紫藍色連結 */
+  
+  /* 視覺特效 */
+  --accent-glow: #00ffaa;     /* 霓虹綠光暈 */
+  --border-light: rgba(255, 255, 255, 0.2);
+  --glass-effect: blur(10px); /* 毛玻璃模糊度 */
+  
+  /* 捐款區塊漸層 */
+  --gradient-donate: linear-gradient(123deg, #962eff 0%, #006ce0 100%);
+}
+
+/* =========================================
+   2. 基礎設定 (Base)
+   ========================================= */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* 修正 Bulma 的 Section 內距，適應深色主題 */
+:root .section {
+  padding: 3rem 1.5rem !important;
+}
+
+/* Vue 尚未加載前隱藏區塊 */
+[v-cloak] {
+  display: none;
+}
+
+/* =========================================
+   3. 專輯封面與視覺 (Album Art)
+   ========================================= */
+.albumcover img {
+  border-radius: 8px;
+  /* 增加更有層次感的陰影 */
+  box-shadow: 0 10px 30px rgba(109, 136, 134, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.albumcover img:hover {
+  transform: scale(1.02); /* 滑鼠移過去微微放大 */
+}
+
+/* =========================================
+   4. 內容區塊 (Description Box)
+   使用現代化的毛玻璃效果
+   ========================================= */
+.desc_content {
+  color: var(--text-primary);
+  /* 玻璃質感背景 */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: var(--glass-effect); 
+  -webkit-backdrop-filter: var(--glass-effect);
+  
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+}
+
+.desc_content a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.2s;
+}
+
+.desc_content a:hover {
+  border-bottom-color: var(--link-color);
+}
+
+.desc_content ol {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* 摺疊選單優化 */
+.desc_content details {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.desc_content details:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.desc_content summary {
+  font-weight: bold;
+  color: var(--accent-glow);
+}
+
+/* =========================================
+   5. 曲目列表 (Track List)
+   核心互動區域
+   ========================================= */
+.track {
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  margin-bottom: 12px !important;
+  padding: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 垂直置中內容 */
+.track .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 斑馬紋效果 (需搭配 HTML 中的 class 或 nth-child) */
+.track:nth-child(odd), .track.is-odd {
+  background-color: var(--bg-stripe-odd);
+}
+
+.track:nth-child(even), .track.is-even {
+  background-color: var(--bg-stripe-even);
+}
+
+/* 懸停發光特效 (Neon Glow) */
+.track:hover {
+  border-color: var(--accent-glow);
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.3), inset 0 0 10px rgba(0, 255, 170, 0.05);
+  transform: translateY(-2px);
+  z-index: 1;
+}
+
+/* 強制按鈕靠右對齊 */
+.track .buttons.is-right {
+  justify-content: flex-end;
+}
+
+/* =========================================
+   6. 按鈕樣式優化 (Button Overrides)
+   覆蓋 Bulma 預設樣式以符合黑底
+   ========================================= */
+.button.is-outlined {
+  backdrop-filter: blur(4px);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.button.is-light.is-outlined:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* 下載按鈕 (黃色) */
+.button.is-warning.is-outlined {
+  color: #ffdd57;
+  border-color: #ffdd57;
+}
+.button.is-warning.is-outlined:hover {
+  background-color: #ffdd57;
+  color: #000;
+}
+
+/* 播放按鈕 (藍色) */
+.button.is-info.is-outlined {
+  color: #3e8ed0;
+  border-color: #3e8ed0;
+}
+.button.is-info.is-outlined:hover {
+  background-color: #3e8ed0;
+  color: #fff;
+}
+
+/* 暫停按鈕 (綠色) */
+.button.is-success.is-outlined {
+  color: #48c774;
+  border-color: #48c774;
+}
+
+/* =========================================
+   7. 特別區塊 (Special Sections)
+   ========================================= */
+/* 捐款/行動支持區塊 */
+.donation-box {
+  background: var(--gradient-donate) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 增加一點微光流動感 */
+.donation-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  pointer-events: none;
+}
+
+/* 頁腳 */
+.footer {
+  background-color: transparent;
+  padding: 3rem 1.5rem 6rem;
+  color: #888;
+}
+
+.footer img.logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer img.logo:hover {
+  opacity: 1;
+}
+
+/* 工具類 */
+.center-icon {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
     </style>
   </head>
 
