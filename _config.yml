@@ -1,5 +1,6 @@
+title: "OCF Website"        # 你的網站名稱
+description: "Open Culture Foundation"
 source: .
-destination: _deploy
 url: https://ocf.tw
 # defaults:
 #   - scope:
@@ -9,6 +10,7 @@ url: https://ocf.tw
 #       og_image: /mediakit/cover.png
 #       og_description: "test default description"
 plugins:
+  - jekyll-feed
   - jekyll-redirect-from
   - jekyll-sitemap
 encoding: utf-8
