@@ -35,22 +35,30 @@ menu:
         url: /p/community
       - title: 工作夥伴
         url: /people/
-  - title: 最新消息
-    url: /story/menu/articles/
-  - title: 基金會專案
-    url: /p/ocf
-  - title: 活動
-    url: /journal/
-  - title: 電子報
-    url: /news/
-#  - title: 捐款徵信
-#    url: https://blog.ocf.tw/search/label/捐款徵信
+      - title: 年度成果
+        url: /story/menu/resource/
+  - title: 核心行動
+    url:
+    items:
+      - title: 基金會專案
+        url: /p/ocf
+      - title: 活動
+        url: /journal/
+  - title: 最新動態
+    items:
+      - title: 最新消息
+        url: /story/menu/articles/
+      - title: 電子報
+        url: /news/
+  - title: 支持我們
+    items:
+      - title: 捐款支持
+        url: /supportus/      
+      - title: 捐款徵信
+        url: https://blog.ocf.tw/search/label/捐款徵信
 #  - title: OCFLab
 #    url: https://lab.ocf.tw/
-  - title: 成果
-    url: /story/menu/resource/
-  - title: 捐款支持
-    url: /supportus/
+
 
 menu_en:
   - title: About
