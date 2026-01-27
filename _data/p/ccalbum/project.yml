@@ -30,36 +30,37 @@ metas:
 metas_en:
 
 links:
-  - title: CC 社群網站
-    url: https://cc.ocf.tw/
-    icon: home
+
+  - title: 【吹專訪】不用所有的事情都要跟人家收費：林強 ⇋ Luca Bo naccorsi 談免費開放下載的新作《時間浸漬》 
+    url: https://blow.streetvoice.com/79043/
+    icon: microphone
     color: grey
-  - title: CC 相關資源
-    url: https://cc.ocf.tw/resource
-    icon: cloud
+  - title: 【樂手巢】開源不等於免費！解放創作的自由實驗，專訪：林強、Luca Bonaccorsi、李欣穎、蔡宏賢
+    url: https://ysolife.com/open-source-co-creation-ai-art-interview/
+    icon: microphone
     color: grey
-  - title: CC 教學影片
-    url: https://www.youtube.com/watch?list=PLFuYOsppHDrlGNj8Ardp1ELYlvEC5jk9o&v=9fuajCuCV4g
-    icon: file video
+  - title: 【音樂興發現】創用開源與音樂產業的交會
+    url: https://www.tmc.taipei/tw/media/article/e3Bb15e287B6
+    icon: microphone
     color: grey
-  - title: CC 論壇
-    url: https://groups.google.com/forum/#!forum/cctw-discussion
+  - title: 【吹對談】自己定義自己，不需迎合他人的美學：Mong Tong ⇋ XTRUX談新作《明日音》
+    url: https://blow.streetvoice.com/84547/
     icon: comments
     color: grey
-  - title: Facebook
-    url: https://www.facebook.com/CCTaiwan/
-    icon: facebook
+  - title: 【樂手巢】陰陽雙軌交疊迸生《明日音》，Mong Tong 攜手 XTRUX 共創未來民俗之道
+    url: https://ysolife.com/mong-tong-xtrux-sun-moon-darkness/
+    icon: comments
+    color: grey
+  - title: 【Hypebeast】當科技遇上民俗音樂 —— 專訪台灣電子組合 Mong Tong
+    url: https://hypebeast.com/zh/2025/11/interview-with-mong-tong
+    icon: comments
     color: grey
 links_en:
 
 actions:
-  - title: 邀請演講申請
-    url: https://goo.gl/forms/Uo9EP4GHNnbnLlBt2
-    icon: microphone
-    color: grey
-  - title: 參與社群簡單自介
-    url: mailto:cc@ocf.tw
-    icon: users
+  - title: 捐款支持
+    url: https://ocf.tw/supportus/
+    icon: money bill alternate outline
     color: grey
 actions_en:
 
