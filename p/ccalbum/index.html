@@ -36,7 +36,7 @@ show_child_projects:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCF 開放頻率 | 公眾授權專輯計畫</title>
-    <style>
+<style>
         :root {
             --primary-color: #6450DC; /* 沈穩深藍 */
             --accent-color: #27ae60;  /* 開放綠色 */
@@ -115,9 +115,11 @@ show_child_projects:
             margin-bottom: 60px;
         }
 
-        /* 正方形下載卡片設計 */
+        /* --- 這裡開始是修正重點 --- */
+
+        /* 1. 設定全域樣式 (電腦與手機都適用) */
         .download-card {
-            width: var(--square-size);
+            width: var(--square-size); /* 預設固定 300px (解決電腦版過大問題) */
             text-align: center;
             text-decoration: none;
             color: inherit;
@@ -128,27 +130,15 @@ show_child_projects:
             transform: translateY(-10px);
         }
 
-        /* 圖片佔位符 (Placeholder) */
-        .image-placeholder {
-            width: 100%;
-            height: var(--square-size); /* 確保是正方形 */
-            background-color: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #888;
-            border: 2px dashed #bbb;
+        /* 圖片設定：強制 1:1 正方形 */
+        .album-art {
+            width: 100%;             /* 填滿卡片寬度 */
+            aspect-ratio: 1 / 1;     /* 關鍵：強制正方形比例 */
+            object-fit: cover;       /* 裁切圖片不變形 */
             border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: block;
             margin-bottom: 15px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* 模擬圖片載入後的樣式（可移除） */
-        .image-placeholder::after {
-            content: "封面圖片區 (300x300)";
-            font-size: 0.9rem;
         }
 
         .download-card h3 {
@@ -165,6 +155,20 @@ show_child_projects:
             font-size: 0.9rem;
         }
 
+        /* 2. 響應式調整 (只針對手機版) */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .download-section { gap: 30px; }
+            
+            /* 手機版讓卡片有點彈性，但不要超過 300px */
+            .download-card {
+                width: 100%;       
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+        /* --- 修正結束 --- */
+
         /* 授權聲明 Footer */
         footer {
             text-align: center;
@@ -178,45 +182,6 @@ show_child_projects:
             margin-top: 10px;
             font-weight: bold;
         }
-
-        /* 響應式調整 */
-        @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            .download-section { gap: 30px; }
-
-        /* 1. 先定義全域樣式（電腦版與手機版通用） */
-        .album-art {
-            width: 100%;             /* 寬度隨容器(download-card)縮放 */
-            aspect-ratio: 1 / 1;    /* 強制 1:1 正方形 */
-            object-fit: cover;      /* 裁切不變形 */
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        /* 2. 響應式調整 */
-        @media (max-width: 300px) {
-            header h1 { font-size: 2rem; }
-            .download-section { gap: 30px; }
-            
-            .download-card {
-                width: 100%;        /* 手機版卡片撐滿 */
-                max-width: 300px;   /* 避免太寬 */
-                margin: 0 auto;     /* 居中 */
-            }
-        }
-
-        /* 3. 電腦版特定調整（若有需要） */
-        @media (min-width: 300px) {
-            .download-card {
-                width: var(--square-size); /* 恢復成你定義的 300px */
-            }
-        }
-
-
-    }
-}
     </style>
 </head>
 <body>
