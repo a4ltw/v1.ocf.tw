@@ -35,8 +35,6 @@ menu:
         url: /p/community
       - title: 工作夥伴
         url: /people/
-      - title: 年度成果
-        url: /story/menu/resource/
   - title: 核心行動
     url:
     items:
@@ -44,6 +42,10 @@ menu:
         url: /p/ocf
       - title: 活動
         url: /journal/
+      - title: 年度成果
+        url: /story/menu/resource/
+      - title: 十週年開源祭
+        url: https://10years.ocf.tw/
   - title: 最新動態
     items:
       - title: 最新消息
