@@ -26,15 +26,15 @@ years:
 
 menu:
   # 這個欄位用來設定主選單的選項與連結
-  - title: 關於我們
+  - title: 關於 OCF
     url:
     items:
-      - title: OCF 介紹
+      - title: 關於我們
         url: /about/
-      - title: 夥伴成員
-        url: /people/
       - title: 社群夥伴
         url: /p/community
+      - title: 工作夥伴
+        url: /people/
   - title: 最新消息
     url: /story/menu/articles/
   - title: 基金會專案
