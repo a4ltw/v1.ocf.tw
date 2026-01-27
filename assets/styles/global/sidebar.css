@@ -27,6 +27,19 @@
           color: var(--ocf-white);
         }
       }
+
+      /* Submenu indentation */
+      ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+          a {
+            padding-left: 2rem;
+            font-size: 0.95em;
+          }
+        }
+      }
     }
   }
 }

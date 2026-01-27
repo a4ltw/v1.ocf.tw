@@ -227,6 +227,14 @@ TODO: 目前只支援舊版（2016）專案資料，將來會支援新版（2020
 ### 編輯主選單
 
 - 編輯全站設定檔 [/_data/settings.yml](https://github.com/ocftw/v1.ocf.tw/blob/gh-pages/_data/settings.yml) ，修改 `menu` 欄位內容
+- 若要新增子選單，請在選單項目下新增 `items` 列表：
+  ```yaml
+  - title: 關於
+    url: /about/
+    items:
+      - title: 團隊成員
+        url: /about/team/
+  ```
 
 ### 編輯 people 頁分類選單
 
