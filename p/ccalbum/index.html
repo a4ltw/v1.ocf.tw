@@ -184,13 +184,23 @@ show_child_projects:
             header h1 { font-size: 2rem; }
             .download-section { gap: 30px; }
 
-        .album-art {
-    width: 100%;                /* 填滿寬度 */
-    height: var(--square-size); /* 強制高度為 300px (維持正方形) */
-    object-fit: cover;          /* 關鍵：裁切圖片中間，防止變形 */
-    border-radius: 12px;        /* 圓角 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 加一點陰影更有質感 */
-        }
+.album-art {
+    width: 100%;             /* 寬度隨容器縮放 */
+    aspect-ratio: 1 / 1;    /* 關鍵：強制維持 1:1 比例 */
+    object-fit: cover;      /* 確保圖片填滿且不變形 */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;         /* 消除下方微小間隙 */
+}
+
+/* 針對卡片寬度的調整 */
+@media (max-width: 768px) {
+    .download-card {
+        width: 100%;        /* 在手機版時讓卡片撐滿或自訂寬度 */
+        max-width: 300px;   /* 限制最大寬度，避免在寬螢幕手機上過大 */
+        margin: 0 auto;     /* 居中 */
+    }
+}
     </style>
 </head>
 <body>
@@ -214,14 +224,14 @@ show_child_projects:
         <section class="download-section">
             
             <a href=https://10years.ocf.tw/bioerosion-album.html class="download-card">
-<img src="/p/ccalbum/bioerosion-cover.png" height = 300 weight = 300 alt="專輯封面" class="album-art">
+<img src="/p/ccalbum/bioerosion-cover.png" alt="專輯封面" class="album-art">
                 <h3>時間浸漬 Bioerosion</h3>
                 <p>《時間浸漬 Bioerosion》由林強編曲，與 Luca Bonaccorsi 共同構思創作，財團法人開放文化基金會於 2024 年 9 月發行，採用 CC BY 4.0 授權條款釋出供大眾自由利用。</p>
                 <span class="btn-download">下載 / 線上播放</span>
             </a>
 
             <a href="#" class="download-card">
-<img src="/p/ccalbum/tomorrow-cover.png" height = 300 weight = 300 alt="專輯封面" class="album-art">
+<img src="/p/ccalbum/tomorrow-cover.png" alt="專輯封面" class="album-art">
                 <h3>明日音</h3>
                                 <p>《明日音》，由財團法人開放文化基金會於 2025 年 11 月發行，採用 CC BY 4.0 授權條款釋出供大眾自由利用。</p>
                 <span class="btn-download">整理中</span>
