@@ -184,21 +184,37 @@ show_child_projects:
             header h1 { font-size: 2rem; }
             .download-section { gap: 30px; }
 
-.album-art {
-    width: 100%;             /* 寬度隨容器縮放 */
-    aspect-ratio: 1 / 1;    /* 關鍵：強制維持 1:1 比例 */
-    object-fit: cover;      /* 確保圖片填滿且不變形 */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: block;         /* 消除下方微小間隙 */
-}
+        /* 1. 先定義全域樣式（電腦版與手機版通用） */
+        .album-art {
+            width: 100%;             /* 寬度隨容器(download-card)縮放 */
+            aspect-ratio: 1 / 1;    /* 強制 1:1 正方形 */
+            object-fit: cover;      /* 裁切不變形 */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: block;
+            margin-bottom: 15px;
+        }
 
-/* 針對卡片寬度的調整 */
-@media (max-width: 768px) {
-    .download-card {
-        width: 100%;        /* 在手機版時讓卡片撐滿或自訂寬度 */
-        max-width: 300px;   /* 限制最大寬度，避免在寬螢幕手機上過大 */
-        margin: 0 auto;     /* 居中 */
+        /* 2. 響應式調整 */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .download-section { gap: 30px; }
+            
+            .download-card {
+                width: 100%;        /* 手機版卡片撐滿 */
+                max-width: 300px;   /* 避免太寬 */
+                margin: 0 auto;     /* 居中 */
+            }
+        }
+
+        /* 3. 電腦版特定調整（若有需要） */
+        @media (min-width: 769px) {
+            .download-card {
+                width: var(--square-size); /* 恢復成你定義的 300px */
+            }
+        }
+
+
     }
 }
     </style>
