@@ -1,0 +1,239 @@
+---
+redirect_from:
+- /p/ccalbum
+
+layout: p
+
+og_title: 
+og_description: 
+og_image: 
+
+header_image_opacity: 
+header_veil_opacity: 
+
+show_events: 
+gsheet_url: 
+show_sponsors: 
+show_donors: 
+
+show_progress: 
+progress:
+  duration: 
+  goal: 
+  current: 
+  percent: 
+  count: 
+  updated: 
+cpid: 
+show_child_projects: 
+---
+
+<h2 class="ui dividing header"></h2>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCF 開放頻率 | 公眾授權專輯計畫</title>
+    <style>
+        :root {
+            --primary-color: #6450DC; /* 沈穩深藍 */
+            --accent-color: #27ae60;  /* 開放綠色 */
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --square-size: 300px;     /* 定義正方形尺寸 */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "PingFang TC", "Heiti TC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Header 區域 */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 主要內容容器 */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 理念說明區塊 */
+        .concept-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .concept-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .concept-text {
+            text-align: left;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* 下載區塊佈局 */
+        .download-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap; /* 手機版自動換行 */
+            margin-bottom: 60px;
+        }
+
+        /* 正方形下載卡片設計 */
+        .download-card {
+            width: var(--square-size);
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+
+        .download-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* 圖片佔位符 (Placeholder) */
+        .image-placeholder {
+            width: 100%;
+            height: var(--square-size); /* 確保是正方形 */
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #888;
+            border: 2px dashed #bbb;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 模擬圖片載入後的樣式（可移除） */
+        .image-placeholder::after {
+            content: "封面圖片區 (300x300)";
+            font-size: 0.9rem;
+        }
+
+        .download-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* 授權聲明 Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .cc-license {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .download-section { gap: 30px; }
+
+        .album-art {
+    width: 100%;                /* 填滿寬度 */
+    height: var(--square-size); /* 強制高度為 300px (維持正方形) */
+    object-fit: cover;          /* 關鍵：裁切圖片中間，防止變形 */
+    border-radius: 12px;        /* 圓角 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 加一點陰影更有質感 */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>OPEN FREQUENCY</h1>
+        <p>從林強《時間浸漬》到 Mong Tong《明日音》，開放文化基金會（OCF）將開源精神帶入音樂與藝術，讓創作能被自由分享、再製與流動。我們相信，當更多人能自由參與、共享與創作，開源的文化就能持續延伸與茁壯。</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="concept-section">
+            <h2>關於本計畫</h2>
+            <div class="concept-text">
+                <p>2008 年，Nine Inch Nails 以 Creative Commons 授權釋出專輯《Ghosts I–IV》，震撼主流唱片工業，為數位時代的自由分享與再創作揭開序幕。2017 年，King Gizzard & the Lizard Wizard 更將母帶與設計檔案全面公開，鼓勵樂迷自行壓製彩膠、重新設計封面，讓音樂真正回到公眾手中。</p>
+                <p>近年來，因為新興科技的快速發展，全球音樂圈也正掀起一股反思的浪潮。從 King Gizzard & the Lizard Wizard、Godspeed You! Black Emperor 到 Massive Attack，不少樂團選擇將自己的作品從 Spotify 等串流平台下架，拒絕讓音樂淪為演算法與資本邏輯的附庸。他們的行動，是對串流經濟壓縮音樂價值的回應，也是對創作自主權的重新主張。</p>
+                <p>開放文化基金會所製作的《時間浸漬》與《明日音》是以公眾授權形式發行的音樂作品，也是一個讓音樂能自由流通、再製與重構的聲音實驗。專輯中的音源與素材將完整開放，只要標示原作者，即可自由 Remix、取樣或商業使用。這樣的釋出，象徵著創作者將音樂主權交還給公眾，使這些音樂不再只是單向聆聽的物件，而是一個不斷被重組與再生的音樂資料庫。</p>
+                <p>我們用這些專輯和素材，將開源精神帶入音樂與藝術，讓創作能被自由分享、再製與流動。OCF 相信，「開源」不只是科技的語言，也是一種文化的行動。透過與音樂人、藝術家及公眾的合作，我們持續探索開源如何成為推動創作自由與文化共榮的力量。邀請您關注並支持這項募資計畫，讓更多人看見來自台灣的開放音樂實驗，並共同參與其中。
+            </div>
+        </section>
+
+        <section class="download-section">
+            
+            <a href=https://10years.ocf.tw/bioerosion-album.html class="download-card">
+<img src="cover.jpg" alt="專輯封面" class="album-art">
+                <h3>時間浸漬 Bioerosion</h3>
+                <p>《時間浸漬 Bioerosion》，由財團法人開放文化基金會發行，林強編曲，與 Luca Bonaccorsi 共同構思創作，於 2024 年 9 月發行，採用 CC BY 4.0 授權條款。</p>
+                <span class="btn-download">下載 / 線上播放</span>
+            </a>
+
+            <a href="#" class="download-card">
+<img src="cover.jpg" alt="專輯封面" class="album-art">
+                <h3>明日音</h3>
+                                <p>《時間浸漬 Bioerosion》，由財團法人開放文化基金會發行，林強編曲，與 Luca Bonaccorsi 共同構思創作，於 2024 年 9 月發行，採用 CC BY 4.0 授權條款。</p>
+                <span class="btn-download">下載 / 線上播放</span>
+            </a>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
+
+
+
