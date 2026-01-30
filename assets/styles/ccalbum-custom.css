@@ -108,7 +108,7 @@ img.maps {
 @keyframes logo-shadow {
     0% {
         box-shadow: 1px 1px 1rem #6450DC;
-        border: 1px #ab50dc solid;
+        border: 1px #6450dc solid;
     }
     25% {
         box-shadow: 6px 4px 3rem #6450DC;
@@ -118,11 +118,11 @@ img.maps {
         border: 1px #6450DC solid;
     }
     75% {
-        box-shadow: 4px 6px 3rem #ab50dc;
+        box-shadow: 4px 6px 3rem #6450dc;
     }
     100% {
         box-shadow: 1px 1px 1rem #6450DC;
-        border: 1px #ab50dc solid;
+        border: 1px #6450dc solid;
     }
  }
 
