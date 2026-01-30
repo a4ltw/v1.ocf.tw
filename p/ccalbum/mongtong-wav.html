@@ -2,78 +2,113 @@
 layout: global
 title: CC Album Download
 permalink: /p/ccalbum/mongtong
+css: ccalbum-custom.css
 ---
+<!-- Note: We are injecting Bulma manually here as it is not part of the standard layout assets -->
+<link rel="stylesheet" href="/assets/styles/ccalbum-bulma.css">
 
 <div class="page__container">
-  <div class="page__spacer--large"></div>
   
-  <div class="ui items">
-    <div class="item">
-      <div class="ui small image">
-        <img src="/p/ccalbum/tomorrow-cover.png" alt="Album Cover">
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-one-quarter">
+          <figure class="image is-square">
+            <img src="/p/ccalbum/tomorrow-cover.png" alt="Album Cover" style="border-radius: 6px;">
+          </figure>
+        </div>
+        <div class="column">
+          <h1 class="title is-2 has-text-white">CC Album Download</h1>
+          <h2 class="subtitle is-4 has-text-grey-light">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fab fa-creative-commons"></i>
+              </span>
+              <span class="icon">
+                <i class="fab fa-creative-commons-by"></i>
+              </span>
+              <span>Download tracks from the Creative Commons Album</span>
+            </span>
+          </h2>
+        </div>
       </div>
-      <div class="middle aligned content">
-        <h1 class="ui header">
-          CC Album Download
-          <div class="sub header">
-            <i class="fab fa-creative-commons"></i>
-            <i class="fab fa-creative-commons-by"></i>
-            Download tracks from the Creative Commons Album
+
+      <div class="box has-background-dark">
+        <!-- Track 1 -->
+        <div class="columns is-vcentered is-mobile my-2" style="border-bottom: 1px solid #4a4a4a; padding-bottom: 0.5rem;">
+          <div class="column is-narrow">
+            <span class="icon is-medium has-text-white">
+              <i class="fas fa-music fa-lg"></i>
+            </span>
           </div>
-        </h1>
+          <div class="column">
+            <p class="title is-5 has-text-white mb-1">Track 1 Title</p>
+            <p class="subtitle is-6 has-text-grey">Artist Name - 3:45</p>
+          </div>
+          <div class="column is-narrow">
+            <a href="#" class="button is-primary is-small">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="columns is-vcentered is-mobile my-2" style="border-bottom: 1px solid #4a4a4a; padding-bottom: 0.5rem;">
+          <div class="column is-narrow">
+            <span class="icon is-medium has-text-white">
+              <i class="fas fa-music fa-lg"></i>
+            </span>
+          </div>
+          <div class="column">
+            <p class="title is-5 has-text-white mb-1">Track 2 Title</p>
+            <p class="subtitle is-6 has-text-grey">Artist Name - 4:20</p>
+          </div>
+          <div class="column is-narrow">
+            <a href="#" class="button is-primary is-small">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="columns is-vcentered is-mobile my-2">
+          <div class="column is-narrow">
+            <span class="icon is-medium has-text-white">
+              <i class="fas fa-music fa-lg"></i>
+            </span>
+          </div>
+          <div class="column">
+            <p class="title is-5 has-text-white mb-1">Track 3 Title</p>
+            <p class="subtitle is-6 has-text-grey">Artist Name - 2:50</p>
+          </div>
+          <div class="column is-narrow">
+            <a href="#" class="button is-primary is-small">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <div class="block mt-6">
+        <button class="button is-primary is-large is-fullwidth is-rounded">
+          <span class="icon">
+            <i class="fas fa-file-archive"></i>
+          </span>
+          <span>Download Full Album (.zip)</span>
+        </button>
+      </div>
+
     </div>
-  </div>
-
-  <div class="ui segment">
-    <div class="ui relaxed divided list">
-      <!-- Track 1 -->
-      <div class="item">
-        <div class="right floated content">
-          <a href="#" class="ui primary button">
-            <i class="download icon"></i> Download
-          </a>
-        </div>
-        <i class="large music middle aligned icon"></i>
-        <div class="content">
-          <a class="header">Track 1 Title</a>
-          <div class="description">Artist Name - 3:45</div>
-        </div>
-      </div>
-      <!-- Track 2 -->
-      <div class="item">
-        <div class="right floated content">
-          <a href="#" class="ui primary button">
-            <i class="download icon"></i> Download
-          </a>
-        </div>
-        <i class="large music middle aligned icon"></i>
-        <div class="content">
-          <a class="header">Track 2 Title</a>
-          <div class="description">Artist Name - 4:20</div>
-        </div>
-      </div>
-      <!-- Track 3 -->
-      <div class="item">
-        <div class="right floated content">
-          <a href="#" class="ui primary button">
-            <i class="download icon"></i> Download
-          </a>
-        </div>
-        <i class="large music middle aligned icon"></i>
-        <div class="content">
-          <a class="header">Track 3 Title</a>
-          <div class="description">Artist Name - 2:50</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui hidden divider"></div>
-
-  <button class="ui huge positive fluid button">
-    <i class="download icon"></i> Download Full Album (.zip)
-  </button>
+  </section>
 
   <div class="page__spacer--xlarge"></div>
 </div>
