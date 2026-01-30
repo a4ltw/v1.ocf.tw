@@ -1,0 +1,55 @@
+/* Override Bulma Primary Color */
+.button.is-primary {
+  background-color: #6450DC !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+  background-color: #5241b5 !important; /* Slightly darker shade for hover */
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+.button.is-primary:focus,
+.button.is-primary.is-focused {
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+.button.is-primary:active,
+.button.is-primary.is-active {
+  background-color: #5241b5 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+/* Override Text Selection Color if needed */
+::selection {
+  background: #6450DC;
+  color: white;
+}
+
+/* Custom link colors if any */
+a {
+  color: #6450DC;
+}
+
+a:hover {
+  color: #5241b5;
+}
+
+/* Update animation shadows if desired, though user just said "Main color #6450DC" */
+@keyframes navbtnEffect {
+    0% {
+      box-shadow: 0 0 1rem #ffffff;
+    }
+    50% {
+      box-shadow: 0 0 0.7rem #6450DC; /* Replaced purple */
+      text-shadow: 1px 1px 1rem #6450DC; /* Replaced #00ffa6 */
+    }
+    100% {
+        box-shadow: 0 0 1rem #ffffff;
+    }
+}
