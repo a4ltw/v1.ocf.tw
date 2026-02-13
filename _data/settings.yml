@@ -26,36 +26,37 @@ years:
 
 menu:
   # 這個欄位用來設定主選單的選項與連結
-  - title: 關於 OCF
+  - title: 關於
     url:
     items:
+      - title: 最新消息
+        url: /story/menu/articles/
       - title: 關於我們
         url: /about/
-      - title: 社群夥伴
-        url: /p/community
       - title: 工作夥伴
         url: /people/
-  - title: 核心行動
+  - title: 核心倡議
     url:
     items:
       - title: 基金會專案
         url: /p/ocf
-      - title: 活動
-        url: /journal/
-      - title: 年度成果
+      - title: 出版品
         url: /story/menu/resource/
       - title: 十週年開源祭
         url: https://10years.ocf.tw/
-  - title: 最新動態
-    items:
-      - title: 最新消息
-        url: /story/menu/articles/
-      - title: 電子報
-        url: /news/
-  - title: 支持我們
-    items:
-      - title: 捐款支持
-        url: /supportus/      
+  - title: 社群網絡
+      - title: 社群夥伴
+        url: /p/community
+      - title: 申請合作社群
+        url: https://forms.gle/a5kqZEmUEsHPusNz8
+      - title: 加入志工
+        url: https://volunteer.ocf.tw/
+  - title: 活動
+    url: /journal/
+  - title: 電子報
+    url: /news/
+  - title: 捐款支持
+    url: /supportus/ 
       - title: 捐款徵信
         url: https://blog.ocf.tw/search/label/捐款徵信
 #  - title: OCFLab
