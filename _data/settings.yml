@@ -45,6 +45,7 @@ menu:
       - title: 十週年開源祭
         url: https://10years.ocf.tw/
   - title: 社群網絡
+    items:
       - title: 社群夥伴
         url: /p/community
       - title: 申請合作社群
