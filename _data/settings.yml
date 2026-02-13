@@ -44,14 +44,16 @@ menu:
         url: /story/menu/resource/
       - title: 十週年開源祭
         url: https://10years.ocf.tw/
+      - title: 徵才消息
+        url: http://ocf.tw/jobs
+      - title: 加入志工
+        url: https://volunteer.ocf.tw/
   - title: 社群網絡
     items:
       - title: 社群夥伴
         url: /p/community
       - title: 申請合作社群
         url: https://forms.gle/a5kqZEmUEsHPusNz8
-      - title: 加入志工
-        url: https://volunteer.ocf.tw/
   - title: 活動
     url: /journal/
   - title: 電子報
