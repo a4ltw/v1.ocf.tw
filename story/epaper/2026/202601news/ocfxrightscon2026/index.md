@@ -3,7 +3,6 @@ layout: story
 og_title: OCF 國際會議獎助計畫：RightsCon 2026
 og_description: "OCF 國際會議獎助計畫"
 og_image: images/image.jpg
-toc: false
 ---
 
 # 申請倒數中！OCF 國際會議獎助計畫：RightsCon 2026
