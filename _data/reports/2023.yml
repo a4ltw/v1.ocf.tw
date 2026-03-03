@@ -6,7 +6,7 @@ color:
 cover_image_opacity:
 cover_veil_opacity:
 alignment: left
-pdf: /_data/reports/2023report.pdf
+pdf: /p/admin/2023report.pdf
 items:
   - type: content
     columns:
