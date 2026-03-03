@@ -6,7 +6,7 @@ color:
 cover_image_opacity:
 cover_veil_opacity:
 alignment: left
-pdf: http://127.0.0.1:4000/_data/reports/2023report.pdf
+pdf: /_data/reports/2023report.pdf
 items:
   - type: content
     columns:
