@@ -35,19 +35,17 @@ menu:
         url: /about/
       - title: 工作夥伴
         url: /people/
+      - title: 徵才消息
+        url: http://ocf.tw/jobs
+      - title: 加入志工
+        url: https://volunteer.ocf.tw/
   - title: 核心倡議
     url:
     items:
       - title: 基金會專案
         url: /p/ocf
-      - title: 出版品
-        url: /story/menu/resource/
       - title: 十週年開源祭
         url: https://10years.ocf.tw/
-      - title: 徵才消息
-        url: http://ocf.tw/jobs
-      - title: 加入志工
-        url: https://volunteer.ocf.tw/
   - title: 社群網絡
     items:
       - title: 社群夥伴
@@ -58,6 +56,8 @@ menu:
     url: /journal/
   - title: 電子報
     url: /news/
+  - title: 成果
+    url: /story/menu/resource/
   - title: 捐款支持
     url: /supportus/ 
     items:
