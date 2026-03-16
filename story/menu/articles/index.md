@@ -6,75 +6,169 @@ og_image:
 toc: false
 ---
 
-<div class="ui styled fluid accordion">
-  <div class="title">
-    <i class="dropdown icon"></i>
-    最新文章
-    <a href="/feed.xml" target="_blank" class="ui mini label orange" style="float: right;">
-      <i class="rss icon"></i> RSS 訂閱
-    </a>
-  </div>
-  <div class="content">
-    <div class="ui list">
-    {% for item in site.data.about.story %}
+<div class="ui container">
+  <div class="ui stackable grid">
 
-      <div class="item">
-        <i class="icon fa-file-alt"></i>
+    <div class="twelve wide column">
+      <h2 class="ui dividing header">
+        <i class="file alternate outline icon"></i>
         <div class="content">
-          <div class="header">
-            <a href="/story/{{ item.slug }}" target="_blank">
+          最新文章
+          <div class="sub header">探索我們最新發布的專題報導與文章</div>
+        </div>
+      </h2>
+      <a href="/feed.xml" target="_blank" class="ui mini label orange" style="margin-bottom: 1em;">
+        <i class="rss icon"></i> RSS 訂閱
+      </a>
+
+      <div class="ui relaxed divided list">
+      {% assign new_articles = "" | split: "," %}
+      {% assign old_articles = "" | split: "," %}
+      
+      {% for item in site.data.about.story %}
+        {% assign article_date = item.date | date: "%Y%m%d" | plus: 0 %}
+        {% if article_date >= 20260101 %}
+          {% assign new_articles = new_articles | push: item %}
+        {% else %}
+          {% assign old_articles = old_articles | push: item %}
+        {% endif %}
+      {% endfor %}
+
+      {% for item in new_articles %}
+        <div class="item" style="padding: 1em 0;">
+          <i class="large file alternate middle aligned icon" style="color: #666;"></i>
+          <div class="content">
+            <a class="header" href="/story/{{ item.slug }}" target="_blank" style="font-size: 1.2em; margin-bottom: 0.3em;">
               {{ item.title }}
             </a>
+            <div class="description" style="color: #888;">
+              <i class="calendar alternate outline icon"></i> {{ item.date }}
+            </div>
           </div>
-          {{ item.date }}
         </div>
+      {% endfor %}
       </div>
 
-    {% endfor %}
-    </div>
-  </div>
-
-  <div class="title">
-    <i class="dropdown icon"></i>
-    媒體報導
-  </div>
-  <div class="content">
-    <div class="ui list">
-    {% for item in site.data.about.ocf %}
-      <div class="item">
-        <i class="icon newspaper"></i>
+      {% if old_articles.size > 0 %}
+      <div class="ui fluid accordion">
+        <div class="title" style="padding: 1em 0; font-size: 1.1em; color: #555; border-top: 1px solid rgba(34, 36, 38, .15);">
+          <i class="dropdown icon"></i>
+          過往文章 (2025 年及更早)
+        </div>
         <div class="content">
-          <div class="header">
-          {{ item.date }} / {{ item.media }}
+          <div class="ui relaxed divided list">
+          {% for item in old_articles %}
+            <div class="item" style="padding: 1em 0;">
+              <i class="large file alternate middle aligned icon" style="color: #666;"></i>
+              <div class="content">
+                <a class="header" href="/story/{{ item.slug }}" target="_blank" style="font-size: 1.1em; margin-bottom: 0.3em;">
+                  {{ item.title }}
+                </a>
+                <div class="description" style="color: #888;">
+                  <i class="calendar alternate outline icon"></i> {{ item.date }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
           </div>
-          <a href="{{ item.url }}" target="_blank">
-          {{ item.title }}
-          </a>
         </div>
       </div>
-    {% endfor %}
+      <script>
+        $(document).ready(function(){
+          $('.ui.accordion').accordion();
+        });
+      </script>
+      {% endif %}
     </div>
-  </div>
 
-  <div class="title">
-    <i class="dropdown icon"></i>
-    開源 / 開放文化相關報導
-  </div>
-  <div class="content">
-    <div class="ui list">
-    {% for item in site.data.about.floss %}
-      <div class="item">
-        <i class="icon newspaper"></i>
-        <div class="content">
-          <div class="header">
-          {{ item.date }} / {{ item.media }}
+    <div class="four wide column">
+      
+      <div class="ui segments">
+        <div class="ui secondary segment">
+          <h4 class="ui header">
+            <i class="newspaper outline icon"></i>
+            媒體報導
+          </h4>
+        </div>
+        <div class="ui segment">
+          <div class="ui relaxed divided list">
+          {% assign recent_ocf = "" | split: "," %}
+          {% assign older_ocf = "" | split: "," %}
+          {% for item in site.data.about.ocf %}
+            {% if forloop.index <= 7 %}
+              {% assign recent_ocf = recent_ocf | push: item %}
+            {% else %}
+              {% assign older_ocf = older_ocf | push: item %}
+            {% endif %}
+          {% endfor %}
+
+          {% for item in recent_ocf %}
+            <div class="item">
+              <div class="content">
+                <a class="header" href="{{ item.url }}" target="_blank" style="font-size: 1em;">
+                  {{ item.title }}
+                </a>
+                <div class="description" style="font-size: 0.85em; color: #777; margin-top: 0.3em;">
+                  {{ item.date }} &middot; {{ item.media }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
           </div>
-          <a href="{{ item.url }}" target="_blank">
-          {{ item.title }}
-          </a>
+
+          {% if older_ocf.size > 0 %}
+          <div class="ui fluid accordion" style="margin-top: 1em;">
+            <div class="title" style="padding: 0.5em 0; font-size: 0.9em; color: #555; text-align: center; border-top: 1px solid rgba(34, 36, 38, .15);">
+              <i class="dropdown icon"></i>
+              顯示更早的報導
+            </div>
+            <div class="content">
+              <div class="ui relaxed divided list">
+              {% for item in older_ocf %}
+                <div class="item">
+                  <div class="content">
+                    <a class="header" href="{{ item.url }}" target="_blank" style="font-size: 1em;">
+                      {{ item.title }}
+                    </a>
+                    <div class="description" style="font-size: 0.85em; color: #777; margin-top: 0.3em;">
+                      {{ item.date }} &middot; {{ item.media }}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endif %}
         </div>
       </div>
-    {% endfor %}
+
+      <div class="ui segments" style="margin-top: 2em;">
+        <div class="ui secondary segment">
+          <h4 class="ui header">
+            <i class="globe icon"></i>
+            開源 / 開放文化相關報導
+          </h4>
+        </div>
+        <div class="ui segment">
+          <div class="ui relaxed divided list">
+          {% for item in site.data.about.floss %}
+            <div class="item">
+              <div class="content">
+                <a class="header" href="{{ item.url }}" target="_blank" style="font-size: 1em;">
+                  {{ item.title }}
+                </a>
+                <div class="description" style="font-size: 0.85em; color: #777; margin-top: 0.3em;">
+                  {{ item.date }} &middot; {{ item.media }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </div>
