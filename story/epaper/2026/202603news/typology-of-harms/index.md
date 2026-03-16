@@ -2,7 +2,7 @@
 layout: story
 og_title: 武裝衝突中的網際網路斷網：危害類型學
 og_description: "在現代武裝衝突中，斷網儼然成為一種日益普遍、蓄意、及系統性的戰爭手段。"
-og_image: images/image.jpg
+og_image: images/image.png
 ---
 
 # 武裝衝突中的網際網路斷網：危害類型學
