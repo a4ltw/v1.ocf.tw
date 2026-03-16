@@ -26,8 +26,7 @@ toc: false
       {% assign old_articles = "" | split: "," %}
       
       {% for item in site.data.about.story %}
-        {% assign article_date = item.date | date: "%Y%m%d" | plus: 0 %}
-        {% if article_date >= 20260101 %}
+        {% if forloop.index <= 10 %}
           {% assign new_articles = new_articles | push: item %}
         {% else %}
           {% assign old_articles = old_articles | push: item %}
@@ -53,7 +52,7 @@ toc: false
       <div class="ui fluid accordion">
         <div class="title" style="padding: 1em 0; font-size: 1.1em; color: #555; border-top: 1px solid rgba(34, 36, 38, .15);">
           <i class="dropdown icon"></i>
-          過往文章 (2025 年及更早)
+          過往文章
         </div>
         <div class="content">
           <div class="ui relaxed divided list">
