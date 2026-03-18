@@ -9,3 +9,9 @@
   description: 我們撰寫《AI-Ready 開放資料實踐研究：賦能資料管理者，促進公民與政府對話》報告，不是要大家「做更多」，而是要「做更準」，從研究各國開放資料出發到成為訓練資料的實務案例，希望在現有的流程中微調觀念與資料格式，將政府開放資料在準備時就已經快速導向成 AI 訓練可用的資料，加速驅動主權 AI 發展 。
   link: https://ocf.neticrm.tw/civicrm/mailing/view?reset=1&id=380
   cover: /p/newspaper/epaper202602.png
+
+- title: AI 時代的開放原始碼與數位主權趨勢
+  subtitle: 2026 年 3 月號
+  description: 本期聚焦 FOSDEM 2026 會議重點，探討民主制度與開源生態的關連。在全球地緣政治變局下，歐洲多國致力強化「數位主權」，包括降低對特定國家科技依賴、提升軟體自主控制力等共識。雖各界對主權定義仍有分歧，但政府應避免過度依賴特定廠商已成歐洲共同目標。
+  link: https://ocf.neticrm.tw/civicrm/mailing/view?reset=1&id=382
+  cover: /p/newspaper/epaper202603.png
