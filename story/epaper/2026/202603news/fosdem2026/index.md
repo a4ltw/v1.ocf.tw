@@ -46,7 +46,7 @@ og_image: images/image1.png
 
 在開源治理方面，目前時常被討論的國際開源標準，便是由 Linux Foundation 在 2020 年推動成為標準的 OpenChain ISO/IEC 5230 及 2023 推出的 ISO/IEC 18974。另外 OpenChain 針對人工智慧在 2025 年也有推出 AI-SBOM 合規管理指引。OCF 作為 OpenChain 的成員之一，也將繼續推動企業採納該標準，並彰顯其未來支撐我國軟硬體產業持續在國際供應鏈扮演關鍵角色的潛在影響力。
 
-- 延伸閱讀：SBOM／VEX 工具互通、REUSE 標示規範，以及中小企業如何啟動開源合規的實務案例，都是現場討論相當熱烈的議題。——擷取自 [ FOSDEM 周邊活動《Code and Compliance》完整議程錄影與簡報](https://fosdem.org/2026/schedule/track/code-and-compliance/)
+- 延伸閱讀：SBOM／VEX 工具互通、REUSE 標示規範，以及中小企業如何啟動開源合規的實務案例，都是現場討論相當熱烈的議題。——擷取自 [ FOSDEM 周邊活動《Code and Compliance》完整議程錄影與簡報](https://github.com/orcwg/orcwg/tree/main/events/2026-01-code-compliance)
 
 ### 人工智慧下的開源合規研議
 
