@@ -38,9 +38,9 @@ og_image: images/image1.png
 
 從跨產業龍頭 IKEA 與 Mercedes-Benz，到歐盟及荷蘭政府，全球公私部門都在成立開放原始碼專案辦公室（Open Source Project Office，OSPO）以建立開源管理機制，確保自身軟體的安全與控制。目前臺灣企業和政府普遍尚未跟上潮流，連帶開源機制和軟體管理無法落實，將是 OCF 作為 OSPO Alliance 成員的年度倡議重點。
 
-- 延伸閱讀 1：[Panel: OSPOs as Sovereignty Engines 完整議程錄影](https://www.youtube.com/watch?v=Zp7K1UKEbdQ) — EU Open Source Policy Summit 2026
+- 延伸閱讀 1：[Panel: OSPOs as Sovereignty Engines 完整議程錄影](https://www.youtube.com/watch?v=qcxaBetVrLc&list=PLPSRZrrm1DwweabTKb98PyaciCFLIxcKg&index=10) — EU Open Source Policy Summit 2026
 
-- 延伸閱讀 2：[From Policy To Practice; Open Source in The Dutch Government 完整議程錄影與簡報](https://fosdem.org/2026/schedule/event/fosdem-2026-6646-from-policy-to-practice-open-source-in-the-dutch-government/) — FOSDEM 2026
+- 延伸閱讀 2：[From Policy To Practice; Open Source in The Dutch Government 完整議程錄影與簡報](https://fosdem.org/2026/schedule/event/BNPJ7P-from-policy-to-practice-open-source-in-gov/) — FOSDEM 2026
 
 ### 鼓勵政府與企業導入 OpenChain 開源合規與安全治理
 
