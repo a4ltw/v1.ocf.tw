@@ -286,6 +286,82 @@
 }
 
 
+#homepage #what_we_do .what_we_do_container {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  width: 100vw;
+  background-color: var(--ocf-light);
+
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .top-item-container,
+  .bottom-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      order: 2;
+    }
+
+    .item {
+      color: var(--ocf-primary);
+      width: 50%;
+
+      p {
+        a {
+          line-height: 2.5rem;
+        }
+      }
+
+      @media only screen and (min-width: 1280px) {
+        padding: 1rem 4.45rem;
+      }
+
+      @media only screen and (max-width: 990px) {
+        width: 100%;
+        padding: 2rem 4rem;
+      }
+
+      .item-title-group {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 2rem;
+
+        h2 {
+          margin: 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+          margin-bottom: 2rem;
+        }
+
+        img {
+          max-width: 65px;
+
+          @media only screen and (max-width: 767px) {
+            max-width: 60px;
+          }
+        }
+      }
+    }
+
+    .item-gap {
+      width: 4px;
+      height: 100%;
+      background-color: var(--ocf-white);
+    }
+  }
+}
+
 /* test */
 
 /* slick 輪播 RWD fix，限制圖片最大寬度 100% 並自動縮放 */
