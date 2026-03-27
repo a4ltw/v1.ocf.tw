@@ -28,15 +28,35 @@
         }
       }
 
+      /* Parent items that have a submenu — style as section headers */
+      &:has(> ul) {
+        > a,
+        > a:link {
+          color: var(--ocf-primary);
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding-top: 0.75rem;
+          padding-bottom: 0.25rem;
+          border-top: 1px solid var(--ocf-primary);
+
+          &:hover {
+            color: var(--ocf-light);
+          }
+        }
+      }
+
       /* Submenu indentation */
       ul {
         padding: 0;
         list-style: none;
 
         li {
-          a {
+          a,
+          a:link {
             padding-left: 2rem;
             font-size: 0.95em;
+            color: var(--ocf-primary);
           }
         }
       }
