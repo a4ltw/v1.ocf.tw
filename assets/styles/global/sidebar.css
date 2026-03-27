@@ -1,65 +1,43 @@
-#page__pusher {
-  h4 {
-    color: var(--ocf-primary);
-    line-height: 1;
-    padding: 0 1rem;
-    margin: 0;
-    border-top: 1px solid var(--ocf-primary);
-  }
+#page__pusher h4 {
+  color: var(--ocf-light);
+  line-height: 1;
+  padding: 0 1rem;
+  margin: 0;
+  border-top: 1px solid var(--ocf-light);
+}
 
-  ul {
-    padding: 0;
-    list-style: none;
+#page__pusher ul {
+  padding: 0;
+  list-style: none;
+}
 
-    li {
-      a,
-      a:link {
-        line-height: 1;
-        display: block;
-        padding: 0.5rem 1rem;
-        color: var(--ocf-light);
-        transition: all var(--page-transition_duration) ease;
+#page__pusher ul li a,
+#page__pusher ul li a:link {
+  line-height: 1;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--ocf-light);
+  transition: all var(--page-transition_duration) ease;
+}
 
-        &:hover {
-          color: var(--ocf-primary);
-        }
-        &:active {
-          color: var(--ocf-white);
-        }
-      }
+#page__pusher ul li a:hover {
+  color: var(--ocf-primary);
+}
 
-      /* Parent items that have a submenu — style as section headers */
-      &:has(> ul) {
-        > a,
-        > a:link {
-          color: var(--ocf-primary);
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          padding-top: 0.75rem;
-          padding-bottom: 0.25rem;
-          border-top: 1px solid var(--ocf-primary);
+#page__pusher ul li a:active {
+  color: var(--ocf-white);
+}
 
-          &:hover {
-            color: var(--ocf-light);
-          }
-        }
-      }
 
-      /* Submenu indentation */
-      ul {
-        padding: 0;
-        list-style: none;
+/* Submenu indentation */
+#page__pusher ul li ul {
+  padding: 0;
+  list-style: none;
+}
 
-        li {
-          a,
-          a:link {
-            padding-left: 2rem;
-            font-size: 0.95em;
-            color: var(--ocf-primary);
-          }
-        }
-      }
-    }
-  }
+#page__pusher ul li ul li a,
+#page__pusher ul li ul li a:link {
+  padding-left: 2rem;
+  font-size: 0.95em;
+  color: var(--ocf-light);
 }
