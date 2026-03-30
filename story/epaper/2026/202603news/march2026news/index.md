@@ -1,7 +1,8 @@
 ---
 layout: story
-og_title: 每週開放科技動態摘要（2026-03-23 ～ 2026-03-30）
-og_description: "本週重點：Linux Foundation $1,250 萬開源安全資助、KubeCon Europe 2026 多項捐贈、Anthropic vs 五角大廈案裁定"
+og_title: 每週開放科技動態摘要
+og_description: 2026-03-23 ～ 2026-03-30
+og_image: images/image1.png
 ---
 
 # 每週開放科技動態摘要
@@ -26,9 +27,9 @@ CNCF 主辦的 KubeCon + CloudNativeCon Europe 2026 於 3 月 23 至 26 日在�
 
 Linux Foundation 於 3 月 26 日發布 Open Source Summit + Embedded Linux Conference North America 2026 完整議程，活動將於 5 月 18–20 日在美國明尼阿波利斯舉行。議題涵蓋 AI 代理人崛起、軟體供應鏈安全強化、嵌入式 Linux 與邊緣運算創新，是今年開源社群最受矚目的年度盛事之一，對軟體工程師、架構師及開源從業者具重要參考價值。
 
-### 4. [OpenSSF 三月通訊：SLSA 達 Graduated 狀態、Kusari 工具免費提供](https://openssf.org/newsletter/2026/03/26/openssf-newsletter-march-2026/)
+### 4. [OpenSSF 三月消息：SLSA 達 Graduated 狀態、Kusari 工具免費提供](https://openssf.org/newsletter/2026/03/26/openssf-newsletter-march-2026/)
 
-OpenSSF 三月通訊宣布多項重要進展：SLSA（Supply-chain Levels for Software Artifacts）專案正式達到「Graduated（畢業）」狀態，成為業界公認的供應鏈安全成熟標準；同時宣布與 Kusari 合作，免費提供 Kusari Inspector 工具給 OpenSSF 旗下專案，大幅提升供應鏈可視性。首份 Gemara 白皮書也同步發布，對關注軟體供應鏈安全的企業與開發者具重要參考意義。
+OpenSSF 宣布多項重要進展：SLSA（Supply-chain Levels for Software Artifacts）專案正式達到「Graduated（畢業）」狀態，成為業界公認的供應鏈安全成熟標準；同時宣布與 Kusari 合作，免費提供 Kusari Inspector 工具給 OpenSSF 旗下專案，大幅提升供應鏈可視性。首份 Gemara 白皮書也同步發布，對關注軟體供應鏈安全的企業與開發者具重要參考意義。
 
 ### 5. [OSI 與 FSF 聯合向司法部提交 AI 開源立場聲明](https://www.fsf.org/news/osi-fsf-joint-position-cptn)
 
