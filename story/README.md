@@ -1,3 +1,6 @@
+---
+published: false
+---
 # 最新消息頁面上架步驟
 
 完成以下三步驟，即可上架文章到[最新消息](https://ocf.tw/story/menu/articles/#最新文章)。
