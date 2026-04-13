@@ -7,10 +7,10 @@ description_en: The tension between government, platforms, and civil rights. The
 tagline: 政府、平台與公民權利的拉鋸
 tagline_en: The tension between government, platforms, and civil rights
 
-og_image:
+og_image: /p/pdr/avatar.jpg
 og_image_en:
-header_image:
-avatar_image:
+header_image: /p/pdr/header.png
+avatar_image: /p/pdr/avatar.jpg
 theme_color: purple
 
 start:
@@ -27,8 +27,8 @@ tags:
 tags_en:
 
 links:
-  - title: 閱讀研究報告（即將釋出）
-    url:
+  - title: 閱讀研究報告
+    url: /p/pdr/pdr-report-2026.pdf
     color: purple
     icon: file alternate outline icon
 
