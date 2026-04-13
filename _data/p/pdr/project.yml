@@ -1,0 +1,47 @@
+name: 配合政府執法，數位平臺該交出民眾資料嗎？
+name_en: Should Digital Platforms Hand Over User Data for Law Enforcement?
+
+description: 政府、平台與公民權利的拉鋸。首份結合臺灣產業實務與政策對話的研究，盤點數位索資的實務挑戰與治理結構問題，並提出具體改革建議。
+description_en: The tension between government, platforms, and civil rights. The first research report combining Taiwan's industry practices and policy dialogue on government data requests to digital platforms.
+
+tagline: 政府、平台與公民權利的拉鋸
+tagline_en: The tension between government, platforms, and civil rights
+
+og_image:
+og_image_en:
+header_image:
+avatar_image:
+theme_color: purple
+
+start:
+end:
+
+topic_ids:
+  - rights
+  - government
+  - data
+field_ids:
+  - rsh
+  - adv
+tags:
+tags_en:
+
+links:
+  - title: 閱讀研究報告（即將釋出）
+    url:
+    color: purple
+    icon: file alternate outline icon
+
+links_en:
+
+organizer_ids:
+  - ocf
+co-organizer_ids:
+consultant_ids:
+
+board_ids:
+
+staff_ids:
+
+listed: yes
+listed_en: no
