@@ -41,7 +41,7 @@ GitHub Copilot 與 VS Code 團隊，聯同 Microsoft 開源計畫辦公室，宣
 
 ### 2. [Google 違諾提供使用者資料給美國移民執法局（ICE）](https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data)
 
-EFF 發文指出，Google 在未事先通知當事人的情況下，應 ICE 傳票要求提供一名博士生的帳戶資料，違反其長達近十年的用戶通知承諾。EFF 已就此向加州及紐約州檢察長提出投訴，要求調查 Google 是否構成欺騙性商業行為，並呼籲用戶重視平台資料保護承諾的法律效力。
+EFF 發文指出，Google 在未事先通知當事人的情況下，應 ICE 傳票要求提供一名博士生的帳戶資料，違反其長達近十年的使用者通知承諾。EFF 已就此向加州及紐約州檢察長提出投訴，要求調查 Google 是否構成欺騙性商業行為，並呼籲使用者重視平台資料保護承諾的法律效力。
 
 ### 3. [EFF 呼籲國會拒絕直接延長 FISA 第 702 條款](https://www.eff.org/deeplinks/2026/04/we-need-you-our-privacy-cannot-afford-clean-extension-section-702)
 
@@ -49,7 +49,7 @@ EFF 公開敦促國會不得在未加入隱私保障條件的情況下，直接�
 
 ### 4. [YouTube 新增「零分鐘」限制，使用者終於可以完全關閉 Shorts](https://9to5google.com/2026/04/15/youtube-shorts-turn-off-zero-minute-timer-setting/)
 
-YouTube 於 4 月 15 日向全球 Android 與 iOS 用戶正式推出 Shorts 每日觀看時限「零分鐘」選項，用戶啟用後，Shorts 分頁將消失，首頁也不再推播短影片。此功能延伸自 2025 年底推出的 Shorts 計時器（原本最低設定為 15 分鐘），並於今年 1 月擴展至家長控制功能，「零分鐘」選項終於在 4/15 全面開放成人帳號使用。
+YouTube 於 4 月 15 日向全球 Android 與 iOS 使用者正式推出 Shorts 每日觀看時限「零分鐘」選項，使用者啟用後，Shorts 分頁將消失，首頁也不再推播短影片。此功能延伸自 2025 年底推出的 Shorts 計時器（原本最低設定為 15 分鐘），並於今年 1 月擴展至家長控制功能，「零分鐘」選項終於在 4/15 全面開放成人帳號使用。
 
 ---
 
