@@ -127,7 +127,8 @@
   color: #fff;
 }
 .os-btn-hero-o {
-  border: 2px solid rgba(255, 255, 255, .3);
+  border: 2px solid rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, .15);
   color: #fff;
   padding: 15px 30px;
   border-radius: 12px;
@@ -139,8 +140,8 @@
   transition: all .2s;
 }
 .os-btn-hero-o:hover {
-  border-color: rgba(255, 255, 255, .7);
-  background: rgba(255, 255, 255, .08);
+  border-color: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .25);
   color: #fff;
 }
 .os-hero-note {
