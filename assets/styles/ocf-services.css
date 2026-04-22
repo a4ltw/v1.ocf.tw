@@ -127,9 +127,9 @@
   color: #fff;
 }
 .os-btn-hero-o {
-  border: 2px solid rgba(255, 255, 255, .6);
-  background: rgba(255, 255, 255, .15);
-  color: #fff;
+  border: 2px solid #fff;
+  background: #fff;
+  color: #2a1a5e;
   padding: 15px 30px;
   border-radius: 12px;
   font-weight: 600;
@@ -140,9 +140,9 @@
   transition: all .2s;
 }
 .os-btn-hero-o:hover {
-  border-color: rgba(255, 255, 255, .9);
-  background: rgba(255, 255, 255, .25);
-  color: #fff;
+  background: rgba(255, 255, 255, .85);
+  border-color: #fff;
+  color: #2a1a5e;
 }
 .os-hero-note {
   margin-top: 20px;
