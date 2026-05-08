@@ -143,6 +143,10 @@ og_image:
 
 <h2 class="section-title">數位人權</h2>
 <div class="card-grid">
+    <a href="https://ocf.tw/p/pdr/pdr-report-2026.pdf" class="resource-card">
+        <h3>配合政府執法，數位平臺該交出民眾資料嗎？</h3>
+        <p>政府、平臺與公民權利的拉鋸</p>
+    </a>
     <a href="https://ocf.tw/p/rdr" class="resource-card">
         <h3>企業數位人權報告</h3>
         <p>檢視企業在數位時代的人權責任</p>
