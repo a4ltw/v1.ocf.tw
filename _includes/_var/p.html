@@ -6,20 +6,19 @@
 
 {% if page.url contains '/en/p/' or page.url contains '/p/' %}
   {% assign paths = page.url | replace: '/en/p/', '' | replace: '/p/', '' | split: '/' %}
-{% endif %}
-
-<!-- fetch data -->
-
-{% if paths[1] and page.name != paths[1] %}
-  {% assign parent_project_id = paths[0] %}
-  {% assign parent_project = site.data.p[parent_project_id].project %}
-  {% assign project_id = paths[1] %}
-  {% assign project = site.data.p[parent_project_id][project_id].project %}
-{% else %}
-  {% assign parent_project_id = undefined %}
-  {% assign parent_project = undefined %}
-  {% assign project_id = paths[0] %}
-  {% assign project = site.data.p[project_id].project %}
+  <!-- Require a real child slug: trailing slash yields paths[1] == "". Ignore .../index.html as slug. -->
+  {% assign path_child = paths[1] | default: '' | strip %}
+  {% if path_child != '' and path_child != 'index.html' and page.name != path_child %}
+    {% assign parent_project_id = paths[0] %}
+    {% assign parent_project = site.data.p[parent_project_id].project %}
+    {% assign project_id = path_child %}
+    {% assign project = site.data.p[parent_project_id][project_id].project %}
+  {% else %}
+    {% assign parent_project_id = undefined %}
+    {% assign parent_project = undefined %}
+    {% assign project_id = paths[0] %}
+    {% assign project = site.data.p[project_id].project %}
+  {% endif %}
 {% endif %}
 
 <!-- get vars -->

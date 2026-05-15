@@ -105,6 +105,11 @@
     img {
       max-width: 35%;
     }
+    /* defendhrd download covers: full width on small screens (override rule above) */
+    .defendhrd-results img.album-art {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -116,6 +121,14 @@
   #project .flex-swap {
     order: 0;
   }
+}
+
+/* Global html/body use font-weight:600; narrative copy in the project column reads better at 400. */
+#project .project__body > div p,
+#project .project__body > div ul,
+#project .project__body > div ol,
+#project .project__body > div li {
+  font-weight: 400;
 }
 
 .ui.dividing.header {
