@@ -1,9 +1,9 @@
-name: 在台人權工作者的數位安全樣態與培力
-name_en: Defending and Documenting Digital Threats for HRDs in Taiwan
+name: 公民團體與人權工作者資安陪伴計畫
+name_en: Digital Security Support for CSOs and HRDs in Taiwan
  
 
-description: 在台人權與民主倡議工作者（Human Rights Defenders，HRDs）因其倡議工作，面對著來自境內或境外的惡意數位威脅攻擊。本項專案旨在記錄在台人權工作者所遭遇到的數位威脅的來源及規模，並且發展一個可分享的整體性資安培力工具及訓練計劃，讓人權工作者得以透過研究成果和工具來提升他們的數位安全。
-description_en: Human rights defenders (HRDs) based in Taiwan have become the targets of digital attacks from malicious actors. This project aims to identify and document the scope and the sources of the digital threats, in order to develop a capacity-building toolkits  to assist HRDs effectively mitigate the risks and support their work.
+description: 透過一年期長期陪伴，協助 6 個高風險組織檢視數位工具、帳號、資料與工作流程，建立可落實的資安政策或守則。計畫產出 3 份成果報告與 1 份網站教材，並在陪伴過程中成功攔截一起針對公民社會的資安攻擊事件。
+description_en: The Open Culture Foundation’s Security Makeover Program for CSOs and HRDs accompanied six Taiwan-based organizations for one year to review tools, accounts, data, and workflows, and to develop practical security policies or guidelines. The program produced three public reports and one learning resource, and helped stop a cyberattack targeting civil society before it caused harm.
 
 
 tagline: 
@@ -26,23 +26,39 @@ tags:
 tags_en:
 
 links:
-  - title: 【研究報告】台灣人權與民主倡議團體數位威脅概況 (English)
-    url:  https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=sharing
+  - title: 【報告】台灣人權與民主倡議團體數位威脅概況
+    url: https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view?usp=drive_link
     color: 
     icon: file outline
-  - title: 【報告摘要】台灣人權與民主倡議團體數位威脅概況 (中文)
-    url: https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view?usp=sharing
+  - title: 【報告】守護倡議之聲：公民團體與人權工作者資安陪伴計畫成果報告
+    url: https://drive.google.com/file/d/1wgYdObezFzlI6OJLozzqQF5Vt11B7gCd/view?usp=drive_link
     color: 
     icon: file outline
+  - title: 【報告】信任的代價：一場針對臺灣人權工作者的資安攻擊與防守實錄
+    url: https://drive.google.com/file/d/1VwZwVXpOjTBZibVCTbIF1wUdPhQU_wJz/view?usp=drive_link
+    color: 
+    icon: file outline
+  - title: 【教材】資安新手村 (SSD)
+    url: https://ssd.ocf.tw/
+    color: 
+    icon: world icon
 links_en:
-  - title: 【Report】 Digital Security Mapping for HRDs in Taiwan
-    url:  https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=sharing
+  - title: 【Report】Digital Security Mapping for HRDs in Taiwan
+    url: https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=drive_link
     color: 
     icon: file outline
-  - title: 【Summary】 Digital Security Mapping for HRDs in Taiwan
-    url: https://drive.google.com/file/d/1SbsZ_4WekPX7sS1jfVKhaFZGxCjtUgPX/view?usp=sharing
+  - title: "【Report】Safeguarding Advocacy: A Security Makeover Program (SMP) for CSOs and HRDs"
+    url: https://drive.google.com/file/d/1ln6__KiGZgf9QSkYhwKo8gm4L9d9tExo/view?usp=drive_link
     color: 
     icon: file outline
+  - title: "【Report】The Cost of Trust: Lessons from a Cyberattack on Taiwan-Based Human Rights Defenders"
+    url: https://drive.google.com/file/d/1Q3Z2nLJ4dkQpmSqXQcctl4IW3cUhdDkF/view?usp=drive_link
+    color: 
+    icon: file outline
+  - title: 【Learning Material】Shield of Self-Defense (SSD)
+    url: https://ssd.ocf.tw/
+    color: 
+    icon: world icon
 
 organizer_ids:
   - ocf
