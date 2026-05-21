@@ -1,0 +1,46 @@
+name: 2026—2036 開放資料倡議宣言
+name_en: 2026-2036 Open Data Advocacy Manifesto
+
+description: 為了讓臺灣能繼續在數位與人權的道路上進步，我們提出「永續資料」作為 2026 到 2036 年開放資料倡議的核心概念。所謂永續，不僅是資料本身的延續性與可重用性，更是一種治理態度──資料應如自然生態般循環流動，於蒐集、治理、開放、應用、回饋之間形成完整的閉環，讓資料的產出能服務治理，治理的成果又能回饋資料的品質與正當性。
+description_en: Centering sustainable data to reshape Taiwan's data governance and transparency, moving open data from release counts toward usable, governable, and sustainable public infrastructure.
+
+tagline: 以「永續資料」為核心，重塑臺灣的資料治理與透明
+tagline_en: Sustainable data for Taiwan's next decade of data governance and transparency
+
+og_image: /p/opendatanext/avatar.png
+og_image_en:
+header_image: /p/opendatanext/visual-og.png
+header_image_en:
+avatar_image: /p/opendatanext/avatar.png
+avatar_image_en:
+theme_color: teal
+
+start: 2026/01/01
+end:
+
+topic_ids:
+  - data
+  - government
+field_ids:
+  - adv
+  - ai
+  - legal
+tags:
+  - 開放資料
+  - 永續資料
+  - 資料治理
+  - AI-Ready
+tags_en:
+  - Open Data
+  - Sustainable Data
+  - Data Governance
+  - AI-Ready
+
+organizer_ids:
+  - ocf
+
+board_ids:
+staff_ids:
+
+listed: yes
+listed_en: no
