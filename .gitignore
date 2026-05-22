@@ -7,3 +7,5 @@ Gemfile
 .jekyll-cache
 .zshrc
 .vscode/
+.claude/
+AGENTS.md
