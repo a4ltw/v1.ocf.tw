@@ -1,0 +1,540 @@
+title: 開放文化基金會 2025 成果報告
+description: 我所看見的數位未來
+cover: /p/2025/cover.png
+theme: light
+color:
+cover_image_opacity: 0
+cover_veil_opacity: 0
+alignment: left
+download: /p/2025/OCF-Annual-Report-2025.pdf
+items:
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 致數位時代的公民
+        description: |
+          <div class="ocf2025-letter">
+          <p>數位科技的發展，正在深刻影響我們每個人如何生活、如何思考，以及如何行使權利。</p>
+          <p>邀請你跟著我們透過一位十六歲女孩的視角，體驗與思考這個時代最真實的集體課題。過去我們努力爭取的開放、自由、透明與參與，隨著科技的快速發展，正逐漸被不透明的程式碼與演算法所隱蔽。我們看似在數位世界裡自由穿梭，但是每個人的隱私、偏好甚至未來的可能性，卻正被少數人編寫的技術規則所定義。</p>
+          <p>開放文化基金會（OCF）存在的理由，正是為了確保科技的運作規則，能重新掌握在每一位數位公民的手中。</p>
+          <p>過去這年，我們不僅「談論」自由，更在第一線「實踐」開放。我們推動公共程式（Public Code）理念，要求政府主動採用開源軟體，避免公共資源被特定廠商壟斷（Vendor Lock-in）；透過開放科技車庫與資安陪伴計畫，我們為公民社會築起資安防線；同時，我們也深入討論數位人權法案，確保隱私與自由不成為科技進步的代價。</p>
+          <p>面對 AI 浪潮帶來訓練資料的討論、安全與隱私危機，OCF 也前進立法院，協力推動「國會應用 AI 指引」，並參與數位部多場會議，探討政府如何負責任地使用 AI，確保個人資料受到保護、創作者權益獲得保障。我們相信，解決數位困境的最佳路徑是透明共享，AI 應該是造福社會的公共財，而非失序的工具。</p>
+          <p>OCF 期待的是一個真正開放且透明的數位未來。在這個世界裡，透過開源程式碼、開放資料與開放政府，每個人都能平等地參與協作，守護屬於自己的權益。誠摯邀請你成為 OCF 的後盾，與我們並肩推動更好的數位生活，將這份決定未來的力量，穩穩掌握在自己手中。</p>
+          <p class="ocf2025-signature">開放文化基金會 執行長 <img src="/p/2025/images/signature.png" alt="執行長簽名"></p>
+          </div>
+        action:
+          title: 下載完整 PDF
+          url: /p/2025/OCF-Annual-Report-2025.pdf
+
+  - type: content
+    columns:
+      - type: image
+        url: /p/2025/cover.png
+        swap: false
+      - type: article
+        alignment: left
+        title: 嘿，很高興在這裡見到你
+        subtitle: 談談我們所處的這個世界
+        description: |
+          <p>在我成長的臺灣社會，大多事都能轉化為 0 與 1 的組合：我們在社群軟體上聊天、購物、從網路搜尋知識，大大小小的生活瑣事如今都在線上完成。在長大的過程中，我發現真實世界裡，我們有歷史悠久的法律、社會制度，無形中在維持、調整著世界的秩序。然而，相較之下，我卻發現人們棲身的數位世界，其實和我一樣年輕、還有些混沌不明。</p>
+          <p>我不希望未來的數位世界是個巨大的黑盒子，藏滿了看不見的監控與操縱。我期待的未來，應該是透明、能夠被討論，且是每個人都能參與編寫的。</p>
+          <p>這座打通數位世界的橋樑，尚在建造中，也需要更多人的關注，所以不妨透過我的視角，看看這一年來，「開放文化基金會」正如何為了我們這代人的數位自由而戰。</p>
+
+  - type: content
+    columns:
+      - type: article
+        alignment: left
+        title: 與世界中的開發者們跑接力賽
+        description: |
+          <div class="ocf2025-story">
+          <p class="ocf2025-story-lead">我會認識 OCF 以及他們正在做的事情，起初只是因為我想在合作社吃到一碗熱騰騰的滷肉飯。</p>
+          <p>二十一世紀都要過四分之一了，我們學校合作社至今還沒有線上訂餐系統！每到中午，大家只能排隊空等，買到飯時，午休早就過了一半。面對這日復一日的窘境，我突發奇想，既然都上了那麼多年的學校資訊課，為什麼我不自己寫一個大家都能用的線上訂餐 App？</p>
+          <p>才開工不久，我發現自己很快就卡關了。那些複雜的後端金流和驗證機制，對一個十六歲高中生來說簡直是越級打怪。直到我點開 GitHub，推開了「開放原始碼」世界的大門。在那裡，我找到了一個學長分享的訂餐系統模板。最讚的是，這份模板沒有所謂「版權所有、翻印必究」這回事，而是「歡迎轉用與協作」！</p>
+          <p>於是我馬上踩在巨人的肩膀上，運用這套程式碼修改出我們學校的版本；甚至，把我的版本傳回 GitHub，幫助了另一個社團的學弟。那一刻我深刻體會到：當技術不再被鎖在黑盒子裡，我們就不必一次次從零開始蓋房子。這，就是 OCF 一直在說的「協作」吧？彷彿是與網路上的開發者們跑接力賽，我的貢獻也能成為他人的墊腳石。原來，開放原始碼就是數位世界裡不可或缺的「公共設施」。</p>
+          <p>回過頭看，既然高中生都能靠著開源精神解決校園的午餐危機，那麼在更大的社會舞台上呢？OCF 在這年針對「開放科技」——包括開放原始碼、開放資料、開放政府——為我們搭建了哪些數位橋樑？</p>
+          </div>
+      - type: article
+        alignment: center
+        title:
+        description: |
+          <figure class="ocf2025-illustration"><img src="/p/2025/images/girl-open-tech.png" alt="小女孩觀察開放科技與開源協作"></figure>
+
+  - type: header
+    anchor: open-tech
+    theme: light
+    color:
+    icon: code branch
+    title: 01 開放科技
+    description:
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 開放原始碼，就是數位世界的公共設施
+        description: |
+          <p>在數位世界裡，我們每天使用的軟體與服務就像是建築的地基。OCF 過去一年在「開放科技」的投入，就是為了確保這座地基不被壟斷、安全可靠且具備公共性。</p>
+          <div class="ocf2025-detail-grid">
+            <section>
+              <h3>軟體供應鏈的守護者：推動 OSPO 治理與國際接軌</h3>
+              <p>開源軟體是政府與企業運作的核心，但如何「用得對、管理得當」就是門學問。OCF 在今年也致力將複雜的治理觀念，轉化為可執行的工具。</p>
+              <ul>
+                <li><strong>國際聯盟首位臺灣成員，正式加入 OSPO Alliance：</strong>OCF 是臺灣第一個加入 OSPO Alliance 的組織，將全球正熱門的開源治理經驗引進國內。</li>
+                <li><strong>釋出治理手冊、共享數位資產：</strong>翻譯並釋出《開放原始碼良善治理手冊》正體中文版，並協力將自由軟體鑄造場（OSSF）及台灣創用 CC 計畫（CCTW）過往研究網站保存的數位資產重新備份到 OCF GitHub。</li>
+                <li><strong>出訪 FOSDEM，觀察數位韌性法案：</strong>第三次出席歐洲最大開源研討會 FOSDEM，把臺灣經驗帶到國際社群，也追蹤「數位韌性法案（CRA）」對開源合規的影響。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>數位主權的守門員：公共程式（PMPC）與在地實作</h3>
+              <p>OCF 長期倡議開放原始碼，也致力讓開源在政府機關落實，讓關乎公眾利益的程式碼能真正由國家和公民所擁有和控制。</p>
+              <ul>
+                <li><strong>協助臺北市政府完成「發展導入開源評估指引」：</strong>針對伺服器虛擬化與資料庫軟體，實際進行兩案開源替代方案評估測試，加速機關採納開源軟體。</li>
+                <li><strong>國際標準在地化：</strong>完成 Standard for Public Code 最新版（0.8.1）的繁中翻譯，確保臺灣推動公共程式時能與國際技術規格接軌。</li>
+                <li><strong>協力數位發展部，搭建政策對話橋樑：</strong>協力辦理 4 場數位部「公共程式發展承諾事項」小組會議，讓民間社群、科技廠商與政府官員共商軟體公共化的下一步。</li>
+              </ul>
+            </section>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title:
+        description: |
+          <div class="ocf2025-photo-grid two">
+            <figure><img src="/p/2025/images/fosdem-1.jpg" alt="在 FOSDEM 向歐洲開源社群介紹臺灣開源專案"><figcaption>在 FOSDEM 向歐洲開源社群介紹臺灣開源專案</figcaption></figure>
+            <figure><img src="/p/2025/images/fosdem-2.jpg" alt="透過留言板促進歐洲與臺灣開源社群交流"><figcaption>透過留言板促進歐洲與臺灣開源社群交流</figcaption></figure>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 女孩的觀察小筆記
+        description: |
+          <div class="ocf2025-note"><p>從前我以為「開源」只是大家聚在一起寫免費程式，但讀到 OCF 寫的《開放原始碼良善治理手冊》和推動的「公共程式」才發現，開源的核心其實是一場關於「權利」的運動。</p><p>如果政府用的程式碼不透明，我們就無法監督；如果人權團體沒有安全的開源工具和資安基礎指引，民眾就難以發聲。OCF 就像是數位世界裡的造橋者，確保我們腳下所踩的每一塊磚石都是透明且安全的。</p></div>
+
+  - type: content
+    columns:
+      - type: article
+        alignment: left
+        title: 我想知道，我們到底吃了什麼？
+        description: |
+          <div class="ocf2025-story">
+          <p class="ocf2025-story-lead">我開發的訂餐 App 正式上線了！同學間好評不斷，學校甚至送了我小功一支。</p>
+          <p>隨著越來越多人購買合作社的餐食，我開始好奇：為什麼有些菜色總是缺貨？食材來源又真的安全嗎？我試著向學校索取過去三年的飲食採購資料，想做成視覺化圖表讓大家監督。結果學務處主任卻推託說「那是內部資料，不方便公開」，最後只給了我一份難以用程式分析的 PDF 檔。</p>
+          <p>這是我第一次感受到「資料不透明」的無力、落實「開放資料」的重要。如果連學校福利社的資料都這麼難拿，或是拿到了程式難以讀取的資料格式，那政府手裡掌握的預算、環境監測資料、甚至法案推動的流程，普羅大眾又真的能看到全貌嗎？</p>
+          <p>我這才理解 OCF 為什麼在「開放原始碼」之外，還要推動開放資料與開放政府。與民生相關的非敏感資料，不應該是被關在公部門硬碟裡的秘密，每個公民都該有自由取用、監督的權利。如果沒有透明的資料，我們所謂的「公眾參與」，都只是在迷霧中盲目摸索。</p>
+          <p>因此我決定堅持到底，仿照 OCF 的倡議方式與溝通策略，去敲開那扇通往真相的大門！</p>
+          </div>
+      - type: article
+        alignment: center
+        title:
+        description: |
+          <figure class="ocf2025-illustration"><img src="/p/2025/images/girl-open-data.png" alt="小女孩觀察開放政府與開放資料"></figure>
+
+  - type: header
+    anchor: open-government
+    theme: light
+    color:
+    icon: database
+    title: 02 開放政府與資料
+    description:
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 資料不應該是被關在公部門硬碟裡的秘密
+        description: |
+          <p>OCF 過去一年扮演了「倡議者」與「教育者」的雙重角色，不僅在體制內推動法制化，更讓開放文化的種子走入國會與校園。</p>
+          <div class="ocf2025-detail-grid">
+            <section>
+              <h3>翻轉權力核心：打造「智慧與開放」的政府與國會</h3>
+              <p>AI 浪潮襲來，掌握國家法律的國會準備好了嗎？OCF 在過去一年持續推動國會及政府的運作透明化與數位化，讓開放政府成為可能。</p>
+              <ul>
+                <li><strong>國會應用 AI 指引：</strong>協力英國 WFD 西敏寺民主基金會於立法院辦理「當國會遇見 AI：國會應用 AI 指引發布分享會」，探討如何負責任地使用 AI，讓科技安全地成為輔助決策工具。</li>
+                <li><strong>凝聚開放共識：</strong>於 g0v 社群空間與 WFD 合作辦理「開放國會的下一步」閉門座談會，重新串連社群，確保開放國會承諾持續傳承與對話。</li>
+                <li><strong>化行動成對話：</strong>出任行政院開放政府國家行動方案推動小組委員，持續在各部會間扮演溝通橋樑。</li>
+                <li><strong>開放政府的深根落地：</strong>協助法務部辦理薦任第九職等政風主管研究班，讓開放政府觀念持續深入公務人員實際運作。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>打造開放基石：從法案、協作到全球串連</h3>
+              <p>推動開放資料，需要強而有力的法律基石。OCF 深度參與政策諮詢，確保法條不只服務技術，更應守護人權。</p>
+              <ul>
+                <li><strong>推動部會間協作：</strong>在退輔會、陸委會、文化部擔任部會等級資料開放諮詢委員，協助各部會在 AI 時代持續依循可行的開放資料路線前進。</li>
+                <li><strong>法案倡議與影響評估：</strong>出席《促進資料創新利用發展條例》草案多場民間諮詢、利害關係人會議，並針對人權影響評估提供專業意見。</li>
+                <li><strong>國際組織的開放推動：</strong>作為 Open Knowledge Foundation 開放資料管理工具 Open Data Editor 的使用者研究諮詢合作夥伴，分享在地倡議經驗。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>開放課程走入校園，培育未來的數位公民</h3>
+              <p>開放文化不應止步於技術社群，更要成為跨領域的通識基礎知能，也融入公部門及非營利組織的知識增能。</p>
+              <ul>
+                <li><strong>開源擴散進校園：</strong>透過多元主題與場域組合，執行 6 場系列講座，走進東吳、臺北大學、陽明交通大學等校系，議題橫跨開放資料、AI 數位創作、數位人權與社會責任。</li>
+                <li><strong>數位公民基礎知能：</strong>在臺灣歷史博物館分享國際「數位公共財」趨勢，並協力「香港邊城青年」學習如何負責任地使用 AI 進行公共表達。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>修復資料品質：公民科技的實戰</h3>
+              <p>開放資料不能只求其「有」，更要「好用」。OCF 與愛陌生協會合作，透過公民科技的力量改善 AED（自動體外心臟電擊去顫器）的資料品質，期望高品質的開放資料在關鍵時刻真的能救命。</p>
+            </section>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title:
+        description: |
+          <div class="ocf2025-photo-grid two">
+            <figure><img src="/p/2025/images/aed.jpg" alt="Taiwan AED Google Maps 全民建置行動起跑記者會"><figcaption>Taiwan AED Google Maps 全民建置行動起跑記者會（照片：鄧東波）</figcaption></figure>
+            <figure><img src="/p/2025/images/parliament-ai.jpg" alt="國會應用 AI 指引"><figcaption>國會應用 AI 指引（照片：西敏寺民主基金會）</figcaption></figure>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 女孩的觀察小筆記
+        description: |
+          <div class="ocf2025-note"><p>從前，我以為資料開放就是把檔案丟到網站上，後來才發現，開放資料是有要求和品質分數的。如果格式不方便機器讀取，又或法律沒有明確規範政府機關必須開放時，民眾便難以取得。</p><p>看到 OCF 跑去立法院、跑去行政院，甚至來到大學校園講課，我才明白「開放」是一場需要跟時間賽跑的耐力賽。特別是 OCF 跟愛陌生協會合作提升 AED 地圖開放資料準確性的案例，讓我覺得很酷——原來當資料變得透明且正確，它就不只是硬碟裡生硬的資料，而是能保護每個人的堅強助力。</p></div>
+
+  - type: content
+    columns:
+      - type: article
+        alignment: left
+        title: 演算法背後，是誰在看著我？
+        description: |
+          <div class="ocf2025-story">
+          <p class="ocf2025-story-lead">這幾個月來，在不斷的溝通與衝撞下，校方的食材資料齊全了，App 的版本也在開發者前輩的建議下越來越成熟。</p>
+          <p>但就在這個訂餐系統越來越受歡迎時，發生了一件令人毛骨悚然的事：我發現某間長期與校方合作的餐飲企業，竟然私下來信，希望我把在校生的點餐偏好、過敏記錄甚至作息時間，「授權」給他們當作行銷資料。</p>
+          <p>想當然耳，我拒絕了，但這事件也讓我驚覺，在這個萬物聯網的時代，我們每一個不經意的數位足跡、每一筆被轉換成 0 與 1 的日常行為，原來都可能淪為企業間私下交易的「貨幣」。在糖衣包裹的科技便利之下，我們的隱私變得更加岌岌可危。</p>
+          <p>這就是 OCF 守護的「數位人權」防線。在無孔不入的網路商業監控，與 AI 技術可能遭逢濫用的陰影下，我們迫切需要更嚴謹、更能保護個資與數位人權的法規。我不希望未來的數位生活，是以我們的個資作為交易貨幣。</p>
+          <p>那一天晚上，我徹夜檢查原始碼，親手刪掉了所有不必要的追蹤碼，因為我明白，守護同學的個人資料，就是在守護他們身而為人的基本尊嚴。</p>
+          </div>
+      - type: article
+        alignment: center
+        title:
+        description: |
+          <div class="ocf2025-illustration-pair">
+            <figure><img src="/p/2025/images/girl-digital-rights.png" alt="小女孩面對數位人權與隱私風險"></figure>
+            <figure><img src="/p/2025/images/girl-digital-rights-detail.png" alt="鍵盤、視線與個資監控的插畫細節"></figure>
+          </div>
+
+  - type: header
+    anchor: digital-rights
+    theme: light
+    color:
+    icon: shield alternate
+    title: 03 數位人權
+    description:
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 數位世界的自由不是理所當然
+        description: |
+          <p>過去一年，OCF 透過國際會議出訪與在地社群紮根，努力守護每一位公民的隱私與言論自由。</p>
+          <div class="ocf2025-detail-grid">
+            <section>
+              <h3>國際外交的數位前線：將臺灣經驗帶向世界</h3>
+              <p>數位權利的威脅是全球性的。OCF 積極參與多場具權威的國際大會，確保臺灣在亞太、乃至全球的數位治理中不缺席。</p>
+              <ul>
+                <li><strong>亞太數位權利大會（DRAPAC）：</strong>於吉隆坡介紹 OCF 的 12 個月「資安陪伴計畫」，與推廣數位人權與科技議題的國際夥伴，交流如何支援高風險環境下的倡議工作者。</li>
+                <li><strong>全球隱私大會（GPA）：</strong>於首爾論壇分享臺灣公民社群在隱私與數位權利保護上的實質貢獻。</li>
+                <li><strong>亞洲民主大會（Asia Democracy Assembly）：</strong>於全亞洲最具影響力的民主盛會，深度解析臺灣遭遇跨境數位攻擊的防禦策略，拆解威權主義行動。</li>
+                <li><strong>Global Gathering：</strong>在葡萄牙連結臺灣及全球數位人權國際組織及工作者，與各國與會者交流臺灣及國際數位權利發展的最新趨勢。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>RightsCon 2025 臺北年會首度在臺舉辦</h3>
+              <p>2025 年，由國際組織 Access Now 主辦的「RightsCon 全球數位人權大會」移師臺灣，一連 4 天在臺北國際會議中心舉行。OCF 作為 2025 RightsCon 的在地夥伴，在這場國際的人權盛會中直接與世界各地的開發者、學者交流，串聯臺灣的 NGO 組織，一起發掘更多實際可執行的人權守護策略。</p>
+              <ul>
+                <li><strong>網路自由、網路審查、匿名網路工作坊：</strong>在 RightsCon 期間，OCF 舉辦網路自由工作坊，邀請 Tor 瀏覽器、隱私作業系統 Tails、全球網路監測組織 OONI 來臺，讓臺灣開發者能直接與國際團隊交流，分享各地如何偵測網路封鎖、規避數位監控，確保資訊流不被惡意阻斷。</li>
+                <li><strong>與民間團體攜手提出 9 大訴求：</strong>攜手民間司法改革基金會、台灣人權促進會、國際特赦組織台灣分會等公民團體，發表聯合聲明及 9 項核心訴求，針對 AI 治理與數位人權向政府提出建言，確保臺灣在國際注目下落實開放與透明。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>資安陪伴計畫：不讓守護者孤軍奮戰</h3>
+              <p>奔波倡議的公民團體（CSOs）與人權工作者（HRDs）往往是跨境威權政府的數位攻擊目標。為了不讓組織在惡意威脅中孤軍奮戰，OCF 自 2024 年起啟動「資安陪伴計畫」，針對 CSOs 與 HRDs 面臨的數位威脅，透過為期一年的實質陪伴，提升組織與個人的資安防禦能力。</p>
+              <ul>
+                <li><strong>資安攻擊案例分享會：</strong>邀請臺灣資安志願社群 CSCS 之資安分析師，將在資安陪伴計畫期間所發現的針對性釣魚攻擊事件進行技術拆解，讓公民團體從實戰中學習如何防禦數位威權主義的擴張。</li>
+                <li><strong>跨領域對話：</strong>在 2025 年 COSCUP 與 HITCON 共同合作規劃的「開源資安軌」中，OCF 現場分享「資安陪伴計畫」的公民團體數位安全現場觀察，媒合開源社群技術力與 CSOs 的需求，共同守護數位安全。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>關鍵權利的爭取：法律與治理的攻防</h3>
+              <ul>
+                <li><strong>健保資料庫「退出權」：</strong>歷經十年的法律爭訟與倡議，成功推動健保資料庫二次利用的「退出權」於 2025 年八月正式上路，守護公民對個人健康數據如何被運用的選擇權利。</li>
+                <li><strong>行政院人權行動計畫倡議：</strong>OCF 主張數位人權的保障需要更開放、透明的社會監督，並提出三大訴求，呼籲政府邀請多方利害關係人參與機制，強化跨部會協調，以更透明的方式治理網路。</li>
+              </ul>
+            </section>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title:
+        description: |
+          <div class="ocf2025-photo-grid two">
+            <figure><img src="/p/2025/images/rightscon-main.jpg" alt="RightsCon 數位人權大會 2025 OCF 執行長代表致詞"><figcaption>RightsCon 數位人權大會 2025 OCF 執行長代表致詞</figcaption></figure>
+            <figure><img src="/p/2025/images/rightscon-statement.jpg" alt="OCF 和臺灣公民團體對 AI 治理與網路自由發表聯合聲明"><figcaption>OCF 和臺灣公民團體對 AI 治理與網路自由發表聯合聲明（照片：RightsCon）</figcaption></figure>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 女孩的觀察小筆記
+        description: |
+          <div class="ocf2025-note"><p>資安不只是「不亂點不明連結」、數位人權也不僅是「警察是否執法過當」。透過 OCF 的這些國際年會參與，我才發現數位人權涵蓋了現代生活的方方面面。</p><p>而許多的議題，也不只發生在臺灣，OCF 遠赴馬來西亞、韓國、葡萄牙參與會議，不只把臺灣的案例分享出去，也把國外的數位防禦經驗帶回來。他們讓我覺得，雖然數位威權看起來很巨大，但只要有人在守護這條防線，我們就絕不會孤立無援。</p></div>
+
+  - type: content
+    columns:
+      - type: article
+        alignment: left
+        title: 數位世界的血管
+        description: |
+          <div class="ocf2025-story">
+          <p class="ocf2025-story-lead">某個平凡的午後，當全校在票選下週菜單時，網路突然 lag 到不行。</p>
+          <p>不只我們學校，整個區域的網路都變得異常卡頓。起初，我以為只是電信商的短暫當機。但翻查新聞後才震驚地發現，導致這場大規模斷網的元凶，也有可能是深海中的海底電纜發生了斷線。前幾年馬祖也發生過海底電纜斷線事件，引發了當地居民的諸多不便，倘若全臺電纜劣化或受到破壞，影響更不堪設想！</p>
+          <p>這場突如其來的斷網，才使我驚覺網路對我這世代生活的重要性，而通暢的網路也並非理所當然。我想起 OCF 也在推動的「網路自由」，雖說民主臺灣目前相對沒有「網路審查」或像國外一樣被政府蓄意斷網的疑雲，但因為是海島國家，基礎設施的韌性卻依舊脆弱。如果海纜、基地台遭人侵擾，甚至因地緣政治被切斷，每天都需要上網的我們，數位生活便會被迫停擺。</p>
+          <p>網路自由不光是上網的自由，也包括自由發表言論、不被審查的自由。我這才理解 OCF 積極關注的網路自由與基礎建設。他們要守護的，不只是螢幕上的言論自由，也是那些深埋在海底、維持民主社會運作的血管。沒有了暢通且自由的網路，我們建構的所有理想，都只是一道海浪就能推倒的沙堡。</p>
+          </div>
+      - type: article
+        alignment: center
+        title:
+        description: |
+          <figure class="ocf2025-illustration"><img src="/p/2025/images/girl-internet-freedom.png" alt="小女孩看見網路斷線與網路自由議題"></figure>
+
+  - type: header
+    anchor: internet-freedom
+    theme: light
+    color:
+    icon: wifi
+    title: 04 網路自由
+    description:
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 網路自由
+        description: |
+          <p>當威權主義透過各種數位工具全境蔓延，網路自由的定義，更包含了「網路韌性」與「不被監控的言論自由」。OCF 致力於提升臺灣的數位韌性，並引進開源的防審查技術與趨勢。</p>
+          <div class="ocf2025-detail-grid">
+            <section>
+              <h3>數位韌性的極端實測</h3>
+              <p>網路自由並非虛無飄渺，在看不見的地底，有海底電纜維繫著數位世界的血管，而其脆弱直至近期才為人所知。OCF 今年持續透過每月一次的網路自由小聚社群討論與技術研究，提前為緊急情況做準備。</p>
+              <ul>
+                <li><strong>防禦大規模斷網：</strong>在網路自由小聚中，與專家共同探討大規模斷網下的替代通訊方案，包括如何利用 Hermes Project 韌性通訊技術、Winlink 無線電通訊，確保海纜受損時民間仍有基本救援與資訊流通能力。</li>
+                <li><strong>借鏡國際經驗：</strong>專題討論「國家安全與數位權利」，借鏡烏克蘭在衝突威脅下維持通訊不斷線的實戰經驗，討論臺灣的執行策略。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>反對數位審查，守護言論自由</h3>
+              <p>針對一連串修法對使用者生成內容（UGC）的衝擊，OCF 透過網路自由小聚，廣邀專家學者、民間團體與政府機關共同討論解方，同時也呼籲社會：法規完善需要多方討論，落實也需要完整配套。若一味開罰，可能造成寒蟬效應、平台擴大事前審查，進而侵害民眾的網路言論自由。</p>
+            </section>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title:
+        description: |
+          <div class="ocf2025-photo-grid">
+            <figure><img src="/p/2025/images/digital-governance.jpg" alt="2025 年參與臺灣網路治理論壇 TWIGF 並分享數位平台治理議題"><figcaption>2025 年參與臺灣網路治理論壇 TWIGF 並分享數位平台治理議題</figcaption></figure>
+            <figure><img src="/p/2025/images/cloud-privacy.png" alt="OCF 舉辦雲端資料與隱私的討論活動"><figcaption>OCF 舉辦雲端資料與隱私的討論活動</figcaption></figure>
+            <figure><img src="/p/2025/images/cloud-ghost.jpg" alt="雲端亡魂書店講座"><figcaption>《雲端亡魂》書店講座</figcaption></figure>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 女孩的觀察小筆記
+        description: |
+          <div class="ocf2025-note"><p>網路斷了，不只是影響追劇、滑不了手機而已，可能基本民生需求都會出問題。看到 OCF 在討論斷網時的替代機制，我才驚覺，原來網路是這麼脆弱的存在。</p><p>過去一年，我看到 OCF 的夥伴們前往世界各地，與專家交換臺灣在網路自由、數位人權上的努力經驗與實踐。雖然在網路連線如氧氣常在的臺灣，網路自由還不是民眾熟悉的議題，但我相信持續倡議、舉辦討論，會有更多人關注潛在的危機、並及早動身尋求解方。</p></div>
+
+  - type: content
+    columns:
+      - type: article
+        alignment: left
+        title: 一個人走得快，一群人走得遠
+        description: |
+          <div class="ocf2025-story">
+          <p class="ocf2025-story-lead">一個學期轉瞬就過去，我的訂餐系統不僅在學校廣受歡迎，還引起了其他學校的興趣。</p>
+          <p>OCF 邀請我帶著這個專案，去參加一場國際開源年會。在那裡，我遇到來自不同國家的青少年開發者，有人在非洲用開源硬體解決供水問題，有人在歐洲推動數位投票系統。在這樣的盛會，看著這些志同道合的人，我發現，我不再是那個坐在螢幕前，面對龐大體制感到無力的小女孩了。當我們把這些經驗與程式碼匯聚起來，社群的能量，足以鼓舞我們一起前往更遠的地方。</p>
+          <p>在這些交流會上，我們分享各自面對的數位挑戰，也感受到開源社群源源不絕的動能。我想，這就是 OCF 致力於「社群經營」的用意。他們不只是在推廣技術，也織出一張巨大的支持網。</p>
+          <p>透過參訪及國際交流，他們讓臺灣開源的能量與世界接軌。現在的我終於明白，那把通往美好的數位未來的鑰匙，傳遞在願意共享知識、樂於協作的社群之間。一個人或許可以衝得很快，但一群志同道合的朋友，可以走得更遠。</p>
+          </div>
+      - type: article
+        alignment: center
+        title:
+        description: |
+          <figure class="ocf2025-illustration"><img src="/p/2025/images/girl-community.png" alt="小女孩觀察開放社群的協作現場"></figure>
+
+  - type: header
+    anchor: community
+    theme: light
+    color:
+    icon: users
+    title: 05 開放社群經營
+    description:
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 技術會更迭，但社群的精神會傳承
+        description: |
+          <p>OCF 自 2014 年創立以來就以服務臺灣開源社群為宗旨，協助行政、財務工作，讓社群致力於社群發展，同時也透過人才培育、教育創新與跨界實驗，擴大臺灣開源社群的影響力。</p>
+          <div class="ocf2025-detail-grid">
+            <section>
+              <h3>為開源人才推行 OSCVPass 專案</h3>
+              <p>延續長期對開源貢獻者的剖析與理解，OCF 受邀協力數位產業署及資訊工業策進會，以 AI 技術小聚中的「開源業師輔導機制」營運試點，檢視 AI 相關技術社群在開源貢獻質量化成果，尋求有助於產業的開源人才滾動機制。</p>
+              <p>此外，OCF 建立快速通關回饋機制 OSCVPass，為長期投入開源專案的夥伴提供 SITCON、COSCUP 等大型研討會的快速通關或票券優惠。這不只是一張票，更是對協作精神的實質敬意。</p>
+            </section>
+            <section>
+              <h3>《開源星手村》桌遊走進更普及的教育現場</h3>
+              <p>OCF 自主開發開源教育桌遊《開源星手村》，將複雜的開源專案概念與協作流程轉化為遊戲體驗，並搭配使用條款查詢學習單、AI 的開放資料運用等實作活動。在不斷改版精進課程下，桌遊及教案入選《親子天下》2025 教育創新 100。</p>
+              <p>OCF 今年透過 4 場深度互動工作坊，將開放科技觀念導入台師大、高師大及五專校園；日本社群 Code for Japan 也正式 Fork 出日文版並發起募資，讓臺灣的開源教育經驗正向國際輸出。</p>
+            </section>
+            <section>
+              <h3>跨界文化的共享實驗：從《時間浸漬》到《明日音》</h3>
+              <p>OCF 透過公眾授權音樂，提倡開放文化不限於資訊科技，也能讓音樂、圖像等不同領域的創作花開滿地。2024 年 OCF 與林強、Luca Bonaccorsi 合作，以 CC BY-SA 4.0 發行《時間浸漬》專輯；2025 年啟動第二張 CC 授權專輯《明日音》募資，與 Mong Tong 及 XTRUX 合作。</p>
+              <p>專輯中的音源與素材皆採公眾授權完整開放，只要標示原作者，任何人都能自由 Remix、取樣甚至商業使用，象徵創作者將音樂主權交還給公眾。</p>
+            </section>
+            <section>
+              <h3>二十載的傳承：COSCUP 20 週年開源政策軌</h3>
+              <p>作為臺灣最具代表性的開源社群盛會，OCF 在 COSCUP 策劃開源政策專屬議程，分享快捷式醫療服務互操作資源（Fast Healthcare Interoperability Resources）與城市通 App 等 9 場議題，探討開源相關政府政策如何對公民產生實質影響。</p>
+            </section>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title:
+        description: |
+          <div class="ocf2025-photo-grid">
+            <figure><img src="/p/2025/images/tmex.jpg" alt="OCF 於 TMEX 論壇談開源共創與 AI 藝術創作的議題"><figcaption>OCF 於 TMEX 論壇談開源共創與 AI 藝術創作的議題（照片：臺北流行音樂中心）</figcaption></figure>
+            <figure><img src="/p/2025/images/code-for-japan.png" alt="日本社群 Code for Japan 發起開源星手村日文版群眾募資達標"><figcaption>日本社群 Code for Japan 發起《開源星手村》日文版群眾募資達標（圖片：CAMPFIRE）</figcaption></figure>
+            <figure><img src="/p/2025/images/coscup-booth.jpg" alt="OCF 在 COSCUP 2025 擺攤推廣開源"><figcaption>OCF 在 COSCUP 2025 擺攤推廣開源（照片：CC BY-SA COSCUP）</figcaption></figure>
+          </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 女孩的觀察小筆記
+        description: |
+          <div class="ocf2025-note"><p>用校園生活來比喻，OCF 就像是一個數位世界版本的「學生會」！他們不只協助開源圈的生態發展，也透過《開源星手村》這樣淺顯易懂的桌遊招募新血，讓不寫程式的人也能輕鬆搞懂開源協作的精神，甚至還和藝文、音樂圈跨界合作，用開放的音樂渲染更多人理解開源世界。</p><p>這讓我覺得，數位世界不是只有冷冰冰的科技競爭，其實充滿著互助的精神。透過 OCF 搭建的這些橋樑，我們不僅能協力解決問題，更能跨越螢幕，認識世界上各式各樣、閃閃發光的人們。</p></div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: OCF 年度大事記
+        description: |
+          <div class="ocf2025-metrics">
+            <div><strong>70 萬</strong><span>社群媒體及電子報觸及近 70 萬人次</span></div>
+            <div><strong>50+</strong><span>舉辦超過 50 場議題活動與演講</span></div>
+            <div><strong>6</strong><span>6 次國際出訪，參與 30 多場國內政策與國際研討會議</span></div>
+            <div><strong>46</strong><span>支援 46 個國內開源社群</span></div>
+          </div>
+        items:
+          - month: 2
+            title: RightsCon 2025 首次在臺灣舉辦，OCF 擔任在地合作夥伴，連結 3,000 名國際行動者。
+          - month: 4
+            title: 釋出《開放原始碼良善治理手冊》繁體中文版。
+          - month: 5
+            title: 《開源星手村》桌遊及教案入選《親子天下》2025 教育創新 100。
+          - month: 8
+            title: 於 COSCUP 主辦開源政策軌、歐洲開源政策觀察、匿名網路工作坊等多場活動。
+          - month: 9
+            title: 加入國際開源辦公室聯盟（OSPO Alliance），成為臺灣首個加入的組織。
+          - month: 11
+            title: OCF 在臺北流行音樂中心舉辦 Mong Tong《明日音》公眾授權專輯演出專場。
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 國際串連
+        description: |
+          <p>2025 年，OCF 持續把臺灣經驗帶到國際，也將全球的開放科技、數位人權與網路自由趨勢帶回臺灣。</p>
+          <section class="ocf2025-world-map" aria-label="2025 年 OCF 國際串連世界地圖">
+            <figure class="ocf2025-world-map-figure"><img src="/p/2025/images/international-map-accurate.svg" alt="2025 年 OCF 國際串連世界地圖，標示臺灣、比利時、葡萄牙、韓國、泰國、馬來西亞與串連航線"></figure>
+            <div class="ocf2025-world-map-cards">
+              <article class="ocf2025-world-card taiwan"><span>臺灣</span><p>2 月在數位人權大會 RightsCon 議程「公民守望相助：臺灣的數位安全支持——從個人到區域性的實踐」，OCF 邀請 4 位公民代表對談，面對東亞地區的人權捍衛者面臨日益嚴峻的數位威脅，探討可行的解決方案。</p><p>共同主辦兩場 RightsCon 衛星活動，分別在「互助 - 共鳴 - 響亮：台灣與東亞數位人權之聲」和國內外專家探討數位隱私政策、數位性別暴力議題。也在網路自由．網路審查．匿名網路工作坊，邀請 Tor、Tails、OONI 團隊分享全球網路監測實務及如何突破網路審查。</p><p>邀請公督盟 / 異人研 / 邊邊女力 3 個臺灣團體在 RightsCon Community Village 進行為期 3 天聯合攤位，分享科技與數位議題，展現公民社會的活躍能量。</p></article>
+              <article class="ocf2025-world-card korea"><span>韓國</span><p>9 月到首爾參與全球隱私大會（Global Privacy Assembly），並在「推進亞太數位消費者對話」論壇，分享臺灣公民社群對於隱私與數位權利保護的貢獻。</p></article>
+              <article class="ocf2025-world-card belgium"><span>比利時</span><p>2 月赴布魯塞爾參加自由及開源軟體開發者歐洲會議（FOSDEM），透過社群擺攤、議程及閃電講，和全球開源推廣者分享臺灣社群協作模式，以及 OSCVPass、OPASS 等工具。</p></article>
+              <article class="ocf2025-world-card portugal"><span>葡萄牙</span><p>9 月和來自全球關心數位科技與人權議題的國際夥伴，共同參與 Global Gathering，持續輸出臺灣在數位人權倡議上的努力，讓臺灣的經驗在國際社群中發揮影響力。</p></article>
+              <article class="ocf2025-world-card thailand"><span>泰國</span><p>11 月參與 CIVICUS 主辦的國際公民社會週（International Civil Society Week），共同探討亞太地區面對數位威權主義擴張、公民空間日益緊縮下，繼續防禦民主的對策。</p><p>11 月受邀至曼谷參與亞洲民主大會（Asia Democracy Assembly），與來自全亞洲的公民社會領袖、政策制定者與國際夥伴分享，臺灣公民團體遭受跨境數位攻擊的經驗，以及 OCF 所提出的防禦策略。</p></article>
+              <article class="ocf2025-world-card malaysia"><span>馬來西亞</span><p>5 月參與由 EngageMedia 於吉隆坡舉辦的亞太數位權利大會（DRAPAC），並在 Open Tech Camp 介紹 OCF 開發的公民團體「資安陪伴計畫」，與來自各國的資安培訓工作者深度對談，交流如何在高風險環境下，更有效地支援人權捍衛者。</p></article>
+            </div>
+          </section>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 2025 年財務報告
+        description: |
+          <div class="ocf2025-finance">
+          <figure class="ocf2025-finance-chart"><img src="/p/2025/images/finance-report.png" alt="2025 年財務報告收入與支出圓餅圖"></figure>
+          </div>
+        action:
+          title: 下載完整 PDF
+          url: /p/2025/OCF-Annual-Report-2025.pdf
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 出版資訊
+        description: |
+          <section class="ocf2025-publish-info">
+            <div class="ocf2025-publish-sponsor"><span>贊助單位</span><img src="/p/2025/images/archilife-logo.png" alt="祐生研究基金會 ARCHILIFE RESEARCH FOUNDATION"></div>
+            <dl>
+              <div><dt>撰稿</dt><dd>許瞳</dd></div>
+              <div><dt>漫畫</dt><dd>良根</dd></div>
+            </dl>
+            <div class="ocf2025-publish-team">
+              <p><strong>董事</strong>李柏鋒、李欣穎、李明哲、高嘉良、耿璐、陳貴成、王潔英</p>
+              <p><strong>顧問</strong>侯宜秀（任職至 2025 年 9 月）、黃雋、趙柏強、鄧東波、鄭鴻旗、Irvin Chen、Kaia、Miaoski</p>
+              <p><strong>OCF 夥伴</strong>李欣穎、林敏婷、姚詠棋、洪華超、凃敬柔、徐詩雅、陳冠中、湯家碩、劉欣妮、劉俊彥、劉韋巖、劉澄真、蔣偉志</p>
+              <p><strong>OCF 畢業校友</strong>李世國、李盈萱、李佳珊、杜雨竹、林韋丞、呂欣璟、呂顥云、郭景晏、曾威誠、黃詩惠、彭宬</p>
+            </div>
+          </section>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: center
+        title:
+        description: |
+          <figure class="ocf2025-illustration ocf2025-closing"><img src="/p/2025/images/girl-closing.png" alt="小女孩在結尾頁使用筆電"></figure>

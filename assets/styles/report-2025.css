@@ -1,0 +1,586 @@
+#report #hero {
+  background: #dce9e5;
+  min-height: 0;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+#report #hero .ui.header {
+  color: #293f54 !important;
+  font-size: clamp(2.15rem, 5vw, 5.2rem);
+  line-height: 1.05;
+}
+
+#report #hero p {
+  color: #465c62;
+  font-size: 1.5rem;
+}
+
+#report #hero .cover {
+  display: none;
+}
+
+#report .image_header .ui.image img[src="/p/2025/cover.png"] {
+  display: block;
+  margin: 0 auto;
+  max-height: 760px;
+  object-fit: contain;
+  width: auto;
+}
+
+#report .content.container {
+  background: #f7f3ee;
+}
+
+#report .content.container:nth-of-type(odd) {
+  background: #eef5f3;
+}
+
+#report .content.container .ui.stripe.container {
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+#report .content.container .ui.header {
+  color: #293f54;
+}
+
+#report .title.ui.segment {
+  background: #dce9e5 !important;
+  border-top: 1px solid rgba(41, 63, 84, 0.12) !important;
+  border-bottom: 1px solid rgba(41, 63, 84, 0.12) !important;
+}
+
+#report .title.ui.segment .ui.header {
+  color: #293f54 !important;
+}
+
+#report .title.ui.segment p {
+  color: #465c62;
+  font-size: 1.3rem;
+}
+
+#report .title .bordered.icon {
+  color: #c06d7d !important;
+  box-shadow: 0 0 0 0.08em rgba(192, 109, 125, 0.45) inset;
+}
+
+#report .column[data-type="image"] img {
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(41, 63, 84, 0.18);
+}
+
+#report .column[data-type="image"] img[src="/p/2025/cover.png"] {
+  margin: 0 auto;
+  max-height: 560px;
+  object-fit: contain;
+  width: 100%;
+}
+
+#report .content.container:has(img[src="/p/2025/cover.png"]) .ui.two.column.stackable.grid {
+  align-items: center;
+  display: grid !important;
+  gap: 2rem;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
+}
+
+#report .content.container:has(img[src="/p/2025/cover.png"]) .ui.two.column.stackable.grid > .column {
+  width: auto !important;
+}
+
+#report .ui.link.divided.list {
+  margin-top: 1.5rem;
+}
+
+#report .ui.link.divided.list .item {
+  color: #293f54;
+  line-height: 1.7;
+}
+
+.ocf2025-letter,
+.ocf2025-note,
+.ocf2025-finance,
+.ocf2025-publish-info,
+.ocf2025-story {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(41, 63, 84, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(41, 63, 84, 0.08);
+  padding: 2rem;
+}
+
+.ocf2025-letter {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.ocf2025-story {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.ocf2025-story-lead {
+  color: #293f54;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.ocf2025-signature {
+  color: #293f54;
+  font-weight: 700;
+  text-align: right;
+}
+
+.ocf2025-signature img {
+  display: inline-block;
+  height: auto;
+  margin-left: 0.75rem;
+  max-width: 150px;
+  vertical-align: middle;
+}
+
+.ocf2025-note {
+  background: #fff7f3;
+  border-left: 5px solid #c06d7d;
+}
+
+.ocf2025-note p:last-child,
+.ocf2025-letter p:last-child,
+.ocf2025-finance p:last-child,
+.ocf2025-publish-info p:last-child,
+.ocf2025-story p:last-child {
+  margin-bottom: 0;
+}
+
+.ocf2025-illustration,
+.ocf2025-illustration-pair figure {
+  margin: 0;
+}
+
+.ocf2025-illustration {
+  margin-inline: auto;
+  max-width: 960px;
+}
+
+.ocf2025-illustration img,
+.ocf2025-illustration-pair img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-height: 820px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.ui.two.column.grid .ocf2025-illustration {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.ui.two.column.grid .ocf2025-illustration img {
+  max-height: 720px;
+}
+
+.ocf2025-illustration-pair {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.ui.two.column.grid .ocf2025-illustration-pair {
+  grid-template-columns: 1fr;
+  max-width: 520px;
+}
+
+.ui.two.column.grid .ocf2025-illustration-pair img {
+  max-height: 420px;
+}
+
+.ocf2025-detail-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.5rem;
+}
+
+.ocf2025-detail-grid section {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(41, 63, 84, 0.12);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.ocf2025-detail-grid h3 {
+  color: #293f54;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  margin: 0 0 1rem;
+}
+
+.ocf2025-detail-grid ul {
+  margin-left: 1.2rem;
+  padding-left: 0;
+}
+
+.ocf2025-detail-grid li {
+  margin-bottom: 0.8rem;
+}
+
+.ocf2025-detail-grid li:last-child {
+  margin-bottom: 0;
+}
+
+.ocf2025-map {
+  margin: 1.5rem 0 2rem;
+}
+
+.ocf2025-map img {
+  background: #fff;
+  border: 1px solid rgba(41, 63, 84, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(41, 63, 84, 0.1);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.ocf2025-world-map {
+  background: linear-gradient(180deg, #f7fbfd 0%, #fff7f3 100%);
+  border: 1px solid rgba(41, 63, 84, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(41, 63, 84, 0.1);
+  margin: 1.5rem 0 2rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.ocf2025-world-map-figure {
+  margin: 0 0 1rem;
+}
+
+.ocf2025-world-map-figure img {
+  background: #f7fbfd;
+  border: 1px solid rgba(41, 63, 84, 0.12);
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.ocf2025-world-map .ocean {
+  fill: rgba(255, 255, 255, 0.36);
+  stroke: rgba(41, 63, 84, 0.12);
+  stroke-width: 2;
+}
+
+.ocf2025-world-map .graticule {
+  fill: none;
+  stroke: rgba(41, 63, 84, 0.11);
+  stroke-width: 1.4;
+}
+
+.ocf2025-world-map .hemisphere {
+  fill: rgba(41, 63, 84, 0.5);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ocf2025-world-map .land {
+  fill: #d2e5e4;
+  stroke: #9fc0bf;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.ocf2025-world-map .route {
+  fill: none;
+  stroke: #c06d7d;
+  stroke-dasharray: 10 11;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.ocf2025-world-map .pin {
+  fill: #c06d7d;
+  stroke: #fff;
+  stroke-width: 5;
+}
+
+.ocf2025-world-map .pin-taiwan {
+  fill: #293f54;
+  r: 11px;
+}
+
+.ocf2025-world-map .pin-label {
+  fill: #293f54;
+  font-size: 22px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-linejoin: round;
+  stroke-width: 6;
+}
+
+.ocf2025-world-map .label-taiwan {
+  fill: #c06d7d;
+}
+
+.ocf2025-world-map-cards {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ocf2025-world-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(41, 63, 84, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(41, 63, 84, 0.1);
+  color: #293f54;
+  padding: 1rem 1.05rem;
+}
+
+.ocf2025-world-card span {
+  color: #c06d7d;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.45rem;
+}
+
+.ocf2025-world-card p {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0 0 0.75rem;
+}
+
+.ocf2025-world-card p:last-child {
+  margin-bottom: 0;
+}
+
+.ocf2025-world-card.taiwan {
+  grid-column: 1 / -1;
+}
+
+.ocf2025-finance-chart {
+  margin: 1.5rem 0;
+}
+
+.ocf2025-finance-chart img {
+  background: #fff;
+  border: 1px solid rgba(41, 63, 84, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(41, 63, 84, 0.1);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: min(920px, 100%);
+}
+
+.ocf2025-publish-sponsor {
+  border-bottom: 1px solid rgba(41, 63, 84, 0.14);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.ocf2025-publish-sponsor span,
+.ocf2025-publish-info dt {
+  color: #c06d7d;
+  font-weight: 700;
+}
+
+.ocf2025-publish-sponsor img {
+  display: block;
+  height: auto;
+  margin-top: 0.35rem;
+  max-width: min(300px, 100%);
+}
+
+.ocf2025-publish-info dl {
+  display: grid;
+  gap: 0.75rem 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 1.5rem;
+}
+
+.ocf2025-publish-info dl div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.ocf2025-publish-info dt,
+.ocf2025-publish-info dd {
+  margin: 0;
+}
+
+.ocf2025-publish-team {
+  color: #293f54;
+  line-height: 1.75;
+}
+
+.ocf2025-publish-team p {
+  margin: 0 0 0.75rem;
+}
+
+.ocf2025-publish-team strong {
+  color: #c06d7d;
+  margin-right: 0.75rem;
+}
+
+.ocf2025-closing img {
+  max-height: 520px;
+}
+
+.ocf2025-metrics {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.ocf2025-metrics div {
+  background: #293f54;
+  border-radius: 8px;
+  color: #fff;
+  min-height: 150px;
+  padding: 1.3rem;
+}
+
+.ocf2025-metrics strong {
+  color: #f1c7cf;
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.ocf2025-metrics span {
+  display: block;
+  line-height: 1.55;
+}
+
+.ocf2025-photo-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.ocf2025-photo-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ocf2025-photo-grid figure {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(41, 63, 84, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(41, 63, 84, 0.1);
+  margin: 0;
+  overflow: hidden;
+}
+
+.ocf2025-photo-grid img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ocf2025-photo-grid figcaption {
+  color: #465c62;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  padding: 0.9rem 1rem 1rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .ocf2025-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ocf2025-photo-grid,
+  .ocf2025-photo-grid.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ocf2025-illustration-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .ocf2025-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ocf2025-world-map {
+    min-height: 0;
+    padding: 1rem;
+  }
+
+  .ocf2025-world-map-cards {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: static;
+  }
+
+  .ocf2025-world-card {
+    position: static;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #report #hero {
+    min-height: 64vh;
+  }
+
+  #report .content.container:has(img[src="/p/2025/cover.png"]) .ui.two.column.stackable.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ocf2025-letter,
+  .ocf2025-note,
+  .ocf2025-finance,
+  .ocf2025-publish-info,
+  .ocf2025-story {
+    padding: 1.25rem;
+  }
+
+  .ocf2025-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .ocf2025-world-map {
+    padding: 0.85rem;
+  }
+
+  .ocf2025-world-map-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ocf2025-world-card {
+    padding: 0.9rem;
+  }
+
+  .ocf2025-world-card span {
+    font-size: 1.15rem;
+  }
+
+  .ocf2025-publish-info dl {
+    grid-template-columns: 1fr;
+  }
+
+  .ocf2025-photo-grid,
+  .ocf2025-photo-grid.two {
+    grid-template-columns: 1fr;
+  }
+}
