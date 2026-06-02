@@ -227,17 +227,10 @@ OCF 的經費來源主要是透過對社群收取服務費用、專案承攬、�
         {% for item in site.data.reports %}
         {% unless item[0] contains "_" %}
         {% assign i = i | minus:1 %}
-            {% if i == 2025 %}
-            <span class="report-btn" style="background-color: #f1f3f5; color: #888; border: 1px dashed #ccc; cursor: default;">
-                <i class="globe icon"></i>
-                {{ i }} 年成果報告（製作中，敬請期待）
-            </span>
-            {% else %}
             <a href="/p/{{ i }}" target="_blank" class="report-btn">
                 <i class="globe icon"></i>
                 {{ i }} 年成果報告
             </a>
-            {% endif %}
         {% endunless %}
         {% endfor %}
     </div>
