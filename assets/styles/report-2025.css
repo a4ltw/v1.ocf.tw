@@ -467,6 +467,48 @@
   line-height: 1.55;
 }
 
+.ocf2025-timeline-entry p {
+  position: relative;
+  margin: 0 0 0.85rem;
+  padding-left: 1rem;
+}
+
+.ocf2025-timeline-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.ocf2025-timeline-entry p::before {
+  background: #c06d7d;
+  border-radius: 999px;
+  content: "";
+  height: 0.42rem;
+  left: 0;
+  position: absolute;
+  top: 0.72em;
+  width: 0.42rem;
+}
+
+.ocf2025-timeline-topic {
+  color: #293f54;
+  font-weight: 700;
+}
+
+#report .content .ui.divided.list .item:has(.ocf2025-timeline-topic) {
+  align-items: flex-start;
+  display: grid;
+  gap: 0 1rem;
+  grid-template-columns: auto minmax(0, 1fr);
+  line-height: 1.7;
+}
+
+#report .content .ui.divided.list .item:has(.ocf2025-timeline-topic) > .ui.horizontal.label {
+  background: #293f54;
+  color: #fff;
+  margin-top: 0.15rem;
+  min-width: 3.4rem;
+  text-align: center;
+}
+
 .ocf2025-photo-grid {
   display: grid;
   gap: 1.5rem;

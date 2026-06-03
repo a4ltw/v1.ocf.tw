@@ -463,17 +463,224 @@ items:
           </div>
         items:
           - month: 2
-            title: RightsCon 2025 首次在臺灣舉辦，OCF 擔任在地合作夥伴，連結 3,000 名國際行動者。
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">RightsCon 2025</span> 擔任在地合作夥伴協助全球最大的人權與數位議題研討會首次在臺灣舉辦，連結 3,000 名國際行動者。RightsCon 期間，OCF 主辦 2 場衛星活動、參與 1 場大會議程，以及和 3 個臺灣團體聯合擺攤。</p>
+              <p><span class="ocf2025-timeline-topic">數位人權聯合聲明</span> 攜手公民團體提出包含數位權利的立法制度、個資保護制度與廣納開源軟體的應用 ...... 等 9 大訴求，將開源、公民科技推動納入法律和政策制定，作為公共服務與數位發展的核心策略。</p>
+              </div>
+          - month: 3
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">舉辦開放科技小聚</span> 追蹤開放政府承諾事項的發展，探討公部門釋出資料的困境，以及社群與公務體系如何協作促進高品質資料開放。</p>
+              </div>
           - month: 4
-            title: 釋出《開放原始碼良善治理手冊》繁體中文版。
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">釋出《開放原始碼良善治理手冊》繁體中文版</span> 透過手冊的翻譯釋出，系統性推廣 OSPO（開源專案辦公室）概念，協助企業與政府完善開源軟體的管理，以及應對可能的供應鏈風險。</p>
+              </div>
           - month: 5
-            title: 《開源星手村》桌遊及教案入選《親子天下》2025 教育創新 100。
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">《開源星手村》桌遊獲教育創新獎</span> 由 FNF Taiwan/ Global Innovation Hub 所支持、OCF 與志工協同開發的桌遊《開源星手村》及教案正式入選《親子天下》2025 教育創新 100，讓開放科技不僅走入校園，也逐步獲主流教育圈認同。</p>
+              </div>
+          - month: 6
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">健保資料庫「退出權」</span> 經歷十年爭訟後，OCF 與友團長期關注的健保資料庫訴訟案終於成功，日後民眾可以申請將相關的個人隱私資料，選擇不提供於學術研究使用。</p>
+              <p><span class="ocf2025-timeline-topic">擴大舉辦網路自由的討論</span> 「防制電子煙的代價是臺灣的網路言論自由？」活動廣邀了政府機關、法學專家、公民組織，現場 70 餘人一同探討因法律的修訂及配套措施不夠完善，導致網路平台擴大關鍵字審查、民眾言論自由受到嚴重衝擊。</p>
+              </div>
+          - month: 7
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">資料法制化觀察</span> 針對開放資料草案提出深度解析專文「十年磨一法：開放資料還在路上——《促進資料創新利用發展條例》草案解析與未竟之路」，確保開放與隱私的平衡。</p>
+              </div>
           - month: 8
-            title: 於 COSCUP 主辦開源政策軌、歐洲開源政策觀察、匿名網路工作坊等多場活動。
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">COSCUP 議程軌與工作坊</span> 於 2,000 多人規模的開源人年會（COSCUP）主辦開源政策軌、歐洲開源政策觀察、匿名網路工作坊等多場活動，持續推廣開源理念。</p>
+              <p><span class="ocf2025-timeline-topic">2025 TMEX 國際論壇</span> OCF 執行長李欣穎、臺灣電子樂工林強、義大利音像藝術家 Luca Bonaccorsi 以及超維度總監蔡宏賢，以「解放創作的未來：從開源共創到 AI 藝術創作」為題，分享開源技術、公眾授權及 AI 創作領域的實務經驗與前瞻觀點。</p>
+              <p><span class="ocf2025-timeline-topic">Jam Jam Asia 亞洲音樂節</span> 林強及多位音樂創作者在「SUB 跨夜特別企劃」演出採用 CC 公眾授權的《時間浸漬》素材，讓「開源精神」融入 JJA 現場，吸引超過 1,700 位觀眾。</p>
+              </div>
           - month: 9
-            title: 加入國際開源辦公室聯盟（OSPO Alliance），成為臺灣首個加入的組織。
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">加入國際開源辦公室聯盟（OSPO Alliance）</span> 正式成為聯盟成員，為臺灣首個加入的組織，強化國際開源治理網絡。</p>
+              <p><span class="ocf2025-timeline-topic">開放國會下一步</span> 與英國西敏寺民主基金會（WFD）合作，於立法院協力辦理「國會應用 AI 指引」繁體中文版發布；同時串連過往開放國會利害關係人，辦理「開放國會的下一步」閉門座談會。</p>
+              </div>
+          - month: 10
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">協助國泰金控辦理 Cathay Open Source Meetup</span> 協力邀請 Cloud Native Computing Foundation 技術長 Chris Aniszczyk 來台參與小聚，介紹臺灣開源生態系與社群，並探討企業開源的可能性。</p>
+              </div>
           - month: 11
-            title: OCF 在臺北流行音樂中心舉辦 Mong Tong《明日音》公眾授權專輯演出專場。
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">人權計畫三大訴求</span> 在「數位中介服務法」暫緩後，臺灣對如何介入與管理網路內容，沒有統一政策框架。OCF 參與行政院人權行動計畫說明會，呼籲建立多方利害關係人機制、跨部會的協調與建立機關透明度責信之義務。</p>
+              <p><span class="ocf2025-timeline-topic">開源祭回來了！</span> OCF 在臺北音樂流行中心舉辦 Mong Tong《明日音》公眾授權專輯演出專場，繼林強《時間浸漬》之後，再度嘗試用開放的音樂，延續公眾素材自由再創的熱潮。</p>
+              </div>
+          - month: 12
+            title: |
+              <div class="ocf2025-timeline-entry">
+              <p><span class="ocf2025-timeline-topic">AI-Ready 開放資料實踐研究</span> OCF 與 FNF Taiwan/ Global Innovation Hub 合作「AI-Ready 開放資料實踐研究」，訪談 5 個國際案例，整理 AI 時代開放資料的實務經驗。舉行 Webinar 以臺灣 2 個在地案例回應研究觀點，為政府、社群與產業探討開放資料治理建立對話基礎。</p>
+              </div>
+
+  - type: content
+    single_column: true
+    columns:
+      - type: article
+        alignment: left
+        title: 社群夥伴年度大事記
+        description: |
+          <p>OCF 由協助臺灣開源社群的初心出發，始終相信開放與協作才是推動進步的動能。</p>
+          <p>2025 年我們有幸與 46+ 個社群合作，並見證夥伴們在各自領域深耕、實踐理想。這份大事記收錄了部分合作社群夥伴們在 2025 年度的亮眼成就。這些足跡是社群豐沛創造力的證明，也是臺灣開源生態最珍貴的果實，誠摯與大家分享！</p>
+          <div class="ocf2025-detail-grid">
+            <section>
+              <h3>臺灣 BSD 社群</h3>
+              <ul>
+                <li>實習計畫培力學生參與 FreeBSD 專案，洪盛益同學獲 committer 資格與發表論文。</li>
+                <li>AsiaBSDCon 2026 王彥皓、葉峻誠 2 位成員論文獲選發表機會。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>CC 臺灣社群</h3>
+              <ul>
+                <li>發表 12 篇 Creative Commons 專文與評論、參與 12 場數發部等各部會的 AI 專家會議。</li>
+                <li>推廣 CC 在生成式 AI 時代的公私協力建議模式，引導國內認識 CC 組織正在推動的 CC Signals 等公益尊重機制。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Cloud Native Taiwan User Group</h3>
+              <ul>
+                <li>Kubernetes Community Days Taipei 吸引百餘人共襄盛舉。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>真的假的 Cofacts</h3>
+              <ul>
+                <li>辦理 6 場事實查核協作培訓，共 132 人次參與，系列活動累計達 50 場，歡迎參加。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>開源人年會 COSCUP</h3>
+              <ul>
+                <li>與 RubyConf TW 合辦，吸引 3200+ 人次、48 名國際講者及 17 組國際攤位來台。</li>
+                <li>出訪 FOSDEM、FOSSASIA、OSC 名古屋等國際年會實體交流，更獲 Open Source Initiative 列入前 50 大開源年會。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>g0v 零時政府揪松團 g0v jothon</h3>
+              <ul>
+                <li>舉辦 6 場大黑客松、1 場黑魔法防禦松、4 場法庭觀察松。</li>
+                <li>零時小學校迎來 5 週年並推出數位源力增能課程。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>新竹碼農 HCSM</h3>
+              <ul>
+                <li>社群復活！！！！！</li>
+                <li>與 RISC-V@Taiwan、陽明交大軟體開發社共辦 World RISC-V Day，共 200+ 人參與。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>JCConf Taiwan</h3>
+              <ul>
+                <li>Java 30 週年，JCConf 聚焦 Java 25 LTS，吸引 450+ 開發者與 10 家企業，舉辦 30+ 場議程，涵蓋 AI Agent 實作、跨平台 KMP 策略、透過新世代 GC 精準調校系統效能 ...... 等。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>開放街圖台灣 OpenStreetMap Taiwan</h3>
+              <ul>
+                <li>每月持續舉辦 OpenStreetMap x Wikidata Taipei 月聚會，歡迎參加。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>台灣 Python 年會 PyCon Taiwan</h3>
+              <ul>
+                <li>議程擴增至 5 軌，首辦 Young Inspires 論壇，提高新世代的參與比率，規模為歷年最大。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>PyLadies 高雄</h3>
+              <ul>
+                <li>於北高舉辦 Python 入門工作坊，建立女性專屬程式學習、AI 輔助寫程式的空間。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>台灣 Ruby 社群</h3>
+              <ul>
+                <li>與 COSCUP 共辦年會，邀請 Ruby 之父松本行弘與松江市市長參與。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>sciwork</h3>
+              <ul>
+                <li>每月辦理 scisprint 開發衝刺；年中與年底分別舉辦 Seminar 與 Conference，催化跨領域技術交流及社群發展。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>SITCON 學生計算機年會</h3>
+              <ul>
+                <li>SITCON 持續邀集學生志工與貢獻者籌辦活動、投入社群。吸引超過 1,200 名參與者在年會上共襄盛舉！</li>
+              </ul>
+            </section>
+            <section>
+              <h3>系統軟體走向國際</h3>
+              <ul>
+                <li>參與 Open Source Summit North America 峰會，以 3 場議程分享 8 位青年貢獻者成果，包含 RISC-V、機器學習效能、Valkey 多執行緒處理 ...... 等。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>數位公民參與平台 vTaiwan</h3>
+              <ul>
+                <li>與 TWNIC 合作，用 AI 驗證來防治詐騙的動態審議模式。</li>
+                <li>與 Google Jigsaw、People Powered 合作發表 AI 審議研究；舉辦 50 場週三小聚與面海松。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Mozilla 台灣社群</h3>
+              <ul>
+                <li>舉辦 197 場活動，共 1,702 名參與者，其中包含逾 200 名初訪者。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Twinkle AI</h3>
+              <ul>
+                <li>與 APMIC、國家高速網路與計算中心打造首個最小推理模型 F1，並同步釋出對應的推理資料集。</li>
+                <li>與台灣大哥大建構教科書品質的繁中預訓練語料庫、發布新一代模型 T1-4B，為繁體中文 AI 生態系樹立新的里程碑。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>FreeSEED</h3>
+              <ul>
+                <li>開源釋出支援繁體中文推理的 gpt-oss-120b 模型。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>台灣網路維運社群 TWNOG</h3>
+              <ul>
+                <li>以「強化網路韌性與安全」為年度主軸，深入探討 RPKI 部署、DDoS 防護及網路自動化技術，實踐更穩定、安全的臺灣網路互連生態。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>源來適你</h3>
+              <ul>
+                <li>成為 Apache 軟體基金會（ASF）臺灣首個官方分部，貢獻數千個提交，躍升為多項國際開源技術的核心組織。</li>
+                <li>獲市長肯定之外，社群達每月逾 55 萬次閱讀與 3 萬多則討論。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>WordCamp Taiwan</h3>
+              <ul>
+                <li>首度移師高雄辦理年會，集結 250 名以上開源愛好者，探討網站架設、設計與內容行銷趨勢。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>光復超人</h3>
+              <ul>
+                <li>自馬太鞍事件起，凝聚力量自主開發資訊系統，整合志工地圖與物資媒合，提升災區協作效率。</li>
+              </ul>
+            </section>
+          </div>
 
   - type: content
     single_column: true
