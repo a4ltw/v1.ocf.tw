@@ -81,13 +81,13 @@ items:
               <h3>軟體供應鏈的守護者：推動 OSPO 治理與國際接軌</h3>
               <p>開源軟體是政府與企業運作的核心，但如何「用得對、管理得當」就是門學問。OCF 在今年也致力將複雜的治理觀念，轉化為可執行的工具。</p>
               <ul>
-                <li><strong>國際聯盟首位臺灣成員，正式加入 OSPO Alliance：</strong>OCF 是臺灣第一個加入 OSPO Alliance 的組織，將全球正熱門的開源治理經驗引進國內。</li>
-                <li><strong>釋出治理手冊、共享數位資產：</strong>翻譯並釋出《開放原始碼良善治理手冊》正體中文版，並協力將自由軟體鑄造場（OSSF）及台灣創用 CC 計畫（CCTW）過往研究網站保存的數位資產重新備份到 OCF GitHub。</li>
-                <li><strong>出訪 FOSDEM，觀察數位韌性法案：</strong>第三次出席歐洲最大開源研討會 FOSDEM，把臺灣經驗帶到國際社群，也追蹤「數位韌性法案（CRA）」對開源合規的影響。</li>
+                <li><strong><a href="https://ocf.tw/story/ospos-1-join-OSPO-alliance/">國際聯盟首位臺灣成員，正式加入 OSPO Alliance</a>：</strong>OCF 是臺灣第一個加入 OSPO Alliance 的組織，將全球正熱門的開源治理經驗引進國內。</li>
+                <li><strong>釋出治理手冊、共享數位資產：</strong><a href="https://dub.sh/OSPO-GGI-ZHTW">翻譯並釋出《開放原始碼良善治理手冊》正體中文版</a>，並協力將自由軟體鑄造場（OSSF）及台灣創用 CC 計畫（CCTW）過往研究網站保存的數位資產<a href="https://github.com/ocftw">重新備份到 OCF GitHub</a>。</li>
+                <li><strong><a href="https://ocf.neticrm.tw/civicrm/mailing/view?reset=1&id=382">出訪 FOSDEM，觀察數位韌性法案</a>：</strong>第三次出席歐洲最大開源研討會 FOSDEM，把臺灣經驗帶到國際社群，也追蹤「數位韌性法案（CRA）」對開源合規的影響。</li>
               </ul>
             </section>
             <section>
-              <h3>數位主權的守門員：公共程式（PMPC）與在地實作</h3>
+              <h3>數位主權的守門員：<a href="https://ocf.tw/p/pmpc/">公共程式（PMPC）</a>與在地實作</h3>
               <p>OCF 長期倡議開放原始碼，也致力讓開源在政府機關落實，讓關乎公眾利益的程式碼能真正由國家和公民所擁有和控制。</p>
               <ul>
                 <li><strong>協助臺北市政府完成「發展導入開源評估指引」：</strong>針對伺服器虛擬化與資料庫軟體，實際進行兩案開源替代方案評估測試，加速機關採納開源軟體。</li>
