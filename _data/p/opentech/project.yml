@@ -35,6 +35,10 @@ links:
     url: https://ocf.tw/p/opentech/otguide/
     color: purple
     icon: world icon
+  - title: 報告《AI-Ready 開放資料實踐研究》
+    url: https://ocf.tw/p/opentech/ai-ready-data/
+    color: purple
+    icon: world icon
   - title: 活動《開放科技小聚》
     url: https://hackmd.io/@OCFTW/OpenTechMeetup/
     color: purple
@@ -59,6 +63,10 @@ links:
 links_en:
   - title: Open Technology - From Source Code, Data to the Government：How Open Shapes the Digital Society of the New Era
     url: https://ocf.tw/en/p/opentech/otguide/
+    color: purple
+    icon: world icon
+  - title: Report：From Open Data to AI-Ready Data
+    url: https://ocf.tw/en/p/opentech/ai-ready-data/
     color: purple
     icon: world icon
   - title: Open Data initiative：research & legislation suggestion
