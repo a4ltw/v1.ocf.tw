@@ -33,7 +33,9 @@ CONCOM 是什麼？CONCOM = CONference for open COMmunities。
 
 如果你曾經是社群貢獻者，不妨抽個時間回來更新近況；如果你還不是，也歡迎一同來參與、來擔任志工，來感受臺灣開源社群的活力。
 
-＊CONCOM 2026 共筆：https://hackmd.io/@OCFTW/BkpTo2Enbe
+＊[CONCOM 2026 共筆](https://hackmd.io/@OCFTW/BkpTo2Enbe)
+
+＊[CONCOM 2026 活動照片](https://www.flickr.com/photos/ocftw/albums/72177720334126486)
 
 --
 
