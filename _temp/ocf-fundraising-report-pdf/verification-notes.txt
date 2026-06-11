@@ -1,0 +1,19 @@
+PDF verification notes
+Generated: 2026-06-05
+
+Source resolution:
+- Hosted artifact URL returned only the sandbox app shell.
+- /api/manifest and /api/snapshot returned BlobNotFound.
+- Static HTML was generated from the validated Data Analytics report payload rendered in this conversation.
+
+Conversion path:
+- Primary Chrome CLI and Playwright/Chrome were attempted but blocked by the macOS sandbox.
+- Renderer-backed fallback used xhtml2pdf against static HTML source.
+- Charts were exported to static PNG and embedded in the PDF source HTML.
+
+Verification:
+- pdfinfo: 4 pages, A4, non-encrypted, no JavaScript.
+- pdftotext: selectable/searchable text extracted successfully.
+- pdftoppm: rendered all 4 pages to PNG previews.
+- Visual inspection: title, narrative, charts, tables, next steps, caveats, and source details present; no blank pages or clipped charts after repair.
+- Negative check: no app-only controls or internal artifact metadata such as Share menu, Edit, Refresh, Publish, toolbar/menu labels, manifest path, package path, validation status, or local temp paths in extracted text.

@@ -1,0 +1,21 @@
+PDF artifact: _temp/ocf-supporter-survey-pdf/ocf-supporter-survey-analysis.pdf
+Static source: _temp/ocf-supporter-survey-pdf/report.html
+Generated at: 2026-06-05
+
+Source resolution:
+- Hosted artifact URL was checked.
+- /api/manifest and /api/snapshot returned BlobNotFound.
+- Root URL returned a live app shell, not static report content.
+- Static HTML export was created from the report content and source data already available in this run.
+
+Renderer notes:
+- Chrome CLI and Playwright/Chromium print paths were unavailable in the macOS sandbox.
+- LibreOffice and Quick Look routes did not produce a usable PDF.
+- Final PDF was generated from the same static report content using a local PDF fallback, preserving title, narrative, charts, table, caveats, and source details.
+
+Verification:
+- pdfinfo: 5 pages, A4, non-empty PDF.
+- pdftotext: extracted 8,146 bytes of selectable text.
+- Negative text check found no app-only controls or internal artifact labels.
+- pdftoppm rendered all 5 pages to PNG previews.
+- Visual inspection confirmed nonblank pages, visible charts, table, caveats, and source details.
