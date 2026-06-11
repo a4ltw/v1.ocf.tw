@@ -1,0 +1,1 @@
+Hosted artifact URL exposed only the sandbox app shell; /api/manifest and /api/snapshot returned BlobNotFound. Static HTML was generated from the validated report payload rendered in this conversation. Visible PDF source details omit local paths and app runtime metadata.

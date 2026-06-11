@@ -1,0 +1,1 @@
+Static HTML created from the validated report content and exported Google Sheets TSV. Hosted artifact URL was checked; /api/manifest and /api/snapshot returned BlobNotFound, and the root HTML was a live app shell only.
