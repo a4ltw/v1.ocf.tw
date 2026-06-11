@@ -212,6 +212,52 @@
   margin-bottom: 0;
 }
 
+#project .opentech-record-tag {
+  align-items: center;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  color: #333;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0.45rem 0.28rem 0;
+  padding: 0.34rem 0.62rem;
+  vertical-align: 0.08rem;
+  white-space: nowrap;
+}
+
+#project .opentech-record-tag--article {
+  background: #eef5f3;
+  border-color: #cfdeda;
+  color: #2c3e50;
+}
+
+#project .opentech-record-tag--meeting {
+  background: #eef3fb;
+  border-color: #d5deef;
+  color: #2f4a70;
+}
+
+#project .opentech-record-tag--advocacy {
+  background: #fdf2f2;
+  border-color: #f3d2d2;
+  color: #8a3f48;
+}
+
+#project .opentech-record-tag--report {
+  background: #f7f3ee;
+  border-color: #e4d8cb;
+  color: #6a5136;
+}
+
+#project .opentech-record-tag--support {
+  background: #f6f0ff;
+  border-color: #dfd2f6;
+  color: #514184;
+}
+
 @media only screen and (max-width: 767px) {
   #project .opentech-section {
     margin-top: 32px;
