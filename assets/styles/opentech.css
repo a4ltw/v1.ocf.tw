@@ -1,0 +1,232 @@
+#project .opentech-page {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#project .opentech-page p,
+#project .opentech-page li {
+  line-height: 1.65;
+}
+
+#project .opentech-section {
+  margin-top: 40px;
+}
+
+#project .opentech-section:first-child {
+  margin-top: 0;
+}
+
+#project .opentech-section--intro {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#project .opentech-lead {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+#project .opentech-section__title.ui.header {
+  border-left: 5px solid #2c3e50;
+  color: #333 !important;
+  font-size: 1.8em;
+  line-height: 1.3;
+  margin: 0 0 20px;
+  padding-left: 15px;
+}
+
+#project .opentech-resource-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  margin-top: 20px;
+}
+
+#project .opentech-resource-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  padding: 20px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+#project .opentech-resource-card:link,
+#project .opentech-resource-card:visited {
+  color: inherit;
+  opacity: 1;
+}
+
+#project .opentech-resource-card:hover {
+  border-color: #ddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+#project .opentech-card__top {
+  align-items: center;
+  color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+#project .opentech-card__top i {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  opacity: 0.75;
+}
+
+#project .opentech-kicker {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  color: #333;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.45rem 0.7rem;
+}
+
+#project .opentech-resource-card h3 {
+  color: #2c3e50;
+  font-size: 1.1em;
+  line-height: 1.42;
+  margin: 0 0 10px;
+}
+
+#project .opentech-resource-card p {
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.55;
+  margin: 0;
+}
+
+#project .opentech-pillar-stack {
+  display: grid;
+  gap: 20px;
+}
+
+#project .opentech-pillar {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+#project .opentech-pillar__heading {
+  align-items: center;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: auto minmax(0, 1fr);
+  margin-bottom: 0.85rem;
+}
+
+#project .opentech-pillar__icon {
+  align-items: center;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  color: #2c3e50;
+  display: inline-flex;
+  height: 2.65rem;
+  justify-content: center;
+  width: 2.65rem;
+}
+
+#project .opentech-pillar h3 {
+  color: #2c3e50;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+#project .opentech-pillar p {
+  color: #555;
+  margin: 0 0 0.9rem;
+}
+
+#project .opentech-pillar p:last-child {
+  margin-bottom: 0;
+}
+
+#project .opentech-pillar__body {
+  border-top: 1px solid #eee;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+#project .opentech-objectives h4,
+#project .opentech-records h4 {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 0.85rem;
+}
+
+#project .opentech-objectives ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#project .opentech-objectives li {
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+#project .opentech-objectives li:last-child {
+  margin-bottom: 0;
+}
+
+#project .opentech-records ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#project .opentech-records li {
+  background: #f9f9f9;
+  border-left: 4px solid #d7dcf0;
+  border-radius: 0 6px 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+  padding: 0.65rem 0.8rem;
+}
+
+#project .opentech-records li:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  #project .opentech-section {
+    margin-top: 32px;
+  }
+
+  #project .opentech-section__title.ui.header {
+    font-size: 1.45rem;
+  }
+
+  #project .opentech-resource-card {
+    min-height: 0;
+  }
+
+  #project .opentech-pillar__heading,
+  #project .opentech-pillar__body {
+    grid-template-columns: 1fr;
+  }
+}
