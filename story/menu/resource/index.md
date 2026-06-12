@@ -99,9 +99,9 @@ og_image:
 
 <h2 class="section-title">開放科技與倡議</h2>
 <div class="card-grid">
-    <a href="https://hackmd.io/@OCFTW/AI-Ready-Open-Data/https%3A%2F%2Fhackmd.io%2F%40OCFTW%2FAI-Ready-CH1" class="resource-card">
-        <h3>AI-Ready Open Data Case Study Report</h3>
-        <p>AI-Ready 開放資料實踐研究</p>
+    <a href="/p/opentech/ai-ready-data/" class="resource-card">
+        <h3>從 開放資料到 AI-Ready 案例研究</h3>
+        <p>從 5 個國際案例，分析出一套藍圖</p>
     </a>
     <a href="https://ocf.tw/p/opentech/otguide/" class="resource-card">
         <h3>關於開放科技</h3>

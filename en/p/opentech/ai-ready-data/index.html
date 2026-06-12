@@ -11,6 +11,19 @@ project_header_image_opacity: 0.75
 project_header_veil_opacity: 0.25
 ---
 
+<style>
+  .ai-ready-case-cards .card {
+    border-top: 0.35rem solid #6450dc !important;
+  }
+  .ai-ready-case-cards .ai-ready-case-tag {
+    background: #6450dc !important;
+    color: #fff !important;
+  }
+  .ai-ready-case-cards .meta strong {
+    color: #6450dc;
+  }
+</style>
+
 <h2 class="ui dividing header">About the Report</h2>
 <p>As artificial intelligence develops rapidly, traditional government open data must evolve toward AI-ready open data. This report examines formats, metadata, licensing, privacy protection, cross-agency coordination, and public-private collaboration to show how data stewards can make open data easier for AI tools to understand and responsibly reuse.</p>
 <p>The report is also intended as a communication resource between government and civic communities. It helps public agencies identify practical paths for data governance, while giving advocates, civic technologists, and open-source communities concrete examples for dialogue with agencies at different stages of readiness.</p>
@@ -64,13 +77,48 @@ project_header_veil_opacity: 0.25
 
 <h2 class="ui dividing header">Case Studies</h2>
 <p>The research presents five international cases, showing how AI-ready open data can begin under different institutional and technical conditions:</p>
-<ul>
-  <li><strong>Spain's ImpulsaDATA:</strong> Companion-style support that helps public agencies navigate regulatory and data-release risks.</li>
-  <li><strong>Germany's The German Commons:</strong> Openly licensed German-language training data with an automated processing workflow.</li>
-  <li><strong>Open Development Cambodia:</strong> Technical assistance and trust-building to encourage data sharing where legal frameworks are still developing.</li>
-  <li><strong>Germany's Parla:</strong> Public parliamentary documents and generative AI tools used to improve administrative search and responses to citizens.</li>
-  <li><strong>France's CroissantLLM:</strong> Government open data and openly licensed corpora used to train a transparent bilingual open language model.</li>
-</ul>
+<div class="ui stackable two cards ai-ready-case-cards">
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">Spain</span>
+      <div class="header">ImpulsaDATA</div>
+      <div class="meta"><strong>Interviewee:</strong> Carlos Alonso Peña, Director of the Spanish Data Office Division</div>
+      <div class="description">A companion-style support program that helps public institutions navigate overlapping regulations. Its diagnose-gap-act method helps agencies identify which high-value datasets can be safely released.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">Germany</span>
+      <div class="header">The German Commons</div>
+      <div class="meta"><strong>Interviewees:</strong> Lukas Gienapp and Martin Potthast, Co-Founders</div>
+      <div class="description">The project consolidates 41 clearly licensed German-language data sources and releases an automated code repository covering data cleaning, personally identifiable information removal, and other workflow steps for fully open German LLM development.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">Cambodia</span>
+      <div class="header">Open Development Cambodia</div>
+      <div class="meta"><strong>Interviewees:</strong> Wen-Ling (Amy) Lai, Vimoil Ourn, and Try Thy</div>
+      <div class="description">In a context where transparency and data protection laws are still developing, ODC provides neutral technical assistance, builds trust with government partners, and strengthens data management, integration, and sharing capacity.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">Germany</span>
+      <div class="header">Parla</div>
+      <div class="meta"><strong>Interviewee:</strong> Ingo Hinterding, Lead Prototyping at CityLAB Berlin</div>
+      <div class="description">Jointly developed by the Senate Chancellery of Berlin and CityLAB Berlin, Parla extracts more than 11,000 public parliamentary documents and uses a generative AI chatbot to improve administrative search and responses to citizen inquiries.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">France</span>
+      <div class="header">CroissantLLM</div>
+      <div class="meta"><strong>Interviewee:</strong> Manuel Faysse, Co-Founder</div>
+      <div class="description">Built on cross-ministry datasets from France's government open data initiative platform, CroissantLLM trained a 1.3-billion-parameter, truly bilingual French-English open language model with an emphasis on transparency and performance.</div>
+    </div>
+  </div>
+</div>
 
 <h2 class="ui dividing header">Key Takeaways</h2>
 <p>Adapted from the report's Executive Summary, these points offer a quick-read view of what AI-ready open data requires:</p>

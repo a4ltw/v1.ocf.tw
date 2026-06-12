@@ -11,6 +11,19 @@ project_header_image_opacity: 0.75
 project_header_veil_opacity: 0.25
 ---
 
+<style>
+  .ai-ready-case-cards .card {
+    border-top: 0.35rem solid #6450dc !important;
+  }
+  .ai-ready-case-cards .ai-ready-case-tag {
+    background: #6450dc !important;
+    color: #fff !important;
+  }
+  .ai-ready-case-cards .meta strong {
+    color: #6450dc;
+  }
+</style>
+
 <h2 class="ui dividing header">專案簡介</h2>
 <p>隨著人工智慧快速發展，傳統政府開放資料需要更進一步朝向 AI-Ready 開放資料轉型。這份研究從開放資料的格式、詮釋資料、授權、個資保護、跨機關協作與公私協力等面向切入，說明資料管理者如何在既有開放資料流程中，讓資料更容易被 AI 工具理解與負責任地再利用。</p>
 <p>本報告也希望成為政府與公民社群之間的溝通材料：讓公務機關看見可執行的資料治理路徑，也讓倡議者、公民科技與開源社群能以具體案例，與不同成熟度的政府機關展開對話。</p>
@@ -64,13 +77,48 @@ project_header_veil_opacity: 0.25
 
 <h2 class="ui dividing header">國際案例</h2>
 <p>研究訪談與整理五個國際案例，呈現不同制度環境與技術成熟度下，AI-Ready 開放資料可以如何開始：</p>
-<ul>
-  <li><strong>西班牙 ImpulsaDATA：</strong>以陪伴式支援協助政府機關釐清法規與資料開放風險。</li>
-  <li><strong>德國 The German Commons：</strong>彙整具開放授權的德語訓練資料，並釋出自動化資料處理流程。</li>
-  <li><strong>柬埔寨 Open Development Cambodia：</strong>在法制尚未完備的環境中，透過技術支援與信任建立促進資料分享。</li>
-  <li><strong>德國 Parla：</strong>以公開議會文件與生成式 AI 工具，優化行政文件檢索與民意回應流程。</li>
-  <li><strong>法國 CroissantLLM：</strong>使用政府開放資料與開放授權語料，訓練具透明度的雙語開放語言模型。</li>
-</ul>
+<div class="ui stackable two cards ai-ready-case-cards">
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">西班牙</span>
+      <div class="header">ImpulsaDATA</div>
+      <div class="meta"><strong>受訪者：</strong>Carlos Alonso Peña，西班牙資料總局局長</div>
+      <div class="description">以陪伴式支援協助公務機構面對多重法規要求，透過「診斷、缺口、行動」方法論，判斷哪些高價值資料能安全開放，並降低機關對資料釋出的顧慮。</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">德國</span>
+      <div class="header">The German Commons</div>
+      <div class="meta"><strong>受訪者：</strong>Lukas Gienapp、Martin Potthast，共同創辦人</div>
+      <div class="description">彙整 41 個具明確開放授權的德語資料來源，並釋出自動化程式碼庫，涵蓋資料清洗、去除可資識別資料等流程，支援完全開放的德語大型語言模型。</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">柬埔寨</span>
+      <div class="header">Open Development Cambodia</div>
+      <div class="meta"><strong>受訪者：</strong>Wen-Ling (Amy) Lai、Vimoil Ourn、Try Thy</div>
+      <div class="description">在資訊公開與個資保護制度尚未成熟的環境中，ODC 以中立角色提供技術協助，累積與政府的信任關係，進一步提升資料管理、整合與分享能力。</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">德國</span>
+      <div class="header">Parla</div>
+      <div class="meta"><strong>受訪者：</strong>Ingo Hinterding，CityLAB Berlin Lead Prototyping</div>
+      <div class="description">由柏林市府辦公廳與 CityLAB Berlin 共同開發，擷取超過 11,000 份公開議會文件，透過生成式 AI 聊天機器人優化行政文件檢索與民眾建議回覆。</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <span class="ui small label ai-ready-case-tag">法國</span>
+      <div class="header">CroissantLLM</div>
+      <div class="meta"><strong>受訪者：</strong>Manuel Faysse，共同創辦人</div>
+      <div class="description">善用法國政府開放資料倡議平台彙整的跨部會資料，訓練 13 億參數、真正雙語的法英開放語言模型，展現開放授權資料在透明度與效能上的潛力。</div>
+    </div>
+  </div>
+</div>
 
 <h2 class="ui dividing header">主要觀察</h2>
 <p>以下依據報告「精選摘要」整理，方便快速掌握 AI-Ready 開放資料的推動重點：</p>
