@@ -144,9 +144,37 @@
   text-decoration: none;
 }
 
-.ot-button:hover {
+.ot-course .ot-button,
+.ot-course .ot-button:link,
+.ot-course .ot-button:visited {
+  color: var(--ocf-dark) !important;
+}
+
+.ot-course .ot-course-actions .ot-button,
+.ot-course .ot-course-actions .ot-button:link,
+.ot-course .ot-course-actions .ot-button:visited {
+  background: var(--ocf-dark);
+  border-color: var(--ocf-dark);
+  color: var(--ocf-white) !important;
+}
+
+.ot-course .ot-course-actions .ot-button:hover {
+  background: var(--ocf-primary);
   border-color: var(--ocf-primary);
-  color: var(--ocf-primary);
+  color: var(--ocf-white) !important;
+}
+
+.ot-course .ot-course-actions .ot-button--primary,
+.ot-course .ot-course-actions .ot-button--primary:link,
+.ot-course .ot-course-actions .ot-button--primary:visited {
+  background: var(--ocf-primary);
+  border-color: var(--ocf-primary);
+  color: var(--ocf-white) !important;
+}
+
+.ot-course .ot-button:hover {
+  border-color: var(--ocf-primary);
+  color: var(--ocf-primary) !important;
 }
 
 .ot-button--primary,
@@ -154,13 +182,13 @@
 .ot-button--primary:visited {
   background: var(--ocf-primary);
   border-color: var(--ocf-primary);
-  color: #fff;
+  color: var(--ocf-white) !important;
 }
 
-.ot-button--primary:hover {
+.ot-course .ot-button--primary:hover {
   background: #5140b5;
   border-color: #5140b5;
-  color: #fff;
+  color: var(--ocf-white) !important;
 }
 
 .ot-course-facts {
@@ -393,7 +421,7 @@
 .ot-lesson-material:visited {
   background: var(--ocf-dark);
   border-radius: 6px;
-  color: #fff;
+  color: var(--ocf-white) !important;
   flex: 0 0 auto;
   font-weight: 700;
   line-height: 1;
@@ -404,7 +432,7 @@
 
 .ot-lesson-material:hover {
   background: var(--ocf-primary);
-  color: #fff;
+  color: var(--ocf-white) !important;
 }
 
 .ot-lesson-material--disabled {
@@ -419,7 +447,7 @@
   padding: 24px 24px 0;
 }
 
-.ot-youtube-slot,
+.ot-video-viewer,
 .ot-slide-viewer {
   aspect-ratio: 16 / 9;
   border-radius: 8px;
@@ -427,37 +455,14 @@
   width: 100%;
 }
 
-.ot-youtube-slot {
-  align-items: center;
+.ot-video-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.ot-video-viewer {
   background: #111827;
   border: 1px solid #2f3a4c;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 26px;
-  text-align: center;
-}
-
-.ot-youtube-slot i {
-  color: #ff4d4d;
-  font-size: 2.4rem;
-  margin-bottom: 12px;
-}
-
-.ot-youtube-slot h4 {
-  color: #fff;
-  font-size: 1rem;
-  line-height: 1.35;
-  margin: 0 0 8px;
-}
-
-.ot-youtube-slot p {
-  color: #d7dcf0;
-  font-size: 0.92rem;
-  line-height: 1.55;
-  margin: 0;
-  max-width: 22rem;
 }
 
 .ot-slide-viewer {
@@ -465,6 +470,7 @@
   border: 1px solid #dfe3ef;
 }
 
+.ot-video-viewer iframe,
 .ot-slide-viewer iframe {
   border: 0;
   display: block;

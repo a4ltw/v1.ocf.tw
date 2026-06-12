@@ -98,9 +98,9 @@
 }
 
 #project .opentech-kicker--activity {
-  background: var(--ocf-cyan);
-  border-color: var(--ocf-cyan);
-  color: var(--ocf-dark);
+  background: var(--ocf-magenda);
+  border-color: var(--ocf-magenda);
+  color: var(--ocf-white);
 }
 
 #project .opentech-kicker--learning {
@@ -114,12 +114,13 @@
 }
 
 #project .opentech-kicker--report {
-  background: var(--ocf-magenda);
-  border-color: var(--ocf-magenda);
+  background: var(--ocf-cyan);
+  border-color: var(--ocf-cyan);
+  color: var(--ocf-white);
 }
 
 #project .opentech-kicker--activity + i {
-  color: var(--ocf-cyan);
+  color: var(--ocf-magenda);
 }
 
 #project .opentech-kicker--learning + i {
@@ -131,7 +132,7 @@
 }
 
 #project .opentech-kicker--report + i {
-  color: var(--ocf-magenda);
+  color: var(--ocf-cyan);
 }
 
 #project .opentech-resource-card h3 {
@@ -274,9 +275,9 @@
 }
 
 #project .opentech-record-tag--meeting {
-  background: var(--ocf-cyan);
-  border-color: var(--ocf-cyan);
-  color: var(--ocf-dark);
+  background: var(--ocf-dark);
+  border-color: var(--ocf-dark);
+  color: var(--ocf-white);
 }
 
 #project .opentech-record-tag--advocacy {
@@ -286,8 +287,8 @@
 }
 
 #project .opentech-record-tag--report {
-  background: var(--ocf-dark);
-  border-color: var(--ocf-dark);
+  background: var(--ocf-magenda);
+  border-color: var(--ocf-magenda);
   color: var(--ocf-white);
 }
 
