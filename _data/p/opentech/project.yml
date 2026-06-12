@@ -31,6 +31,10 @@ tags:
 tags_en:
 
 links:
+  - title: 教材《開放科技 MOOC 課程》
+    url: https://ocf.tw/p/opentech/course/
+    color: purple
+    icon: graduation cap icon
   - title: 手冊《關於開放科技—從原始碼、資料到政府：開放，如何塑造新時代數位社會》
     url: https://ocf.tw/p/opentech/otguide/
     color: purple
