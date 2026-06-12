@@ -316,3 +316,63 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* OpenTech related events: normalize event images only.
+ * Keep the original one-column event layout and existing card styles.
+ */
+
+#project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item > .image {
+  background-color: var(--ocf-primary);
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  border-radius: 8px;
+  flex: 0 0 140px;
+  height: 140px !important;
+  margin: 0 1.25rem 0 0 !important;
+  min-height: 0;
+  overflow: hidden;
+  width: 140px !important;
+}
+
+#project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item > .image img {
+  display: block;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  width: 100%;
+}
+
+/* Events without images: provide a consistent square placeholder. */
+#project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item:not(:has(> .image))::after {
+  align-items: center;
+  background: rgba(100, 80, 220, 0.12);
+  border-radius: 8px;
+  color: var(--ocf-light);
+  content: "EVENT";
+  display: flex;
+  flex: 0 0 140px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  height: 140px;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  margin: 0 1.25rem 0 0;
+  order: 1;
+  width: 140px;
+}
+
+#project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item:not(:has(> .image)) > .content {
+  order: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  #project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item > .image,
+  #project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item:not(:has(> .image))::after {
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    height: auto !important;
+    margin: 0 0 1rem 0 !important;
+    width: 100% !important;
+  }
+}
