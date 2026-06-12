@@ -302,7 +302,7 @@
 }
 
 #project .project__body > div > h2.ocf__text--primary ~ .ui.divided.items > .item:hover {
-  border-color: rgba(100, 80, 220, 0.35) !important;
+  border-color: rgba(15, 25, 35, 0.5) !important;
   box-shadow: 0 8px 22px rgba(15, 25, 35, 0.1);
   transform: translateY(-1px);
 }
