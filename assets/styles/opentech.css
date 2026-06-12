@@ -1,3 +1,111 @@
+#project .opentech-section {
+  margin-top: 48px;
+}
+
+#project .opentech-section:first-child {
+  margin-top: 0;
+}
+
+#project .opentech-lead {
+  color: #555;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+#project .opentech-section__title.ui.header {
+  color: var(--ocf-dark);
+  font-size: 1.75rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+#project .opentech-resource-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.5rem;
+}
+
+#project .opentech-resource-card {
+  background: #fff;
+  border: 1px solid #e7e9f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  color: var(--ocf-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 20px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#project .opentech-resource-card:hover {
+  border-color: rgba(100, 80, 220, 0.35);
+  box-shadow: 0 8px 22px rgba(15, 25, 35, 0.1);
+  color: var(--ocf-dark);
+  transform: translateY(-1px);
+}
+
+#project .opentech-card__top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+#project .opentech-card__top i {
+  color: var(--ocf-primary);
+  font-size: 1.35rem;
+}
+
+#project .opentech-resource-card h3 {
+  color: var(--ocf-dark);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin: 0 0 0.65rem;
+}
+
+#project .opentech-resource-card p {
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+#project .opentech-kicker {
+  align-items: center;
+  border-radius: 6px;
+  color: var(--ocf-white);
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.42rem 0.64rem;
+  white-space: nowrap;
+}
+
+#project .opentech-kicker--activity {
+  background: var(--ocf-magenda);
+}
+
+#project .opentech-kicker--learning {
+  background: var(--ocf-primary);
+}
+
+#project .opentech-kicker--guide {
+  background: var(--ocf-dark);
+}
+
+#project .opentech-kicker--report {
+  background: var(--ocf-cyan);
+}
+
+@media only screen and (max-width: 767px) {
+  #project .opentech-resource-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 #project .opentech-pillar-stack {
   display: grid;
   gap: 20px;
