@@ -1,0 +1,83 @@
+- id: ai-ready-g0v-summit-2026
+  name: g0v Summit 論壇：AI 時代的開放資料——從國際公私協作經驗看台灣共創的下一步
+  name_en: "g0v Summit Forum: Open Data in the Age of AI - Taiwan's Next Step in Co-Creation from International Public-Private Collaboration"
+  description: 這場論壇聚焦 AI 時代下開放資料的下一階段挑戰，從國際公私協作經驗出發，討論台灣如何推動更可用、可治理、可協作的 AI-Ready 開放資料。
+  description_en: This forum focused on the next-stage challenges of open data in the age of AI, drawing from international public-private collaboration experiences to discuss how Taiwan can promote more usable, governable, and collaborative AI-ready open data.
+  start: 2026/05/24
+  end:
+  metas:
+    - 時間：10:00–11:00
+    - 地點：g0v Summit 2026，R3
+  metas_en:
+    - "Time: 10:00-11:00"
+    - "Venue: g0v Summit 2026, R3"
+  links:
+    - title: 研究頁面
+      url: /p/opentech/ai-ready-data/
+    - title: 線上提問
+      url: https://app.sli.do/event/21uGgVeSy1Zrj2yq8gzZJn/live/questions
+    - title: 共同筆記
+      url: https://g0v.hackmd.io/@summit2026/H1EqQBc0bl/%2FwMU4H2KtQ_-V6YZUPKRJ6Q
+  links_en:
+    - title: Research Page
+      url: /en/p/opentech/ai-ready-data/
+    - title: Slido Questions
+      url: https://app.sli.do/event/21uGgVeSy1Zrj2yq8gzZJn/live/questions
+    - title: Shared Notes
+      url: https://g0v.hackmd.io/@summit2026/H1EqQBc0bl/%2FwMU4H2KtQ_-V6YZUPKRJ6Q
+  cover_image: /p/opentech/ai-ready-data/og-zhtw.jpg
+  project_ids:
+    - opentech
+
+- id: ai-ready-webinar-2025
+  name: AI-Ready 開放資料實踐研究 Webinar：線上發表會
+  name_en: "AI-Ready Open Data Case Study Webinar: Online Presentation"
+  description: 本場線上發表會分享「AI-Ready 開放資料實踐研究」的研究成果、國際案例觀察與後續討論方向。
+  description_en: This online presentation shared the research findings, international case observations, and follow-up discussion directions from the AI-Ready Open Data case study.
+  start: 2025/12/29
+  end:
+  metas:
+    - 時間：17:00–19:00
+    - 形式：線上活動
+  metas_en:
+    - "Time: 17:00-19:00"
+    - "Format: Online event"
+  links:
+    - title: 研究頁面
+      url: /p/opentech/ai-ready-data/
+    - title: 簡報
+      url: https://docs.google.com/presentation/d/1jge83za4n2YSSnUPDZlItuMfBEV1ZAXGdmc0qroq3-w/edit?slide=id.p#slide=id.p
+  links_en:
+    - title: Research Page
+      url: /en/p/opentech/ai-ready-data/
+    - title: Slides
+      url: https://docs.google.com/presentation/d/1jge83za4n2YSSnUPDZlItuMfBEV1ZAXGdmc0qroq3-w/edit?slide=id.p#slide=id.p
+  # TODO: 討論紀錄或最新消息連結確認後，可新增至 links。
+  cover_image: /p/opentech/ai-ready-data/og-zhtw.jpg
+  project_ids:
+    - opentech
+
+- id: opendata-advocacy-workshop-2025
+  name: 開放資料下階段倡議共識凝聚研討會
+  name_en: Consensus-Building Workshop for the Next Stage of Open Data Advocacy
+  description: 本場研討會作為開放資料下階段倡議與 AI-Ready 開放資料討論的重要案例，協助整理社群、倡議者與利害關係人對於未來資料治理方向的觀察與共識。
+  description_en: This workshop served as an important case for next-stage open data advocacy and AI-ready open data discussions, helping organize observations and consensus from communities, advocates, and stakeholders on future data governance directions.
+  start: 2025/04/14
+  end:
+  metas:
+    - 形式：研討會 / 討論案例
+  metas_en:
+    - "Format: Workshop / discussion case"
+  links:
+    - title: 研究頁面
+      url: /p/opentech/ai-ready-data/
+    - title: 活動紀錄
+      url: https://www.facebook.com/photo.php?fbid=1387245903446397&set=pb.100064830005651.-2207520000&type=3
+  links_en:
+    - title: Research Page
+      url: /en/p/opentech/ai-ready-data/
+    - title: Activity Record
+      url: https://www.facebook.com/photo.php?fbid=1387245903446397&set=pb.100064830005651.-2207520000&type=3
+  cover_image: /p/opentech/ai-ready-data/og-zhtw.jpg
+  project_ids:
+    - opentech

@@ -11,26 +11,57 @@ project_header_image_opacity: 0.75
 project_header_veil_opacity: 0.25
 ---
 
-<h2 class="ui dividing header">Read and Download “From Open Data to AI-Ready Data”</h2>
+<h2 class="ui dividing header">About the Report</h2>
+<p>As artificial intelligence develops rapidly, traditional government open data must evolve toward AI-ready open data. This report examines formats, metadata, licensing, privacy protection, cross-agency coordination, and public-private collaboration to show how data stewards can make open data easier for AI tools to understand and responsibly reuse.</p>
+<p>The report is also intended as a communication resource between government and civic communities. It helps public agencies identify practical paths for data governance, while giving advocates, civic technologists, and open-source communities concrete examples for dialogue with agencies at different stages of readiness.</p>
+
+<h2 class="ui dividing header">Research Outputs / Document Versions</h2>
+<p>This page will continue collecting research outputs, document versions, and collaboration entry points for the AI-Ready Open Data study. Different versions serve different purposes:</p>
+
+<div class="ui stackable three cards">
+  <div class="card">
+    <div class="content">
+      <div class="header">PDF Report</div>
+      <div class="meta">Official reading and citation</div>
+      <div class="description">The fully designed version for reading, downloading, citation, and external sharing.</div>
+    </div>
+    <div class="extra content">
+      <p><i class="file pdf outline icon"></i><a href="/p/opentech/ai-ready-data/report/OCF-AI-en.pdf">English PDF</a></p>
+      <p><i class="file pdf outline icon"></i><a href="/p/opentech/ai-ready-data/report/OCF-AI-zhtw.pdf">Mandarin Chinese PDF</a></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <div class="header">GitHub Markdown Version</div>
+      <div class="meta">Formal organization and long-term maintenance</div>
+      <div class="description">This future version will support formal organization, version control, long-term maintenance, issue discussion, and document evolution.</div>
+    </div>
+    <div class="extra content">
+      <!-- TODO: Add the official OCF GitHub Markdown repo / path once it exists. Do not use yanyiyi's reference repo as an official OCF link. -->
+      <i class="github icon"></i>Official OCF GitHub link pending
+    </div>
+  </div>
+
+  <a class="card" href="https://hackmd.io/@OCFTW/AI-Ready-Open-Data/https%3A%2F%2Fhackmd.io%2F%40OCFTW%2FAI-Ready-CH1" target="_blank" rel="noopener">
+    <div class="content">
+      <div class="header">HackMD Collaboration Version</div>
+      <div class="meta">Community reading, discussion, and feedback</div>
+      <div class="description">This version is suitable for community reading, shared notes, suggested edits, and additional case contributions.</div>
+    </div>
+    <div class="extra content">
+      <i class="edit outline icon"></i>Open HackMD
+    </div>
+  </a>
+</div>
+
+<h3 class="ui dividing header">Online Preview</h3>
 <iframe src="/p/opentech/ai-ready-data/report/OCF-AI-en.pdf" width="100%" height="640">
   <p>If the online PDF preview is unavailable, please download:
     <a href="/p/opentech/ai-ready-data/report/OCF-AI-en.pdf">English Version</a>,
     <a href="/p/opentech/ai-ready-data/report/OCF-AI-zhtw.pdf">Mandarin Chinese Version</a>
   </p>
 </iframe>
-
-<p>
-  <i class="globe icon"></i>
-  <a href="/p/opentech/ai-ready-data/report/OCF-AI-en.pdf">English Version</a>
-</p>
-<p>
-  <i class="globe icon"></i>
-  <a href="/p/opentech/ai-ready-data/report/OCF-AI-zhtw.pdf">Mandarin Chinese Version</a>
-</p>
-
-<h2 class="ui dividing header">About the Report</h2>
-<p>As artificial intelligence develops rapidly, traditional government open data must evolve toward AI-ready open data. This report examines formats, metadata, licensing, privacy protection, cross-agency coordination, and public-private collaboration to show how data stewards can make open data easier for AI tools to understand and responsibly reuse.</p>
-<p>The report is also intended as a communication resource between government and civic communities. It helps public agencies identify practical paths for data governance, while giving advocates, civic technologists, and open-source communities concrete examples for dialogue with agencies at different stages of readiness.</p>
 
 <h2 class="ui dividing header">Case Studies</h2>
 <p>The research presents five international cases, showing how AI-ready open data can begin under different institutional and technical conditions:</p>
@@ -50,6 +81,30 @@ project_header_veil_opacity: 0.25
   <li>Public-private collaboration can begin with lower-sensitivity topics, concrete needs, and visible outcomes that build long-term trust.</li>
   <li>High-quality local data helps preserve linguistic and cultural context, preventing AI systems from reflecting only dominant languages and external cultural frameworks.</li>
 </ol>
+
+<h2 class="ui dividing header">Activities and Presentations</h2>
+<p>The following records collect activities, presentations, discussions, and public references related to this research. Event notes, slides, shared notes, and follow-up articles can be added here over time.</p>
+
+{% include _var/events.html %}
+{% if events %}
+<div class="ui divided items">
+  {% for event in events %}
+    {% include p/events/item.html %}
+  {% endfor %}
+</div>
+{% else %}
+<p>No activity records yet.</p>
+{% endif %}
+
+<h2 class="ui dividing header">Related Links</h2>
+<p>
+  <i class="folder open outline icon"></i>
+  <a href="/en/p/opentech/">Open Technology and Advocacy</a>
+</p>
+<p>
+  <i class="edit outline icon"></i>
+  <a href="https://hackmd.io/@OCFTW/AI-Ready-Open-Data/https%3A%2F%2Fhackmd.io%2F%40OCFTW%2FAI-Ready-CH1" target="_blank" rel="noopener">HackMD Collaboration Version</a>
+</p>
 
 <h2 class="ui dividing header">Publication and License</h2>
 <p>This report is jointly published by the Open Culture Foundation (OCF) and the Taiwan Office/Global Innovation Hub of the Friedrich Naumann Foundation for Freedom (FNF). It is released under the CC BY 4.0 license.</p>
