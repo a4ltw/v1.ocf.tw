@@ -25,7 +25,7 @@
       url: https://app.sli.do/event/21uGgVeSy1Zrj2yq8gzZJn/live/questions
     - title: Shared Notes
       url: https://g0v.hackmd.io/@summit2026/H1EqQBc0bl/%2FwMU4H2KtQ_-V6YZUPKRJ6Q
-  cover_image: /p/opentech/ai-ready-data/og-zhtw.jpg
+  cover_image: /p/opentech/ai-ready-data/event-g0v-summit-2026.png
   project_ids:
     - opentech
 
@@ -45,15 +45,18 @@
   links:
     - title: 研究頁面
       url: /p/opentech/ai-ready-data/
+    - title: 活動速記
+      url: /story/ai-ready-open-data-webinar/
     - title: 簡報
       url: https://docs.google.com/presentation/d/1jge83za4n2YSSnUPDZlItuMfBEV1ZAXGdmc0qroq3-w/edit?slide=id.p#slide=id.p
   links_en:
     - title: Research Page
       url: /en/p/opentech/ai-ready-data/
+    - title: Event Notes
+      url: /story/ai-ready-open-data-webinar/
     - title: Slides
       url: https://docs.google.com/presentation/d/1jge83za4n2YSSnUPDZlItuMfBEV1ZAXGdmc0qroq3-w/edit?slide=id.p#slide=id.p
-  # TODO: 討論紀錄或最新消息連結確認後，可新增至 links。
-  cover_image: /p/opentech/ai-ready-data/og-zhtw.jpg
+  cover_image: /p/opentech/ai-ready-data/event-webinar-2025.png
   project_ids:
     - opentech
 
@@ -78,6 +81,6 @@
       url: /en/p/opentech/ai-ready-data/
     - title: Activity Record
       url: https://www.facebook.com/photo.php?fbid=1387245903446397&set=pb.100064830005651.-2207520000&type=3
-  cover_image: /p/opentech/ai-ready-data/og-zhtw.jpg
+  cover_image: /p/opentech/ai-ready-data/event-workshop-2025.jpg
   project_ids:
     - opentech

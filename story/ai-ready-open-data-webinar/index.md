@@ -4,7 +4,7 @@ og_title: "[Webinar 速記] 從開放資料到 AI-Ready：以資料基礎支撐�
 og_description: "OCF 與 FNF 共同舉辦線上研討會，發布《從開放資料到 AI-Ready 國際實踐研究》Early Release 版本，並邀請台灣在地 AI 社群、產業實務者與開放資料社群一同對談。"
 og_image: images/image1.png
 publish_date: 2025-12-29
-modified_time: 2026-06-12 12:10
+modified_time: 2026-06-12 12:29
 author: OCF
 section: 開放資料
 ---
@@ -14,6 +14,8 @@ section: 開放資料
 ![AI-Ready 開放資料實踐研究線上發表會主視覺][image1]
 
 2025 年 12 月 29 日，開放文化基金會（OCF）與弗里德里希・諾曼自由基金會（FNF）共同舉辦線上研討會，發布《從開放資料到 AI-Ready 國際實踐研究：賦能資料管理者，促進公民與政府的對話》Early Release 版本，並邀請台灣在地 AI 社群、產業實務者與開放資料社群一同對談，討論在生成式 AI 快速發展的今日，開放資料如何從「公開」進一步走向「可被機器理解、可被持續應用」。
+
+完整報告、PDF 下載、GitHub Markdown 與 HackMD 協作版本，可參考 [AI-Ready 開放資料實踐研究成果頁](/p/opentech/ai-ready-data/)。
 
 活動由開放文化基金會（OCF）專案經理劉俊彥（Ian Liu）主持，並邀請開放文化基金會（OCF）顧問、報告總主筆鄧東波（Dongpo Deng）導讀研究內容；弗里德里希・諾曼自由基金會（FNF）專案經理周雅薇（YaWei Chou）代表合作單位致詞。下半場則邀請 TwinkleAI 創辦人黃亮勳（Liang-Hsun Huang）、TwinkleAI 資深訓練師陳旻詣（Minyi Chen）、BookAI 創辦人謝昆霖（Kun-Lin Hsieh）共同分享台灣實務經驗。
 
@@ -97,6 +99,6 @@ BookAI 創辦人謝昆霖則從另一條路徑切入。他坦言，自己早期�
 
 AI-Ready 開放資料不是一句新口號，而是開放資料在下一個階段需要補上的基礎工程。它關乎政府治理效率，也關乎文化記憶、公民參與與台灣如何在全球 AI 浪潮中保有自己的聲音。
 
-報告目前仍處於 Early Release 階段，OCF 後續將彙整 Webinar 與社群回饋，持續修訂中文版報告，並規劃翻譯為英文版本，讓台灣的經驗與觀察也能回到國際開放資料與 AI 治理社群之中。
+報告目前仍處於 Early Release 階段，OCF 後續將彙整 Webinar 與社群回饋，持續修訂文件版本；最新整理請見 [AI-Ready 開放資料實踐研究成果頁](/p/opentech/ai-ready-data/)，讓台灣的經驗與觀察也能回到國際開放資料與 AI 治理社群之中。
 
 [image1]: images/image1.png
