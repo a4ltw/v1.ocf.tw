@@ -41,10 +41,12 @@ layout: global
       <!-- 屬於此專案的活動 -->
 
       {% if page.show_events %}
-      <h2 class="ocf__text--primary">
-        {% include _shared/titles.html type='project' id='events' %}
-      </h2>
-      {% include p/events.html %}
+      <section class="project-related-events">
+        <h2 class="ocf__text--primary">
+          {% include _shared/titles.html type='project' id='events' %}
+        </h2>
+        {% include p/events.html %}
+      </section>
       {% endif %}
 
       <!-- 幫內嵌 gsheet -->

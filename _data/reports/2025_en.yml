@@ -110,7 +110,7 @@ items:
     columns:
       - type: article
         alignment: left
-        title: The Girl's Field Notes
+        title: Notes
         description: |
           <div class="ocf2025-note"><p>I used to think “open source” just meant people getting together to write free software. After reading OCF's Good Governance Initiative handbook and learning about Public Code, I realized that open source is also a movement about rights.</p><p>If government code is not transparent, we cannot oversee it. If human rights groups lack secure open-source tools and basic digital security guidance, people will have a harder time speaking up. OCF is like a bridge builder in the digital world, making sure every stone under our feet is transparent and safe.</p></div>
 
@@ -199,7 +199,7 @@ items:
     columns:
       - type: article
         alignment: left
-        title: The Girl's Field Notes
+        title: Notes
         description: |
           <div class="ocf2025-note"><p>I used to think open data simply meant putting files on a website. Later I learned that open data has requirements and quality standards. If formats are not machine-readable, or if the law does not clearly require government agencies to open data, people still cannot use it.</p><p>Seeing OCF go to the Legislative Yuan, the Executive Yuan, and university classrooms helped me understand that “openness” is a long-distance race against time. The work with the Aimosheng Foundation（愛陌生協會） to improve AED map data was especially cool to me. When data becomes transparent and accurate, it stops being a stiff file on a hard drive and becomes real support that can protect people.</p></div>
 
@@ -293,7 +293,7 @@ items:
     columns:
       - type: article
         alignment: left
-        title: The Girl's Field Notes
+        title: Notes
         description: |
           <div class="ocf2025-note"><p>Digital security is not only about avoiding suspicious links, and digital rights are not limited to whether the police abuse their power. Through OCF's participation in these international conferences, I learned that digital rights touch almost every corner of modern life.</p><p>Many of these issues do not happen only in Taiwan. OCF went to Malaysia, South Korea, and Portugal to share Taiwan's cases and bring back digital defense experience from abroad. They made me feel that even though digital authoritarianism looks enormous, we are not alone as long as people keep defending this line.</p></div>
 
@@ -363,7 +363,7 @@ items:
     columns:
       - type: article
         alignment: left
-        title: The Girl's Field Notes
+        title: Notes
         description: |
           <div class="ocf2025-note"><p>When the internet goes down, it affects much more than streaming shows or scrolling on a phone. Basic needs can also run into trouble. Seeing OCF discuss backup mechanisms for outages made me realize how fragile the internet really is.</p><p>Over the past year, I saw OCF partners travel around the world to exchange Taiwan's work and experience in internet freedom and digital rights with experts. In Taiwan, where internet access feels as constant as oxygen, internet freedom is still not a familiar issue for many people. Continued advocacy and discussion can help more people notice potential risks and start looking for solutions earlier.</p></div>
 
@@ -440,7 +440,7 @@ items:
     columns:
       - type: article
         alignment: left
-        title: The Girl's Field Notes
+        title: Notes
         description: |
           <div class="ocf2025-note"><p>If I compare this to school life, OCF feels like a student council for the digital world. They support the open-source ecosystem, use an easy-to-understand board game like OpenStarTer Village to welcome newcomers, help people who do not write code understand open-source collaboration, and even work across art and music to help more people experience the open-source world.</p><p>It makes me feel that the digital world is not only cold technological competition. It is full of mutual support. Through the bridges OCF builds, we can solve problems together and meet all kinds of brilliant people beyond the screen.</p></div>
 
