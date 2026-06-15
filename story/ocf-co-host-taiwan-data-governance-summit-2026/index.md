@@ -86,6 +86,6 @@ OCF 邀請關注開放資料與資料治理的你，把握徵稿時間，一起�
 
 - 📌 政府軌徵稿表單：<https://tdama.pse.is/gcfp26>
 - 🗓️ 徵稿截止：2026 年 6 月 26 日
-- 🔗 延伸閱讀：OCF[「永續資料」開放資料倡議](/p/opendatanext/)、[「從開放資料到 AI-READY 國際實踐研究： 賦能資料管理者，促進公民與政府的對話](/p/opentech/ai-ready-data/)、[從開放資料到 AI-Ready Webinar 速記](/story/ai-ready-open-data-webinar/)
+- 🔗 延伸閱讀：OCF [「永續資料」開放資料倡議](/p/opendatanext/)、[《從開放資料到 AI-READY 國際實踐研究：賦能資料管理者，促進公民與政府的對話》](/p/opentech/ai-ready-data/)、[從開放資料到 AI-READY Webinar 速記](/story/ai-ready-open-data-webinar/)
 
 [banner]: images/banner.png

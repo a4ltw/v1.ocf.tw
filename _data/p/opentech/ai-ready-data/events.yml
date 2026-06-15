@@ -1,7 +1,7 @@
 - id: ai-ready-g0v-summit-2026
   name: g0v Summit 論壇：AI 時代的開放資料——從國際公私協作經驗看台灣共創的下一步
   name_en: "g0v Summit Forum: Open Data in the Age of AI - Taiwan's Next Step in Co-Creation from International Public-Private Collaboration"
-  description: 這場論壇聚焦 AI 時代下開放資料的下一階段挑戰，從國際公私協作經驗出發，討論台灣如何推動更可用、可治理、可協作的 AI-Ready 開放資料。
+  description: 這場論壇聚焦 AI 時代下開放資料的下一階段挑戰，從國際公私協作經驗出發，討論台灣如何推動更可用、可治理、可協作的 AI-READY 開放資料。
   description_en: This forum focused on the next-stage challenges of open data in the age of AI, drawing from international public-private collaboration experiences to discuss how Taiwan can promote more usable, governable, and collaborative AI-ready open data.
   start: 2026/05/24
   end:
@@ -30,10 +30,10 @@
     - opentech
 
 - id: ai-ready-webinar-2025
-  name: AI-Ready 開放資料實踐研究 Webinar：線上發表會
-  name_en: "AI-Ready Open Data Case Study Webinar: Online Presentation"
-  description: 本場線上發表會分享「AI-Ready 開放資料實踐研究」的研究成果、國際案例觀察與後續討論方向。
-  description_en: This online presentation shared the research findings, international case observations, and follow-up discussion directions from the AI-Ready Open Data case study.
+  name: 從開放資料到 AI-READY 國際實踐研究 Webinar：線上發表會
+  name_en: "From Open Data to AI-Ready Data Webinar: Online Presentation"
+  description: 本場線上發表會分享「從開放資料到 AI-READY 國際實踐研究」的研究成果、國際案例觀察與後續討論方向。
+  description_en: This online presentation shared the research findings, international case observations, and follow-up discussion directions from the From Open Data to AI-Ready Data report.
   start: 2025/12/29
   end:
   metas:
@@ -63,7 +63,7 @@
 - id: opendata-advocacy-workshop-2025
   name: 開放資料下階段倡議共識凝聚研討會
   name_en: Consensus-Building Workshop for the Next Stage of Open Data Advocacy
-  description: 本場研討會作為開放資料下階段倡議與 AI-Ready 開放資料討論的重要案例，協助整理社群、倡議者與利害關係人對於未來資料治理方向的觀察與共識。
+  description: 本場研討會作為開放資料下階段倡議與 AI-READY 開放資料討論的重要案例，協助整理社群、倡議者與利害關係人對於未來資料治理方向的觀察與共識。
   description_en: This workshop served as an important case for next-stage open data advocacy and AI-ready open data discussions, helping organize observations and consensus from communities, advocates, and stakeholders on future data governance directions.
   start: 2026/04/14
   end:

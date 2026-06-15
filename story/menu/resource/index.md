@@ -100,8 +100,8 @@ og_image:
 <h2 class="section-title">開放科技與倡議</h2>
 <div class="card-grid">
     <a href="/p/opentech/ai-ready-data/" class="resource-card">
-        <h3>從 開放資料到 AI-Ready 案例研究</h3>
-        <p>從 5 個國際案例，分析出一套藍圖</p>
+        <h3>從開放資料到 AI-READY 國際實踐研究</h3>
+        <p>從 5 個國際案例，整理 AI 時代開放資料治理的實務路徑</p>
     </a>
     <a href="https://ocf.tw/p/opentech/otguide/" class="resource-card">
         <h3>關於開放科技</h3>
