@@ -6,7 +6,6 @@ color:
 cover_image_opacity: 0
 cover_veil_opacity: 0
 alignment: left
-download: /p/2025/OCF-Annual-Report-2025.pdf
 items:
   - type: content
     single_column: true
@@ -22,11 +21,8 @@ items:
           <p>Over the past year, we have practiced openness on the front lines. We promoted the idea of Public Code, urging government agencies to adopt open-source software and avoid vendor lock-in. Through the Open Tech Garage and our digital security support program, we helped civil society build stronger defenses. We also joined discussions on digital rights legislation, so privacy and freedom would not become the price of technological progress.</p>
           <p>As AI brought new debates over training data, safety, and privacy, OCF went to the Legislative Yuan to help advance guidelines for parliamentary use of AI. We also joined multiple Ministry of Digital Affairs meetings on responsible government use of AI, personal data protection, and creators' rights. We believe transparency and sharing offer the best path through today's digital problems. AI should serve society as a public good, not grow into a tool without accountability.</p>
           <p>OCF works toward a genuinely open and transparent digital future. In that future, open-source code, open data, and open government allow everyone to participate as equals and defend their own rights. We sincerely invite you to stand with OCF, help us build better digital lives, and keep the power to decide the future firmly in people's hands.</p>
-          <p class="ocf2025-signature">Chief Executive Officer, Open Culture Foundation <img src="/p/2025/images/signature.png" alt="Signature of the Chief Executive Officer"></p>
+          <p class="ocf2025-signature ocf2025-signature-en"><img src="/p/admin/2023/b-sign-en.png" alt="Signature of the Chief Executive Officer"></p>
           </div>
-        action:
-          title: Download Full PDF
-          url: /p/2025/OCF-Annual-Report-2025.pdf
 
   - type: content
     columns:
@@ -589,9 +585,6 @@ items:
           <div class="ocf2025-finance">
           <figure class="ocf2025-finance-chart"><img src="/p/2025/images/finance-report.png" alt="2025 financial report pie charts for income and expenses"></figure>
           </div>
-        action:
-          title: Download Full PDF
-          url: /p/2025/OCF-Annual-Report-2025.pdf
 
   - type: content
     single_column: true
