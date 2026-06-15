@@ -255,6 +255,12 @@
   color: var(--ocf-dark);
 }
 
+#project .opentech-record-tag--activity {
+  background: var(--ocf-magenda);
+  border-color: var(--ocf-magenda);
+  color: var(--ocf-white);
+}
+
 @media only screen and (max-width: 767px) {
   #project .opentech-section {
     margin-top: 32px;
