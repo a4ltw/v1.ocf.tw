@@ -1,3 +1,30 @@
+- id: open-source-business-ai-competitiveness-2026
+  name: "開源不只是技術選擇：AI 時代企業布局國際競爭力的起點"
+  name_en:
+  description: >-
+    AI 正在改變軟體產品的開發、營運與國際競爭規則，而開源也不再只是工程團隊的技術選擇。從開源授權、SBOM、AI 治理，到社群經營、開放資料與營運工具導入，企業需要重新理解開源如何成為建立信任、降低風險與連結市場的關鍵能力。本次聚會將從合規趨勢、商業策略與新創實戰出發，陪伴企業在 AI 時代找到重塑國際競爭力的起點。
+  start: 2026/06/22
+  end:
+  cover_image: /story/open-source-business-ai-competitiveness-2026/images/banner.png
+  banner_image: /story/open-source-business-ai-competitiveness-2026/images/banner.png
+  metas:
+    - 14:00-17:00
+    - 台北市文創 6 樓 B 廳（台北市信義區菸廠路 88 號 6 樓）
+  links:
+    - title: 最新消息
+      url: /story/open-source-business-ai-competitiveness-2026/
+    - title: ACCUPASS 報名
+      url: https://dub.sh/ostwocf0622
+    - title: Google 表單報名
+      url: https://dub.sh/ostwocf0622gf
+  organizer_ids:
+    - osof
+  co-organizer_ids:
+    - ocf
+    - openchain
+  project_ids:
+    - openchain
+
 - id: 0918openchain
   name: OpenChain 臺灣社群聚會：首發工作坊
   description: "OpenChain 協助產業在碰觸或思索開源合規 (Open Source Compliance) 爭議或政策時，有一套流程可以提供參考！
