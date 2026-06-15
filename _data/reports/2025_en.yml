@@ -583,7 +583,7 @@ items:
         title: 2025 Financial Report
         description: |
           <div class="ocf2025-finance">
-          <figure class="ocf2025-finance-chart"><img src="/p/2025/images/finance-report.png" alt="2025 financial report pie charts for income and expenses"></figure>
+          <figure class="ocf2025-finance-chart"><img src="/p/2025/en/images/finance-report-en.png" alt="2025 financial report pie charts for income and expenses"></figure>
           </div>
 
   - type: content
