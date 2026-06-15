@@ -1,5 +1,6 @@
 ---
 layout: f
+css: opentech.css
 
 og_title: From Open Data to AI-Ready Data
 og_description: This report is jointly published by OCF and the Taiwan Office/Global Innovation Hub of the Friedrich Naumann Foundation for Freedom. Drawing on case studies from Spain, Germany, Cambodia, and France, it explores how government open data can become machine-readable, legally reusable, and useful for citizen-government dialogue in the age of AI.
@@ -195,19 +196,36 @@ project_header_veil_opacity: 0.25
   </div>
 </div>
 
-<h2 class="ui dividing header">Activities and Presentations</h2>
-<p>The following records collect activities, presentations, discussions, and public references related to this research. Event notes, slides, shared notes, and follow-up articles can be added here over time.</p>
+<section class="opentech-event-section">
+<h2 class="opentech-section__title ui header">Activities and Presentations</h2>
+<p class="opentech-lead">The following records collect activities, presentations, discussions, and public references related to this research. Event notes, slides, shared notes, and follow-up articles can be added here over time.</p>
 
 {% include _var/events.html %}
 {% if events %}
-<div class="ui divided items">
+{% assign years = site.data.settings.years %}
+{% for year in years %}
+  {% assign year_events = "" | split: "" %}
   {% for event in events %}
+    {% if event.start contains year %}
+      {% assign year_events = year_events | push: event %}
+    {% endif %}
+  {% endfor %}
+  {% if year_events.size > 0 %}
+<h2 class="ui dividing header">
+  {{ year }}
+  <i class="icon down chevron"></i>
+</h2>
+<div class="ui divided items">
+  {% for event in year_events %}
     {% include p/events/item.html %}
   {% endfor %}
 </div>
+  {% endif %}
+{% endfor %}
 {% else %}
 <p>No activity records yet.</p>
 {% endif %}
+</section>
 
 <h2 class="ui dividing header">Related Links</h2>
 <p>
