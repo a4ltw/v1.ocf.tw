@@ -1,5 +1,5 @@
 title: Open Culture Foundation 2025 Annual Report
-description: The digital future I can see
+description: The Digital Future I See
 cover: /p/2025/cover.png
 theme: light
 color:
@@ -16,10 +16,10 @@ items:
         description: |
           <div class="ocf2025-letter">
           <p>Digital technology is reshaping how each of us lives, thinks, and exercises our rights.</p>
-          <p>We invite you to look at the questions of this age through the eyes of a sixteen-year-old girl. The openness, freedom, transparency, and participation we have fought for are being hidden behind opaque code and algorithms. We seem to move freely through the digital world, yet our privacy, preferences, and even possible futures are increasingly defined by technical rules written by a small number of people.</p>
-          <p>The Open Culture Foundation (OCF) exists so that the rules governing technology can return to the hands of every digital citizen.</p>
-          <p>Over the past year, we have practiced openness on the front lines. We promoted the idea of Public Code, urging government agencies to adopt open-source software and avoid vendor lock-in. Through the Open Tech Garage and our digital security support program, we helped civil society build stronger defenses. We also joined discussions on digital rights legislation, so privacy and freedom would not become the price of technological progress.</p>
-          <p>As AI brought new debates over training data, safety, and privacy, OCF went to the Legislative Yuan to help advance guidelines for parliamentary use of AI. We also joined multiple Ministry of Digital Affairs meetings on responsible government use of AI, personal data protection, and creators' rights. We believe transparency and sharing offer the best path through today's digital problems. AI should serve society as a public good, not grow into a tool without accountability.</p>
+          <p>We invite you to look at the most urgent questions of our time through the eyes of a sixteen-year-old girl. The openness, freedom, transparency, and participation we have fought for are being hidden behind opaque code and algorithms. We seem to move freely through the digital world, yet our privacy, preferences, and even possible futures are increasingly defined by technical rules written by a small number of people.</p>
+          <p>The Open Culture Foundation (OCF) exists so that the rules governing technology can be put back in the hands of every digital citizen.</p>
+          <p>Over the past year, we have put openness into practice on the front lines. We promoted the idea of Public Code, urging government agencies to adopt open-source software and avoid vendor lock-in. Through the Open Tech Garage and our digital security support program, we helped civil society build stronger defenses. We also joined discussions on digital rights legislation, so privacy and freedom would not become the price of technological progress.</p>
+          <p>As the rise of AI sharpened debates over training data, safety, and privacy, OCF went to the Legislative Yuan to help advance guidelines for parliamentary use of AI. We also joined multiple Ministry of Digital Affairs meetings on responsible government use of AI, personal data protection, and creators' rights. We believe transparency and sharing offer the best path through today's digital problems. AI should serve society as a public good, not grow into a tool without accountability.</p>
           <p>OCF works toward a genuinely open and transparent digital future. In that future, open-source code, open data, and open government allow everyone to participate as equals and defend their own rights. We sincerely invite you to stand with OCF, help us build better digital lives, and keep the power to decide the future firmly in people's hands.</p>
           <p class="ocf2025-signature ocf2025-signature-en"><img src="/p/2025/images/signature-en.png" alt="Signature of the Chief Executive Officer"></p>
           </div>
@@ -31,12 +31,12 @@ items:
         swap: false
       - type: article
         alignment: left
-        title: Hi, I am glad to meet you here
+        title: Hi, I'm Glad We Met Here
         subtitle: A few thoughts about the world we live in
         description: |
-          <p>In the Taiwan where I grew up, so many things can be turned into combinations of 0s and 1s. We chat on social media, shop online, search the web for knowledge, and now handle all kinds of daily errands through screens. As I grew older, I saw that the physical world has long-established laws and social systems that quietly maintain and adjust its order. The digital world we inhabit feels much younger, almost as young as I am, and still uncertain in many ways.</p>
+          <p>Growing up in Taiwan, I saw more and more of life turn into combinations of 0s and 1s. We chat on social media, shop online, search the web for knowledge, and now handle all kinds of daily errands through screens. As I grew older, I saw that the physical world has long-established laws and social systems that quietly maintain and adjust its order. The digital world we inhabit feels much younger, almost as young as I am, and still uncertain in many ways.</p>
           <p>I do not want the digital world of the future to become a giant black box filled with invisible surveillance and manipulation. The future I hope for is transparent, open to public debate, and written by everyone who lives in it.</p>
-          <p>The bridge into that digital world is still under construction, and it needs more people paying attention. So please follow my point of view and see how the Open Culture Foundation has fought for the digital freedom of my generation this year.</p>
+          <p>The bridge to that digital world is still being built, and it needs more people paying attention. So please follow my point of view and see how the Open Culture Foundation has fought for the digital freedom of my generation this year.</p>
 
   - type: content
     columns:
@@ -46,9 +46,9 @@ items:
         description: |
           <div class="ocf2025-story">
           <p class="ocf2025-story-lead">I first learned about OCF and its work because I wanted a hot bowl of braised pork rice from the school co-op.</p>
-          <p>We are already a quarter of the way through the twenty-first century, and my school co-op still does not have an online meal-ordering system. Every noon, everyone waits in line, and by the time we get our lunch, half of the break is gone. Facing the same awkward situation day after day, I suddenly wondered: after taking all those computer classes, why not write an ordering app everyone could use?</p>
-          <p>I hit a wall almost as soon as I started. Payment flows and authentication systems were far beyond the level of a sixteen-year-old student. Then I opened GitHub and stepped into the world of open source. There, I found an ordering system template shared by an older student. The best part was that it was not locked behind “all rights reserved.” It welcomed reuse and collaboration.</p>
-          <p>I stood on someone else's shoulders, modified the code for my school, and even sent my version back to GitHub to help a younger student in another club. At that moment I understood something deeply: when technology is not locked inside a black box, we do not have to rebuild everything from scratch. This must be the “collaboration” OCF keeps talking about. It felt like running a relay with developers online, where my contribution could become the next person's foothold. Open source is public infrastructure for the digital world.</p>
+          <p>We are already a quarter of the way through the twenty-first century, and my school co-op still does not have an online meal-ordering system. Every lunchtime, everyone waits in line, and by the time we get our lunch, half of the break is gone. Facing the same awkward situation day after day, I suddenly wondered: after all those computer classes, why not write an ordering app everyone could use?</p>
+          <p>I hit a wall almost as soon as I started. Payment flows and authentication systems were far beyond the level of a sixteen-year-old student. Then I opened GitHub and stepped into the world of open source. There, I found an ordering system template shared by a senior student. The best part was that it was not locked behind “all rights reserved.” It welcomed reuse and collaboration.</p>
+          <p>I stood on someone else's shoulders, modified the code for my school, and even sent my version back to GitHub to help another student club. At that moment I understood something important: when technology is not locked inside a black box, we do not have to rebuild everything from scratch. This must be the “collaboration” OCF keeps talking about. It felt like running a relay with developers online, where my contribution could become the next person's foothold. Open source is public infrastructure for the digital world.</p>
           <p>If a high school student can use open-source ideas to solve a lunch problem on campus, what about the wider society? What digital bridges did OCF build this year through open technology, including open source, open data, and open government?</p>
           </div>
       - type: article
@@ -71,24 +71,24 @@ items:
         alignment: left
         title: Open Source Is Public Infrastructure for the Digital World
         description: |
-          <p>In the digital world, the software and services we use every day are like the foundation of a building. OCF's work on open technology this year focused on making sure that foundation remains reliable, secure, public-minded, and free from monopoly.</p>
+          <p>In the digital world, the software and services we use every day are like the foundation of a building. OCF's work on open technology this year focused on making sure that foundation remains reliable, secure, public-minded, and not captured by monopolies.</p>
           <div class="ocf2025-detail-grid">
             <section>
-              <h3>Guardians of the software supply chain: advancing OSPO governance and global alignment</h3>
+              <h3>Guardians of the software supply chain: advancing OSPO governance and international coordination</h3>
               <p>Open-source software sits at the core of how governments and companies operate. Using it well and managing it responsibly requires practical knowledge. This year, OCF turned complex governance ideas into tools that organizations can actually use.</p>
               <ul>
                 <li><strong><a href="https://ocf.tw/story/ospos-1-join-OSPO-alliance/">Taiwan's first member of the OSPO Alliance</a>:</strong> OCF became the first organization in Taiwan to join the OSPO Alliance, bringing global open-source governance experience into local practice.</li>
-                <li><strong>Publishing governance resources and preserving digital assets:</strong> OCF <a href="https://dub.sh/OSPO-GGI-ZHTW">translated and released the Traditional Chinese edition of the Good Governance Initiative handbook</a>, and helped preserve digital assets from the Open Source Software Foundry (OSSF) and Creative Commons Taiwan (CCTW) by <a href="https://github.com/ocftw">backing them up to the OCF GitHub</a>.</li>
+                <li><strong>Publishing governance resources and preserving digital assets:</strong> OCF <a href="https://dub.sh/OSPO-GGI-ZHTW">translated and released the Traditional Chinese edition of the Good Governance Initiative handbook</a>, and helped preserve digital assets from the Open Source Software Foundry (OSSF) and Creative Commons Taiwan (CCTW) by <a href="https://github.com/ocftw">backing them up to OCF's GitHub organization</a>.</li>
                 <li><strong><a href="https://ocf.neticrm.tw/civicrm/mailing/view?reset=1&id=382">Visiting FOSDEM and tracking the Cyber Resilience Act</a>:</strong> OCF attended FOSDEM, Europe's largest open-source conference, for the third time, bringing Taiwan's experience to the international community and following how the Cyber Resilience Act (CRA) affects open-source compliance.</li>
               </ul>
             </section>
             <section>
               <h3>Gatekeepers of digital sovereignty: <a href="https://ocf.tw/p/pmpc/">Public Money, Public Code (PMPC)</a> and local implementation</h3>
-              <p>OCF has long advocated for open source and worked to make it practical inside government agencies, so code serving the public interest can truly be owned and controlled by the state and its citizens.</p>
+              <p>OCF has long advocated for open source and worked to make it practical inside government agencies, so code serving the public interest can truly be governed by the public and its democratic institutions.</p>
               <ul>
-                <li><strong>Helping Taipei City Government complete open-source adoption assessment guidelines:</strong> OCF carried out two open-source alternative assessments for server virtualization and database software, accelerating public-sector adoption of open-source solutions.</li>
+                <li><strong>Helping Taipei City Government develop open-source adoption assessment guidelines:</strong> OCF carried out two open-source alternative assessments for server virtualization and database software, accelerating public-sector adoption of open-source solutions.</li>
                 <li><strong>Localizing international standards:</strong> OCF completed the Traditional Chinese translation of Standard for Public Code version 0.8.1, helping Taiwan's Public Code work align with international technical standards.</li>
-                <li><strong>Working with the Ministry of Digital Affairs to build policy dialogue:</strong> OCF helped organize four working group meetings on the ministry's Public Code commitments, bringing civic communities, technology companies, and government officials together to discuss the next steps for public software.</li>
+                <li><strong>Working with the Ministry of Digital Affairs to build policy dialogue:</strong> OCF helped organize four working group meetings on the ministry's Public Code commitments, bringing civic communities, technology companies, and government officials together to discuss the next steps for public-interest software.</li>
               </ul>
             </section>
           </div>
@@ -122,7 +122,7 @@ items:
         description: |
           <div class="ocf2025-story">
           <p class="ocf2025-story-lead">My ordering app officially launched. My classmates loved it, and the school even gave me a minor merit award.</p>
-          <p>As more people bought meals from the co-op, I started to wonder why some dishes always sold out and whether the ingredients were really safe. I asked the school for three years of food procurement data, hoping to turn it into charts that everyone could review. The student affairs director said the data was internal and not convenient to disclose. In the end, I only received a PDF that was hard to analyze with code.</p>
+          <p>As more people bought meals from the co-op, I started to wonder why some dishes always sold out and whether the ingredients were really safe. I asked the school for three years of food procurement data, hoping to turn it into charts that everyone could review. The student affairs director said the data was internal and unavailable for public release. In the end, I only received a PDF that was hard to analyze with code.</p>
           <p>That was the first time I felt the frustration of opaque data and understood why open data matters. If even school co-op data is this hard to get, or if the data arrives in a format that machines cannot read, how can ordinary people see the full picture of government budgets, environmental monitoring data, or the progress of legislation?</p>
           <p>Only then did I understand why OCF works on open data and open government in addition to open source. Non-sensitive data related to daily life should not be a secret locked away on a public-sector hard drive. Every citizen should have the right to access and oversee it. Without transparent data, “public participation” becomes a blind search through fog.</p>
           <p>So I decided to keep going and use OCF's advocacy methods and communication strategies to knock on the door to the truth.</p>
@@ -138,7 +138,7 @@ items:
     theme: light
     color:
     icon: database
-    title: 02 Open Government and Data
+    title: 02 Open Government and Open Data
     description:
   - type: content
     single_column: true
@@ -151,7 +151,7 @@ items:
           <div class="ocf2025-detail-grid">
             <section>
               <h3>Opening the center of power: building a smarter and more open government and parliament</h3>
-              <p>As AI rises, is the parliament that makes national laws ready? OCF continued to promote transparent and digitalized parliamentary and government operations, making open government more possible.</p>
+              <p>As AI reshapes public decision-making, is the parliament that makes national laws ready? OCF continued to promote more transparent and digitally capable parliamentary and government operations, making open government more possible.</p>
               <ul>
                 <li><strong>Guidelines for parliamentary use of AI:</strong> OCF worked with the Westminster Foundation for Democracy (WFD) to hold “When Parliament Meets AI: Launch of Guidelines for Parliamentary Use of AI” at the Legislative Yuan, discussing responsible AI use and how technology can safely support decision-making.</li>
                 <li><strong>Reconnecting open parliament stakeholders:</strong> OCF and WFD held a closed-door discussion, “The Next Step for Open Parliament,” at the g0v community space, reconnecting the community and keeping open parliament commitments in conversation.</li>
@@ -163,7 +163,7 @@ items:
               <h3>Building open foundations: from legislation and collaboration to global connection</h3>
               <p>Open data needs strong legal foundations. OCF took part in policy consultations to make sure the law serves people and protects rights, not only technology.</p>
               <ul>
-                <li><strong>Supporting inter-ministerial collaboration:</strong> OCF served on ministry-level open data advisory committees for the Veterans Affairs Council, Mainland Affairs Council, and Ministry of Culture, helping agencies follow workable open data paths in the AI era.</li>
+                <li><strong>Supporting inter-ministerial collaboration:</strong> OCF served on ministry-level open data advisory committees for the Veterans Affairs Council, Mainland Affairs Council, and Ministry of Culture, helping agencies develop practical open data practices in the AI era.</li>
                 <li><strong>Legislative advocacy and impact assessment:</strong> OCF joined multiple civil society consultations and stakeholder meetings on the <a href="https://ocf.neticrm.tw/civicrm/mailing/view?reset=1&id=352">draft Act for Promoting Data Innovation and Use</a>, and provided professional input on human rights impact assessment.</li>
                 <li><strong>Advancing openness through international organizations:</strong> OCF served as a user research and consultation partner for the Open Knowledge Foundation's Open Data Editor, sharing local advocacy experience.</li>
               </ul>
@@ -178,7 +178,7 @@ items:
             </section>
             <section>
               <h3>Repairing data quality: civic tech in practice</h3>
-              <p>Open data must be useful, not merely available. OCF worked with the Association for Strangers to <a href="https://ocf.tw/story/epaper/2025/202511news/aed/">improve the quality of AED open data</a> through civic tech, so high-quality open data can truly save lives when it matters.</p>
+              <p>Open data must be useful, not merely available. OCF worked with the Aimosheng Foundation to <a href="https://ocf.tw/story/epaper/2025/202511news/aed/">improve the quality of AED open data</a> through civic tech, so high-quality open data can truly save lives when it matters.</p>
             </section>
           </div>
 
@@ -201,7 +201,7 @@ items:
         alignment: left
         title: The Girl's Field Notes
         description: |
-          <div class="ocf2025-note"><p>I used to think open data simply meant putting files on a website. Later I learned that open data has requirements and quality standards. If formats are not machine-readable, or if the law does not clearly require government agencies to open data, people still cannot use it.</p><p>Seeing OCF go to the Legislative Yuan, the Executive Yuan, and university classrooms helped me understand that “openness” is a long-distance race against time. The work with the Association for Strangers to improve AED map data was especially cool to me. When data becomes transparent and accurate, it stops being a stiff file on a hard drive and becomes real support that can protect people.</p></div>
+          <div class="ocf2025-note"><p>I used to think open data simply meant putting files on a website. Later I learned that open data has requirements and quality standards. If formats are not machine-readable, or if the law does not clearly require government agencies to open data, people still cannot use it.</p><p>Seeing OCF go to the Legislative Yuan, the Executive Yuan, and university classrooms helped me understand that “openness” is a long-distance race against time. The work with the Aimosheng Foundation to improve AED map data was especially cool to me. When data becomes transparent and accurate, it stops being a stiff file on a hard drive and becomes real support that can protect people.</p></div>
 
   - type: content
     columns:
@@ -210,9 +210,9 @@ items:
         title: Who Is Watching Me Behind the Algorithm?
         description: |
           <div class="ocf2025-story">
-          <p class="ocf2025-story-lead">After months of communication and friction, the school's food data became complete, and the app improved with advice from more experienced developers.</p>
+          <p class="ocf2025-story-lead">After months of communication and friction, the school's food data became more complete, and the app improved with advice from more experienced developers.</p>
           <p>Then, just as the ordering system became more popular, something chilling happened. I found out that a catering company with a long-term relationship with the school had written privately, hoping I would “authorize” them to use students' ordering preferences, allergy records, and even daily schedules as marketing data.</p>
-          <p>Of course I refused. But the incident made me realize that in an age where everything is connected, every casual digital footprint and every everyday action converted into 0s and 1s can become a currency traded quietly between companies. Under the sweet coating of technological convenience, our privacy is becoming dangerously fragile.</p>
+          <p>Of course I refused. But the incident made me realize that in an age where everything is connected, every casual digital footprint and every everyday action converted into 0s and 1s can become a currency traded quietly between companies. Under the friendly surface of technological convenience, our privacy is becoming dangerously fragile.</p>
           <p>This is the digital rights front line OCF defends. In the shadow of pervasive commercial surveillance and possible AI abuse, we urgently need stronger rules that protect personal data and digital rights. I do not want the digital life of the future to trade on our personal information.</p>
           <p>That night, I checked the source code line by line and removed every unnecessary tracker. Protecting my classmates' personal data meant protecting their basic human dignity.</p>
           </div>
@@ -243,10 +243,10 @@ items:
           <div class="ocf2025-detail-grid">
             <section>
               <h3>The digital front line of international advocacy: bringing Taiwan's experience to the world</h3>
-              <p>Threats to digital rights are global. OCF actively joined major international gatherings to make sure Taiwan has a place in digital governance conversations across the Asia-Pacific region and beyond.</p>
+              <p>Threats to digital rights are global. OCF joined major international gatherings to make sure Taiwan has a place in digital governance conversations across the Asia-Pacific region and beyond.</p>
               <ul>
                 <li><strong>Digital Rights Asia-Pacific Assembly (DRAPAC):</strong> In Kuala Lumpur, OCF introduced its 12-month digital security support program and exchanged experience with international partners working on digital rights and technology, discussing how to support advocates in high-risk environments.</li>
-                <li><strong>Global Privacy Assembly (GPA):</strong> At a forum in Seoul, OCF shared the concrete contributions of Taiwan's civic community to privacy and digital rights protection.</li>
+                <li><strong>Global Privacy Assembly (GPA):</strong> At a forum in Seoul, OCF shared Taiwan's civic community contributions to privacy and digital rights protection.</li>
                 <li><strong>Asia Democracy Assembly:</strong> At one of Asia's most influential democracy gatherings, OCF analyzed Taiwan's defense strategies against cross-border digital attacks and examined authoritarian tactics.</li>
                 <li><strong>Global Gathering:</strong> In Portugal, OCF connected Taiwanese and global digital rights organizations and practitioners, exchanging the latest trends in digital rights in Taiwan and around the world.</li>
               </ul>
@@ -256,7 +256,7 @@ items:
               <p>In 2025, <a href="https://ocf.tw/p/rightscon2025/">RightsCon</a>, the global digital rights conference hosted by Access Now, came to Taiwan for four days at the Taipei International Convention Center. As the local partner for RightsCon 2025, OCF worked directly with developers and researchers from around the world and connected Taiwanese NGOs to identify human rights strategies that can be put into practice.</p>
               <ul>
                 <li><strong>Workshops on internet freedom, censorship, and anonymity:</strong> During RightsCon, OCF organized an internet freedom workshop and invited Tor Browser, the privacy-focused operating system Tails, and the global network measurement organization OONI to Taiwan. Taiwanese developers were able to exchange directly with international teams on detecting network blocking, resisting digital surveillance, and keeping information flows from being maliciously disrupted.</li>
-                <li><strong><a href="https://ocf.tw/en/p/rightscon2025/joint-statement/">Nine demands with civil society partners</a>:</strong> OCF joined the Judicial Reform Foundation, Taiwan Association for Human Rights, Amnesty International Taiwan, and other civic groups to issue a joint statement with nine core demands on AI governance and digital rights, urging the government to practice openness and transparency under international attention.</li>
+                <li><strong><a href="https://ocf.tw/en/p/rightscon2025/joint-statement/">Nine demands with civil society partners</a>:</strong> OCF joined the Judicial Reform Foundation, Taiwan Association for Human Rights, Amnesty International Taiwan, and other civic groups to issue a joint statement with nine core demands on AI governance and digital rights, urging the government to follow through on openness and transparency under international attention.</li>
               </ul>
             </section>
             <section>
@@ -268,10 +268,10 @@ items:
               </ul>
             </section>
             <section>
-              <h3>Fighting for key rights: law and governance in contest</h3>
+              <h3>Fighting for key rights: law and governance under pressure</h3>
               <ul>
-                <li><strong>The right to opt out of secondary use of National Health Insurance data:</strong> After ten years of litigation and advocacy, the opt-out mechanism for secondary use of the National Health Insurance database officially launched in August 2025, protecting people's right to decide how their personal health data is used.</li>
-                <li><strong><a href="https://ocf.tw/story/epaper/2025/202511news/advrights/">Advocacy on the Executive Yuan Human Rights Action Plan</a>:</strong> OCF argued that digital rights protection needs more open and transparent social oversight. We proposed three demands, calling on the government to invite multi-stakeholder participation, strengthen inter-ministerial coordination, and govern the internet more transparently.</li>
+                <li><strong>The right to opt out of secondary use of National Health Insurance data:</strong> After ten years of litigation and advocacy, the opt-out mechanism for secondary use of the National Health Insurance database officially launched in August 2025, protecting people's right to decide how their health data is used.</li>
+                <li><strong><a href="https://ocf.tw/story/epaper/2025/202511news/advrights/">Advocacy on the Executive Yuan Human Rights Action Plan</a>:</strong> OCF argued that digital rights protection needs more open and transparent public oversight. We proposed three demands, calling on the government to create multi-stakeholder participation mechanisms, strengthen inter-ministerial coordination, and govern the internet more transparently.</li>
               </ul>
             </section>
           </div>
@@ -295,7 +295,7 @@ items:
         alignment: left
         title: The Girl's Field Notes
         description: |
-          <div class="ocf2025-note"><p>Digital security is not only about avoiding suspicious links, and digital rights are not limited to whether the police abuse their power. Through OCF's participation in these international conferences, I learned that digital rights touch almost every corner of modern life.</p><p>Many of these issues do not happen only in Taiwan. OCF went to Malaysia, Korea, and Portugal to share Taiwan's cases and bring back digital defense experience from abroad. They made me feel that even though digital authoritarianism looks enormous, we are not alone as long as people keep defending this line.</p></div>
+          <div class="ocf2025-note"><p>Digital security is not only about avoiding suspicious links, and digital rights are not limited to whether the police abuse their power. Through OCF's participation in these international conferences, I learned that digital rights touch almost every corner of modern life.</p><p>Many of these issues do not happen only in Taiwan. OCF went to Malaysia, South Korea, and Portugal to share Taiwan's cases and bring back digital defense experience from abroad. They made me feel that even though digital authoritarianism looks enormous, we are not alone as long as people keep defending this line.</p></div>
 
   - type: content
     columns:
@@ -305,9 +305,9 @@ items:
         description: |
           <div class="ocf2025-story">
           <p class="ocf2025-story-lead">One ordinary afternoon, while the whole school was voting on next week's menu, the internet suddenly became painfully slow.</p>
-          <p>It was not only our school. The entire area was experiencing unusual lag. At first, I thought the telecom provider had a short outage. Then I checked the news and was shocked to learn that a major disconnection could also be caused by a break in undersea cables. Matsu experienced undersea cable breaks a few years ago, bringing serious inconvenience to local residents. If cables across Taiwan deteriorated or were damaged, the impact would be hard to imagine.</p>
+          <p>It was not only our school. The entire area was experiencing unusual lag. At first, I thought the telecom provider had a short outage. Then I checked the news and was shocked to learn that a major disconnection could also be caused by a break in submarine cables. Matsu experienced submarine cable breaks a few years ago, bringing serious inconvenience to local residents. If cables around Taiwan deteriorated or were damaged, the impact would be hard to imagine.</p>
           <p>That unexpected outage made me realize how important the internet is to life for my generation, and that a smooth connection is not guaranteed. I thought of OCF's work on internet freedom. Democratic Taiwan currently faces relatively little internet censorship or deliberate shutdowns by the government compared with some countries, but as an island, Taiwan's resilience remains fragile. If submarine cables or base stations are disrupted, or if geopolitical conflict cuts them off, our everyday digital lives could be forced to stop.</p>
-          <p>Internet freedom includes the freedom to connect, speak, and avoid censorship. I finally understood why OCF pays attention to both internet freedom and infrastructure. They are protecting freedom of expression on our screens and the blood vessels buried beneath the sea that keep a democratic society running. Without an open and functioning internet, all the ideals we build could be washed away by a single wave.</p>
+          <p>Internet freedom includes the freedom to connect, speak, and avoid censorship. I finally understood why OCF pays attention to both internet freedom and infrastructure. They are protecting freedom of expression on our screens and the submarine cables that keep a democratic society running. Without an open and functioning internet, all the ideals we build could be washed away by a single wave.</p>
           </div>
       - type: article
         alignment: center
@@ -333,15 +333,15 @@ items:
           <div class="ocf2025-detail-grid">
             <section>
               <h3>Stress-testing digital resilience</h3>
-              <p>Internet freedom is not abstract. Beneath the sea, submarine cables carry the blood vessels of the digital world, and their vulnerability has only recently become widely understood. This year, OCF continued to prepare for emergencies through monthly Internet Freedom Meetups, community discussions, and technical research.</p>
+              <p>Internet freedom is not abstract. Beneath the sea, submarine cables carry the traffic of the digital world, and their vulnerability has only recently become widely understood. This year, OCF continued to prepare for emergencies through monthly Internet Freedom Meetups, community discussions, and technical research.</p>
               <ul>
-                <li><strong>Defending against large-scale outages:</strong> At Internet Freedom Meetups, OCF and experts discussed alternative communication options during major outages, including Hermes Project resilient communication technology and Winlink radio communication, so civil society can maintain basic rescue and information flows when submarine cables are damaged.</li>
+                <li><strong>Defending against large-scale outages:</strong> At Internet Freedom Meetups, OCF and experts discussed alternative communication options during major outages, including the Hermes Project's resilient communication technology and Winlink radio communication, so civil society can maintain basic rescue and information flows when submarine cables are damaged.</li>
                 <li><strong>Learning from international experience:</strong> A discussion on national security and digital rights drew lessons from Ukraine's experience maintaining communications under conflict, and explored possible strategies for Taiwan.</li>
               </ul>
             </section>
             <section>
               <h3>Opposing digital censorship and defending freedom of expression</h3>
-              <p>In response to legal amendments affecting user-generated content (UGC), OCF used Internet Freedom Meetups to bring experts, academics, civil society groups, and government agencies together to <a href="https://ocf.tw/story/epaper/2025/202511news/wiki-sue/">discuss possible solutions</a>. We also reminded society that better regulation needs broad discussion and complete implementation measures. Heavy-handed fines can create a chilling effect, push platforms toward broader prior review, and harm people's freedom of expression online.</p>
+              <p>In response to legal amendments affecting user-generated content (UGC), OCF used Internet Freedom Meetups to bring experts, academics, civil society groups, and government agencies together to <a href="https://ocf.tw/story/epaper/2025/202511news/wiki-sue/">discuss possible solutions</a>. We also reminded society that better regulation needs broad discussion and complete implementation measures. Heavy-handed fines can create a chilling effect, push platforms toward broader pre-screening, and harm people's freedom of expression online.</p>
             </section>
           </div>
 
@@ -403,8 +403,8 @@ items:
           <div class="ocf2025-detail-grid">
             <section>
               <h3>Advancing the <a href="https://ocf.tw/p/oscvpass/">OSCVPass</a> project for open-source talent</h3>
-              <p>Building on long-term analysis of open-source contributors, OCF was invited to work with the Administration for Digital Industries and the Institute for Information Industry on an AI technology meetup pilot for open-source mentorship, examining the quality and quantity of open-source contributions in AI-related technical communities and exploring sustainable mechanisms for industry-relevant open-source talent.</p>
-              <p>OCF also established OSCVPass, a fast-track feedback mechanism that offers fast entry or ticket discounts to long-term open-source contributors at major conferences such as SITCON and COSCUP. It is more than a ticket. It is practical respect for the spirit of collaboration.</p>
+              <p>Building on long-term analysis of open-source contributors, OCF was invited to work with the Administration for Digital Industries and the Institute for Information Industry on an AI technology meetup pilot for open-source mentorship. The pilot reviewed open-source contributions in AI-related technical communities and explored sustainable ways to support industry-relevant open-source talent.</p>
+              <p>OCF also established OSCVPass, a fast-track feedback mechanism that offers priority entry or ticket discounts to long-term open-source contributors at major conferences such as SITCON and COSCUP. It is more than a ticket. It is practical respect for the spirit of collaboration.</p>
             </section>
             <section>
               <h3><a href="https://ocf.tw/p/openstarter/">OpenStarTer Village</a> reaches broader education settings</h3>
@@ -412,13 +412,13 @@ items:
               <p>This year, OCF brought open technology concepts to National Taiwan Normal University, National Kaohsiung Normal University, and junior college campuses through four in-depth interactive workshops. The Japanese community Code for Japan also forked a Japanese edition and launched crowdfunding, bringing Taiwan's open-source education experience to the international stage.</p>
             </section>
             <section>
-              <h3>Cross-cultural experiments in sharing: from <a href="https://ocf.tw/story/epaper/2025/202509news/jja-music/">Time Soaked to Ming-Tian-Yin</a></h3>
-              <p>Through openly licensed music, OCF shows that open culture is not limited to information technology. It can also help music, images, and other creative fields flourish. In 2024, OCF worked with Lim Giong and Luca Bonaccorsi to release the album <em>Time Soaked</em> under CC BY-SA 4.0. In 2025, OCF launched crowdfunding for a second CC-licensed album, <em>Ming-Tian-Yin</em>, with Mong Tong and XTRUX.</p>
+              <h3>Cross-cultural experiments in sharing: from <a href="https://ocf.tw/story/epaper/2025/202509news/jja-music/">Bioerosion to Sun Moon Darkness</a></h3>
+              <p>Through openly licensed music, OCF shows that open culture is not limited to information technology. It can also help music, images, and other creative fields flourish. In 2024, OCF worked with Lim Giong and Luca Bonaccorsi to release the album <em>Bioerosion</em> under CC BY-SA 4.0. In 2025, OCF launched crowdfunding for a second CC-licensed album, <em>Sun Moon Darkness</em>, with Mong Tong and XTRUX.</p>
               <p><a href="https://ocf.tw/p/ccalbum/">The album's audio and source materials are fully open under public licenses</a>. Anyone can freely remix, sample, and even use them commercially with attribution, returning musical sovereignty to the public.</p>
             </section>
             <section>
               <h3>Twenty years of continuity: COSCUP 20th anniversary open-source policy track</h3>
-              <p>At COSCUP, Taiwan's flagship open-source community conference, OCF curated an open-source policy track with nine sessions, including Fast Healthcare Interoperability Resources and the city pass app, discussing how open-source-related government policy affects citizens in practice.</p>
+              <p>At COSCUP, Taiwan's flagship open-source community conference, OCF curated an open-source policy track with nine sessions, including Fast Healthcare Interoperability Resources and the TaipeiPASS app, discussing how open-source-related government policy affects citizens in practice.</p>
             </section>
           </div>
 
@@ -442,7 +442,7 @@ items:
         alignment: left
         title: The Girl's Field Notes
         description: |
-          <div class="ocf2025-note"><p>Using school life as a comparison, OCF feels like a student council for the digital world. They support the open-source ecosystem, use an easy-to-understand board game like OpenStarTer Village to welcome newcomers, help people who do not write code understand open-source collaboration, and even work across art and music to help more people experience the open-source world.</p><p>It makes me feel that the digital world is not only cold technological competition. It is full of mutual support. Through the bridges OCF builds, we can solve problems together and meet all kinds of brilliant people beyond the screen.</p></div>
+          <div class="ocf2025-note"><p>If I compare this to school life, OCF feels like a student council for the digital world. They support the open-source ecosystem, use an easy-to-understand board game like OpenStarTer Village to welcome newcomers, help people who do not write code understand open-source collaboration, and even work across art and music to help more people experience the open-source world.</p><p>It makes me feel that the digital world is not only cold technological competition. It is full of mutual support. Through the bridges OCF builds, we can solve problems together and meet all kinds of brilliant people beyond the screen.</p></div>
 
   - type: content
     single_column: true
@@ -455,14 +455,14 @@ items:
             <div><strong>700K</strong><span>Nearly 700,000 people reached through social media and newsletters</span></div>
             <div><strong>50+</strong><span>More than 50 events and talks organized</span></div>
             <div><strong>6</strong><span>Six international trips and participation in more than 30 domestic policy and international conference meetings</span></div>
-            <div><strong>46</strong><span>46 domestic open-source communities supported</span></div>
+            <div><strong>46</strong><span>46 Taiwan-based open-source communities supported</span></div>
           </div>
         items:
           - month: 2
             title: |
               <div class="ocf2025-timeline-entry">
-              <p><span class="ocf2025-timeline-topic">RightsCon 2025</span> OCF served as a local partner for the world's largest human rights and digital issues conference, helping bring it to Taiwan for the first time and connecting 3,000 international actors. During RightsCon, OCF hosted two satellite events, joined one official session, and co-hosted a booth with three Taiwanese organizations.</p>
-              <p><span class="ocf2025-timeline-topic">Joint statement on digital rights</span> OCF joined civic groups to raise nine demands, including legal systems for digital rights, personal data protection, and broader adoption of open-source software, bringing open source and civic tech into law and policymaking as core strategies for public services and digital development.</p>
+              <p><span class="ocf2025-timeline-topic">RightsCon 2025</span> OCF served as a local partner for the world's largest human rights and digital issues conference, helping bring it to Taiwan for the first time and connecting 3,000 international advocates. During RightsCon, OCF hosted two satellite events, joined one official session, and co-hosted a booth with three Taiwanese organizations.</p>
+              <p><span class="ocf2025-timeline-topic">Joint statement on digital rights</span> OCF joined civic groups to raise nine demands, including legal protections for digital rights, personal data protection, and broader adoption of open-source software, bringing open source and civic tech into law and policymaking as core strategies for public services and digital development.</p>
               </div>
           - month: 3
             title: |
@@ -482,7 +482,7 @@ items:
           - month: 6
             title: |
               <div class="ocf2025-timeline-entry">
-              <p><span class="ocf2025-timeline-topic">Opt-out right for the National Health Insurance database</span> After ten years of litigation, the case long followed by OCF and partner organizations succeeded. People can now apply to withhold related personal privacy data from academic research use.</p>
+              <p><span class="ocf2025-timeline-topic">Opt-out right for the National Health Insurance database</span> After ten years of litigation, a case long followed by OCF and partner organizations succeeded. People can now apply to withhold related personal health data from academic research use.</p>
               <p><span class="ocf2025-timeline-topic">Expanded discussions on internet freedom</span> The event “The Cost of E-Cigarette Control: Taiwan's Freedom of Expression Online?” brought together government agencies, legal experts, and civic organizations. More than 70 participants discussed how incomplete legal amendments and supporting measures led platforms to expand keyword review and seriously affected people's freedom of expression online.</p>
               </div>
           - month: 7
@@ -495,7 +495,7 @@ items:
               <div class="ocf2025-timeline-entry">
               <p><span class="ocf2025-timeline-topic">COSCUP track and workshops</span> At COSCUP, an open-source conference with more than 2,000 participants, OCF hosted the open-source policy track, a European open-source policy observation session, anonymity network workshops, and other activities to keep promoting open-source ideas.</p>
               <p><span class="ocf2025-timeline-topic">2025 TMEX International Forum</span> OCF CEO Lee Shin-Ying, Taiwanese electronic musician Lim Giong, Italian audiovisual artist Luca Bonaccorsi, and XTRUX director Tsai Hung-Hsien spoke on “Liberating the Future of Creation: From Open Co-Creation to AI Art,” sharing practical experience and future perspectives on open-source technology, public licensing, and AI creation.</p>
-              <p><span class="ocf2025-timeline-topic">Jam Jam Asia music festival</span> Lim Giong and several music creators used CC-licensed materials from <em>Time Soaked</em> in the SUB overnight special program, bringing open-source spirit into JJA and attracting more than 1,700 audience members.</p>
+              <p><span class="ocf2025-timeline-topic">Jam Jam Asia music festival</span> Lim Giong and several music creators used CC-licensed materials from <em>Bioerosion</em> in the SUB overnight special program, bringing open-source spirit into JJA and attracting more than 1,700 audience members.</p>
               </div>
           - month: 9
             title: |
@@ -511,13 +511,13 @@ items:
           - month: 11
             title: |
               <div class="ocf2025-timeline-entry">
-              <p><span class="ocf2025-timeline-topic">Three demands for the human rights action plan</span> After the suspension of the Digital Intermediary Services Act, Taiwan lacked a unified policy framework for intervening in and managing online content. OCF joined an Executive Yuan Human Rights Action Plan briefing and called for a multi-stakeholder mechanism, inter-ministerial coordination, and agency transparency and accountability duties.</p>
-              <p><span class="ocf2025-timeline-topic">Open Source Festival returns</span> At Taipei Music Center, OCF organized a special performance for Mong Tong's publicly licensed album <em>Ming-Tian-Yin</em>. After Lim Giong's <em>Time Soaked</em>, OCF again used open music to continue the momentum around freely reusable public materials.</p>
+              <p><span class="ocf2025-timeline-topic">Three demands for the human rights action plan</span> After the suspension of the Digital Intermediary Services Act, Taiwan lacked a unified policy framework for intervening in and managing online content. OCF joined an Executive Yuan Human Rights Action Plan briefing and called for a multi-stakeholder mechanism, inter-ministerial coordination, and clear transparency and accountability obligations for government agencies.</p>
+              <p><span class="ocf2025-timeline-topic">Open Source Festival returns</span> At Taipei Music Center, OCF organized a special performance for Mong Tong's publicly licensed album <em>Sun Moon Darkness</em>. After Lim Giong's <em>Bioerosion</em>, OCF again used open music to continue the momentum around freely reusable public materials.</p>
               </div>
           - month: 12
             title: |
               <div class="ocf2025-timeline-entry">
-              <p><span class="ocf2025-timeline-topic">AI-Ready Open Data Practice Research</span> OCF and FNF Taiwan/Global Innovation Hub conducted research on AI-ready open data practices, interviewing five international cases and summarizing practical experience for open data in the AI era. A webinar used two local Taiwan cases to respond to the research and build a foundation for dialogue among government, communities, and industry on open data governance.</p>
+              <p><span class="ocf2025-timeline-topic">AI-Ready Open Data Practice Research</span> OCF and FNF Taiwan/Global Innovation Hub conducted research on AI-ready open data practices, interviewing five international cases and summarizing practical experience for open data in the AI era. A webinar then discussed two Taiwan cases in response to the research and built a foundation for dialogue among government, communities, and industry on open data governance.</p>
               </div>
 
   - type: content
@@ -527,8 +527,8 @@ items:
         alignment: left
         title: Community Partner Milestones
         description: |
-          <p>OCF began with the original intention of supporting Taiwan's open-source communities. We continue to believe that openness and collaboration are the forces that move society forward.</p>
-          <p>In 2025, we were fortunate to work with more than 46 communities and witness partners deepen their work and practice their ideals in their own fields. This timeline records some of the bright achievements of our community partners in 2025. These footprints show the abundance of community creativity and the most precious fruit of Taiwan's open-source ecosystem.</p>
+          <p>OCF was founded to support Taiwan's open-source communities. We continue to believe that openness and collaboration are the forces that move society forward.</p>
+          <p>In 2025, we were fortunate to work with more than 46 communities and witness partners deepen their work and practice their ideals in their own fields. This timeline records some of our community partners' notable achievements in 2025. Together, they show the creativity of Taiwan's open-source ecosystem.</p>
           <div class="ocf2025-detail-grid">
             <section><h3>Taiwan BSD Community</h3><ul><li>The internship program trained students to participate in the FreeBSD project. Student Sheng-Yi Hung became a committer and published a paper.</li><li>Two members, Yen-Hao Wang and Chun-Cheng Yeh, had papers accepted for presentation at AsiaBSDCon 2026.</li></ul></section>
             <section><h3>Creative Commons Taiwan</h3><ul><li>Published 12 Creative Commons articles and commentaries and joined 12 AI expert meetings at the Ministry of Digital Affairs and other agencies.</li><li>Promoted CC's recommendations for public-private collaboration in the generative AI era, helping local audiences understand public-interest and respect mechanisms such as CC Signals.</li></ul></section>
@@ -547,10 +547,10 @@ items:
             <section><h3>System Software Goes Global</h3><ul><li>Participated in Open Source Summit North America, presenting three sessions on the work of eight young contributors, including RISC-V, machine learning performance, and Valkey multithreading.</li></ul></section>
             <section><h3>vTaiwan</h3><ul><li>Worked with TWNIC on a dynamic deliberation model using AI verification to prevent fraud.</li><li>Published AI deliberation research with Google Jigsaw and People Powered, and held 50 Wednesday meetups and Facing the Ocean hackathons.</li></ul></section>
             <section><h3>Mozilla Taiwan Community</h3><ul><li>Held 197 events with 1,702 participants, including more than 200 first-time visitors.</li></ul></section>
-            <section><h3>Twinkle AI</h3><ul><li>Worked with APMIC and the National Center for High-performance Computing to build the first smallest reasoning model, F1, and release the corresponding reasoning dataset.</li><li>Built a textbook-quality Traditional Chinese pretraining corpus with Taiwan Mobile and released the next-generation T1-4B model, setting a new milestone for the Traditional Chinese AI ecosystem.</li></ul></section>
+            <section><h3>Twinkle AI</h3><ul><li>Worked with APMIC and the National Center for High-performance Computing to build the first compact reasoning model, F1, and release the corresponding reasoning dataset.</li><li>Built a textbook-quality Traditional Chinese pretraining corpus with Taiwan Mobile and released the next-generation T1-4B model, setting a new milestone for the Traditional Chinese AI ecosystem.</li></ul></section>
             <section><h3>FreeSEED</h3><ul><li>Open-sourced the gpt-oss-120b model supporting Traditional Chinese reasoning.</li></ul></section>
             <section><h3>Taiwan Network Operators' Group (TWNOG)</h3><ul><li>Focused the year on strengthening network resilience and security, exploring RPKI deployment, DDoS protection, and network automation to support a more stable and secure Taiwan internet interconnection ecosystem.</li></ul></section>
-            <section><h3>Open Source for You</h3><ul><li>Became Taiwan's first official chapter of the Apache Software Foundation (ASF), contributing thousands of commits and becoming a core organization for multiple international open-source technologies.</li><li>Received recognition from the mayor, while the community reached more than 550,000 monthly reads and over 30,000 discussions.</li></ul></section>
+            <section><h3>opensource4you</h3><ul><li>Became Taiwan's first official chapter of the Apache Software Foundation (ASF), contributing thousands of commits and becoming a core organization for multiple international open-source technologies.</li><li>Received recognition from the mayor, while the community reached more than 550,000 monthly reads and over 30,000 discussions.</li></ul></section>
             <section><h3>WordCamp Taiwan</h3><ul><li>Held the annual conference in Kaohsiung for the first time, bringing together more than 250 open-source enthusiasts to discuss website building, design, and content marketing trends.</li></ul></section>
             <section><h3>Guangfu Volunteers</h3><ul><li>Since the Matai'an incident, the community independently developed information systems that integrated volunteer maps and supply matching to improve collaboration efficiency in disaster areas.</li></ul></section>
           </div>
@@ -564,13 +564,13 @@ items:
         description: |
           <p>In 2025, OCF continued bringing Taiwan's experience to the world and bringing global trends in open technology, digital rights, and internet freedom back to Taiwan.</p>
           <section class="ocf2025-world-map" aria-label="World map of OCF's 2025 global connections">
-            <figure class="ocf2025-world-map-figure"><img src="/p/2025/images/international-map-accurate.svg" alt="World map of OCF's 2025 global connections, marking Taiwan, Belgium, Portugal, Korea, Thailand, Malaysia, and connecting routes"></figure>
+            <figure class="ocf2025-world-map-figure"><img src="/p/2025/images/international-map-accurate.svg" alt="World map of OCF's 2025 global connections, marking Taiwan, Belgium, Portugal, South Korea, Thailand, Malaysia, and connecting routes"></figure>
             <div class="ocf2025-world-map-cards">
               <article class="ocf2025-world-card taiwan"><span>Taiwan</span><p>In February, during the RightsCon session “The Watchful Eyes of Civic Community: Taiwan's Digital Security Support from Personal to Regional Practices,” OCF invited four civic representatives to discuss practical solutions for human rights defenders in East Asia facing increasingly severe digital threats.</p><p>OCF co-hosted two RightsCon satellite events: “Mutual Aid, Resonance, and Amplification: Digital Rights Voices from Taiwan and East Asia” and a discussion with domestic and international experts on digital privacy policy and digital gender-based violence. At the internet freedom, censorship, and anonymity workshop, OCF invited Tor, Tails, and OONI to share global network measurement practices and ways to bypass internet censorship.</p><p>OCF invited three Taiwanese groups, Citizen Congress Watch, Doublethink Lab, and Taiwan Equality Campaign, to co-host a three-day booth at the RightsCon Community Village, sharing work on technology and digital issues and showing the energy of civil society.</p></article>
-              <article class="ocf2025-world-card korea"><span>Korea</span><p>In September, OCF attended the Global Privacy Assembly in Seoul and shared Taiwan's civic community contributions to privacy and digital rights protection at the forum “Advancing Asia-Pacific Digital Consumer Dialogue.”</p></article>
+              <article class="ocf2025-world-card korea"><span>South Korea</span><p>In September, OCF attended the Global Privacy Assembly in Seoul and shared Taiwan's civic community contributions to privacy and digital rights protection at the forum “Advancing Asia-Pacific Digital Consumer Dialogue.”</p></article>
               <article class="ocf2025-world-card belgium"><span>Belgium</span><p>In February, OCF traveled to Brussels for FOSDEM, sharing Taiwan's community collaboration model and tools such as OSCVPass and OPASS with global open-source advocates through booths, sessions, and lightning talks.</p></article>
-              <article class="ocf2025-world-card portugal"><span>Portugal</span><p>In September, OCF joined international partners concerned with digital technology and human rights at Global Gathering, continuing to share Taiwan's digital rights advocacy efforts and help Taiwan's experience contribute to the international community.</p></article>
-              <article class="ocf2025-world-card thailand"><span>Thailand</span><p>In November, OCF joined International Civil Society Week hosted by CIVICUS to discuss strategies for defending democracy in the Asia-Pacific region amid expanding digital authoritarianism and shrinking civic space.</p><p>Also in November, OCF was invited to Bangkok for the Asia Democracy Assembly, where it shared Taiwan civic groups' experiences with cross-border digital attacks and OCF's proposed defense strategies with civil society leaders, policymakers, and international partners from across Asia.</p></article>
+              <article class="ocf2025-world-card portugal"><span>Portugal</span><p>In September, OCF joined international partners working on digital technology and human rights at Global Gathering, continuing to share Taiwan's digital rights advocacy efforts and help Taiwan's experience contribute to the international community.</p></article>
+              <article class="ocf2025-world-card thailand"><span>Thailand</span><p>In November, OCF joined International Civil Society Week hosted by CIVICUS to discuss strategies for defending democracy in the Asia-Pacific region amid expanding digital authoritarianism and shrinking civic space.</p><p>Also in November, OCF was invited to Bangkok for the Asia Democracy Assembly, where it shared Taiwanese civic groups' experiences with cross-border digital attacks and OCF's proposed defense strategies with civil society leaders, policymakers, and international partners from across Asia.</p></article>
               <article class="ocf2025-world-card malaysia"><span>Malaysia</span><p>In May, OCF joined the Digital Rights Asia-Pacific Assembly (DRAPAC) hosted by EngageMedia in Kuala Lumpur, introduced its Digital Security Support Program for civil society groups at Open Tech Camp, and held in-depth exchanges with security trainers from different countries on supporting human rights defenders more effectively in high-risk environments.</p></article>
             </div>
           </section>
