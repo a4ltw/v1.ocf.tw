@@ -1,3 +1,48 @@
+- id: ospology-asia-sony-2026
+  name: "OSPOlogy Asia：OCF 前進 Sony 總部分享台灣開源治理推動經驗"
+  name_en:
+  description: OCF 將前進日本東京品川的 Sony City Osaki，於 OSPOlogy Asia 分享台灣推動開源治理的經驗，也邀請台灣企業夥伴一同關注亞洲開源治理交流。這次出訪將連結 OSPO、OpenChain、SBOM、AI 治理與企業開源策略，持續把國際開源治理新知帶回台灣。
+  start: 2026/07/27
+  end:
+  cover_image: /story/ospos-5-ospology-asia-sony-2026/images/cover.png
+  banner_image: /story/ospos-5-ospology-asia-sony-2026/images/cover.png
+  metas:
+    - Sony City Osaki, Shinagawa, Tokyo
+  links:
+    - title: 最新消息
+      url: /story/ospos-5-ospology-asia-sony-2026/
+  contributor_ids:
+    - yanyiyi
+  project_ids:
+    - opentech
+
+- id: open-source-business-ai-competitiveness-2026
+  name: "開源不只是技術選擇：AI 時代企業布局國際競爭力的起點"
+  name_en:
+  description: >-
+    AI 正在改變軟體產品的開發、營運與國際競爭規則，而開源也不再只是工程團隊的技術選擇。從開源授權、SBOM、AI 治理，到社群經營、開放資料與營運工具導入，企業需要重新理解開源如何成為建立信任、降低風險與連結市場的關鍵能力。本次聚會將從合規趨勢、商業策略與新創實戰出發，陪伴企業在 AI 時代找到重塑國際競爭力的起點。
+  start: 2026/06/22
+  end:
+  cover_image: /story/open-source-business-ai-competitiveness-2026/images/banner.png
+  banner_image: /story/open-source-business-ai-competitiveness-2026/images/banner.png
+  metas:
+    - 14:00-17:00
+    - 台北市文創 6 樓 B 廳（台北市信義區菸廠路 88 號 6 樓）
+  links:
+    - title: 最新消息
+      url: /story/open-source-business-ai-competitiveness-2026/
+    - title: ACCUPASS 報名
+      url: https://dub.sh/ostwocf0622
+    - title: Google 表單報名
+      url: https://dub.sh/ostwocf0622gf
+  organizer_ids:
+    - osof
+  co-organizer_ids:
+    - ocf
+    - openchain
+  project_ids:
+    - opentech
+
 - id: opentech
   name: 開放科技小聚 [002] ：成就與挑戰：公部門釋出開放資料前的期待與掙扎
   name_en: 開放科技小聚 [002] ：成就與挑戰：公部門釋出開放資料前的期待與掙扎
@@ -338,4 +383,3 @@
     - szuhui
   project_ids:
     - issues
-
