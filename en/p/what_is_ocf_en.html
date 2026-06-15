@@ -4,126 +4,398 @@ og_title: About OCF
 og_description: 
 ---
 
+<style>
+  .ocf-about-en {
+    --ocf-primary: #6450dc;
+    --ocf-secondary: #0091da;
+    --ocf-green: #28a745;
+    --ocf-orange: #d35400;
+    --ocf-text: #333333;
+    --ocf-muted: #666666;
+    --ocf-line: #e6e6ee;
+    --ocf-soft: #f8f9fa;
+    color: var(--ocf-text);
+    line-height: 1.7;
+  }
+
+  .ocf-about-en * {
+    box-sizing: border-box;
+  }
+
+  .ocf-about-en .ocf-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ocf-about-en .ocf-section {
+    padding: 56px 0;
+  }
+
+  .ocf-about-en .ocf-section.alt-bg {
+    background: var(--ocf-soft);
+  }
+
+  .ocf-about-en .ocf-section-title {
+    color: var(--ocf-primary);
+    font-size: 1.85rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 28px;
+    text-align: center;
+  }
+
+  .ocf-about-en .ocf-section-title::after {
+    background: var(--ocf-primary);
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 16px auto 0;
+    width: 60px;
+  }
+
+  .ocf-about-en .ocf-lead {
+    font-size: 1.08rem;
+    margin: 0 auto;
+    max-width: 860px;
+  }
+
+  .ocf-about-en .ocf-lead p,
+  .ocf-about-en .ocf-copy p {
+    margin: 0 0 18px;
+  }
+
+  .ocf-about-en .ocf-copy {
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 860px;
+  }
+
+  .ocf-about-en .ocf-card-grid,
+  .ocf-about-en .ocf-task-grid,
+  .ocf-about-en .ocf-report-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .ocf-about-en .ocf-card,
+  .ocf-about-en .ocf-task-card,
+  .ocf-about-en .ocf-report-card {
+    background: #ffffff;
+    border: 1px solid var(--ocf-line);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(20, 20, 50, 0.05);
+    padding: 24px;
+  }
+
+  .ocf-about-en .ocf-card {
+    border-top: 5px solid var(--ocf-primary);
+    text-align: center;
+  }
+
+  .ocf-about-en .ocf-card h3,
+  .ocf-about-en .ocf-task-card h3 {
+    color: var(--ocf-secondary);
+    font-size: 1.25rem;
+    margin: 0 0 12px;
+  }
+
+  .ocf-about-en .ocf-card p,
+  .ocf-about-en .ocf-task-card p {
+    margin: 0;
+  }
+
+  .ocf-about-en .ocf-image-wrap {
+    margin: 0 auto 34px;
+    max-width: 620px;
+    text-align: center;
+  }
+
+  .ocf-about-en .ocf-image-wrap img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .ocf-about-en .ocf-area-grid,
+  .ocf-about-en .ocf-culture-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ocf-about-en .ocf-area-grid li,
+  .ocf-about-en .ocf-culture-grid li {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(20, 20, 50, 0.05);
+    padding: 20px;
+  }
+
+  .ocf-about-en .ocf-area-grid li {
+    border-left: 4px solid var(--ocf-green);
+  }
+
+  .ocf-about-en .ocf-culture-grid li {
+    border-left: 4px solid var(--ocf-orange);
+  }
+
+  .ocf-about-en .ocf-area-grid strong,
+  .ocf-about-en .ocf-culture-grid strong {
+    display: block;
+    margin: 0 0 8px;
+  }
+
+  .ocf-about-en .ocf-area-grid strong {
+    color: var(--ocf-green);
+  }
+
+  .ocf-about-en .ocf-culture-grid strong {
+    color: var(--ocf-orange);
+  }
+
+  .ocf-about-en .ocf-task-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ocf-about-en .ocf-task-card ul {
+    color: var(--ocf-muted);
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .ocf-about-en .ocf-task-card li {
+    margin-bottom: 8px;
+  }
+
+  .ocf-about-en .ocf-culture-subtitle {
+    color: var(--ocf-muted);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: -12px 0 28px;
+    text-align: center;
+  }
+
+  .ocf-about-en .ocf-project-link {
+    margin-top: 26px;
+    text-align: center;
+  }
+
+  .ocf-about-en .ocf-project-link img {
+    height: auto;
+    max-width: 250px;
+    width: 100%;
+  }
+
+  .ocf-about-en .ocf-back-link {
+    margin-top: 22px;
+    text-align: center;
+  }
+
+  .ocf-about-en .ocf-report-card {
+    align-items: center;
+    color: var(--ocf-text);
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+
+  .ocf-about-en .ocf-report-card:hover {
+    border-color: var(--ocf-secondary);
+    box-shadow: 0 8px 18px rgba(20, 20, 50, 0.08);
+    color: var(--ocf-secondary);
+    transform: translateY(-2px);
+  }
+
+  .ocf-about-en .ocf-report-card i {
+    color: var(--ocf-secondary);
+    margin-left: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .ocf-about-en .ocf-section {
+      padding: 40px 0;
+    }
+
+    .ocf-about-en .ocf-section-title {
+      font-size: 1.55rem;
+    }
+
+    .ocf-about-en .ocf-card,
+    .ocf-about-en .ocf-task-card,
+    .ocf-about-en .ocf-report-card {
+      padding: 20px;
+    }
+  }
+</style>
+
+<main class="ocf-about-en">
   {% include _shared/kv.html title=page.og_title
     description=site.data.people.orgs.ocf.slogan_en image="/assets/images/about_KV.png" %}
-    
-<h3 class="ui header">About Open Culture Foundation (OCF)</h3> 
-<P><blockquote>(The) Open Culture Foundation is a non-profit organization. Through promoting open technology and cross-field collaboration, we continue to connect tech communities and other public and private entities in Taiwan. By doing so, we work to promote open co-creation and protect digital rights, and thereby support a more transparent and inclusive digital civil society.</blockquote></p>
 
-<P><blockquote>Since 2014, we have functioned as a legal entity and supported over 30 open technology communities in Taiwan. Throughout this process, we have not only continued to promote the idea of open technology, we have also become involved in policy advocacy and spoken up for the public's digital rights. Through this process, we have created a base for the development of open technology in Taiwan. None of these successes are the result of OCF alone. Rather, they are the result of several open tech communities, individuals and organizations working together to make Taiwan's internet and digital environment more open, transparent, and participation.<blockquote> </p>
+  <section class="ocf-section">
+    <div class="ocf-container ocf-lead">
+      <h2 class="ocf-section-title">About Open Culture Foundation (OCF)</h2>
+      <p>(The) Open Culture Foundation is a non-profit organization. Through promoting open technology and cross-field collaboration, we continue to connect tech communities and other public and private entities in Taiwan. By doing so, we work to promote open co-creation and protect digital rights, and thereby support a more transparent and inclusive digital civil society.</p>
+      <p>Since 2014, we have functioned as a legal entity and supported over 30 open technology communities in Taiwan. Throughout this process, we have not only continued to promote the idea of open technology, we have also become involved in policy advocacy and spoken up for the public's digital rights. Through this process, we have created a base for the development of open technology in Taiwan. None of these successes are the result of OCF alone. Rather, they are the result of several open tech communities, individuals and organizations working together to make Taiwan's internet and digital environment more open, transparent, and participation.</p>
+    </div>
+  </section>
 
-<div class="ui center aligned stripe container">
- <h3 class="ui header">Our Vision</h3>
-</div>
+  <section class="ocf-section alt-bg">
+    <div class="ocf-container">
+      <div class="ocf-card-grid">
+        <article class="ocf-card">
+          <h3>Our Vision</h3>
+          <p>OCF is an advocate for open technology, we hope to promote open co-creation and protect digital rights, and thus support a more transparent and inclusive digital civil society.</p>
+        </article>
+        <article class="ocf-card">
+          <h3>Our Mission </h3>
+          <p>Using open technology and collaboration across different fields to foster digital civil society and help respond to the multiple threats of the digital era </p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<P><blockquote>OCF is an advocate for open technology, we hope to promote open co-creation and protect digital rights, and thus support a more transparent and inclusive digital civil society.</blockquote></p>
+  <section class="ocf-section">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">What is Open Technology?</h2>
+      <div class="ocf-copy">
+        <p>Open Technology comprises Open Source, Open Data and Open Government. The goal of open technology is to ensure that the construction of our digital society, the collection of data and the functioning of government is all open, transparent and participation.  By ensuring these principals, open technology aims to promote the implementation of digital rights and internet freedom, thus allowing for the realization of a digital civic society.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="ui center aligned stripe container">
- <h3 class="ui header">Our Mission </h3>
-</div>
+  <section class="ocf-section alt-bg">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">Our 5 Main Areas</h2>
+      <div class="ocf-image-wrap">
+        <img src="/en/p/web_about_elements_en.png" title="projects" alt="projects">
+      </div>
+      <ul class="ocf-area-grid">
+        <li><strong>Open Source:</strong>Open source: The operation of technology is open, transparency and participation. Through the openness and collaboration, everyone can use and improve technology. By doing this, it highly increase the public trust and the privacy protection. Meanwhile, as the software development is not enclosed anymore, everyone can promote and contribute to civilization development and technology innovation.</li>
+        <li><strong>Open Data:</strong>Implementing open data, through using open source licenses to release data directly or indirectly collected by major public and private fields, we can make different data connectable and thus enable greater knowledge sharing and public information.</li>
+        <li><strong>Open Government:</strong>Using digital technology to help the government use open and collaborative means to promote digital governance and thereby create new potentials for public participation.</li>
+        <li><strong>Internet Freedom:</strong>The internet should not create divisions and should instead be universal. The internet should ensure our freedom of speech and freedom of assembly, and through ensuring the internet has an open base, find a balance between the public good and private profit.</li>
+        <li><strong>Digital Rights:</strong>The concept of “digital rights” has two meanings, firstly, our existing human rights (such as the right to privacy) need to exist online, and secondly, new types of rights (such as the right to internet access) that have emerged as digital technologies have become more common, must also be protected.</li>
+      </ul>
+    </div>
+  </section>
 
-<P><blockquote>Using open technology and collaboration across different fields to foster digital civil society and help respond to the multiple threats of the digital era </blockquote></p>  
+  <section class="ocf-section">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">Tasks</h2>
+      <div class="ocf-task-grid">
+        <article class="ocf-task-card">
+          <h3>Community Support</h3>
+          <ul>
+            <li>Providing administrative and financial support to open tech related communities, and support the development of these communities through providing consultation services and joint activity planning </li>
+          </ul>
+        </article>
+        <article class="ocf-task-card">
+          <h3>Talent Development</h3>
+          <ul>
+            <li>Providing scholarship programs, training channels and platforms to gather and continue to foster talent able to engage in advocacy related to open tech and digital rights</li>
+          </ul>
+        </article>
+        <article class="ocf-task-card">
+          <h3>Knowledge Exchange</h3>
+          <ul>
+            <li>Creating ways to share knowledge, and using multiple channels and networks to continue to share knowledge and exchange ideas with the general public</li>
+            <li>Participating and hosting both offline and online events in order to promote the concept and use of open tech, digital rights and internet freedom </li>
+          </ul>
+        </article>
+        <article class="ocf-task-card">
+          <h3>Monitoring and Advocacy </h3>
+          <ul>
+            <li>Working with government agencies or civil society groups to obtain multiple perspectives on the use of technology in civil society that can be used as a reference point for related laws or protocols </li>
+            <li>Bringing together experts from a range of fields in order to undertake hands-on monitoring and advocacy on related policies </li>
+          </ul>
+        </article>
+        <article class="ocf-task-card">
+          <h3>International Collaboration </h3>
+          <ul>
+            <li>Using international events and network building to help collectively respond to the setbacks and threats to the establishment of digital civil society </li>
+          </ul>
+        </article>
+        <article class="ocf-task-card">
+          <h3>Open Source Promotion</h3>
+          <ul>
+            <li>Promoting the use pen source code and related tools on projects, work and in all areas of digital life </li>
+            <li>All knowledge produced by this foundation is released using a CC license, and we use open source tools wherever possible in our own work</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<div class="ui center aligned stripe container">
- <h3 class="ui header">What is Open Technology?</h3>
-</div>
+  <section class="ocf-section alt-bg">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">What is Our Culture :Open Culture</h2>
+      <div class="ocf-culture-subtitle">Open, Transparent, participation</div>
+      <div class="ocf-copy">
+        <p>The Open Culture Foundation was founded to promote Taiwan’s open source communities. The hope was that by encouraging open and shareable source code, we could help to create a trend wherein everyone can modify, contribute and co-work to improve technology collectively. Following the digitalization of society as a whole, this line of thought has continued to extend beyond just coding and now includes all types of social behaviors and systems. We believe that openness can ensure that knowledge and technology will no longer be monopolized by a small number of technical experts of private enterprises. Through openness, we can promote quick growth and sustainable recording of this progress, and it is only through an open culture of this kind that we can exert a positive influence on society in the digital era.</p>
+        <p>Building on the spirit of openness and incorporating digital rights and internet freedom, our style is  “Open, transparent, participation. When we make decisions relating to making plans or taking action, we consider the (non-exhaustive) list of principles listed below. </p>
+      </div>
+      <ul class="ocf-culture-grid">
+        <li><strong>Rough Consensus and Running Code:</strong>As soon as a rough consensus is reached, we encourage people to try things out and not criticize errors.</li>
+        <li><strong>Patches Welcome：</strong>When feedback is needed, we provide concrete and actionable advice</li>
+        <li><strong>Release early, Release often:</strong>all drafts or models prototypes developed during all work processes  should be released early and often  </li>
+        <li><strong>Open information:</strong>As long there are no privacy concerns and there is enough manpower to handle the task, all information should be released openly </li>
+        <li><strong>Sharing experience:</strong>the results of all our projects should be released openly, and in addition, all experience and knowledge gained throughout the process should also be shared with the outside world </li>
+        <li><strong>Implementing openness in our daily lives:</strong>within reasonable means, we try to use open source technology and services and avoid monopolization by corporate software </li>
+        <li><strong>Respecting diversity:</strong>we respect and protect the independence and autonomy of the communities we support  </li>
+      </ul>
+    </div>
+  </section>
 
-<P><blockquote>Open Technology comprises Open Source, Open Data and Open Government. The goal of open technology is to ensure that the construction of our digital society, the collection of data and the functioning of government is all open, transparent and participation.  By ensuring these principals, open technology aims to promote the implementation of digital rights and internet freedom, thus allowing for the realization of a digital civic society.</blockquote></p>
+  <section class="ocf-section">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">How do we keep ourselves running?</h2>
+      <div class="ocf-copy">
+        <p>Our expenses include administrative, event, and office operating costs. Our Funding mainly comes through two channels: 1) the collection of service fees from the communities we support and 2) regular and fixed donations.</p>
+        <p>As a fiscal sponsor for open tech communities, in addition to collecting our own administrative fund, funds that are donated to each community project is earmarked for that project specifically.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="ui center aligned stripe container">
- <h3 class="ui header">Our 5 Main Areas</h3>
-</div>
+  <section class="ocf-section alt-bg">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">Learn More About Our Current Projects</h2>
+      <div class="ocf-copy">
+        <p> OCF was funded due to the conferences that open source communities organized needed a fisical support from an organizational constraints, it made this non-profit organization became reality. Nowadays, out of being the support of financial management and administratiion tasks for over 30 open source related projects, OCF also developed our own missions and works to advocate for digital rights. Please find our current projects and the annual reports to know more about our outcomes. </p>
+      </div>
+      <div class="ocf-project-link">
+        <a href="https://ocf.tw/en/p/ocf"><img src="/en/p/button_project.png" width="250" height="250" alt="buttomINTL"></a>
+      </div>
+      <div class="ocf-back-link">
+        <p><a href="https://ocf.tw/en/">Back to main page to check them out.</a></p>
+      </div>
+    </div>
+  </section>
 
-<div class="ui center aligned stripe container">
- <img src="/en/p/web_about_elements_en.png" title="projects" border="0" width="500">
-</div>
-
-<P><blockquote>
-<ul>
-<li> <strong>Open Source:</strong>&nbsp;Open source: The operation of technology is open, transparency and participation. Through the openness and collaboration, everyone can use and improve technology. By doing this, it highly increase the public trust and the privacy protection. Meanwhile, as the software development is not enclosed anymore, everyone can promote and contribute to civilization development and technology innovation.
-<li> <strong>Open Data:</strong>&nbsp;Implementing open data, through using open source licenses to release data directly or indirectly collected by major public and private fields, we can make different data connectable and thus enable greater knowledge sharing and public information.
-<li> <strong>Open Government:</strong>&nbsp;Using digital technology to help the government use open and collaborative means to promote digital governance and thereby create new potentials for public participation. 
-<li> <strong>Internet Freedom:</strong>&nbsp;The internet should not create divisions and should instead be universal. The internet should ensure our freedom of speech and freedom of assembly, and through ensuring the internet has an open base, find a balance between the public good and private profit. 
-<li> <strong>Digital Rights:</strong>&nbsp;The concept of “digital rights” has two meanings, firstly, our existing human rights (such as the right to privacy) need to exist online, and secondly, new types of rights (such as the right to internet access) that have emerged as digital technologies have become more common, must also be protected.   
-</ul>
-</blockquote></p>  
-
-<div class="ui center aligned stripe container">
- <h2 class="ui header">Tasks</h2>
-</div>
-
-<P><blockquote>
-<ul>
-<li>Community Support
-    <ul>
-    <li>Providing administrative and financial support to open tech related communities, and support the development of these communities through providing consultation services and joint activity planning 
-    </ul> 
-<li>Talent Development
-    <ul>   
-    <li>Providing scholarship programs, training channels and platforms to gather and continue to foster talent able to engage in advocacy related to open tech and digital rights
-   </ul>  
-<li>Knowledge Exchange
-    <ul> 
-    <li>Creating ways to share knowledge, and using multiple channels and networks to continue to share knowledge and exchange ideas with the general public
-    <li>Participating and hosting both offline and online events in order to promote the concept and use of open tech, digital rights and internet freedom 
-   </ul>  
-<li>Monitoring and Advocacy 
-    <ul>  
-    <li>Working with government agencies or civil society groups to obtain multiple perspectives on the use of technology in civil society that can be used as a reference point for related laws or protocols 
-    <li>Bringing together experts from a range of fields in order to undertake hands-on monitoring and advocacy on related policies 
-   </ul>  
-<li>International Collaboration 
-    <ul>  
-    <li>Using international events and network building to help collectively respond to the setbacks and threats to the establishment of digital civil society 
-    </ul>  
-<li>Open Source Promotion
-    <ul>  
-    <li>Promoting the use pen source code and related tools on projects, work and in all areas of digital life 
-    <li>All knowledge produced by this foundation is released using a CC license, and we use open source tools wherever possible in our own work
-    </ul>  
-</ul>
-</blockquote></p>  
-
-<div class="ui center aligned stripe container">
-<h3 class="ui header">What is Our Culture :Open Culture</h3>
-<h4 class="ui header">Open, Transparent, participation</h4>
-</div>
-
-<P><blockquote>The Open Culture Foundation was founded to promote Taiwan’s open source communities. The hope was that by encouraging open and shareable source code, we could help to create a trend wherein everyone can modify, contribute and co-work to improve technology collectively. Following the digitalization of society as a whole, this line of thought has continued to extend beyond just coding and now includes all types of social behaviors and systems. We believe that openness can ensure that knowledge and technology will no longer be monopolized by a small number of technical experts of private enterprises. Through openness, we can promote quick growth and sustainable recording of this progress, and it is only through an open culture of this kind that we can exert a positive influence on society in the digital era.</blockquote></p> 
-
-<P><blockquote>Building on the spirit of openness and incorporating digital rights and internet freedom, our style is  “Open, transparent, participation. When we make decisions relating to making plans or taking action, we consider the (non-exhaustive) list of principles listed below. </blockquote></p>
-  
-<P><blockquote>  
-<ul>
-<li> Rough Consensus and Running Code: As soon as a rough consensus is reached, we encourage people to try things out and not criticize errors.
-<li> Patches Welcome：When feedback is needed, we provide concrete and actionable advice
-<li> Release early, Release often: all drafts or models prototypes developed during all work processes  should be released early and often  
-<li> Open information: As long there are no privacy concerns and there is enough manpower to handle the task, all information should be released openly 
-<li> Sharing experience: the results of all our projects should be released openly, and in addition, all experience and knowledge gained throughout the process should also be shared with the outside world 
-<li> Implementing openness in our daily lives: within reasonable means, we try to use open source technology and services and avoid monopolization by corporate software 
-<li> Respecting diversity: we respect and protect the independence and autonomy of the communities we support  
-</ul>
-</blockquote></p>
-
-<div class="ui center aligned stripe container">
- <h3 class="ui header">How do we keep ourselves running?</h3>
-</div>
-
-<P><blockquote>Our expenses include administrative, event, and office operating costs. Our Funding mainly comes through two channels: 1) the collection of service fees from the communities we support and 2) regular and fixed donations.</blockquote></p> 
- <p><blockquote>As a fiscal sponsor for open tech communities, in addition to collecting our own administrative fund, funds that are donated to each community project is earmarked for that project specifically.</blockquote></p> 
-
- <div class="ui center aligned stripe container">
- <h3 class="ui header">Learn More About Our Current Projects</h3>
-</div>
-
-<P><blockquote> OCF was funded due to the conferences that open source communities organized needed a fisical support from an organizational constraints, it made this non-profit organization became reality. Nowadays, out of being the support of financial management and administratiion tasks for over 30 open source related projects, OCF also developed our own missions and works to advocate for digital rights. Please find our current projects and the annual reports to know more about our outcomes. </blockquote></p>
-
-<div class="ui center aligned stripe container">
- <a href="https://ocf.tw/en/p/ocf"><img src="/en/p/button_project.png" width="250px" heigh="250px" alt="buttomINTL"></a>
-</div>
-
-<div class="ui center aligned stripe container">
- <P><a href="https://ocf.tw/en/">Back to main page to check them out.</a></p>
-</div>
-
-
+  <section class="ocf-section">
+    <div class="ocf-container">
+      <h2 class="ocf-section-title">Annual Reports</h2>
+      <div class="ocf-report-grid">
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2016/">2016 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2017/">2017 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2018/">2018 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2019/">2019 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2020/">2020 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2021/">2021 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2022/">2022 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2023/">2023 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2024/">2024 Annual Report <i class="external alternate icon"></i></a>
+        <a class="ocf-report-card" href="https://ocf.tw/en/p/2025/">2025 Annual Report <i class="external alternate icon"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
