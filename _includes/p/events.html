@@ -4,17 +4,22 @@
 {% if events %}
 {% assign years = site.data.settings.years %} 
 {% for year in years %}
+  {% assign year_events = "" | split: "" %}
+  {% for event in events %}
+    {% if event.start contains year %}
+      {% assign year_events = year_events | push: event %}
+    {% endif %}
+  {% endfor %}
+  {% if year_events.size > 0 %}
   <h2 class="ui dividing header">
     {{ year }} 年
     <i class="icon down chevron"></i>
   </h2> 
-<div id="events" class="ui divided items">
-  {% for event in events %}
-    {% if event.start contains year %}
-      {% include p/events/item.html %}
-    {% endif%}
+<div id="events" class="ui divided items opentech-event-list">
+  {% for event in year_events %}
+    {% include p/events/item.html %}
   {% endfor %}
 </div>
+  {% endif %}
   {% endfor %}
 {% endif %}
-
