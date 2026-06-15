@@ -65,7 +65,7 @@ links:
     url: https://ocf.tw/p/issues/twogp
     icon:
 links_en:
-  - title: Course: Open Technology MOOC Course
+  - title: "Course: Open Technology MOOC Course"
     url: https://ocf.tw/p/opentech/course/
     color: purple
     icon: graduation cap icon
