@@ -590,27 +590,6 @@ items:
     single_column: true
     columns:
       - type: article
-        alignment: left
-        title: Publication Information
-        description: |
-          <section class="ocf2025-publish-info">
-            <div class="ocf2025-publish-sponsor"><span>Sponsor</span><img src="/p/2025/images/archilife-logo.png" alt="ARCHILIFE RESEARCH FOUNDATION"></div>
-            <dl>
-              <div><dt>Writing</dt><dd>Hsu Tung</dd></div>
-              <div><dt>Comics</dt><dd>Liang Ken</dd></div>
-            </dl>
-            <div class="ocf2025-publish-team">
-              <p><strong>Board Members</strong> Lee Po-Feng, Lee Shin-Ying, Lee Ming-Che, Kao Chia-Liang, Keng Lu, Chen Kuei-Cheng, Wang Chieh-Ying</p>
-              <p><strong>Advisors</strong> Hou Yi-Hsiu (through September 2025), Huang Chun, Chao Po-Chiang, Deng Tung-Po, Cheng Hung-Chi, Irvin Chen, Kaia, Miaoski</p>
-              <p><strong>OCF Team</strong> Lee Shin-Ying, Lin Min-Ting, Yao Yung-Chi, Hung Hua-Chao, Tu Ching-Jou, Hsu Shih-Ya, Chen Kuan-Chung, Tang Chia-Shuo, Liu Hsin-Ni, Liu Chun-Yen, Liu Wei-Yen, Liu Cheng-Chen, Chiang Wei-Chih</p>
-              <p><strong>OCF Alumni</strong> Lee Shih-Kuo, Lee Ying-Hsuan, Lee Chia-Shan, Tu Yu-Chu, Lin Wei-Cheng, Lu Hsin-Ching, Lu Hao-Yun, Kuo Ching-Yen, Tseng Wei-Cheng, Huang Shih-Hui, Peng Cheng</p>
-            </div>
-          </section>
-
-  - type: content
-    single_column: true
-    columns:
-      - type: article
         alignment: center
         title:
         description: |
