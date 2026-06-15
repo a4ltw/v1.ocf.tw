@@ -3,7 +3,7 @@ layout: story
 og_title: "[Webinar 速記] 從開放資料到 AI-Ready：以資料基礎支撐台灣的主權 AI 想像"
 og_description: "OCF 與 FNF 共同舉辦線上研討會，發布《從開放資料到 AI-Ready 國際實踐研究》Early Release 版本，並邀請台灣在地 AI 社群、產業實務者與開放資料社群一同對談。"
 og_image: images/image1.png
-publish_date: 2025-12-29
+publish_date: 2026-06-12
 modified_time: 2026-06-12 12:29
 author: OCF
 section: 開放資料

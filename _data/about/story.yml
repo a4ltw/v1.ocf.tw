@@ -1,3 +1,7 @@
+- title: "[Webinar 速記] 從開放資料到 AI-Ready：以資料基礎支撐台灣的主權 AI 想像"
+  slug: ai-ready-open-data-webinar
+  date: 2026-06-12
+
 - title: "為什麼社群經營需要橫向串聯？CONCOM 2026 會後記"
   slug: concom-2026
   date: 2026-06-10
@@ -45,10 +49,6 @@
 - title: "✨社群小故事 ④✨ PostgreSQL 台灣使用者社群"
   slug: epaper/2025/202512news/postsql202512/
   date: 2026-01-02
-
-- title: "[Webinar 速記] 從開放資料到 AI-Ready：以資料基礎支撐台灣的主權 AI 想像"
-  slug: ai-ready-open-data-webinar
-  date: 2025-12-29
 
 - title: "✨社群小故事 ③✨ - Golang Taiwan"
   slug: epaper/2025/202512news/golang202512/
