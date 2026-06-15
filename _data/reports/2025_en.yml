@@ -178,7 +178,7 @@ items:
             </section>
             <section>
               <h3>Repairing data quality: civic tech in practice</h3>
-              <p>Open data must be useful, not merely available. OCF worked with the Aimosheng Foundation to <a href="https://ocf.tw/story/epaper/2025/202511news/aed/">improve the quality of AED open data</a> through civic tech, so high-quality open data can truly save lives when it matters.</p>
+              <p>Open data must be useful, not merely available. OCF worked with the Aimosheng Foundation（愛陌生協會） to <a href="https://ocf.tw/story/epaper/2025/202511news/aed/">improve the quality of AED open data</a> through civic tech, so high-quality open data can truly save lives when it matters.</p>
             </section>
           </div>
 
@@ -201,7 +201,7 @@ items:
         alignment: left
         title: The Girl's Field Notes
         description: |
-          <div class="ocf2025-note"><p>I used to think open data simply meant putting files on a website. Later I learned that open data has requirements and quality standards. If formats are not machine-readable, or if the law does not clearly require government agencies to open data, people still cannot use it.</p><p>Seeing OCF go to the Legislative Yuan, the Executive Yuan, and university classrooms helped me understand that “openness” is a long-distance race against time. The work with the Aimosheng Foundation to improve AED map data was especially cool to me. When data becomes transparent and accurate, it stops being a stiff file on a hard drive and becomes real support that can protect people.</p></div>
+          <div class="ocf2025-note"><p>I used to think open data simply meant putting files on a website. Later I learned that open data has requirements and quality standards. If formats are not machine-readable, or if the law does not clearly require government agencies to open data, people still cannot use it.</p><p>Seeing OCF go to the Legislative Yuan, the Executive Yuan, and university classrooms helped me understand that “openness” is a long-distance race against time. The work with the Aimosheng Foundation（愛陌生協會） to improve AED map data was especially cool to me. When data becomes transparent and accurate, it stops being a stiff file on a hard drive and becomes real support that can protect people.</p></div>
 
   - type: content
     columns:
