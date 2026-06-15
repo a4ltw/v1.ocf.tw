@@ -533,3 +533,224 @@
     width: 100% !important;
   }
 }
+
+/* AI-Ready report page: use the same event-card treatment as /p/opentech/. */
+#freestyle .opentech-event-section {
+  margin-top: 48px;
+}
+
+#freestyle .opentech-event-section .opentech-section__title.ui.header {
+  color: var(--ocf-dark);
+  font-size: 1.75rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+#freestyle .opentech-event-section .opentech-lead {
+  color: #555;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+#freestyle .opentech-event-section > h2.ui.dividing.header {
+  border-bottom: 2px solid var(--ocf-light);
+  color: var(--ocf-primary);
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#freestyle .opentech-event-list.ui.divided.items,
+#freestyle .opentech-event-section > .ui.divided.items {
+  border: 0;
+  display: block;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item,
+#freestyle .opentech-event-section > .ui.divided.items > .item {
+  align-items: stretch;
+  background: var(--ocf-white);
+  border: 1px solid var(--ocf-light) !important;
+  border-left: 6px solid var(--ocf-primary) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(15, 25, 35, 0.06);
+  display: flex;
+  margin: 0 0 1rem 0 !important;
+  padding: 1.25rem 1.35rem !important;
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item:hover,
+#freestyle .opentech-event-section > .ui.divided.items > .item:hover {
+  border-color: rgba(15, 25, 35, 0.5) !important;
+  box-shadow: 0 8px 22px rgba(15, 25, 35, 0.1);
+  transform: translateY(-1px);
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item::before,
+#freestyle .opentech-event-section > .ui.divided.items > .item::before {
+  align-self: flex-start;
+  background: var(--ocf-magenda);
+  border-radius: 6px;
+  color: var(--ocf-white);
+  content: "活動";
+  flex: 0 0 auto;
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-right: 1rem;
+  order: 0;
+  padding: 0.35rem 0.55rem;
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item > .image,
+#freestyle .opentech-event-section > .ui.divided.items > .item > .image {
+  background-color: var(--ocf-primary);
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  border-radius: 8px;
+  flex: 0 0 140px;
+  height: 140px !important;
+  margin: 0 1.25rem 0 0 !important;
+  min-height: 0;
+  order: 1;
+  overflow: hidden;
+  position: relative;
+  width: 140px !important;
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item > .image img,
+#freestyle .opentech-event-section > .ui.divided.items > .item > .image img {
+  display: block;
+  height: auto;
+  left: 0;
+  max-height: none;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item:not(:has(> .image))::after,
+#freestyle .opentech-event-section > .ui.divided.items > .item:not(:has(> .image))::after {
+  align-items: center;
+  background: rgba(100, 80, 220, 0.12);
+  border-radius: 8px;
+  color: var(--ocf-primary);
+  content: "EVENT";
+  display: flex;
+  flex: 0 0 140px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  height: 140px;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  margin: 0 1.25rem 0 0;
+  order: 1;
+  width: 140px;
+}
+
+#freestyle .opentech-event-list.ui.divided.items > .item > .content,
+#freestyle .opentech-event-section > .ui.divided.items > .item > .content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  order: 2;
+}
+
+#freestyle .opentech-event-list.ui.divided.items h3.ui.header,
+#freestyle .opentech-event-list.ui.divided.items .header,
+#freestyle .opentech-event-section > .ui.divided.items h3.ui.header,
+#freestyle .opentech-event-section > .ui.divided.items .header {
+  color: var(--ocf-dark);
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.45;
+  margin-bottom: 0.45rem;
+  margin-top: 0;
+}
+
+#freestyle .opentech-event-list.ui.divided.items .meta,
+#freestyle .opentech-event-section > .ui.divided.items .meta {
+  color: rgba(15, 25, 35, 0.72);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+#freestyle .opentech-event-list.ui.divided.items .description,
+#freestyle .opentech-event-section > .ui.divided.items .description {
+  color: var(--ocf-dark);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-top: 0.35rem;
+}
+
+#freestyle .opentech-event-list.ui.divided.items .extra,
+#freestyle .opentech-event-section > .ui.divided.items .extra {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+}
+
+#freestyle .opentech-event-list.ui.divided.items .extra a,
+#freestyle .opentech-event-section > .ui.divided.items .extra a {
+  background: rgba(215, 220, 240, 0.42);
+  border: 1px solid rgba(100, 80, 220, 0.25);
+  border-radius: 6px;
+  color: var(--ocf-primary);
+  display: inline-block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0.25rem 0.35rem 0.25rem 0;
+  padding: 0.38rem 0.65rem;
+  text-decoration: none;
+}
+
+#freestyle .opentech-event-list.ui.divided.items .extra a:hover,
+#freestyle .opentech-event-section > .ui.divided.items .extra a:hover {
+  background: rgba(100, 80, 220, 0.08);
+  border-color: var(--ocf-primary);
+  color: var(--ocf-primary);
+}
+
+@media only screen and (max-width: 767px) {
+  #freestyle .opentech-event-section {
+    margin-top: 32px;
+  }
+
+  #freestyle .opentech-event-section .opentech-section__title.ui.header {
+    font-size: 1.45rem;
+  }
+
+  #freestyle .opentech-event-list.ui.divided.items > .item,
+  #freestyle .opentech-event-section > .ui.divided.items > .item {
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+
+  #freestyle .opentech-event-list.ui.divided.items > .item::before,
+  #freestyle .opentech-event-section > .ui.divided.items > .item::before {
+    margin-bottom: 0.75rem;
+    margin-right: 0;
+  }
+
+  #freestyle .opentech-event-list.ui.divided.items > .item > .image,
+  #freestyle .opentech-event-list.ui.divided.items > .item:not(:has(> .image))::after,
+  #freestyle .opentech-event-section > .ui.divided.items > .item > .image,
+  #freestyle .opentech-event-section > .ui.divided.items > .item:not(:has(> .image))::after {
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    height: auto !important;
+    margin: 0 0 1rem 0 !important;
+    width: 100% !important;
+  }
+}

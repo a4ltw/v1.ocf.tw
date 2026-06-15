@@ -1,5 +1,6 @@
 ---
 layout: f
+css: opentech.css
 
 og_title: AI-Ready 開放資料實踐研究
 og_description: OCF 與 FNF Taiwan/Global Innovation Hub 合作發行本報告，透過西班牙、德國、柬埔寨與法國等國際案例，整理政府開放資料如何在 AI 時代轉化為更可被機器理解、可合法合規再利用，並能促進公民與政府對話的公共基礎建設。
@@ -195,19 +196,36 @@ project_header_veil_opacity: 0.25
   </div>
 </div>
 
-<h2 class="ui dividing header">活動與發表紀錄</h2>
-<p>以下整理本研究相關的活動、發表、討論與露出紀錄，後續可持續補充活動紀錄、簡報、共同筆記與延伸文章。</p>
+<section class="opentech-event-section">
+<h2 class="opentech-section__title ui header">活動與發表紀錄</h2>
+<p class="opentech-lead">以下整理本研究相關的活動、發表、討論與露出紀錄，後續可持續補充活動紀錄、簡報、共同筆記與延伸文章。</p>
 
 {% include _var/events.html %}
 {% if events %}
-<div class="ui divided items">
+{% assign years = site.data.settings.years %}
+{% for year in years %}
+  {% assign year_events = "" | split: "" %}
   {% for event in events %}
+    {% if event.start contains year %}
+      {% assign year_events = year_events | push: event %}
+    {% endif %}
+  {% endfor %}
+  {% if year_events.size > 0 %}
+<h2 class="ui dividing header">
+  {{ year }} 年
+  <i class="icon down chevron"></i>
+</h2>
+<div class="ui divided items">
+  {% for event in year_events %}
     {% include p/events/item.html %}
   {% endfor %}
 </div>
+  {% endif %}
+{% endfor %}
 {% else %}
 <p>目前尚無活動紀錄。</p>
 {% endif %}
+</section>
 
 <h2 class="ui dividing header">相關連結</h2>
 <p>
