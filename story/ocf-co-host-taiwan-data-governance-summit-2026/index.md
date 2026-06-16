@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: "OCF 協辦第一屆台灣資料治理年會，「政府軌」現正徵稿中"
-og_description: "開放文化基金會（OCF）協辦由台灣資料管理協會（TDAMA）主辦的「第一屆台灣資料治理年會」，並主要負責「政府軌」規劃與徵稿，延續 OCF 長期對政府開放資料、AI-Ready 資料基礎與公私協作的關注。政府軌現正徵稿中，至 2026 年 6 月 26 日截止。"
+og_description: "可用、可信、可被問責的永續資料"
 og_image: images/banner.png
 publish_date: 2026-06-16
 modified_time: 2026-06-16 12:00
