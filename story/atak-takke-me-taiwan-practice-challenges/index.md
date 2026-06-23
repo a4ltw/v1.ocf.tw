@@ -1,7 +1,7 @@
 ---
 layout: story
-og_title: "當災難來臨，你的隊友在哪裡？ATAK 戰術感知平台在臺灣的實踐與挑戰"
-og_description: "本文整理自 2026/6/18 TAKKE.ME 講座，記錄 ATAK 在災防、搜救與跨單位協作中的應用，以及 TAKKE.ME 在臺灣推廣時遇到的現實挑戰。"
+og_title: "TAKKE.ME 災防、搜救、通訊知識交流平台"
+og_description: "2026/6 月網路自由小聚"
 og_image:
 publish_date: 2026-06-23
 modified_time: 2026-06-23 12:00
@@ -9,9 +9,9 @@ author: OCF
 section: 網路自由
 ---
 
-# 當災難來臨，你的隊友在哪裡？ATAK 戰術感知平台在臺灣的實踐與挑戰
+# [TAKKE.ME](https://takke.me/) 災防、搜救、通訊知識交流平台
 
-本文整理自 2026/6/18 [TAKKE.ME](https://takke.me) 災防、搜救、通訊知識交流平台講座，講者 Schee 分享 ATAK 能做的事情，以及 TAKKE.ME 希望在臺灣推動的方向。
+2026/6 月網路自由小聚。本文整理自 2026/6/18 講座，講者 Schee 分享 ATAK 能做的事情，以及 TAKKE.ME 希望在臺灣推動的方向。
 
 921 大地震發生時，救災隊員騎著越野摩托車在埔里穿梭，卻對彼此的位置一無所知。無線電電力耗盡，資訊只能靠 LED 牆打跑馬燈傳遞。二十幾年後，這類問題有了更好的解法，只是臺灣還不太知道。
 
