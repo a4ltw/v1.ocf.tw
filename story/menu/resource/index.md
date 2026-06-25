@@ -137,10 +137,6 @@ og_image:
         <h3>資安新手村 | Shield of Self-Defense (SSD) 遊戲版</h3>
         <p>透過互動遊戲理解數位安全風險與防護做法</p>
     </a>
-    <a href="https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view?usp=drive_link" class="resource-card">
-        <h3>【報告】台灣人權與民主倡議團體數位威脅概況</h3>
-        <p>台灣人權與民主倡議團體面臨的數位威脅調查</p>
-    </a>
     <a href="https://drive.google.com/file/d/1wgYdObezFzlI6OJLozzqQF5Vt11B7gCd/view?usp=drive_link" class="resource-card">
         <h3>【報告】守護倡議之聲：公民團體與人權工作者資安陪伴計畫成果報告</h3>
         <p>公民團體與人權工作者資安陪伴計畫的成果整理</p>
