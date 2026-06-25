@@ -129,6 +129,26 @@ og_image:
 
 <h2 class="section-title">公民社會數位防禦</h2>
 <div class="card-grid">
+    <a href="https://ssd.ocf.tw/" class="resource-card">
+        <h3>資安新手村 | Shield of Self-Defense (SSD) 網頁版</h3>
+        <p>從日常情境開始，學習個人與組織的資安自我防護</p>
+    </a>
+    <a href="https://ssd.ocf.tw/play/" class="resource-card">
+        <h3>資安新手村 | Shield of Self-Defense (SSD) 遊戲版</h3>
+        <p>透過互動遊戲理解數位安全風險與防護做法</p>
+    </a>
+    <a href="https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view?usp=drive_link" class="resource-card">
+        <h3>【報告】台灣人權與民主倡議團體數位威脅概況</h3>
+        <p>台灣人權與民主倡議團體面臨的數位威脅調查</p>
+    </a>
+    <a href="https://drive.google.com/file/d/1wgYdObezFzlI6OJLozzqQF5Vt11B7gCd/view?usp=drive_link" class="resource-card">
+        <h3>【報告】守護倡議之聲：公民團體與人權工作者資安陪伴計畫成果報告</h3>
+        <p>公民團體與人權工作者資安陪伴計畫的成果整理</p>
+    </a>
+    <a href="https://drive.google.com/file/d/1VwZwVXpOjTBZibVCTbIF1wUdPhQU_wJz/view?usp=drive_link" class="resource-card">
+        <h3>【報告】信任的代價：一場針對臺灣人權工作者的資安攻擊與防守實錄</h3>
+        <p>記錄針對臺灣人權工作者的攻擊事件與防守經驗</p>
+    </a>
     <a href="https://digitalsecurityhandbook.ocf.tw/" class="resource-card">
         <h3>CSOs 數位防禦手冊（網頁版）</h3>
         <p>注重隱私與安全的開放原始碼工具指南</p>
