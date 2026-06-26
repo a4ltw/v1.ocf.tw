@@ -7,7 +7,11 @@
 
 {% assign og_url = page.url %}
 {% assign og_title = page.og_title %}
-{% assign og_image = site.data.people.orgs.ocf.cover %}
+{% if page.url == "/story/menu/articles/" %}
+  {% assign og_image = site.data.people.orgs.ocf.cover %}
+{% else %}
+  {% assign og_image = "/story/epaper/2026/202604news/weekly-0417/images/image1.png" %}
+{% endif %}
 {% if lang == 'en' %}
   {% assign og_description = site.data.people.orgs.ocf.context_description_en %}
 {% else %}

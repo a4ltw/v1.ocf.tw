@@ -11,9 +11,11 @@
   {% assign og_title = page.og_title %}
 {% endif %}
 
+{% unless page.layout == "story" and page.url != "/story/menu/articles/" %}
 {% if page.og_image %}
   {% assign og_image = page.og_image %}
 {% endif %}
+{% endunless %}
 
 {% if page.og_description %}
   {% assign og_description = page.og_description %}

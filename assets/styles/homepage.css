@@ -195,11 +195,18 @@
 #homepage #partners .ui.horizontal.list,
 #homepage #sponsors .ui.horizontal.list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   gap: 2rem 1rem;
   align-items: center;
   justify-items: center;
   width: 100%;
+}
+
+#homepage #partners .ui.horizontal.list {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#homepage #sponsors .ui.horizontal.list {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 @media only screen and (max-width: 1024px) {

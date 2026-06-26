@@ -3,7 +3,12 @@ layout: global
 ---
 
 <main id="about">
-  {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
+  {% assign default_story_image = "/story/epaper/2026/202604news/weekly-0417/images/image1.png" %}
+  {% if page.url == "/story/menu/articles/" %}
+    {% assign kv_image = page.og_image | default: "/assets/images/about_KV.png" %}
+  {% else %}
+    {% assign kv_image = default_story_image %}
+  {% endif %}
   {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
 
   {% comment %} 處理 h2 標籤的 id 和 title {% endcomment %}
