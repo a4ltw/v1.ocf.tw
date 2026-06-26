@@ -8,6 +8,17 @@
   overflow: hidden;
 }
 
+#keyvisual_inner .container.upper,
+#keyvisual_inner .container.lower {
+  height: clamp(4rem, 8vw, 7rem);
+  overflow: hidden;
+}
+
+#keyvisual_inner .container img.decorator {
+  height: 100%;
+  object-fit: cover;
+}
+
 #keyvisual_inner::before {
   content: '';
   position: absolute;
