@@ -1,0 +1,18 @@
+- id: civil-society-digital-frontline-2026
+  name: "公民社會的數位防線：共同面對數位威脅"
+  name_en:
+  description: "OCF 將於 2026 年 7 月 20 日舉辦數位安全論壇，發表兩份聚焦台灣公民社會數位威脅的研究報告，分享資安陪伴計畫觀察與近期攻擊案例，並邀請國家安全會議、黑熊民防教育協會、Cisco Talos、CSCS 等講者，共同討論公民社會如何理解、辨識並回應數位威權與數位攻擊。"
+  start: 2026/07/20
+  end:
+  metas:
+    - 時間：14:30–17:10（14:00 開放報到）
+    - 地點：BEONE 未來共生基地（台北市信義區基隆路一段 200 號 B1F）
+  links:
+    - title: 最新消息
+      url: /story/civil-society-digital-frontline-2026/
+    - title: KKTIX 報名
+      url: https://ocftw.kktix.cc/events/2026digitalfronline
+  cover_image: /story/civil-society-digital-frontline-2026/images/digital-frontline-square.png
+  banner_image: /story/civil-society-digital-frontline-2026/images/digital-frontline-square.png
+  project_ids:
+    - defendhrd
