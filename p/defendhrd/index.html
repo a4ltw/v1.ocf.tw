@@ -8,7 +8,7 @@ og_image: /p/defendhrd/defendhrd logo_tw.png
 header_image_opacity: 0.75
 header_veil_opacity: 0.25
 
-show_events: 
+show_events: yes
 gsheet_url: 
 show_sponsors: 
 show_donors: 
@@ -111,3 +111,15 @@ show_child_projects: yes
 </div>
 
 <p>如果你想進一步瞭解我們的資安概況報告、數位安全培力工具包及對人權工作者的資安支持，請聯繫開放文化基金會 hi@ocf.tw 。</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document
+      .querySelectorAll('.project-related-events .meta')
+      .forEach(function (meta) {
+        if (meta.textContent.trim().indexOf('時間：') === 0) {
+          meta.remove();
+        }
+      });
+  });
+</script>
