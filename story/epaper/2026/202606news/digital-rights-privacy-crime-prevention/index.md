@@ -1,12 +1,12 @@
 ---
 layout: story
-og_title: 以防治犯罪為名，數位人權與隱私正急劇縮小
+og_title: 以防治犯罪為名，數位人權與隱私正急劇限縮中
 og_description: "開放科技新聞摘要"
 og_image: images/image1.png
 toc: false
 ---
 
-# 以防治犯罪為名，數位人權與隱私正急劇縮小
+# 以防治犯罪為名，數位人權與隱私正急劇限縮中
 
 ## 開放科技新聞摘要
 
