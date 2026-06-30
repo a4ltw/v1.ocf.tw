@@ -8,8 +8,6 @@ toc: false
 
 # 以防治犯罪為名，數位人權與隱私正急劇限縮中
 
-## 開放科技新聞摘要
-
 ![][image1]
 
 *Figure Source: [The KIDS Act Would Require Age Checks To Get Online, CC BY @Electronic Frontier Foundation](https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online)*
