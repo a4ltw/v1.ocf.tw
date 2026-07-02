@@ -493,3 +493,113 @@
     - global
   reports: 2024/05/08
   reports_en: 2024/05/09
+
+- id: global
+  name: FOSDEM 2025
+  name_en: FOSDEM 2025
+  description: FOSDEM（自由及開源軟體開發者歐洲會議）是歐洲最大的開源社群年度聚會，由社群志工共同籌辦的兩天的活動，整場活動免報名、開放自由參加，有超過 8000 名開源參與者加入。OCF 首次透過議程發表分享台灣公私協力經驗以及 OSCVPass，也與 COSCUP 等臺灣開源社群共同擺攤，推廣介紹臺灣的開源活動與相關組織發展。
+  description_en: FOSDEM is Europe's largest annual open source gathering. Organized by community volunteers, the two-day event is free to attend and brings together more than 8,000 open source participants. For the first time, OCF joined the program as a speaker, sharing Taiwan's experience in public-private collaboration and introducing OSCVPass. OCF also co-hosted a booth with COSCUP and other Taiwanese open source communities to promote Taiwan's open source events and the development of related organizations.
+  cover_image: /p/global/2025FOSDEM.jpg
+  start: 2025/02/01
+  end: 2025/02/02
+  links:
+    - title: 會議官網
+      url: https://archive.fosdem.org/2025/
+    - title: COSCUP 會後分享
+      url: https://www.youtube.com/watch?v=gEWwZEW5KHQ
+  co-organizer_ids:
+  contributor_ids:
+  project_ids:
+    - global
+  reports: 2025/02/01
+  reports_en: 2025/02/02
+
+- id: global
+  name: 亞太數位人權大會 DRAPAC 2025
+  name_en: DRAPAC 2025
+  description: 亞太數位權利大會（DRAPAC）是一個致力於推動亞太地區數位權利與網路自由的區域會議，第三屆將於 2025 年 8 月 26 至 27 日在馬來西亞吉隆坡舉行。DRAPAC25 延續前兩屆會議持續團結區域夥伴，推動亞太區域的數位韌性。面對日益升高的數位威權主義，發展以人權為核心的數位治理模式與創新策略，以支援處於高風險環境的人權捍衛者。
+  description_en: The Digital Rights Asia-Pacific Assembly (DRAPAC) is a regional gathering dedicated to advancing digital rights and internet freedom across the Asia-Pacific. Building on the first two editions, DRAPAC25 continues to bring regional partners together to strengthen digital resilience across Asia-Pacific. In response to the growing threat of digital authoritarianism, the assembly focuses on developing human rights-centered models of digital governance and innovative strategies to support human rights defenders working in high-risk environments.
+  cover_image: /p/global/2025DRAPAC.jpg
+  start: 2025/08/26
+  end: 2025/08/27
+  links:
+    - title: 會議官網
+      url: https://drap.ac/25/
+  co-organizer_ids:
+  contributor_ids:
+  project_ids:
+    - global
+  reports: 2025/08/26
+  reports_en: 2025/08/27
+
+- id: global
+  name: Global Gathering 2025
+  name_en: Global Gathering 2025
+  description: Global Gathering 是由 Team CommUNITY 所舉辦的年度聚會，匯聚來自世界各地的數位人權倡議者。預計有 1,000 人參與。整個活動將在戶外舉行，營造輕鬆的氛圍，並提供靈活的議程來協助的數位人權倡議者建立關係與分享知識，並舉辦衛星活動提供額外的交流機會。
+  description_en: Global Gathering is an annual event organized by Team CommUNITY, bringing together digital rights advocates from around the world. The event is expected to welcome around 1,000 participants. Held entirely outdoors, Global Gathering creates a relaxed atmosphere with a flexible program designed to help digital rights advocates build relationships and share knowledge. In addition, there are also satellite events offering further opportunities for networking and exchange.
+  cover_image: /p/global/2025GlobalGathering.png
+  start: 2025/09/08
+  end: 2025/09/10
+  links:
+    - title: 會議官網
+      url: https://wiki.digitalrights.community/index.php?title=Global_Gathering_2025
+  co-organizer_ids:
+  contributor_ids:
+  project_ids:
+    - global
+  reports: 2025/09/08
+  reports_en: 2025/09/10
+
+- id: global
+  name: 全球隱私大會 Global Privacy Assembly 2025
+  name_en: Global Privacy Assembly 2025
+  description: Global Privacy Assembly 2025（GPA 2025）是全球資料保護與隱私監管機關的重要年度會議，於 2025 年 9 月 15 至 19 日在韓國首爾舉行。本屆會議以人工智慧、資料治理與隱私保護為核心議題，匯聚各國資料保護機關、政策制定者、產業代表、學者與公民社會，討論 AI 時代下個人資料保護、跨境資料流通、兒少隱私與數位治理等重要挑戰，並推動國際合作與共同標準的發展。
+  description_en: Global Privacy Assembly 2025 (GPA 2025) was a major annual gathering of data protection and privacy authorities from around the world, held in Seoul, South Korea, from 15 to 19 September 2025. With a focus on artificial intelligence, data governance, and privacy protection, the Assembly brought together regulators, policymakers, industry representatives, academics, and civil society actors to discuss key challenges in the AI era, including personal data protection, cross-border data flows, children's privacy, and digital governance, while strengthening international cooperation and the development of shared privacy standards.
+  cover_image: /p/global/2025GPA.jpg
+  start: 2025/09/15
+  end: 2025/09/19
+  links:
+    - title: 會議官網
+      url: https://globalprivacyassembly.com/
+  co-organizer_ids:
+  contributor_ids:
+  project_ids:
+    - global
+  reports: 2025/09/15
+  reports_en: 2025/09/19
+
+- id: global
+  name: 亞洲民主大會 Asia Democracy Assembly 2025
+  name_en: Asia Democracy Assembly 2025
+  description: Asia Democracy Assembly 2025 是由 Asia Democracy Network（ADN）主辦的區域民主倡議聚會，於 2025 年 11 月 1 至 3 日在泰國曼谷舉行，並與 International Civil Society Week 同期舉辦。本屆大會以「Defending Democracy, Mobilizing Movements and New Frontiers for Citizen Action」為主題，匯聚亞洲各地的民主倡議組織、公民社會工作者與運動領袖，共同回應威權擴張、公民空間限縮與民主倒退等區域挑戰，並推動更具連結性的民主行動與跨國合作。
+  description_en: Asia Democracy Assembly 2025 is a regional convening hosted by the Asia Democracy Network (ADN), held in Bangkok, Thailand, from 1 to 3 November 2025 alongside International Civil Society Week. Under the theme "Defending Democracy, Mobilizing Movements and New Frontiers for Citizen Action," the Assembly brought together pro-democracy organizations, civil society actors, and movement leaders from across Asia. It served as a space to address rising authoritarianism, shrinking civic space, and democratic backsliding in the region, while strengthening solidarity, collective strategies, and cross-border cooperation for democratic action.
+  cover_image: /p/global/2025AsiaDemocracyAssembly.png
+  start: 2025/11/01
+  end: 2025/11/03
+  links:
+    - title: 會議官網
+      url: https://adnasia.org/asia-democracy-assembly-2025/
+  co-organizer_ids:
+  contributor_ids:
+  project_ids:
+    - global
+  reports: 2025/11/01
+  reports_en: 2025/11/03
+
+- id: global
+  name: 國際公民社會週 ICSW 2025
+  name_en: International Civil Society Week (ICSW) 2025
+  description: International Civil Society Week（ICSW）是由 CIVICUS 與 Asia Democracy Network (ADN) 共同主辦、為期一週的全球公民社會系列活動。活動內容包括會議、研討會、培訓與文化活動，為來自世界各地的公民社會組織、行動者、人權捍衛者與盟友提供一個開放的交流空間，促進知識分享、跨區域連結與共同倡議。
+  description_en: International Civil Society Week (ICSW) is a week-long series of global civil society events co-hosted by CIVICUS and the Asia Democracy Network (ADN). Through conferences, workshops, trainings, and cultural activities, ICSW provides an open space for civil society organizations, activists, human rights defenders, and allies from around the world to connect, exchange knowledge, and strengthen collective action across regions.
+  cover_image: /p/global/2025ICSW.jpg
+  start: 2025/11/01
+  end: 2025/11/05
+  links:
+    - title: 會議官網
+      url: https://icsw.civicus.org/program/
+  co-organizer_ids:
+  contributor_ids:
+  project_ids:
+    - global
+  reports: 2025/11/01
+  reports_en: 2025/11/05
