@@ -70,4 +70,4 @@ DNS 這本電話簿的條目以「整個網站」為單位，沒有「某網站�
 
 *本文為網路自由小聚：保護網路言論自由，現在我們還缺什麼？聊聊平台管制全面加嚴下缺少哪些制衡機制 - 活動後記，由現場參與者整理發言狀況與參與心得。*
 
-活動共筆：https://g0v.hackmd.io/@summit2026/H1EqQBc0bl/%2F3CyS4NcOQ5KQsZ8BCppPhw
+[活動共筆](https://g0v.hackmd.io/@summit2026/H1EqQBc0bl/%2F3CyS4NcOQ5KQsZ8BCppPhw)
