@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 防制電子煙的代價是台灣的網路言論自由？
-og_description: "網路自由小聚後記"
+og_description: "網路言論自由系列 1"
 og_image: images/image1.jpg
 ---
 
@@ -65,3 +65,5 @@ og_image: images/image1.jpg
 
 - 線上討論：[https://groups.google.com/g/coffee-circumvention-tw](https://groups.google.com/g/coffee-circumvention-tw)
 - 活動共筆：[https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view](https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view)
+
+延伸閱讀：[從蔡衍明控告維基百科，回頭檢視台灣的平台法制](https://ocf.tw/story/epaper/2025/202511news/wiki-sue/)

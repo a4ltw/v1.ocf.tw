@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 臺灣網路審查的成本結構
-og_description: "網路自由小聚 2026/5 後記"
+og_description: "網路言論自由系列 3"
 ---
 
 # 臺灣網路審查的成本結構

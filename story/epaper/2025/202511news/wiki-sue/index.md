@@ -1,7 +1,7 @@
 ---
 layout: story
 og_title: 從蔡衍明控告維基百科，回頭檢視台灣的平台法制
-og_description: "網路自由小聚 2025/9 後記"
+og_description: "網路言論自由系列 2"
 og_image: images/image1.jpg
 ---
 # 從蔡衍明控告維基百科，回頭檢視台灣的平台法制
