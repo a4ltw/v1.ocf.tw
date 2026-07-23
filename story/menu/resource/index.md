@@ -185,6 +185,14 @@ og_image:
 
 <h2 class="section-title">網路自由</h2>
 <div class="card-grid">
+    <a href="https://resilience.ocf.tw/web/report/" class="resource-card">
+        <h3>網路韌性檢測報告</h3>
+        <p>海纜斷光會怎樣？認識台灣的國際網路中斷風險</p>
+    </a>
+    <a href="https://resilience.ocf.tw/web/" class="resource-card">
+        <h3>網路韌性檢測工具</h3>
+        <p>海纜斷掉時，台灣人常用的網站會動嗎？</p>
+    </a>
     <a href="https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view" class="resource-card">
         <h3>網路自由小聚共筆</h3>
         <p>社群討論記錄與知識分享</p>
