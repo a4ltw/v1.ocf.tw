@@ -202,8 +202,8 @@ og_image:
         <p>用聽的了解網路自由議題</p>
     </a>
     <a href="https://www.youtube.com/watch?v=ek2XjW7Q3wI&list=PLFuYOsppHDrlYquISvSfOjrT5g_mjMGot" class="resource-card">
-        <h3>2024 回顧影片</h3>
-        <p>OCF 年度重要時刻影像紀錄</p>
+        <h3>網路自由小聚短影音</h3>
+        <p>2024 重要的幾場活動</p>
     </a>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/infr/">網路自由</a></small></p>
