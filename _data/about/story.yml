@@ -1,179 +1,224 @@
 - title: "臺灣網路審查的成本結構"
   slug: epaper/2026/202607news/taiwan-internet-censorship-cost-structure/
   date: 2026-07-21
+  category: "數位人權與網路自由"
 
 - title: "以防治犯罪為名，數位人權與隱私正急劇限縮中"
   slug: epaper/2026/202606news/digital-rights-privacy-crime-prevention/
   date: 2026-06-29
+  category: "數位人權與網路自由"
 
 - title: "OCF 數位安全論壇開放報名中：共同面對公民社會的數位威脅"
   slug: civil-society-digital-frontline-2026
   date: 2026-06-23
+  category: "數位人權與網路自由"
 
 - title: "TAKKE.ME 災防、搜救、通訊知識交流平台"
   slug: atak-takke-me-taiwan-practice-challenges
   date: 2026-06-23
+  category: "數位人權與網路自由"
 
 - title: "OCF 協辦第一屆台灣資料治理年會，「政府軌」現正徵稿中"
   slug: ocf-co-host-taiwan-data-governance-summit-2026
   date: 2026-06-16
+  category: "開放資料與資料治理"
 
 - title: "【開源治理系列 05】OCF 前進 Sony 總部：台灣開源治理推動經驗如何與亞洲接軌？"
   slug: ospos-5-ospology-asia-sony-2026
   date: 2026-06-16
+  category: "開放原始碼與開源治理"
 
 - title: "【開源治理系列 04】開源不只是技術選擇：AI 時代企業布局國際競爭力的起點"
   slug: open-source-business-ai-competitiveness-2026
   date: 2026-06-15
+  category: "開放原始碼與開源治理"
 
 - title: "[Webinar 速記] 從開放資料到 AI-READY：以資料基礎支撐台灣的主權 AI 想像"
   slug: ai-ready-open-data-webinar
   date: 2026-06-12
+  category: "開放資料與資料治理"
 
 - title: "為什麼社群經營需要橫向串聯？CONCOM 2026 會後記"
   slug: concom-2026
   date: 2026-06-10
+  category: "公民科技與社群"
 
 - title: "OCF 不替人看門，而是和社群一起守住開放、透明、可被問責的數位公共空間。"
   slug: ocf-digital-public-space-watch
   date: 2026-06-04
+  category: "數位人權與網路自由"
 
 - title: "那些 OCF 沒能在 RightsCon 說完的故事：臺灣公民社會如何抵抗數位威脅"
   slug: rightscon-taiwan-civil-society-digital-threats
   date: 2026-05-18
+  category: "數位人權與網路自由"
 
 - title: "每週開放科技動態摘要（2026-04-07 ～ 2026-04-17）"
   slug: epaper/2026/202604news/weekly-0417/
   date: 2026-04-17
+  category: "開放科技新聞摘要"
 
 - title: "【開源治理系列】2026 Q1 開源合規與安全調查報告：臺灣企業準備好了嗎？"
   slug: ospos-3-taiwan-open-compliance-security-report-2026-q1
   date: 2026-04-13
+  category: "開放原始碼與開源治理"
 
 - title: "每週開放科技動態摘要（2026-03-30 ～ 2026-04-06）"
   slug: epaper/2026/202604news/april2026news/
   date: 2026-04-08
+  category: "開放科技新聞摘要"
 
 - title: "每週開放科技動態摘要（2026-03-23 ～ 2026-03-30）"
   slug: epaper/2026/202603news/march2026news/
   date: 2026-03-30
+  category: "開放科技新聞摘要"
 
 - title: "AI 時代的開放原始碼與數位主權趨勢"
   slug: epaper/2026/202603news/fosdem2026/
   date: 2026-03-18
+  category: "開放原始碼與開源治理"
 
 - title: "武裝衝突中的網際網路斷網：危害類型學"
   slug: epaper/2026/202603news/typology-of-harms/
   date: 2026-03-16
+  category: "數位人權與網路自由"
 
 - title: "申請倒數中！OCF 國際會議獎助計畫：RightsCon 2026"
   slug: epaper/2026/202601news/ocfxrightscon2026/
   date: 2026-01-23
+  category: "數位人權與網路自由"
 
 - title: "✨社群小故事 ⑤✨ BSD Taiwan"
   slug: epaper/2025/202512news/bsdtw202512/
   date: 2026-01-02
+  category: "公民科技與社群"
 
 - title: "✨社群小故事 ④✨ PostgreSQL 台灣使用者社群"
   slug: epaper/2025/202512news/postsql202512/
   date: 2026-01-02
+  category: "公民科技與社群"
 
 - title: "✨社群小故事 ③✨ - Golang Taiwan"
   slug: epaper/2025/202512news/golang202512/
   date: 2025-12-29
+  category: "公民科技與社群"
 
 - title: "✨社群小故事 ②✨ - Civil Society Cyber Shield"
   slug: epaper/2025/202512news/cscs202512/
   date: 2025-12-22
+  category: "公民科技與社群"
 
 - title: "✨社群小故事 ①✨ - Cofacts 真的假的"
   slug: epaper/2025/202512news/cofacts202512/
   date: 2025-12-12
+  category: "公民科技與社群"
 
 - title: "IT Matters 開源社群貢獻獎"
   slug: epaper/2025/202512news/oscvpass202512/
   date: 2025-12-12
+  category: "開放原始碼與開源治理"
 
 - title: "2025/11/21 行政院人權行動計畫說明會倡議全文"
   slug: epaper/2025/202511news/advrights/
   date: 2025-11-21
+  category: "數位人權與網路自由"
 
 - title: "從蔡衍明控告維基百科，回頭檢視台灣的平台法制"
   slug: epaper/2025/202511news/wiki-sue/
   date: 2025-11-18
+  category: "數位人權與網路自由"
 
 - title: "【開源治理系列】OSPO 正在集結中！來自世界各地的政府開源專案辦公室"
   slug: ospos-2-floss-pso-intl-network
   date: 2025-11-04
+  category: "開放原始碼與開源治理"
 
 - title: "【開源治理系列】OCF 正式加入 OSPO 聯盟！開源治理手冊是什麼？"
   slug: ospos-1-join-OSPO-alliance
   date: 2025-11-01
+  category: "開放原始碼與開源治理"
 
 - title: "OCF 與愛陌生基金會攜手改善 AED 資料品質"
   slug: epaper/2025/202511news/aed
   date: 2025-10-31
+  category: "開放資料與資料治理"
 
 - title: "數位威權主義商品化-網路政變報告分享會"
   slug: epaper/2025/202510news/ifm10/
   date: 2025-10-27
+  category: "數位人權與網路自由"
 
 - title: "台灣數位信任協會"
   slug: epaper/2025/202510news/ifm07/
   date: 2025-10-27
+  category: "數位人權與網路自由"
 
 - title: "迷幻開源宇宙啟動：Mong Tong × XTRUX《明日音》"
   slug: epaper/2025/202510news/main/
   date: 2025-10-15
+  category: "開放音像創作"
 
 - title: "MONG TONG《明日音》「反民族誌音樂」的誕生"
   slug: epaper/2025/202510news/mongtong-da/
   date: 2025-10-15
+  category: "開放音像創作"
 
 - title: "【新聞】2025/10 開放科技新聞摘要"
   slug: epaper/2025/202510news/news/
   date: 2025-10-07
+  category: "開放科技新聞摘要"
 
 - title: "OCF 參與 Jam Jam Asia 亞洲音樂節回顧：開放音像派對：從《時間浸漬》到《明日音》"
   slug: epaper/2025/202509news/jja-music
   date: 2025-09-18
+  category: "開放音像創作"
 
 - title: "OCF 參與臺北音樂博覽會回顧：解放創作的未來 —— 從開源共創到 AI 藝術創作"
   slug: epaper/2025/202509news/jja-forum
   date: 2025-09-18
+  category: "開放音像創作"
 
 - title: "【新聞】2025/9 開放科技新聞摘要"
   slug: epaper/2025/202509news/news
   date: 2025-09-01
+  category: "開放科技新聞摘要"
 
 - title: "【新聞】2025/8 開放科技新聞摘要"
   slug: epaper/2025/202508news
   date: 2025-08-01
+  category: "開放科技新聞摘要"
 
 - title: "【開源祭特刊】他們用程式碼改變世界——臺灣開源運動的前世今生"
   slug: change-the-world
   date: 2025-07-31
+  category: "開放原始碼與開源治理"
 
 - title: "【開源祭特刊】沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子"
   slug: find-your-place
   date: 2025-07-31
+  category: "開放原始碼與開源治理"
 
 - title: "【開源祭特刊】從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路"
   slug: ten-years-of-ocf
   date: 2025-07-31
+  category: "開放原始碼與開源治理"
 
 - title: "OCF 精彩活動一次看，COSCUP 20 週年！"
   slug: epaper/2025/ocf-in-coscup
   date: 2025-07-20
+  category: "開放原始碼與開源治理"
 
 - title: "防制電子煙的代價是台灣的網路言論自由？"
   slug: epaper/2025/202507news/e-cigar/
   date: 2025-07-10
+  category: "數位人權與網路自由"
 
 - title: "OCF 融入開放科技數位人權課程，入選親子天下教育創新 100"
   slug: ocf-100
   date: 2025-05-29
+  category: "公民科技與社群"
 
 - title: "開放資料存亡戰：公民科技與開源如何阻擋資訊消失？"
   slug: open-data-survival-civic-tech-open-source
   date: 2025-03-14
+  category: "開放資料與資料治理"
