@@ -21,17 +21,6 @@ layout: global
     {% endif %}
   {% endfor %}
 
-  {% if story_item and story_item.category %}
-  <div class="ui center aligned container story-taxonomy" aria-label="文章分類">
-    <a
-      class="ui small label story-category"
-      href="/story/menu/articles/?category={{ story_item.category | url_encode }}"
-    >
-      <i class="tag icon"></i>{{ story_item.category }}
-    </a>
-  </div>
-  {% endif %}
-
   {% comment %} 處理 h2 標籤的 id 和 title {% endcomment %}
   {% assign h2_parts = content | split: '<h2' %}
   {% assign toc_ids = '' | split: '' %}
@@ -69,6 +58,17 @@ layout: global
       <div class="{% if page.toc == false %}sixteen{% else %}twelve{% endif %} wide column" id="content">
         {% assign content_without_h1 = content | replace: '<h1', '<!-- <h1' | replace: '</h1>', '</h1> -->' %}
         {{ content_without_h1 }}
+
+        {% if story_item and story_item.category %}
+        <div class="story-taxonomy" aria-label="文章分類">
+          <a
+            class="ui small label story-category"
+            href="/story/menu/articles/?category={{ story_item.category | url_encode }}"
+          >
+            <i class="tag icon"></i>{{ story_item.category }}
+          </a>
+        </div>
+        {% endif %}
       </div>
 
     </div>
