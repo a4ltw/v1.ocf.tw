@@ -21,6 +21,33 @@ toc: false
         <i class="rss icon"></i> RSS 訂閱
       </a>
 
+      {% assign story_categories = "" | split: "," %}
+      {% for item in site.data.about.story %}
+        {% unless story_categories contains item.category %}
+          {% assign story_categories = story_categories | push: item.category %}
+        {% endunless %}
+      {% endfor %}
+
+      <div class="story-filter-panel" aria-label="文章分類篩選">
+        <div class="story-filter-heading">依 TAG 瀏覽</div>
+        <div class="ui small buttons story-filter-buttons">
+          <button type="button" class="ui button story-filter active" data-filter-type="all" data-filter-value="">
+            全部文章
+          </button>
+          {% for category in story_categories %}
+          <button
+            type="button"
+            class="ui basic button story-filter"
+            data-filter-type="category"
+            data-filter-value="{{ category | escape }}"
+          >
+            {{ category }}
+          </button>
+          {% endfor %}
+        </div>
+        <div id="story-filter-summary" class="story-filter-summary" aria-live="polite"></div>
+      </div>
+
       <div class="ui relaxed divided list">
       {% assign new_articles = "" | split: "," %}
       {% assign old_articles = "" | split: "," %}
@@ -34,7 +61,11 @@ toc: false
       {% endfor %}
 
       {% for item in new_articles %}
-        <div class="item" style="padding: 1em 0;">
+        <div
+          class="item story-article-item"
+          data-category="{{ item.category | escape }}"
+          style="padding: 1em 0;"
+        >
           <i class="large file alternate middle aligned icon" style="color: #666;"></i>
           <div class="content">
             <a class="header" href="/story/{{ item.slug }}" target="_blank" style="font-size: 1.2em; margin-bottom: 0.3em;">
@@ -43,13 +74,18 @@ toc: false
             <div class="description" style="color: #888;">
               <i class="calendar alternate outline icon"></i> {{ item.date }}
             </div>
+            <div class="story-list-taxonomy">
+              <button type="button" class="ui mini label story-filter-link" data-filter-type="category" data-filter-value="{{ item.category | escape }}">
+                {{ item.category }}
+              </button>
+            </div>
           </div>
         </div>
       {% endfor %}
       </div>
 
       {% if old_articles.size > 0 %}
-      <div class="ui fluid accordion">
+      <div class="ui fluid accordion" id="older-articles-accordion">
         <div class="title" style="padding: 1em 0; font-size: 1.1em; color: #555; border-top: 1px solid rgba(34, 36, 38, .15);">
           <i class="dropdown icon"></i>
           過往文章
@@ -57,7 +93,11 @@ toc: false
         <div class="content">
           <div class="ui relaxed divided list">
           {% for item in old_articles %}
-            <div class="item" style="padding: 1em 0;">
+            <div
+              class="item story-article-item"
+              data-category="{{ item.category | escape }}"
+              style="padding: 1em 0;"
+            >
               <i class="large file alternate middle aligned icon" style="color: #666;"></i>
               <div class="content">
                 <a class="header" href="/story/{{ item.slug }}" target="_blank" style="font-size: 1.1em; margin-bottom: 0.3em;">
@@ -66,6 +106,11 @@ toc: false
                 <div class="description" style="color: #888;">
                   <i class="calendar alternate outline icon"></i> {{ item.date }}
                 </div>
+                <div class="story-list-taxonomy">
+                  <button type="button" class="ui mini label story-filter-link" data-filter-type="category" data-filter-value="{{ item.category | escape }}">
+                    {{ item.category }}
+                  </button>
+                </div>
               </div>
             </div>
           {% endfor %}
@@ -73,8 +118,70 @@ toc: false
         </div>
       </div>
       <script>
-        $(document).ready(function(){
+        document.addEventListener('DOMContentLoaded', function() {
           $('.ui.accordion').accordion();
+
+          const articleItems = Array.from(document.querySelectorAll('.story-article-item'));
+          const filterButtons = Array.from(document.querySelectorAll('.story-filter'));
+          const filterSummary = document.getElementById('story-filter-summary');
+          const olderAccordion = $('#older-articles-accordion');
+
+          function setActiveButton(type, value) {
+            filterButtons.forEach(function(button) {
+              const isActive =
+                button.dataset.filterType === type &&
+                button.dataset.filterValue === value;
+              button.classList.toggle('active', isActive);
+              button.classList.toggle('basic', !isActive);
+            });
+          }
+
+          function applyStoryFilter(type, value, updateUrl) {
+            let visibleCount = 0;
+
+            articleItems.forEach(function(item) {
+              const visible =
+                type === 'all' ||
+                (type === 'category' && item.dataset.category === value);
+
+              item.hidden = !visible;
+              if (visible) visibleCount += 1;
+            });
+
+            setActiveButton(type, value);
+            filterSummary.textContent =
+              type === 'all'
+                ? `共 ${visibleCount} 篇文章`
+                : `「${value}」共有 ${visibleCount} 篇文章`;
+
+            if (type !== 'all') {
+              olderAccordion.accordion('open', 0);
+            }
+
+            if (updateUrl) {
+              const url = new URL(window.location.href);
+              url.searchParams.delete('category');
+              if (type !== 'all') url.searchParams.set(type, value);
+              window.history.replaceState({}, '', url);
+            }
+          }
+
+          document.querySelectorAll('.story-filter, .story-filter-link').forEach(function(button) {
+            button.addEventListener('click', function() {
+              applyStoryFilter(
+                button.dataset.filterType,
+                button.dataset.filterValue,
+                true
+              );
+            });
+          });
+
+          const params = new URLSearchParams(window.location.search);
+          if (params.has('category')) {
+            applyStoryFilter('category', params.get('category'), false);
+          } else {
+            applyStoryFilter('all', '', false);
+          }
         });
       </script>
       {% endif %}

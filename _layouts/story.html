@@ -11,6 +11,27 @@ layout: global
   {% endif %}
   {% include _shared/kv.html title=page.og_title description=page.og_description image=kv_image %}
 
+  {% assign page_story_key = page.url | remove: '/story/' | remove: '/' %}
+  {% assign story_item = nil %}
+  {% for item in site.data.about.story %}
+    {% assign item_story_key = item.slug | remove: '/' %}
+    {% if item_story_key == page_story_key %}
+      {% assign story_item = item %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if story_item and story_item.category %}
+  <div class="ui center aligned container story-taxonomy" aria-label="文章分類">
+    <a
+      class="ui small label story-category"
+      href="/story/menu/articles/?category={{ story_item.category | url_encode }}"
+    >
+      <i class="tag icon"></i>{{ story_item.category }}
+    </a>
+  </div>
+  {% endif %}
+
   {% comment %} 處理 h2 標籤的 id 和 title {% endcomment %}
   {% assign h2_parts = content | split: '<h2' %}
   {% assign toc_ids = '' | split: '' %}
