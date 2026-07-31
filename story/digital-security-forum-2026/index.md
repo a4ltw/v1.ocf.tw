@@ -3,7 +3,7 @@ layout: story
 css: digital-security-forum-2026.css
 og_title: "【2026 數位安全論壇－活動紀錄】數位木馬兵臨城下——面對數位攻擊，公民社會如何培養信任與韌性？"
 og_description: "從 APT 攻擊、資安陪伴與跨界互助，思考公民社會如何建立信任與數位韌性。"
-og_image: images/0720-forum-cover.jpg
+og_image: /story/digital-security-forum-2026/images/0720-forum-cover.jpg
 publish_date: 2026-07-30
 modified_time: 2026-07-30 12:00
 author: Heng
