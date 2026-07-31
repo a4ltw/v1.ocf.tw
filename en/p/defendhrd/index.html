@@ -33,16 +33,23 @@ show_child_projects: yes
 <h2 class="ui dividing header">Reports &amp; Resources</h2>
 <p>The project produced three public reports and one learning resource. Together, these outputs document digital threat trends, the <strong>Security Makeover Program</strong> experience, practical learning materials, and a real-world cyberattack case, offering useful insights for NGOs and digital security practitioners working to strengthen civil society’s digital resilience.</p>
 
-<h3 class="ui header">Digital Security Mapping for HRDs in Taiwan: Preliminary Results (2024)</h3>
-<p>Based on 35 survey responses and 3 in-depth interviews, this report maps <strong>key digital threats</strong> facing Taiwan-based CSOs and HRDs, including phishing, online harassment, account compromise, and infrastructure attacks. It highlights why resource-limited CSOs need long-term digital security support.</p>
-
-<h3 class="ui header">Safeguarding Advocacy: A <strong>Security Makeover Program</strong> (SMP) for CSOs and HRDs (2026)</h3>
-<p>This report documents OCF’s one-year <strong>Security Makeover Program</strong> with 6 high-risk CSOs and HRD groups. It shares how long-term accompaniment helped organizations review daily digital practices and develop practical security policies or guidelines.</p>
-
-<h3 class="ui header">The Cost of Trust: Lessons from a Cyberattack on Taiwan-Based Human Rights Defenders (2026)</h3>
-<p>This report examines <strong>the MAK case</strong>, a real cyberattack in which attackers impersonated a Taiwanese human rights organization to target its partners. It shows how civil society trust networks can be exploited—and how timely reporting, OCF coordination, and CSCS technical support helped stop the attack before infection.</p>
+<ul class="report-summaries">
+  <li><span class="report-title"><strong><em>Digital Security Mapping for HRDs in Taiwan: Preliminary Results</em></strong> (2024)</span><span class="report-description">Based on 35 survey responses and 3 in-depth interviews, this report maps key digital threats facing Taiwan-based CSOs and HRDs, including phishing, online harassment, account compromise, and infrastructure attacks. It highlights why resource-limited CSOs need long-term digital security support.</span></li>
+  <li><span class="report-title"><strong><em>Safeguarding Advocacy: A Security Makeover Program (SMP) for CSOs and HRDs</em></strong> (2026)</span><span class="report-description">This report documents OCF’s one-year Security Makeover Program with 6 high-risk CSOs and HRD groups. It shares how long-term accompaniment helped organizations review daily digital practices and develop practical security policies or guidelines.</span></li>
+  <li><span class="report-title"><strong><em>The Cost of Trust: Lessons from a Cyberattack on Taiwan-Based Human Rights Defenders</em></strong> (2026)</span><span class="report-description">This report examines the MAK case, a real cyberattack in which attackers impersonated a Taiwanese human rights organization to target its partners. It shows how civil society trust networks can be exploited—and how timely reporting, OCF coordination, and CSCS technical support helped stop the attack before infection.</span></li>
+</ul>
 
 <style>
+  .report-summaries .report-title,
+  .report-summaries .report-description {
+    display: block;
+  }
+  .report-summaries .report-title {
+    margin-bottom: 0.5em;
+  }
+  .report-summaries li + li {
+    margin-top: 1em;
+  }
   .defendhrd-results .download-section {
     display: flex; justify-content: center; gap: 40px;
     flex-wrap: wrap; margin: 30px 0 40px;
@@ -67,7 +74,24 @@ show_child_projects: yes
     border-radius: 20px; font-size: 0.9rem; text-decoration: none;
   }
   .defendhrd-results a.btn-download:hover { color: #ffffff !important; opacity: 0.9; }
+  #project #links a[href="https://ssd.ocf.tw/"] {
+    position: relative;
+    left: -0.25em;
+  }
+  #project #meta .ocf__heading3,
+  #project #meta > .meta__section:first-of-type p,
+  #project #meta #cast dt,
+  #project #meta #cast dd,
+  #project #links .item {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
   @media (max-width: 768px) {
+    #project .project__body > div > p,
+    #project .defendhrd-results .card-desc {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
     .defendhrd-results .download-card {
       width: 100%;
       max-width: 300px;

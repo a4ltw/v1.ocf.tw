@@ -31,13 +31,23 @@ show_child_projects: yes
 
 <h2 class="ui dividing header">研究成果與資源</h2>
 
-<ul>
-  <li>《台灣人權民主倡議團體數位威脅概況》（2024）<br>本報告透過 35 份問卷與 3 份深度訪談，了解在臺灣的人權與民主倡議團體面對哪些數位威脅。研究發現，許多組織規模小、人力有限，卻經常面對社群媒體騷擾、釣魚攻擊、帳號或資料受損等風險。報告也指出，許多團體的數位工具與工作流程多半是因應需求臨時拼湊而成，缺乏完整規劃，因此更難面對持續升高的攻擊風險。</li>
-  <li>《守護倡議之聲：公民團體與人權工作者<strong>資安陪伴計畫</strong>成果報告》（2026）<br>本報告整理 OCF 一年期「<strong>資安陪伴計畫</strong>」的執行過程與成果。計畫陪伴 6 個高風險公民團體與人權工作者組織，協助他們檢視日常使用的工具、帳號、資料與工作流程，並建立可執行的資安政策或守則。報告也整理陪伴過程中的經驗，包括如何建立信任、如何讓資安成為組織日常，以及如何在有限資源下逐步提升防護能力。</li>
-  <li>《信任的代價：一場針對臺灣人權工作者的資安攻擊與防守實錄》（2026）<br>本報告記錄一場<strong>針對臺灣人權工作者與其合作網絡的資安攻擊</strong>。攻擊者冒用人權組織 MAK 的名義，寄出高度擬真的釣魚郵件，企圖利用該組織累積的信任，進一步攻擊合作夥伴。事件最後在感染前被成功攔截，關鍵在於外部夥伴察覺異常、MAK 即時通報 OCF，並由 CSCS 資安社群協助分析。報告提醒，公民社會需要更穩定的通報與防禦機制。</li>
+<ul class="report-summaries">
+  <li><span class="report-title">《台灣人權民主倡議團體數位威脅概況》（2024）</span><span class="report-description">本報告透過 35 份問卷與 3 份深度訪談，了解在臺灣的人權與民主倡議團體面對哪些數位威脅。研究發現，許多組織規模小、人力有限，卻經常面對社群媒體騷擾、釣魚攻擊、帳號或資料受損等風險。報告也指出，許多團體的數位工具與工作流程多半是因應需求臨時拼湊而成，缺乏完整規劃，因此更難面對持續升高的攻擊風險。</span></li>
+  <li><span class="report-title">《守護倡議之聲：公民團體與人權工作者<strong>資安陪伴計畫</strong>成果報告》（2026）</span><span class="report-description">本報告整理 OCF 一年期「資安陪伴計畫」的執行過程與成果。計畫陪伴 6 個高風險公民團體與人權工作者組織，協助他們檢視日常使用的工具、帳號、資料與工作流程，並建立可執行的資安政策或守則。報告也整理陪伴過程中的經驗，包括如何建立信任、如何讓資安成為組織日常，以及如何在有限資源下逐步提升防護能力。</span></li>
+  <li><span class="report-title">《信任的代價：一場針對臺灣人權工作者的資安攻擊與防守實錄》（2026）</span><span class="report-description">本報告記錄一場針對臺灣人權工作者與其合作網絡的資安攻擊。攻擊者冒用人權組織 MAK 的名義，寄出高度擬真的釣魚郵件，企圖利用該組織累積的信任，進一步攻擊合作夥伴。事件最後在感染前被成功攔截，關鍵在於外部夥伴察覺異常、MAK 即時通報 OCF，並由 CSCS 資安社群協助分析。報告提醒，公民社會需要更穩定的通報與防禦機制。</span></li>
 </ul>
 
 <style>
+  .report-summaries .report-title,
+  .report-summaries .report-description {
+    display: block;
+  }
+  .report-summaries .report-title {
+    margin-bottom: 0.5em;
+  }
+  .report-summaries li + li {
+    margin-top: 1em;
+  }
   .defendhrd-results .download-section {
     display: flex; justify-content: center; gap: 40px;
     flex-wrap: wrap; margin: 30px 0 40px;
@@ -62,7 +72,26 @@ show_child_projects: yes
     border-radius: 20px; font-size: 0.9rem; text-decoration: none;
   }
   .defendhrd-results a.btn-download:hover { color: #ffffff !important; opacity: 0.9; }
+  #project #links a[href="https://ssd.ocf.tw/"] {
+    position: relative;
+    left: -0.25em;
+  }
+  #project #meta .ocf__heading3,
+  #project #meta > .meta__section:first-of-type p,
+  #project #meta #cast dt,
+  #project #meta #cast dd,
+  #project #links .item {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
   @media (max-width: 768px) {
+    #project .project__body > div > p,
+    #project .report-summaries li,
+    #project .defendhrd-results .card-desc,
+    #project .project-related-events .description p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
     .defendhrd-results .download-card {
       width: 100%;
       max-width: 300px;
@@ -79,7 +108,7 @@ show_child_projects: yes
     <div class="download-card">
       <img src="/p/defendhrd/Digital%20Security%20Mapping%20for%20HRDs%20in%20Taiwan.png" alt="台灣人權與民主倡議團體數位威脅概況" class="album-art">
       <h3>台灣人權與民主倡議團體數位威脅概況</h3>
-      <p class="card-desc">2024 年研究報告摘要（中文版），整理 35 份問卷與 3 場深度訪談中，在臺人權與民主倡議團體面臨的數位威脅樣態與資安需求。</p>
+      <p class="card-desc">透過 35 份問卷與 3 場深度訪談，瞭解在臺人權與民主倡議團體面臨的數位威脅樣態與資安需求。</p>
       <a href="https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view" class="btn-download">中文版</a>
       <a href="https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=sharing" class="btn-download">英文版</a>
     </div>
