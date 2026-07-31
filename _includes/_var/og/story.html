@@ -10,7 +10,8 @@
 {% if page.url == "/story/menu/articles/" %}
   {% assign og_image = site.data.people.orgs.ocf.cover %}
 {% else %}
-  {% assign og_image = "/story/epaper/2026/202604news/weekly-0417/images/image1.png" %}
+  {% assign default_story_image = "/story/epaper/2026/202604news/weekly-0417/images/image1.png" %}
+  {% assign og_image = page.og_image | default: default_story_image %}
 {% endif %}
 {% if lang == 'en' %}
   {% assign og_description = site.data.people.orgs.ocf.context_description_en %}
