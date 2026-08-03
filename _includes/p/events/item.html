@@ -4,12 +4,10 @@
 
   <!-- 活動主視覺圖片 -->
 
+  {% assign event_card_image = event_banner_image | default: event_cover_image %}
+  {% if event_card_image %}
   <div class="image" style="margin: auto; background-image: url(
-    {% if event_banner_image %}
-      {{event_banner_image}}
-    {% elsif event_cover_image %}
-      {{event_cover_image}}
-    {% endif %}
+    {{ event_card_image }}
   ); 
     background-size: contain;
     height: 175px;
@@ -17,6 +15,17 @@
     background-position: center;
   ">
   </div>
+  {% elsif page.layout == "p" and project_avatar_image %}
+  <div class="image" style="margin: auto; background-image: url(
+    {{ project_avatar_image }}
+  );
+    background-size: contain;
+    height: 175px;
+    background-repeat: no-repeat;
+    background-position: center;
+  ">
+  </div>
+  {% endif %}
 
   <div class="content">
 
@@ -92,4 +101,3 @@
 
   </div>
 </div>
-
