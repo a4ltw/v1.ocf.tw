@@ -131,6 +131,28 @@
   font-weight: 400;
 }
 
+/*
+ * global.css reduces only paragraphs and headings below 400px, while list
+ * items keep the 16px body size. Keep project narrative copy and its heading
+ * hierarchy consistent on narrow phones.
+ */
+@media only screen and (width < 400px) {
+  #project .project__body > div p,
+  #project .project__body > div ul,
+  #project .project__body > div ol,
+  #project .project__body > div li {
+    font-size: 1rem;
+  }
+
+  #project .project__body > div h2 {
+    font-size: 1.625rem;
+  }
+
+  #project .project__body > div h3 {
+    font-size: 1.125rem;
+  }
+}
+
 .ui.dividing.header {
   cursor: pointer;
   .icon {
