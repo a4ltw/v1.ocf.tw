@@ -24,42 +24,35 @@ og_image:
 }
 
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0 40px;
 }
 
 .resource-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 0;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    text-decoration: none !important; /* 移除預設底線 */
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    color: inherit;
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    min-height: 100%;
 }
 
 .resource-card:hover {
-    transform: translateY(-5px); /* 懸浮上移效果 */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-color: #ddd;
-}
-
-.resource-card:focus-visible {
-    outline: 3px solid #6455a5;
-    outline-offset: 3px;
+    transform: translateY(-10px);
 }
 
 .resource-card__visual {
     position: relative;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     background: linear-gradient(135deg, #5a4b9b, #8171c2);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
 }
 
 .resource-card__visual img {
@@ -68,10 +61,6 @@ og_image:
     display: block;
     object-fit: cover;
     transition: transform 0.35s ease;
-}
-
-.resource-card:hover .resource-card__visual img {
-    transform: scale(1.035);
 }
 
 .resource-card__visual--title {
@@ -94,28 +83,53 @@ og_image:
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 18px 20px 20px;
 }
 
 .resource-card h3 {
     margin-top: 0;
-    font-size: 1.1em;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
 .resource-card p {
-    font-size: 0.9em;
-    color: #666;
-    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 0 12px;
     line-height: 1.5;
+}
+
+.resource-card__actions {
+    margin-top: auto;
+}
+
+.resource-card__button {
+    display: inline-block;
+    padding: 6px 16px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: #27ae60;
+    color: #fff !important;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+}
+
+.resource-card__button:hover,
+.resource-card__button:focus-visible {
+    color: #fff !important;
+    opacity: 0.9;
 }
 
 @media (max-width: 700px) {
     .resource-container { padding-inline: 14px; }
-    .card-grid { grid-template-columns: 1fr; gap: 18px; }
+    .card-grid { gap: 2rem; }
+    .resource-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
     .section-title { font-size: 1.5em; }
-    .resource-card__visual { aspect-ratio: 2 / 1; }
 }
 
 /* 針對年度報告的特殊按鈕樣式 */
@@ -157,27 +171,27 @@ og_image:
 <div class="card-grid">
     <a href="/p/opentech/ai-ready-data/" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/ai-ready.webp" alt="" fetchpriority="high"></div>
-        <div class="resource-card__body"><h3>從開放資料到 AI-READY 國際實踐研究</h3><p>從 5 個國際案例，整理 AI 時代開放資料治理的實務路徑</p></div>
+        <div class="resource-card__body"><h3>從開放資料到 AI-READY 國際實踐研究</h3><p>從 5 個國際案例，整理 AI 時代開放資料治理的實務路徑</p><span class="resource-card__actions"><span class="resource-card__button">查看研究</span></span></div>
     </a>
     <a href="https://ocf.tw/p/opentech/otguide/" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/opentech-guide.webp" alt=""></div>
-        <div class="resource-card__body"><h3>關於開放科技</h3><p>從原始碼、資料到政府：開放，如何塑造新時代數位社會</p></div>
+        <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">關於開放科技</strong></div>
+        <div class="resource-card__body"><h3>關於開放科技</h3><p>從原始碼、資料到政府：開放，如何塑造新時代數位社會</p><span class="resource-card__actions"><span class="resource-card__button">前往網站</span></span></div>
     </a>
     <a href="https://openstartervillage.ocf.tw/" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/openstarter.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>開源星手村</h3><p>桌遊及教案資源，輕鬆了解開源文化</p></div>
+        <div class="resource-card__body"><h3>開源星手村</h3><p>桌遊及教案資源，輕鬆了解開源文化</p><span class="resource-card__actions"><span class="resource-card__button">前往網站</span></span></div>
     </a>
     <a href="https://docs.google.com/presentation/d/1WAh6lcLDfof_iZzuGmvw-ztIWZfP7QZSdHJu7HScTlA/edit" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">開放國會研究報告</strong></div>
-        <div class="resource-card__body"><h3>開放國會研究報告</h3><p>如何改善工作追蹤與開放國會委員會內部協力（CC BY 4.0）</p></div>
+        <div class="resource-card__body"><h3>開放國會研究報告</h3><p>如何改善工作追蹤與開放國會委員會內部協力（CC BY 4.0）</p><span class="resource-card__actions"><span class="resource-card__button">查看報告</span></span></div>
     </a>
     <a href="https://opengovreport.ocf.tw/" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/open-government-report.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>開放政府觀察報告</h3><p>2014-2016，中英文版（CC BY-SA 4.0）</p></div>
+        <div class="resource-card__body"><h3>開放政府觀察報告</h3><p>2014-2016，中英文版（CC BY-SA 4.0）</p><span class="resource-card__actions"><span class="resource-card__button">前往網站</span></span></div>
     </a>
     <a href="https://github.com/moda-gov-tw" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">數位部中文化成果</strong></div>
-        <div class="resource-card__body"><h3>數位部中文化成果</h3><p>GitHub 上的開源軟體在地化專案</p></div>
+        <div class="resource-card__body"><h3>數位部中文化成果</h3><p>GitHub 上的開源軟體在地化專案</p><span class="resource-card__actions"><span class="resource-card__button">查看專案</span></span></div>
     </a>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/opentech/">開放科技與倡議專案</a></small></p>
@@ -186,29 +200,29 @@ og_image:
 <h2 class="section-title">公民社會數位防禦</h2>
 <div class="card-grid">
     <a href="https://ssd.ocf.tw/" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/ssd.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>資安新手村 | Shield of Self-Defense (SSD) 網頁版</h3><p>從日常情境開始，學習個人與組織的資安自我防護</p></div>
+        <div class="resource-card__visual"><img src="/p/defendhrd/ssd-cover.png" alt="SSD 資安防護基礎教材" loading="lazy"></div>
+        <div class="resource-card__body"><h3>資安防護基礎教材 (SSD)</h3><p>給公民團體與人權工作者的資安防護基礎教材，涵蓋威脅建模、裝置安全、身份驗證、加密通訊等八大主題，採 CC BY 4.0 授權。</p><span class="resource-card__actions"><span class="resource-card__button">前往網站</span></span></div>
     </a>
     <a href="https://ssd.ocf.tw/play/" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/ssd-game.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>資安新手村 | Shield of Self-Defense (SSD) 遊戲版</h3><p>透過互動遊戲理解數位安全風險與防護做法</p></div>
+        <div class="resource-card__body"><h3>資安新手村遊戲版</h3><p>透過互動遊戲理解數位安全風險與防護做法。</p><span class="resource-card__actions"><span class="resource-card__button">開始遊戲</span></span></div>
     </a>
-    <a href="https://drive.google.com/file/d/1wgYdObezFzlI6OJLozzqQF5Vt11B7gCd/view?usp=drive_link" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/safeguarding-advocacy.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>【報告】守護倡議之聲：公民團體與人權工作者資安陪伴計畫成果報告</h3><p>公民團體與人權工作者資安陪伴計畫的成果整理</p></div>
-    </a>
-    <a href="https://drive.google.com/file/d/1VwZwVXpOjTBZibVCTbIF1wUdPhQU_wJz/view?usp=drive_link" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/cost-of-trust.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>【報告】信任的代價：一場針對臺灣人權工作者的資安攻擊與防守實錄</h3><p>記錄針對臺灣人權工作者的攻擊事件與防守經驗</p></div>
-    </a>
-    <a href="https://digitalsecurityhandbook.ocf.tw/" class="resource-card">
+    <div class="resource-card">
+        <div class="resource-card__visual"><img src="/p/defendhrd/Digital%20Security%20Mapping%20for%20HRDs%20in%20Taiwan.png" alt="台灣人權與民主倡議團體數位威脅概況" loading="lazy"></div>
+        <div class="resource-card__body"><h3>台灣人權與民主倡議團體數位威脅概況</h3><p>透過 35 份問卷與 3 場深度訪談，瞭解在臺人權與民主倡議團體面臨的數位威脅樣態與資安需求。</p><div class="resource-card__actions"><a href="https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view" class="resource-card__button">中文版</a><a href="https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=sharing" class="resource-card__button">英文版</a></div></div>
+    </div>
+    <div class="resource-card">
+        <div class="resource-card__visual"><img src="/p/defendhrd/safeguarding-advocacy-cover.png" alt="守護倡議之聲封面" loading="lazy"></div>
+        <div class="resource-card__body"><h3>守護倡議之聲</h3><p>本專案結案報告，整理「資安陪伴計畫」(SMP) 對公民團體與人權工作者的服務模式、實作經驗與建議。</p><div class="resource-card__actions"><a href="https://drive.google.com/file/d/1wgYdObezFzlI6OJLozzqQF5Vt11B7gCd/view?usp=drive_link" class="resource-card__button">中文版</a><a href="https://drive.google.com/file/d/1ln6__KiGZgf9QSkYhwKo8gm4L9d9tExo/view?usp=drive_link" class="resource-card__button">英文版</a></div></div>
+    </div>
+    <div class="resource-card">
+        <div class="resource-card__visual"><img src="/p/defendhrd/cost-of-trust-cover.png" alt="信任的代價封面" loading="lazy"></div>
+        <div class="resource-card__body"><h3>信任的代價</h3><p>一份針對臺灣人權工作者實際遭遇資安攻擊事件的個案研究實錄，記錄攻擊樣態、防守過程與經驗教訓。</p><div class="resource-card__actions"><a href="https://drive.google.com/file/d/1VwZwVXpOjTBZibVCTbIF1wUdPhQU_wJz/view?usp=drive_link" class="resource-card__button">中文版</a><a href="https://drive.google.com/file/d/1Q3Z2nLJ4dkQpmSqXQcctl4IW3cUhdDkF/view?usp=drive_link" class="resource-card__button">英文版</a></div></div>
+    </div>
+    <div class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/cso-defense.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>CSOs 數位防禦手冊（網頁版）</h3><p>注重隱私與安全的開放原始碼工具指南</p></div>
-    </a>
-    <a href="https://ocf.tw/story/menu/resource/(public)CSOs數位防禦手冊_注重隱私與安全的開放原始碼工具V2.pdf" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/cso-defense.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>CSOs 數位防禦手冊（PDF）</h3><p>2024.07 更新版</p></div>
-    </a>
+        <div class="resource-card__body"><h3>CSOs 數位防禦手冊</h3><p>注重隱私與安全的開放原始碼工具指南，2024.07 更新。</p><div class="resource-card__actions"><a href="https://digitalsecurityhandbook.ocf.tw/" class="resource-card__button">網頁版</a><a href="https://ocf.tw/story/menu/resource/(public)CSOs數位防禦手冊_注重隱私與安全的開放原始碼工具V2.pdf" class="resource-card__button">PDF</a></div></div>
+    </div>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/csodefense/">公民社會數位防禦計畫</a></small></p>
 
@@ -217,24 +231,16 @@ og_image:
 <div class="card-grid">
     <a href="https://ocf.tw/p/pdr/pdr-report-2026.pdf" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/platform-data-report.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>配合政府執法，數位平臺該交出民眾資料嗎？</h3><p>政府、平臺與公民權利的拉鋸</p></div>
+        <div class="resource-card__body"><h3>配合政府執法，數位平臺該交出民眾資料嗎？</h3><p>政府、平臺與公民權利的拉鋸。</p><span class="resource-card__actions"><span class="resource-card__button">查看報告</span></span></div>
     </a>
     <a href="https://ocf.tw/p/rdr" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/digital-rights.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>企業數位人權報告</h3><p>檢視企業在數位時代的人權責任</p></div>
+        <div class="resource-card__body"><h3>企業數位人權報告</h3><p>檢視企業在數位時代的人權責任。</p><span class="resource-card__actions"><span class="resource-card__button">查看報告</span></span></div>
     </a>
-    <a href="https://drive.google.com/file/d/1VV12Rp7IKkWexNTKQRuWIA4Zfd8ztN9X/view?usp=sharing" class="resource-card">
-        <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">數位威脅概況<br>English</strong></div>
-        <div class="resource-card__body"><h3>數位威脅概況（English）</h3><p>台灣人權與民主倡議團體面臨的挑戰</p></div>
-    </a>
-    <a href="https://drive.google.com/file/d/1sxAFmSiJL6DzdO3ezq_hJSBROuGXNLAA/view?usp=sharing" class="resource-card">
-        <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">數位威脅概況<br>中文摘要</strong></div>
-        <div class="resource-card__body"><h3>數位威脅概況（中文摘要）</h3><p>台灣人權與民主倡議團體面臨的挑戰</p></div>
-    </a>
-    <a href="https://ocf.tw/p/dra/ep/" class="resource-card">
+    <div class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/empowering-privacy.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>強化隱私報告</h3><p>東亞數位人權及所處環境之下，公民社會的行動策略</p></div>
-    </a>
+        <div class="resource-card__body"><h3>強化隱私報告</h3><p>東亞數位人權及所處環境之下，公民社會的行動策略。</p><div class="resource-card__actions"><a href="https://ocf.tw/p/dra/ep/" class="resource-card__button">中文版</a><a href="https://drive.google.com/file/d/17DgeI_xVRdvt4_sAGetSRAv7tSVAGg-3/view?usp=sharing" class="resource-card__button">英文版</a></div></div>
+    </div>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/dra/">數位人權與倡議</a></small></p>
 
@@ -243,23 +249,23 @@ og_image:
 <div class="card-grid">
     <a href="https://resilience.ocf.tw/web/report/" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">網路韌性檢測報告</strong></div>
-        <div class="resource-card__body"><h3>網路韌性檢測報告</h3><p>海纜斷光會怎樣？認識台灣的國際網路中斷風險</p></div>
+        <div class="resource-card__body"><h3>網路韌性檢測報告</h3><p>海纜斷光會怎樣？認識台灣的國際網路中斷風險。</p><span class="resource-card__actions"><span class="resource-card__button">查看報告</span></span></div>
     </a>
     <a href="https://resilience.ocf.tw/web/" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">網路韌性檢測工具</strong></div>
-        <div class="resource-card__body"><h3>網路韌性檢測工具</h3><p>海纜斷掉時，台灣人常用的網站會動嗎？</p></div>
+        <div class="resource-card__body"><h3>網路韌性檢測工具</h3><p>海纜斷掉時，台灣人常用的網站會動嗎？</p><span class="resource-card__actions"><span class="resource-card__button">開始檢測</span></span></div>
     </a>
     <a href="https://hackmd.io/efBMZl4ITImkxUOjlmByHg?view" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">網路自由小聚共筆</strong></div>
-        <div class="resource-card__body"><h3>網路自由小聚共筆</h3><p>社群討論記錄與知識分享</p></div>
+        <div class="resource-card__body"><h3>網路自由小聚共筆</h3><p>社群討論記錄與知識分享。</p><span class="resource-card__actions"><span class="resource-card__button">閱讀共筆</span></span></div>
     </a>
     <a href="https://youtu.be/04fsSK3q7Oo?si=iNItWnSuPDtELc-J" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/internet-freedom-podcast.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>小劇場 Podcast</h3><p>用聽的了解網路自由議題</p></div>
+        <div class="resource-card__body"><h3>小劇場 Podcast</h3><p>用聽的了解網路自由議題。</p><span class="resource-card__actions"><span class="resource-card__button">收聽節目</span></span></div>
     </a>
     <a href="https://www.youtube.com/watch?v=ek2XjW7Q3wI&list=PLFuYOsppHDrlYquISvSfOjrT5g_mjMGot" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">網路自由小聚短影音</strong></div>
-        <div class="resource-card__body"><h3>網路自由小聚短影音</h3><p>2024 重要的幾場活動</p></div>
+        <div class="resource-card__body"><h3>網路自由小聚短影音</h3><p>2024 重要的幾場活動。</p><span class="resource-card__actions"><span class="resource-card__button">觀看影片</span></span></div>
     </a>
 </div>
 <p style="text-align: right;"><small>關於 <a href="https://ocf.tw/p/infr/">網路自由</a></small></p>
@@ -269,7 +275,7 @@ og_image:
 <div class="card-grid">
     <a href="https://ocf.tw/story/menu/overseas" class="resource-card">
         <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">國際會議出訪記錄</strong></div>
-        <div class="resource-card__body"><h3>國際會議出訪記錄</h3><p>OCF 接軌國際開源社群的足跡</p></div>
+        <div class="resource-card__body"><h3>國際會議出訪記錄</h3><p>OCF 接軌國際開源社群的足跡。</p><span class="resource-card__actions"><span class="resource-card__button">查看記錄</span></span></div>
     </a>
 </div>
 
@@ -278,19 +284,19 @@ og_image:
 <div class="card-grid">
     <a href="https://10years.ocf.tw" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/10years.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>開源祭官方網站</h3><p>OCF 十週年特別活動首頁</p></div>
+        <div class="resource-card__body"><h3>開源祭官方網站</h3><p>OCF 十週年特別活動首頁。</p><span class="resource-card__actions"><span class="resource-card__button">前往網站</span></span></div>
     </a>
     <a href="https://ocf.tw/story/change-the-world" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/open-festival-special-1.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>開源祭特刊 #1</h3><p>他們用程式碼改變世界：臺灣開源運動的前世今生</p></div>
+        <div class="resource-card__body"><h3>開源祭特刊 #1</h3><p>他們用程式碼改變世界：臺灣開源運動的前世今生。</p><span class="resource-card__actions"><span class="resource-card__button">閱讀特刊</span></span></div>
     </a>
     <a href="https://ocf.tw/story/find-your-place" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/open-festival-special-2.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>開源祭特刊 #2</h3><p>沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子</p></div>
+        <div class="resource-card__body"><h3>開源祭特刊 #2</h3><p>沒寫過程式，也能當開源大神！走進開源祭，找到自己的位子。</p><span class="resource-card__actions"><span class="resource-card__button">閱讀特刊</span></span></div>
     </a>
     <a href="https://ocf.tw/story/ten-years-of-ocf" class="resource-card">
         <div class="resource-card__visual"><img src="/story/menu/resource/images/open-festival-special-3.webp" alt="" loading="lazy"></div>
-        <div class="resource-card__body"><h3>開源祭特刊 #3</h3><p>從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路</p></div>
+        <div class="resource-card__body"><h3>開源祭特刊 #3</h3><p>從協助社群帳務到登上國際舞台，OCF 推動開源文化的十年之路。</p><span class="resource-card__actions"><span class="resource-card__button">閱讀特刊</span></span></div>
     </a>
 </div>
 
