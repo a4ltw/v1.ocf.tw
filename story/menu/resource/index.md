@@ -63,6 +63,14 @@ og_image:
     transition: transform 0.35s ease;
 }
 
+.resource-card__visual img.resource-card__image--podcast {
+    object-position: 42% center;
+}
+
+.resource-card__visual img.resource-card__image--festival {
+    object-position: 6% center;
+}
+
 .resource-card__visual--title {
     display: grid;
     place-items: center;
@@ -238,7 +246,7 @@ og_image:
         <div class="resource-card__body"><h3>企業數位人權報告</h3><p>檢視企業在數位時代的人權責任。</p><span class="resource-card__actions"><span class="resource-card__button">查看報告</span></span></div>
     </a>
     <div class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/empowering-privacy.webp" alt="" loading="lazy"></div>
+        <div class="resource-card__visual resource-card__visual--title" aria-hidden="true"><strong class="resource-card__visual-title">強化隱私報告</strong></div>
         <div class="resource-card__body"><h3>強化隱私報告</h3><p>東亞數位人權及所處環境之下，公民社會的行動策略。</p><div class="resource-card__actions"><a href="https://ocf.tw/p/dra/ep/" class="resource-card__button">中文版</a><a href="https://drive.google.com/file/d/17DgeI_xVRdvt4_sAGetSRAv7tSVAGg-3/view?usp=sharing" class="resource-card__button">英文版</a></div></div>
     </div>
 </div>
@@ -260,7 +268,7 @@ og_image:
         <div class="resource-card__body"><h3>網路自由小聚共筆</h3><p>社群討論記錄與知識分享。</p><span class="resource-card__actions"><span class="resource-card__button">閱讀共筆</span></span></div>
     </a>
     <a href="https://youtu.be/04fsSK3q7Oo?si=iNItWnSuPDtELc-J" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/internet-freedom-podcast.webp" alt="" loading="lazy"></div>
+        <div class="resource-card__visual"><img class="resource-card__image--podcast" src="/story/menu/resource/images/internet-freedom-podcast.webp" alt="" loading="lazy"></div>
         <div class="resource-card__body"><h3>小劇場 Podcast</h3><p>用聽的了解網路自由議題。</p><span class="resource-card__actions"><span class="resource-card__button">收聽節目</span></span></div>
     </a>
     <a href="https://www.youtube.com/watch?v=ek2XjW7Q3wI&list=PLFuYOsppHDrlYquISvSfOjrT5g_mjMGot" class="resource-card">
@@ -283,7 +291,7 @@ og_image:
 <h2 class="section-title">十週年開源祭</h2>
 <div class="card-grid">
     <a href="https://10years.ocf.tw" class="resource-card">
-        <div class="resource-card__visual"><img src="/story/menu/resource/images/10years.webp" alt="" loading="lazy"></div>
+        <div class="resource-card__visual"><img class="resource-card__image--festival" src="/story/menu/resource/images/10years.webp" alt="" loading="lazy"></div>
         <div class="resource-card__body"><h3>開源祭官方網站</h3><p>OCF 十週年特別活動首頁。</p><span class="resource-card__actions"><span class="resource-card__button">前往網站</span></span></div>
     </a>
     <a href="https://ocf.tw/story/change-the-world" class="resource-card">
