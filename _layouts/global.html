@@ -36,6 +36,12 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+  {% if page.referrer_policy %}
+  <meta name="referrer" content="{{ page.referrer_policy }}" />
+  {% endif %}
+  {% if page.content_security_policy %}
+  <meta http-equiv="Content-Security-Policy" content="{{ page.content_security_policy }}" />
+  {% endif %}
   {% if page.layout == "story" %}
   {{ story_meta_tags }}
   {% else %}
