@@ -89,22 +89,4 @@ show_child_projects:
 <h3 class="ui dividing header">國際出訪相關紀錄</h2>
 <p> 從 2016 年開始，OCF 便積極參與重要相關國際會議，除了派員出訪，也會發文告知出訪行程並公開邀請有興趣社群成員一同前往。並且提供社群，行前--會視情況召開行前說明會，提供會議和周邊拜訪資訊，也會開立協作共筆和訊息群組供有興趣的人和我們交流。 回台後--大部分出訪都有出訪報告 & 公開分享會，讓無法前往之社群成員或有興趣民眾得以了解會議狀況和主要議題。<br> 過往出訪紀錄及更多國際會議介紹，可由下方互動式地圖查看。</p>
 
-<iframe
-  class="overseas-map-embed"
-  src="/story/menu/overseas/?embed=map#overseas-map-title"
-  title="OCF 國際出訪地點互動地圖"
-  loading="lazy"
-  scrolling="no"
-></iframe>
-
-<style>
-#project iframe.overseas-map-embed {
-  display: block;
-  width: 100%;
-  height: 710px;
-  border: 0;
-}
-@media (max-width: 767px) {
-  #project iframe.overseas-map-embed { height: 760px; }
-}
-</style>
+{% include overseas-map.html record_source="/story/menu/overseas/" %}
