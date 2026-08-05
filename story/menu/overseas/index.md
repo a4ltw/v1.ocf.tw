@@ -45,10 +45,27 @@ content_security_policy: "default-src 'self'; script-src 'self' 'unsafe-inline' 
   <noscript><p>地圖需要 JavaScript 才能顯示，完整紀錄仍可由下方年份清單閱讀。</p></noscript>
 </section>
 
+<script>
+if (new URLSearchParams(window.location.search).get('embed') === 'map') {
+  document.documentElement.classList.add('overseas-map-embed');
+}
+</script>
+
 <style>
+html.overseas-map-embed #topbar,
+html.overseas-map-embed main#about > :not(.stripe),
+html.overseas-map-embed #footer,
+html.overseas-map-embed #page__pusher,
+html.overseas-map-embed address,
 html.overseas-map-embed #table-of-contents,
 html.overseas-map-embed #content > :not(.overseas-map):not(style):not(link):not(script) {
   display: none !important;
+}
+html.overseas-map-embed body,
+html.overseas-map-embed main#about {
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 html.overseas-map-embed #content {
   width: 100% !important;
@@ -221,9 +238,6 @@ html.overseas-map-embed #content {
 <script src="/assets/libs/maplibre-gl-5.24.0/maplibre-gl.js" integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  if (new URLSearchParams(window.location.search).get('embed') === 'map') {
-    document.documentElement.classList.add('overseas-map-embed');
-  }
   var root = document.querySelector('.overseas-map');
   if (!root || !window.maplibregl) return;
 
