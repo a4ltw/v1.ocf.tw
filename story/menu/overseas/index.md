@@ -67,6 +67,10 @@ html.overseas-map-embed main#about {
   padding: 0;
   background: transparent;
 }
+html.overseas-map-embed,
+html.overseas-map-embed body {
+  overflow: hidden;
+}
 html.overseas-map-embed #content {
   width: 100% !important;
 }
