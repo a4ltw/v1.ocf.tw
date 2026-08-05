@@ -404,6 +404,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+## 2025 國際出訪
+
+* 2025/11 國際公民社會週 ICSW 2025 @ 泰國曼谷 [會議官網](https://icsw.civicus.org/program/)
+* 2025/11 亞洲民主大會 Asia Democracy Assembly 2025 @ 泰國曼谷 [會議官網](https://adnasia.org/asia-democracy-assembly-2025/)
+* 2025/09 全球隱私大會 Global Privacy Assembly 2025 @ 韓國首爾 [會議官網](https://globalprivacyassembly.com/)
+* 2025/09 Global Gathering 2025 @ Estoril, Portugal [會議官網](https://wiki.digitalrights.community/)
+* 2025/08 亞太數位人權大會 DRAPAC 2025 @ 馬來西亞吉隆坡 [會議官網](https://drap.ac/25/)
+* 2025/02 FOSDEM 2025 @ 比利時布魯塞爾 [會議官網](https://archive.fosdem.org/2025/)
+
 ## 2024 國際出訪
 
 * 2024/09 Global Gathering 2024 @ Estoril, Portugal [參與議程分享、擺攤推廣](https://wiki.digitalrights.community/index.php?title=September_29_2024_Agenda)
