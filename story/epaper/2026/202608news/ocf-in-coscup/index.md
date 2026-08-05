@@ -2,7 +2,7 @@
 layout: story
 og_title: 和 OCF 一起參與 COSCUP 2026！
 og_description: "COSCUP 開源人年會特輯"
-og_image: images/coscup-2026.png
+og_image: images/coscup-2026.jpg
 toc: false
 ---
 
@@ -56,4 +56,4 @@ COSCUP 大會期間，持 OSCVPass 通知信上的邀請碼，前往研揚大樓
 
 ＊如遇天候不佳因素導致活動延期、取消，以 COSCUP 官方發布的消息為主。
 
-[image1]: images/coscup-2026.png
+[image1]: images/coscup-2026.jpg
