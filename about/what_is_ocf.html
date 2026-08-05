@@ -168,13 +168,6 @@
     border-radius: 8px;
     margin-top: 20px;
   }
-
-  .founder-list-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.1em;
-  }
   
   .founder-list ul {
     display: flex;
@@ -209,28 +202,6 @@
     background: var(--ocf-primary);
     color: white;
     border-color: var(--ocf-primary);
-  }
-
-  .koboyo-icon {
-    display: inline-block;
-    width: 1.25em;
-    height: 1.25em;
-    flex: 0 0 auto;
-    background-color: currentColor;
-    mask: var(--koboyo-icon) center / contain no-repeat;
-    -webkit-mask: var(--koboyo-icon) center / contain no-repeat;
-  }
-
-  .koboyo-icon--trophy {
-    --koboyo-icon: url('../assets/images/icons/koboyo/trophy.svg');
-  }
-
-  .koboyo-icon--globe {
-    --koboyo-icon: url('../assets/images/icons/koboyo/globe.svg');
-  }
-
-  .koboyo-icon--scroll {
-    --koboyo-icon: url('../assets/images/icons/koboyo/scroll.svg');
   }
 
   /* 6. Culture */
@@ -386,10 +357,7 @@
         <p>2014 年 6 月，在 g0v 村長 clkao 挖坑，多方社群與企業贊助，以及眾多開源人奔走相挺之下，開放文化基金會向台北市政府文化局提出申請並核准成立。</p>
         
         <div class="founder-list">
-          <strong class="founder-list-title">
-            <span class="koboyo-icon koboyo-icon--trophy" aria-hidden="true"></span>
-            感謝創始捐助人：
-          </strong>
+          <strong style="font-size: 1.1em;">🏆 感謝創始捐助人：</strong>
           <ul>
             <li>OSDC：簡信昌</li>
             <li>李明哲（時任 KKBOX COO）</li>
@@ -401,12 +369,10 @@
 
         <div class="doc-links">
           <a href="https://web.archive.org/web/20220522161904/https://g0v.hackpad.tw/0rg.tw--2r3K7emrNpC" target="_blank" class="doc-btn">
-            <span class="koboyo-icon koboyo-icon--globe" aria-hidden="true"></span>
-            籌備期間社群討論共筆
+            <i>🌐</i> 籌備期間社群討論共筆
           </a>
           <a href="bylaws.html" target="_blank" class="doc-btn">
-            <span class="koboyo-icon koboyo-icon--scroll" aria-hidden="true"></span>
-            財團法人開放文化基金會捐助章程
+            <i>📜</i> 財團法人開放文化基金會捐助章程
           </a>
         </div>
       </div>
