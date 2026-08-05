@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', function () {
 * 2024/3 IETF 119 @澳洲布里斯本 [網路自由小聚-回國分享](https://ocftw.kktix.cc/events/internetfreedom-april2024)
 * 2024/02 FOSDEM 2024 @ 比利時 [參與紀錄](https://ocf.tw/p/global/fosdem-2024/)
 
-## 2023國際出訪
+## 2023 國際出訪
 
 * 2023/12 Open Source Summit Japan & Open Source Compliance Summit @ 日本東京 [會後分享簡報](https://docs.google.com/presentation/d/1p3HIpnvnUMhE4vSmyELMZQwj9GST5PJwpoi7bSGXRj0/edit#slide=id.g262636ebe2c_0_238)
 * 2023/09 OGP Global Summit 國際開放政府高峰會 @ 愛沙尼亞 [參與紀錄共筆](https://docs.google.com/document/d/1oGsj22fMvPfDU5LH64Bk_0HftrSW10NOM1pDJ_NciZw/edit)
