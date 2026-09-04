@@ -244,6 +244,12 @@ main {
   font-size: 0.92rem;
 }
 
+.gform p.field-hint {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
 .gform label.field-label .required {
   color: var(--accent);
   margin-left: 3px;
